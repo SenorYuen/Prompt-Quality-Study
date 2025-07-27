@@ -1,0 +1,1991 @@
+Kind,Name,MaxCyclomatic,RatioCommentToCode,CountClassCoupled,CountDeclMethod,CountLineBlank,CountLineCode,CountLineComment,MaxNesting
+Class,"AccessGatewayFilter.AccessGatewayFilter",3,0.25,0,5,4,24,6,2
+Class,"AccessGatewayFilter.AccessGatewayFilter",3,0.67,4,5,4,24,16,2
+Class,"AccessGatewayFilter.AccessGatewayFilter",4,1.09,0,5,13,33,36,2
+Function,"AccessGatewayFilter.AccessGatewayFilter.__init__",,0.00,,,0,2,0,0
+Function,"AccessGatewayFilter.AccessGatewayFilter.__init__",,0.50,,,0,2,1,0
+Function,"AccessGatewayFilter.AccessGatewayFilter.__init__",,0.50,,,0,2,1,0
+Function,"AccessGatewayFilter.AccessGatewayFilter.filter",,0.40,,,0,5,2,1
+Function,"AccessGatewayFilter.AccessGatewayFilter.filter",,0.80,,,0,5,4,2
+Function,"AccessGatewayFilter.AccessGatewayFilter.filter",,1.00,,,3,8,8,1
+Function,"AccessGatewayFilter.AccessGatewayFilter.get_jwt_user",,0.14,,,0,7,1,1
+Function,"AccessGatewayFilter.AccessGatewayFilter.get_jwt_user",,0.67,,,0,6,4,1
+Function,"AccessGatewayFilter.AccessGatewayFilter.get_jwt_user",,0.77,,,2,13,10,1
+Function,"AccessGatewayFilter.AccessGatewayFilter.is_start_with",,0.17,,,0,6,1,2
+Function,"AccessGatewayFilter.AccessGatewayFilter.is_start_with",,0.67,,,0,6,4,2
+Function,"AccessGatewayFilter.AccessGatewayFilter.is_start_with",,1.17,,,2,6,7,2
+Function,"AccessGatewayFilter.AccessGatewayFilter.set_current_user_info_and_log",,0.67,,,0,3,2,0
+Function,"AccessGatewayFilter.AccessGatewayFilter.set_current_user_info_and_log",,0.75,,,0,4,3,0
+Function,"AccessGatewayFilter.AccessGatewayFilter.set_current_user_info_and_log",,2.33,,,1,3,7,0
+Module File,"AccessGatewayFilter.py",3,0.22,,,5,27,6,2
+Module File,"AccessGatewayFilter.py",3,0.62,,,5,26,16,2
+Module File,"AccessGatewayFilter.py",4,1.03,,,14,36,37,2
+Class,"AreaCalculator.AreaCalculator",1,0.92,0,6,5,13,12,0
+Function,"AreaCalculator.AreaCalculator.__init__",,0.50,,,0,2,1,0
+Function,"AreaCalculator.AreaCalculator.calculate_annulus_area",,0.50,,,0,2,1,0
+Function,"AreaCalculator.AreaCalculator.calculate_circle_area",,0.50,,,0,2,1,0
+Function,"AreaCalculator.AreaCalculator.calculate_cylinder_area",,0.50,,,0,2,1,0
+Function,"AreaCalculator.AreaCalculator.calculate_sector_area",,0.50,,,0,2,1,0
+Function,"AreaCalculator.AreaCalculator.calculate_sphere_area",,0.50,,,0,2,1,0
+Module File,"AreaCalculator.py",1,0.93,,,6,14,13,0
+Class,"ArgumentParser.ArgumentParser",8,0.00,6,5,7,59,0,3
+Class,"ArgumentParser.ArgumentParser",6,0.44,5,5,12,45,20,3
+Class,"ArgumentParser.ArgumentParser",8,0.60,6,5,12,50,30,3
+Class,"ArgumentParser.ArgumentParser",5,0.45,5,5,8,33,15,3
+Function,"ArgumentParser.ArgumentParser.__init__",,0.00,,,0,4,0,0
+Function,"ArgumentParser.ArgumentParser.__init__",,0.25,,,0,4,1,0
+Function,"ArgumentParser.ArgumentParser.__init__",,1.50,,,0,4,6,0
+Function,"ArgumentParser.ArgumentParser.__init__",,0.25,,,0,4,1,0
+Function,"ArgumentParser.ArgumentParser._convert_type",,0.00,,,0,17,0,2
+Function,"ArgumentParser.ArgumentParser._convert_type",,0.23,,,1,13,3,2
+Function,"ArgumentParser.ArgumentParser._convert_type",,0.17,,,2,18,3,2
+Function,"ArgumentParser.ArgumentParser._convert_type",,0.40,,,0,5,2,1
+Function,"ArgumentParser.ArgumentParser.add_argument",,0.00,,,0,4,0,1
+Function,"ArgumentParser.ArgumentParser.add_argument",,0.50,,,1,4,2,1
+Function,"ArgumentParser.ArgumentParser.add_argument",,0.50,,,1,4,2,1
+Function,"ArgumentParser.ArgumentParser.add_argument",,0.50,,,1,4,2,1
+Function,"ArgumentParser.ArgumentParser.get_argument",,0.00,,,0,2,0,0
+Function,"ArgumentParser.ArgumentParser.get_argument",,0.50,,,0,2,1,0
+Function,"ArgumentParser.ArgumentParser.get_argument",,0.50,,,0,2,1,0
+Function,"ArgumentParser.ArgumentParser.get_argument",,0.50,,,0,2,1,0
+Function,"ArgumentParser.ArgumentParser.parse_arguments",,0.00,,,3,31,0,3
+Function,"ArgumentParser.ArgumentParser.parse_arguments",,0.62,,,6,21,13,3
+Function,"ArgumentParser.ArgumentParser.parse_arguments",,0.71,,,4,21,15,3
+Function,"ArgumentParser.ArgumentParser.parse_arguments",,0.53,,,3,17,9,3
+Module File,"ArgumentParser.py",8,0.00,,,7,59,0,3
+Module File,"ArgumentParser.py",6,0.44,,,12,45,20,3
+Module File,"ArgumentParser.py",8,0.60,,,12,50,30,3
+Module File,"ArgumentParser.py",5,0.45,,,8,33,15,3
+Class,"ArrangementCalculator.ArrangementCalculator",2,0.30,3,6,5,27,8,1
+Function,"ArrangementCalculator.ArrangementCalculator.__init__",,0.50,,,0,2,1,0
+Function,"ArrangementCalculator.ArrangementCalculator.count",,0.40,,,0,5,2,1
+Function,"ArrangementCalculator.ArrangementCalculator.count_all",,0.20,,,0,5,1,1
+Function,"ArrangementCalculator.ArrangementCalculator.factorial",,0.50,,,0,2,1,0
+Function,"ArrangementCalculator.ArrangementCalculator.select",,0.50,,,0,4,2,1
+Function,"ArrangementCalculator.ArrangementCalculator.select_all",,0.20,,,0,5,1,1
+Module File,"ArrangementCalculator.py",2,0.28,,,6,29,8,1
+Class,"AssessmentSystem.AssessmentSystem",4,0.17,0,7,6,42,7,3
+Class,"AssessmentSystem.AssessmentSystem",4,0.17,0,7,6,42,7,3
+Class,"AssessmentSystem.AssessmentSystem",4,1.50,0,7,7,40,60,3
+Class,"AssessmentSystem.AssessmentSystem",4,0.67,1,7,6,48,32,3
+Function,"AssessmentSystem.AssessmentSystem.__init__",,0.50,,,0,2,1,0
+Function,"AssessmentSystem.AssessmentSystem.__init__",,0.50,,,0,2,1,0
+Function,"AssessmentSystem.AssessmentSystem.__init__",,2.00,,,0,2,4,0
+Function,"AssessmentSystem.AssessmentSystem.__init__",,0.50,,,0,2,1,0
+Function,"AssessmentSystem.AssessmentSystem.add_course_score",,0.33,,,0,3,1,1
+Function,"AssessmentSystem.AssessmentSystem.add_course_score",,0.33,,,0,3,1,1
+Function,"AssessmentSystem.AssessmentSystem.add_course_score",,2.67,,,0,3,8,1
+Function,"AssessmentSystem.AssessmentSystem.add_course_score",,0.60,,,0,5,3,1
+Function,"AssessmentSystem.AssessmentSystem.add_student",,0.50,,,0,2,1,0
+Function,"AssessmentSystem.AssessmentSystem.add_student",,0.50,,,0,2,1,0
+Function,"AssessmentSystem.AssessmentSystem.add_student",,3.50,,,0,2,7,0
+Function,"AssessmentSystem.AssessmentSystem.add_student",,0.50,,,0,2,1,0
+Function,"AssessmentSystem.AssessmentSystem.get_all_students_with_fail_course",,0.13,,,0,8,1,3
+Function,"AssessmentSystem.AssessmentSystem.get_all_students_with_fail_course",,0.13,,,0,8,1,3
+Function,"AssessmentSystem.AssessmentSystem.get_all_students_with_fail_course",,1.25,,,0,8,10,3
+Function,"AssessmentSystem.AssessmentSystem.get_all_students_with_fail_course",,0.88,,,0,8,7,3
+Function,"AssessmentSystem.AssessmentSystem.get_course_average",,0.09,,,0,11,1,2
+Function,"AssessmentSystem.AssessmentSystem.get_course_average",,0.09,,,0,11,1,2
+Function,"AssessmentSystem.AssessmentSystem.get_course_average",,1.22,,,0,9,11,2
+Function,"AssessmentSystem.AssessmentSystem.get_course_average",,0.73,,,0,11,8,2
+Function,"AssessmentSystem.AssessmentSystem.get_gpa",,0.17,,,0,6,1,1
+Function,"AssessmentSystem.AssessmentSystem.get_gpa",,0.17,,,0,6,1,1
+Function,"AssessmentSystem.AssessmentSystem.get_gpa",,1.33,,,0,6,8,1
+Function,"AssessmentSystem.AssessmentSystem.get_gpa",,0.60,,,0,10,6,2
+Function,"AssessmentSystem.AssessmentSystem.get_top_student",,0.11,,,0,9,1,2
+Function,"AssessmentSystem.AssessmentSystem.get_top_student",,0.11,,,0,9,1,2
+Function,"AssessmentSystem.AssessmentSystem.get_top_student",,1.00,,,0,9,9,2
+Function,"AssessmentSystem.AssessmentSystem.get_top_student",,0.67,,,0,9,6,2
+Module File,"AssessmentSystem.py",4,0.17,,,6,42,7,3
+Module File,"AssessmentSystem.py",4,0.17,,,6,42,7,3
+Module File,"AssessmentSystem.py",4,1.50,,,7,40,60,3
+Module File,"AssessmentSystem.py",4,0.67,,,6,48,32,3
+Class,"AutomaticGuitarSimulator.AutomaticGuitarSimulator",6,1.33,0,3,12,21,28,3
+Class,"AutomaticGuitarSimulator.AutomaticGuitarSimulator",6,1.48,0,3,12,21,31,3
+Class,"AutomaticGuitarSimulator.AutomaticGuitarSimulator",6,1.23,0,3,10,22,27,3
+Class,"AutomaticGuitarSimulator.AutomaticGuitarSimulator",6,0.81,2,3,11,26,21,2
+Function,"AutomaticGuitarSimulator.AutomaticGuitarSimulator.__init__",,2.50,,,1,2,5,0
+Function,"AutomaticGuitarSimulator.AutomaticGuitarSimulator.__init__",,2.50,,,1,2,5,0
+Function,"AutomaticGuitarSimulator.AutomaticGuitarSimulator.__init__",,2.00,,,0,2,4,0
+Function,"AutomaticGuitarSimulator.AutomaticGuitarSimulator.__init__",,1.50,,,0,2,3,0
+Function,"AutomaticGuitarSimulator.AutomaticGuitarSimulator.display",,4.50,,,2,2,9,0
+Function,"AutomaticGuitarSimulator.AutomaticGuitarSimulator.display",,4.50,,,2,2,9,0
+Function,"AutomaticGuitarSimulator.AutomaticGuitarSimulator.display",,3.50,,,0,2,7,0
+Function,"AutomaticGuitarSimulator.AutomaticGuitarSimulator.display",,1.67,,,0,3,5,0
+Function,"AutomaticGuitarSimulator.AutomaticGuitarSimulator.interpret",,0.88,,,7,16,14,3
+Function,"AutomaticGuitarSimulator.AutomaticGuitarSimulator.interpret",,0.88,,,7,16,14,3
+Function,"AutomaticGuitarSimulator.AutomaticGuitarSimulator.interpret",,0.76,,,6,17,13,3
+Function,"AutomaticGuitarSimulator.AutomaticGuitarSimulator.interpret",,0.65,,,8,20,13,2
+Module File,"AutomaticGuitarSimulator.py",6,1.33,,,12,21,28,3
+Module File,"AutomaticGuitarSimulator.py",6,1.48,,,12,21,31,3
+Module File,"AutomaticGuitarSimulator.py",6,1.23,,,10,22,27,3
+Module File,"AutomaticGuitarSimulator.py",6,0.82,,,14,28,23,2
+Class,"BankAccount.BankAccount",3,0.20,1,5,4,25,5,1
+Class,"BankAccount.BankAccount",3,1.71,1,5,14,24,41,1
+Function,"BankAccount.BankAccount.__init__",,0.50,,,0,2,1,0
+Function,"BankAccount.BankAccount.__init__",,2.50,,,1,2,5,0
+Function,"BankAccount.BankAccount.deposit",,0.20,,,0,5,1,1
+Function,"BankAccount.BankAccount.deposit",,1.80,,,3,5,9,1
+Function,"BankAccount.BankAccount.transfer",,0.13,,,0,8,1,1
+Function,"BankAccount.BankAccount.transfer",,1.14,,,2,7,8,1
+Function,"BankAccount.BankAccount.view_balance",,0.50,,,0,2,1,0
+Function,"BankAccount.BankAccount.view_balance",,2.50,,,1,2,5,0
+Function,"BankAccount.BankAccount.withdraw",,0.14,,,0,7,1,1
+Function,"BankAccount.BankAccount.withdraw",,1.29,,,3,7,9,1
+Module File,"BankAccount.py",3,0.20,,,4,25,5,1
+Module File,"BankAccount.py",3,1.71,,,14,24,41,1
+Class,"BinaryDataProcessor.BinaryDataProcessor",3,0.41,2,5,10,32,13,2
+Function,"BinaryDataProcessor.BinaryDataProcessor.__init__",,0.50,,,0,2,1,0
+Function,"BinaryDataProcessor.BinaryDataProcessor.calculate_binary_info",,0.33,,,2,9,3,0
+Function,"BinaryDataProcessor.BinaryDataProcessor.clean_non_binary_chars",,0.50,,,0,2,1,0
+Function,"BinaryDataProcessor.BinaryDataProcessor.convert_to_ascii",,0.44,,,2,9,4,2
+Function,"BinaryDataProcessor.BinaryDataProcessor.convert_to_utf8",,0.44,,,2,9,4,2
+Module File,"BinaryDataProcessor.py",3,0.39,,,11,36,14,2
+Class,"BitStatusUtil.BitStatusUtil",4,0.50,1,4,4,20,10,2
+Class,"BitStatusUtil.BitStatusUtil",3,0.36,1,4,7,22,8,1
+Function,"BitStatusUtil.BitStatusUtil.add",,0.67,,,0,3,2,0
+Function,"BitStatusUtil.BitStatusUtil.add",,0.50,,,1,4,2,0
+Function,"BitStatusUtil.BitStatusUtil.check",,0.17,,,0,6,1,2
+Function,"BitStatusUtil.BitStatusUtil.check",,0.40,,,1,5,2,1
+Function,"BitStatusUtil.BitStatusUtil.has",,0.67,,,0,3,2,0
+Function,"BitStatusUtil.BitStatusUtil.has",,0.50,,,1,4,2,0
+Function,"BitStatusUtil.BitStatusUtil.remove",,0.67,,,0,3,2,0
+Function,"BitStatusUtil.BitStatusUtil.remove",,0.50,,,1,4,2,0
+Module File,"BitStatusUtil.py",4,0.50,,,4,20,10,2
+Module File,"BitStatusUtil.py",3,0.41,,,8,22,9,1
+Class,"BlackjackGame.BlackjackGame",7,0.21,0,4,5,38,8,2
+Class,"BlackjackGame.BlackjackGame",5,0.27,0,4,3,33,9,1
+Class,"BlackjackGame.BlackjackGame",7,1.17,1,4,12,46,54,2
+Class,"BlackjackGame.BlackjackGame",8,0.43,1,4,11,49,21,3
+Function,"BlackjackGame.BlackjackGame.__init__",,0.25,,,0,4,1,0
+Function,"BlackjackGame.BlackjackGame.__init__",,0.25,,,0,4,1,0
+Function,"BlackjackGame.BlackjackGame.__init__",,1.75,,,0,4,7,0
+Function,"BlackjackGame.BlackjackGame.__init__",,0.25,,,0,4,1,0
+Function,"BlackjackGame.BlackjackGame.calculate_hand_value",,0.25,,,1,8,2,1
+Function,"BlackjackGame.BlackjackGame.calculate_hand_value",,0.25,,,0,8,2,1
+Function,"BlackjackGame.BlackjackGame.calculate_hand_value",,1.38,,,4,16,22,2
+Function,"BlackjackGame.BlackjackGame.calculate_hand_value",,0.81,,,4,16,13,2
+Function,"BlackjackGame.BlackjackGame.check_winner",,0.21,,,1,19,4,2
+Function,"BlackjackGame.BlackjackGame.check_winner",,0.31,,,0,13,4,1
+Function,"BlackjackGame.BlackjackGame.check_winner",,0.79,,,1,19,15,2
+Function,"BlackjackGame.BlackjackGame.check_winner",,0.18,,,1,22,4,3
+Function,"BlackjackGame.BlackjackGame.create_deck",,0.17,,,0,6,1,0
+Function,"BlackjackGame.BlackjackGame.create_deck",,0.29,,,0,7,2,0
+Function,"BlackjackGame.BlackjackGame.create_deck",,1.17,,,3,6,7,0
+Function,"BlackjackGame.BlackjackGame.create_deck",,0.50,,,3,6,3,0
+Module File,"BlackjackGame.py",7,0.21,,,6,39,8,2
+Module File,"BlackjackGame.py",5,0.27,,,3,33,9,1
+Module File,"BlackjackGame.py",7,1.15,,,13,47,54,2
+Module File,"BlackjackGame.py",8,0.45,,,13,56,25,3
+Class,"BookManagement.BookManagement",4,0.22,1,5,4,27,6,3
+Class,"BookManagement.BookManagement",4,0.74,1,5,4,27,20,3
+Class,"BookManagement.BookManagement",4,1.92,2,5,5,26,50,3
+Function,"BookManagement.BookManagement.__init__",,0.50,,,0,2,1,0
+Function,"BookManagement.BookManagement.__init__",,0.50,,,0,2,1,0
+Function,"BookManagement.BookManagement.__init__",,2.00,,,0,2,4,0
+Function,"BookManagement.BookManagement.add_book",,0.33,,,0,6,2,1
+Function,"BookManagement.BookManagement.add_book",,0.67,,,0,6,4,1
+Function,"BookManagement.BookManagement.add_book",,1.50,,,0,6,9,1
+Function,"BookManagement.BookManagement.remove_book",,0.09,,,0,11,1,3
+Function,"BookManagement.BookManagement.remove_book",,0.55,,,0,11,6,3
+Function,"BookManagement.BookManagement.remove_book",,1.20,,,0,10,12,3
+Function,"BookManagement.BookManagement.view_book_quantity",,0.20,,,0,5,1,1
+Function,"BookManagement.BookManagement.view_book_quantity",,0.60,,,0,5,3,1
+Function,"BookManagement.BookManagement.view_book_quantity",,2.40,,,0,5,12,1
+Function,"BookManagement.BookManagement.view_inventory",,0.50,,,0,2,1,0
+Function,"BookManagement.BookManagement.view_inventory",,0.50,,,0,2,1,0
+Function,"BookManagement.BookManagement.view_inventory",,5.00,,,0,2,10,0
+Module File,"BookManagement.py",4,0.22,,,4,27,6,3
+Module File,"BookManagement.py",4,0.74,,,4,27,20,3
+Module File,"BookManagement.py",4,1.92,,,5,26,50,3
+Class,"BookManagementDB.BookManagementDB",1,0.00,0,7,6,26,0,0
+Class,"BookManagementDB.BookManagementDB",1,0.41,0,7,7,54,22,0
+Function,"BookManagementDB.BookManagementDB.__init__",,0.00,,,0,4,0,0
+Function,"BookManagementDB.BookManagementDB.__init__",,0.75,,,0,4,3,0
+Function,"BookManagementDB.BookManagementDB.add_book",,0.00,,,0,3,0,0
+Function,"BookManagementDB.BookManagementDB.add_book",,0.43,,,0,7,3,0
+Function,"BookManagementDB.BookManagementDB.borrow_book",,0.00,,,0,3,0,0
+Function,"BookManagementDB.BookManagementDB.borrow_book",,0.38,,,0,8,3,0
+Function,"BookManagementDB.BookManagementDB.create_table",,0.00,,,0,6,0,0
+Function,"BookManagementDB.BookManagementDB.create_table",,0.27,,,0,11,3,0
+Function,"BookManagementDB.BookManagementDB.remove_book",,0.00,,,0,3,0,0
+Function,"BookManagementDB.BookManagementDB.remove_book",,0.43,,,0,7,3,0
+Function,"BookManagementDB.BookManagementDB.return_book",,0.00,,,0,3,0,0
+Function,"BookManagementDB.BookManagementDB.return_book",,0.38,,,0,8,3,0
+Function,"BookManagementDB.BookManagementDB.search_books",,0.00,,,0,3,0,0
+Function,"BookManagementDB.BookManagementDB.search_books",,0.50,,,0,8,4,0
+Module File,"BookManagementDB.py",1,0.00,,,7,27,0,0
+Module File,"BookManagementDB.py",2,0.35,,,9,66,23,1
+Class,"BoyerMooreSearch.BoyerMooreSearch",4,0.00,1,4,3,31,0,3
+Class,"BoyerMooreSearch.BoyerMooreSearch",4,0.00,1,4,3,32,0,3
+Class,"BoyerMooreSearch.BoyerMooreSearch",4,1.28,1,4,4,32,41,3
+Class,"BoyerMooreSearch.BoyerMooreSearch",3,0.48,1,4,3,27,13,2
+Function,"BoyerMooreSearch.BoyerMooreSearch.__init__",,0.00,,,0,5,0,0
+Function,"BoyerMooreSearch.BoyerMooreSearch.__init__",,0.00,,,0,5,0,0
+Function,"BoyerMooreSearch.BoyerMooreSearch.__init__",,1.67,,,0,3,5,0
+Function,"BoyerMooreSearch.BoyerMooreSearch.__init__",,0.33,,,0,6,2,1
+Function,"BoyerMooreSearch.BoyerMooreSearch.bad_character_heuristic",,0.00,,,0,15,0,3
+Function,"BoyerMooreSearch.BoyerMooreSearch.bad_character_heuristic",,0.00,,,0,16,0,3
+Function,"BoyerMooreSearch.BoyerMooreSearch.bad_character_heuristic",,0.94,,,0,16,15,3
+Function,"BoyerMooreSearch.BoyerMooreSearch.bad_character_heuristic",,0.46,,,0,13,6,2
+Function,"BoyerMooreSearch.BoyerMooreSearch.match_in_pattern",,0.00,,,0,5,0,2
+Function,"BoyerMooreSearch.BoyerMooreSearch.match_in_pattern",,0.00,,,0,5,0,2
+Function,"BoyerMooreSearch.BoyerMooreSearch.match_in_pattern",,1.40,,,0,5,7,2
+Function,"BoyerMooreSearch.BoyerMooreSearch.match_in_pattern",,1.00,,,0,2,2,0
+Function,"BoyerMooreSearch.BoyerMooreSearch.mismatch_in_text",,0.00,,,0,5,0,2
+Function,"BoyerMooreSearch.BoyerMooreSearch.mismatch_in_text",,0.00,,,0,5,0,2
+Function,"BoyerMooreSearch.BoyerMooreSearch.mismatch_in_text",,1.43,,,0,7,10,2
+Function,"BoyerMooreSearch.BoyerMooreSearch.mismatch_in_text",,0.60,,,0,5,3,2
+Module File,"BoyerMooreSearch.py",4,0.00,,,3,31,0,3
+Module File,"BoyerMooreSearch.py",4,0.00,,,3,32,0,3
+Module File,"BoyerMooreSearch.py",4,1.28,,,4,32,41,3
+Module File,"BoyerMooreSearch.py",3,0.48,,,3,27,13,2
+Class,"CSVProcessor.CSVProcessor",2,0.00,1,4,3,30,0,2
+Class,"CSVProcessor.CSVProcessor",3,0.00,3,4,3,35,0,3
+Class,"CSVProcessor.CSVProcessor",3,1.24,3,4,4,34,42,2
+Class,"CSVProcessor.CSVProcessor",4,0.77,4,4,9,35,27,2
+Function,"CSVProcessor.CSVProcessor.__init__",,0.00,,,0,2,0,0
+Function,"CSVProcessor.CSVProcessor.__init__",,0.00,,,0,2,0,0
+Function,"CSVProcessor.CSVProcessor.__init__",,0.50,,,0,2,1,0
+Function,"CSVProcessor.CSVProcessor.__init__",,0.50,,,0,2,1,0
+Function,"CSVProcessor.CSVProcessor.process_csv_data",,0.00,,,0,10,0,1
+Function,"CSVProcessor.CSVProcessor.process_csv_data",,0.00,,,0,10,0,1
+Function,"CSVProcessor.CSVProcessor.process_csv_data",,1.67,,,0,9,15,1
+Function,"CSVProcessor.CSVProcessor.process_csv_data",,0.92,,,5,13,12,1
+Function,"CSVProcessor.CSVProcessor.read_csv",,0.00,,,0,9,0,2
+Function,"CSVProcessor.CSVProcessor.read_csv",,0.00,,,0,13,0,3
+Function,"CSVProcessor.CSVProcessor.read_csv",,0.92,,,0,13,12,2
+Function,"CSVProcessor.CSVProcessor.read_csv",,0.70,,,0,10,7,2
+Function,"CSVProcessor.CSVProcessor.write_csv",,0.00,,,0,8,0,2
+Function,"CSVProcessor.CSVProcessor.write_csv",,0.00,,,0,9,0,2
+Function,"CSVProcessor.CSVProcessor.write_csv",,1.22,,,0,9,11,2
+Function,"CSVProcessor.CSVProcessor.write_csv",,0.78,,,0,9,7,2
+Module File,"CSVProcessor.py",2,0.00,,,4,31,0,2
+Module File,"CSVProcessor.py",3,0.00,,,4,36,0,3
+Module File,"CSVProcessor.py",3,1.20,,,5,35,42,2
+Module File,"CSVProcessor.py",4,0.72,,,12,39,28,2
+Class,"Calculator.Calculator",6,0.00,1,4,3,43,0,3
+Class,"Calculator.Calculator",8,0.00,1,4,3,51,0,3
+Class,"Calculator.Calculator",6,0.78,1,5,15,54,42,3
+Class,"Calculator.Calculator",7,0.20,1,5,8,56,11,3
+Function,"Calculator.Calculator.__init__",,0.00,,,0,8,0,0
+Function,"Calculator.Calculator.__init__",,0.00,,,0,8,0,0
+Function,"Calculator.Calculator.__init__",,0.38,,,0,8,3,0
+Function,"Calculator.Calculator.__init__",,0.13,,,0,8,1,0
+Function,"Calculator.Calculator.apply_operator",,0.00,,,0,7,0,0
+Function,"Calculator.Calculator.apply_operator",,0.00,,,0,9,0,1
+Function,"Calculator.Calculator.apply_operator",,1.29,,,3,7,9,0
+Function,"Calculator.Calculator.apply_operator",,0.14,,,0,7,1,0
+Function,"Calculator.Calculator.calculate",,0.00,,,0,18,0,3
+Function,"Calculator.Calculator.calculate",,0.00,,,0,24,0,3
+Function,"Calculator.Calculator.calculate",,0.80,,,4,15,12,3
+Function,"Calculator.Calculator.calculate",,0.47,,,4,15,7,3
+Function,"Calculator.Calculator.precedence",,0.00,,,0,9,0,1
+Function,"Calculator.Calculator.precedence",,0.00,,,0,9,0,1
+Function,"Calculator.Calculator.precedence",,0.67,,,0,9,6,0
+Function,"Calculator.Calculator.precedence",,0.11,,,0,9,1,0
+Function,"Calculator.Calculator.tokenize",,0.64,,,3,14,9,3
+Function,"Calculator.Calculator.tokenize",,0.06,,,0,16,1,3
+Module File,"Calculator.py",6,0.00,,,3,43,0,3
+Module File,"Calculator.py",8,0.00,,,3,51,0,3
+Module File,"Calculator.py",6,0.78,,,15,54,42,3
+Module File,"Calculator.py",7,0.21,,,8,56,12,3
+Class,"CalendarUtil.CalendarUtil",5,0.00,1,7,6,29,0,3
+Class,"CalendarUtil.CalendarUtil",4,0.00,1,7,6,28,0,3
+Class,"CalendarUtil.CalendarUtil",3,0.33,2,7,9,30,10,2
+Class,"CalendarUtil.CalendarUtil",3,0.45,2,7,6,29,13,2
+Function,"CalendarUtil.CalendarUtil.__init__",,0.00,,,0,2,0,0
+Function,"CalendarUtil.CalendarUtil.__init__",,0.00,,,0,2,0,0
+Function,"CalendarUtil.CalendarUtil.__init__",,0.50,,,0,2,1,0
+Function,"CalendarUtil.CalendarUtil.__init__",,0.50,,,0,2,1,0
+Function,"CalendarUtil.CalendarUtil.add_event",,0.00,,,0,2,0,0
+Function,"CalendarUtil.CalendarUtil.add_event",,0.00,,,0,2,0,0
+Function,"CalendarUtil.CalendarUtil.add_event",,0.50,,,0,2,1,0
+Function,"CalendarUtil.CalendarUtil.add_event",,1.00,,,0,2,2,0
+Function,"CalendarUtil.CalendarUtil.get_available_slots",,0.00,,,0,12,0,3
+Function,"CalendarUtil.CalendarUtil.get_available_slots",,0.00,,,0,11,0,3
+Function,"CalendarUtil.CalendarUtil.get_available_slots",,0.10,,,2,10,1,2
+Function,"CalendarUtil.CalendarUtil.get_available_slots",,0.20,,,0,10,2,2
+Function,"CalendarUtil.CalendarUtil.get_events",,0.00,,,0,2,0,0
+Function,"CalendarUtil.CalendarUtil.get_events",,0.00,,,0,2,0,0
+Function,"CalendarUtil.CalendarUtil.get_events",,0.50,,,0,2,1,0
+Function,"CalendarUtil.CalendarUtil.get_events",,1.00,,,0,2,2,0
+Function,"CalendarUtil.CalendarUtil.get_upcoming_events",,0.00,,,0,3,0,0
+Function,"CalendarUtil.CalendarUtil.get_upcoming_events",,0.00,,,0,3,0,0
+Function,"CalendarUtil.CalendarUtil.get_upcoming_events",,0.33,,,0,3,1,0
+Function,"CalendarUtil.CalendarUtil.get_upcoming_events",,0.67,,,0,3,2,0
+Function,"CalendarUtil.CalendarUtil.is_available",,0.00,,,0,5,0,2
+Function,"CalendarUtil.CalendarUtil.is_available",,0.00,,,0,5,0,2
+Function,"CalendarUtil.CalendarUtil.is_available",,0.14,,,0,7,1,2
+Function,"CalendarUtil.CalendarUtil.is_available",,0.29,,,0,7,2,2
+Function,"CalendarUtil.CalendarUtil.remove_event",,0.00,,,0,2,0,0
+Function,"CalendarUtil.CalendarUtil.remove_event",,0.00,,,0,2,0,0
+Function,"CalendarUtil.CalendarUtil.remove_event",,0.33,,,0,3,1,1
+Function,"CalendarUtil.CalendarUtil.remove_event",,1.00,,,0,2,2,0
+Module File,"CalendarUtil.py",5,0.00,,,7,30,0,3
+Module File,"CalendarUtil.py",4,0.00,,,7,29,0,3
+Module File,"CalendarUtil.py",3,0.32,,,10,31,10,2
+Module File,"CalendarUtil.py",3,0.36,,,8,39,14,2
+Class,"CamelCaseMap.CamelCaseMap",1,0.00,0,8,7,19,0,0
+Class,"CamelCaseMap.CamelCaseMap",1,0.00,0,8,7,19,0,0
+Class,"CamelCaseMap.CamelCaseMap",1,3.95,0,8,8,20,79,0
+Class,"CamelCaseMap.CamelCaseMap",1,0.45,0,8,7,20,9,0
+Function,"CamelCaseMap.CamelCaseMap.__delitem__",,0.00,,,0,2,0,0
+Function,"CamelCaseMap.CamelCaseMap.__delitem__",,0.00,,,0,2,0,0
+Function,"CamelCaseMap.CamelCaseMap.__delitem__",,5.50,,,0,2,11,0
+Function,"CamelCaseMap.CamelCaseMap.__delitem__",,0.50,,,0,2,1,0
+Function,"CamelCaseMap.CamelCaseMap.__getitem__",,0.00,,,0,2,0,0
+Function,"CamelCaseMap.CamelCaseMap.__getitem__",,0.00,,,0,2,0,0
+Function,"CamelCaseMap.CamelCaseMap.__getitem__",,5.00,,,0,2,10,0
+Function,"CamelCaseMap.CamelCaseMap.__getitem__",,0.50,,,0,2,1,0
+Function,"CamelCaseMap.CamelCaseMap.__init__",,0.00,,,0,2,0,0
+Function,"CamelCaseMap.CamelCaseMap.__init__",,0.00,,,0,2,0,0
+Function,"CamelCaseMap.CamelCaseMap.__init__",,2.00,,,0,2,4,0
+Function,"CamelCaseMap.CamelCaseMap.__init__",,0.50,,,0,2,1,0
+Function,"CamelCaseMap.CamelCaseMap.__iter__",,0.00,,,0,2,0,0
+Function,"CamelCaseMap.CamelCaseMap.__iter__",,0.00,,,0,2,0,0
+Function,"CamelCaseMap.CamelCaseMap.__iter__",,5.50,,,0,2,11,0
+Function,"CamelCaseMap.CamelCaseMap.__iter__",,0.50,,,0,2,1,0
+Function,"CamelCaseMap.CamelCaseMap.__len__",,0.00,,,0,2,0,0
+Function,"CamelCaseMap.CamelCaseMap.__len__",,0.00,,,0,2,0,0
+Function,"CamelCaseMap.CamelCaseMap.__len__",,5.50,,,0,2,11,0
+Function,"CamelCaseMap.CamelCaseMap.__len__",,0.50,,,0,2,1,0
+Function,"CamelCaseMap.CamelCaseMap.__setitem__",,0.00,,,0,2,0,0
+Function,"CamelCaseMap.CamelCaseMap.__setitem__",,0.00,,,0,2,0,0
+Function,"CamelCaseMap.CamelCaseMap.__setitem__",,5.50,,,0,2,11,0
+Function,"CamelCaseMap.CamelCaseMap.__setitem__",,0.50,,,0,2,1,0
+Function,"CamelCaseMap.CamelCaseMap._convert_key",,0.00,,,0,2,0,0
+Function,"CamelCaseMap.CamelCaseMap._convert_key",,0.00,,,0,2,0,0
+Function,"CamelCaseMap.CamelCaseMap._convert_key",,3.00,,,0,3,9,0
+Function,"CamelCaseMap.CamelCaseMap._convert_key",,0.50,,,0,2,1,0
+Function,"CamelCaseMap.CamelCaseMap._to_camel_case",,0.00,,,0,3,0,0
+Function,"CamelCaseMap.CamelCaseMap._to_camel_case",,0.00,,,0,3,0,0
+Function,"CamelCaseMap.CamelCaseMap._to_camel_case",,3.00,,,0,3,9,0
+Function,"CamelCaseMap.CamelCaseMap._to_camel_case",,0.50,,,0,4,2,0
+Module File,"CamelCaseMap.py",1,0.00,,,7,19,0,0
+Module File,"CamelCaseMap.py",1,0.00,,,7,19,0,0
+Module File,"CamelCaseMap.py",1,3.95,,,8,20,79,0
+Module File,"CamelCaseMap.py",3,0.55,,,9,29,16,2
+Class,"ChandrasekharSieve.ChandrasekharSieve",4,0.50,2,3,2,12,6,3
+Function,"ChandrasekharSieve.ChandrasekharSieve.__init__",,0.50,,,0,4,2,0
+Function,"ChandrasekharSieve.ChandrasekharSieve.generate_primes",,0.60,,,0,5,3,3
+Function,"ChandrasekharSieve.ChandrasekharSieve.get_primes",,0.50,,,0,2,1,0
+Module File,"ChandrasekharSieve.py",4,0.44,,,3,16,7,3
+Class,"Chat.Chat",2,0.00,1,5,4,38,0,1
+Class,"Chat.Chat",2,0.00,1,5,4,24,0,1
+Class,"Chat.Chat",2,1.41,0,5,5,32,45,1
+Class,"Chat.Chat",3,0.35,1,5,4,37,13,2
+Function,"Chat.Chat.__init__",,0.00,,,0,2,0,0
+Function,"Chat.Chat.__init__",,0.00,,,0,2,0,0
+Function,"Chat.Chat.__init__",,2.00,,,0,2,4,0
+Function,"Chat.Chat.__init__",,0.67,,,0,3,2,0
+Function,"Chat.Chat.add_user",,0.00,,,0,6,0,1
+Function,"Chat.Chat.add_user",,0.00,,,0,5,0,1
+Function,"Chat.Chat.add_user",,1.50,,,0,6,9,1
+Function,"Chat.Chat.add_user",,0.29,,,0,7,2,1
+Function,"Chat.Chat.get_messages",,0.00,,,0,5,0,1
+Function,"Chat.Chat.get_messages",,0.00,,,0,4,0,1
+Function,"Chat.Chat.get_messages",,1.60,,,0,5,8,1
+Function,"Chat.Chat.get_messages",,0.40,,,0,5,2,1
+Function,"Chat.Chat.remove_user",,0.00,,,0,6,0,1
+Function,"Chat.Chat.remove_user",,0.00,,,0,5,0,1
+Function,"Chat.Chat.remove_user",,1.50,,,0,6,9,1
+Function,"Chat.Chat.remove_user",,0.33,,,0,9,3,2
+Function,"Chat.Chat.send_message",,0.00,,,0,18,0,1
+Function,"Chat.Chat.send_message",,0.00,,,0,7,0,1
+Function,"Chat.Chat.send_message",,1.00,,,0,12,12,1
+Function,"Chat.Chat.send_message",,0.33,,,0,12,4,1
+Module File,"Chat.py",2,0.00,,,6,39,0,1
+Module File,"Chat.py",2,0.00,,,5,25,0,1
+Module File,"Chat.py",2,1.41,,,5,32,45,1
+Module File,"Chat.py",3,0.37,,,6,38,14,2
+Class,"ClassRegistrationSystem.ClassRegistrationSystem",3,0.00,2,6,5,28,0,1
+Class,"ClassRegistrationSystem.ClassRegistrationSystem",3,0.00,2,6,5,28,0,1
+Class,"ClassRegistrationSystem.ClassRegistrationSystem",5,1.27,2,6,6,41,52,3
+Class,"ClassRegistrationSystem.ClassRegistrationSystem",5,0.47,2,6,5,36,17,3
+Function,"ClassRegistrationSystem.ClassRegistrationSystem.__init__",,0.00,,,0,3,0,0
+Function,"ClassRegistrationSystem.ClassRegistrationSystem.__init__",,0.00,,,0,3,0,0
+Function,"ClassRegistrationSystem.ClassRegistrationSystem.__init__",,1.67,,,0,3,5,0
+Function,"ClassRegistrationSystem.ClassRegistrationSystem.__init__",,1.00,,,0,3,3,0
+Function,"ClassRegistrationSystem.ClassRegistrationSystem.get_all_major",,0.00,,,0,2,0,0
+Function,"ClassRegistrationSystem.ClassRegistrationSystem.get_all_major",,0.00,,,0,2,0,0
+Function,"ClassRegistrationSystem.ClassRegistrationSystem.get_all_major",,1.60,,,0,5,8,1
+Function,"ClassRegistrationSystem.ClassRegistrationSystem.get_all_major",,0.67,,,0,3,2,0
+Function,"ClassRegistrationSystem.ClassRegistrationSystem.get_most_popular_class_in_major",,0.00,,,0,9,0,1
+Function,"ClassRegistrationSystem.ClassRegistrationSystem.get_most_popular_class_in_major",,0.00,,,0,9,0,1
+Function,"ClassRegistrationSystem.ClassRegistrationSystem.get_most_popular_class_in_major",,1.00,,,0,11,11,3
+Function,"ClassRegistrationSystem.ClassRegistrationSystem.get_most_popular_class_in_major",,0.20,,,0,15,3,3
+Function,"ClassRegistrationSystem.ClassRegistrationSystem.get_students_by_major",,0.00,,,0,2,0,0
+Function,"ClassRegistrationSystem.ClassRegistrationSystem.get_students_by_major",,0.00,,,0,2,0,0
+Function,"ClassRegistrationSystem.ClassRegistrationSystem.get_students_by_major",,1.67,,,0,6,10,2
+Function,"ClassRegistrationSystem.ClassRegistrationSystem.get_students_by_major",,0.67,,,0,3,2,0
+Function,"ClassRegistrationSystem.ClassRegistrationSystem.register_class",,0.00,,,0,4,0,1
+Function,"ClassRegistrationSystem.ClassRegistrationSystem.register_class",,0.00,,,0,4,0,1
+Function,"ClassRegistrationSystem.ClassRegistrationSystem.register_class",,1.11,,,0,9,10,3
+Function,"ClassRegistrationSystem.ClassRegistrationSystem.register_class",,0.75,,,0,4,3,1
+Function,"ClassRegistrationSystem.ClassRegistrationSystem.register_student",,0.00,,,0,7,0,1
+Function,"ClassRegistrationSystem.ClassRegistrationSystem.register_student",,0.00,,,0,7,0,1
+Function,"ClassRegistrationSystem.ClassRegistrationSystem.register_student",,0.83,,,0,6,5,2
+Function,"ClassRegistrationSystem.ClassRegistrationSystem.register_student",,0.57,,,0,7,4,1
+Class,"ClassRegistrationSystem.Classroom",2,0.65,0,5,4,17,11,1
+Function,"ClassRegistrationSystem.Classroom.__init__",,0.50,,,0,4,2,0
+Function,"ClassRegistrationSystem.Classroom.enroll_student",,0.50,,,0,6,3,1
+Function,"ClassRegistrationSystem.Classroom.get_capacity",,1.00,,,0,2,2,0
+Function,"ClassRegistrationSystem.Classroom.get_class_name",,1.00,,,0,2,2,0
+Function,"ClassRegistrationSystem.Classroom.get_enrolled_students",,1.00,,,0,2,2,0
+Module File,"ClassRegistrationSystem.py",3,0.00,,,5,28,0,1
+Module File,"ClassRegistrationSystem.py",3,0.00,,,5,28,0,1
+Module File,"ClassRegistrationSystem.py",5,1.27,,,6,41,52,3
+Module File,"ClassRegistrationSystem.py",5,0.50,,,17,74,37,3
+Class,"Classroom.Classroom",3,0.00,1,5,4,27,0,2
+Class,"Classroom.Classroom",3,0.00,1,5,4,27,0,2
+Class,"Classroom.Classroom",3,1.90,2,6,13,31,59,2
+Function,"Classroom.Classroom.__init__",,0.00,,,0,3,0,0
+Function,"Classroom.Classroom.__init__",,0.00,,,0,3,0,0
+Function,"Classroom.Classroom.__init__",,1.33,,,0,3,4,0
+Function,"Classroom.Classroom.add_course",,0.00,,,0,3,0,1
+Function,"Classroom.Classroom.add_course",,0.00,,,0,3,0,1
+Function,"Classroom.Classroom.add_course",,2.33,,,0,3,7,1
+Function,"Classroom.Classroom.check_course_conflict",,0.00,,,0,9,0,2
+Function,"Classroom.Classroom.check_course_conflict",,0.00,,,0,9,0,2
+Function,"Classroom.Classroom.check_course_conflict",,1.40,,,3,10,14,2
+Function,"Classroom.Classroom.is_free_at",,0.00,,,0,8,0,2
+Function,"Classroom.Classroom.is_free_at",,0.00,,,0,8,0,2
+Function,"Classroom.Classroom.is_free_at",,2.00,,,3,8,16,2
+Function,"Classroom.Classroom.remove_course",,0.00,,,0,3,0,1
+Function,"Classroom.Classroom.remove_course",,0.00,,,0,3,0,1
+Function,"Classroom.Classroom.remove_course",,2.67,,,0,3,8,1
+Function,"Classroom.Classroom.time_to_minutes",,2.33,,,1,3,7,0
+Module File,"Classroom.py",3,0.00,,,5,28,0,2
+Module File,"Classroom.py",3,0.00,,,5,28,0,2
+Module File,"Classroom.py",3,1.84,,,14,32,59,2
+Class,"CombinationCalculator.CombinationCalculator",3,0.00,4,6,5,30,0,1
+Class,"CombinationCalculator.CombinationCalculator",3,0.00,4,6,5,26,0,1
+Class,"CombinationCalculator.CombinationCalculator",3,0.50,6,6,6,28,14,1
+Class,"CombinationCalculator.CombinationCalculator",3,0.34,4,6,5,32,11,1
+Function,"CombinationCalculator.CombinationCalculator.__init__",,0.00,,,0,2,0,0
+Function,"CombinationCalculator.CombinationCalculator.__init__",,0.00,,,0,2,0,0
+Function,"CombinationCalculator.CombinationCalculator.__init__",,1.50,,,0,2,3,0
+Function,"CombinationCalculator.CombinationCalculator.__init__",,0.50,,,0,2,1,0
+Function,"CombinationCalculator.CombinationCalculator._select",,0.00,,,0,7,0,1
+Function,"CombinationCalculator.CombinationCalculator._select",,0.00,,,0,7,0,1
+Function,"CombinationCalculator.CombinationCalculator._select",,0.14,,,0,7,1,1
+Function,"CombinationCalculator.CombinationCalculator._select",,0.63,,,0,8,5,1
+Function,"CombinationCalculator.CombinationCalculator.count",,0.00,,,0,4,0,1
+Function,"CombinationCalculator.CombinationCalculator.count",,0.00,,,0,2,0,0
+Function,"CombinationCalculator.CombinationCalculator.count",,0.25,,,0,4,1,1
+Function,"CombinationCalculator.CombinationCalculator.count",,0.20,,,0,5,1,1
+Function,"CombinationCalculator.CombinationCalculator.count_all",,0.00,,,0,5,0,1
+Function,"CombinationCalculator.CombinationCalculator.count_all",,0.00,,,0,3,0,0
+Function,"CombinationCalculator.CombinationCalculator.count_all",,0.40,,,0,5,2,1
+Function,"CombinationCalculator.CombinationCalculator.count_all",,0.40,,,0,5,2,1
+Function,"CombinationCalculator.CombinationCalculator.select",,0.00,,,0,4,0,0
+Function,"CombinationCalculator.CombinationCalculator.select",,0.00,,,0,4,0,0
+Function,"CombinationCalculator.CombinationCalculator.select",,0.50,,,0,2,1,0
+Function,"CombinationCalculator.CombinationCalculator.select",,0.25,,,0,4,1,0
+Function,"CombinationCalculator.CombinationCalculator.select_all",,0.00,,,0,5,0,1
+Function,"CombinationCalculator.CombinationCalculator.select_all",,0.00,,,0,5,0,1
+Function,"CombinationCalculator.CombinationCalculator.select_all",,0.40,,,0,5,2,1
+Function,"CombinationCalculator.CombinationCalculator.select_all",,0.20,,,0,5,1,1
+Module File,"CombinationCalculator.py",3,0.00,,,6,32,0,1
+Module File,"CombinationCalculator.py",3,0.00,,,6,28,0,1
+Module File,"CombinationCalculator.py",3,0.51,,,8,39,20,1
+Module File,"CombinationCalculator.py",3,0.32,,,6,34,11,1
+Class,"CookiesUtil.CookiesUtil",3,0.00,2,4,3,31,0,3
+Class,"CookiesUtil.CookiesUtil",3,0.00,2,4,3,26,0,3
+Class,"CookiesUtil.CookiesUtil",3,1.08,2,4,4,24,26,2
+Class,"CookiesUtil.CookiesUtil",2,0.59,2,4,3,22,13,2
+Function,"CookiesUtil.CookiesUtil.__init__",,0.00,,,0,3,0,0
+Function,"CookiesUtil.CookiesUtil.__init__",,0.00,,,0,3,0,0
+Function,"CookiesUtil.CookiesUtil.__init__",,1.33,,,0,3,4,0
+Function,"CookiesUtil.CookiesUtil.__init__",,0.67,,,0,3,2,0
+Function,"CookiesUtil.CookiesUtil._save_cookies",,0.00,,,0,11,0,3
+Function,"CookiesUtil.CookiesUtil._save_cookies",,0.00,,,0,11,0,3
+Function,"CookiesUtil.CookiesUtil._save_cookies",,0.75,,,0,8,6,2
+Function,"CookiesUtil.CookiesUtil._save_cookies",,0.63,,,0,8,5,2
+Function,"CookiesUtil.CookiesUtil.get_cookies",,0.00,,,0,7,0,1
+Function,"CookiesUtil.CookiesUtil.get_cookies",,0.00,,,0,4,0,1
+Function,"CookiesUtil.CookiesUtil.get_cookies",,2.00,,,0,3,6,0
+Function,"CookiesUtil.CookiesUtil.get_cookies",,0.67,,,0,3,2,0
+Function,"CookiesUtil.CookiesUtil.load_cookies",,0.00,,,0,9,0,2
+Function,"CookiesUtil.CookiesUtil.load_cookies",,0.00,,,0,7,0,2
+Function,"CookiesUtil.CookiesUtil.load_cookies",,0.78,,,0,9,7,2
+Function,"CookiesUtil.CookiesUtil.load_cookies",,0.57,,,0,7,4,2
+Module File,"CookiesUtil.py",3,0.00,,,4,32,0,3
+Module File,"CookiesUtil.py",3,0.00,,,4,27,0,3
+Module File,"CookiesUtil.py",3,1.04,,,5,25,26,2
+Module File,"CookiesUtil.py",2,0.57,,,4,23,13,2
+Class,"Course.Classroom",7,0.74,2,5,4,50,37,2
+Function,"Course.Classroom.__init__",,1.67,,,0,3,5,0
+Function,"Course.Classroom.add_course",,1.17,,,0,6,7,2
+Function,"Course.Classroom.check_course_conflict",,0.45,,,0,22,10,2
+Function,"Course.Classroom.is_free_at",,0.67,,,0,15,10,2
+Function,"Course.Classroom.remove_course",,1.67,,,0,3,5,1
+Class,"Course.Course",1,0.60,0,1,0,5,3,0
+Function,"Course.Course.__init__",,0.75,,,0,4,3,0
+Module File,"Course.py",7,0.66,,,10,65,43,2
+Class,"CurrencyConverter.CurrencyConverter",2,0.00,2,5,4,25,0,1
+Class,"CurrencyConverter.CurrencyConverter",2,1.41,2,5,10,27,38,1
+Class,"CurrencyConverter.CurrencyConverter",2,0.59,2,5,9,27,16,1
+Function,"CurrencyConverter.CurrencyConverter.__init__",,0.00,,,0,10,0,0
+Function,"CurrencyConverter.CurrencyConverter.__init__",,0.40,,,0,10,4,0
+Function,"CurrencyConverter.CurrencyConverter.__init__",,0.75,,,0,8,6,0
+Function,"CurrencyConverter.CurrencyConverter.add_currency_rate",,0.00,,,0,4,0,1
+Function,"CurrencyConverter.CurrencyConverter.add_currency_rate",,2.00,,,1,4,8,1
+Function,"CurrencyConverter.CurrencyConverter.add_currency_rate",,0.60,,,1,5,3,1
+Function,"CurrencyConverter.CurrencyConverter.convert",,0.00,,,0,4,0,1
+Function,"CurrencyConverter.CurrencyConverter.convert",,1.67,,,3,6,10,1
+Function,"CurrencyConverter.CurrencyConverter.convert",,0.50,,,3,6,3,1
+Function,"CurrencyConverter.CurrencyConverter.get_supported_currencies",,0.00,,,0,2,0,0
+Function,"CurrencyConverter.CurrencyConverter.get_supported_currencies",,2.50,,,0,2,5,0
+Function,"CurrencyConverter.CurrencyConverter.get_supported_currencies",,0.50,,,0,2,1,0
+Function,"CurrencyConverter.CurrencyConverter.update_currency_rate",,0.00,,,0,4,0,1
+Function,"CurrencyConverter.CurrencyConverter.update_currency_rate",,2.00,,,1,4,8,1
+Function,"CurrencyConverter.CurrencyConverter.update_currency_rate",,0.60,,,1,5,3,1
+Module File,"CurrencyConverter.py",2,0.00,,,4,25,0,1
+Module File,"CurrencyConverter.py",2,1.41,,,10,27,38,1
+Module File,"CurrencyConverter.py",2,0.59,,,9,27,16,1
+Class,"DataStatistics.DataStatistics",2,0.73,0,3,2,15,11,1
+Function,"DataStatistics.DataStatistics.mean",,0.50,,,0,4,2,1
+Function,"DataStatistics.DataStatistics.median",,0.50,,,0,4,2,1
+Function,"DataStatistics.DataStatistics.mode",,0.67,,,0,6,4,1
+Module File,"DataStatistics.py",2,0.73,,,5,22,16,1
+Class,"DataStatistics4.DataStatistics4",1,0.00,1,4,3,27,0,0
+Class,"DataStatistics4.DataStatistics4",1,0.00,1,4,3,28,0,0
+Class,"DataStatistics4.DataStatistics4",2,0.71,2,4,20,34,24,1
+Class,"DataStatistics4.DataStatistics4",1,0.57,1,4,13,30,17,0
+Function,"DataStatistics4.DataStatistics4.correlation_coefficient",,0.00,,,0,6,0,0
+Function,"DataStatistics4.DataStatistics4.correlation_coefficient",,0.00,,,0,7,0,0
+Function,"DataStatistics4.DataStatistics4.correlation_coefficient",,0.42,,,5,12,5,1
+Function,"DataStatistics4.DataStatistics4.correlation_coefficient",,0.40,,,3,10,4,0
+Function,"DataStatistics4.DataStatistics4.kurtosis",,0.00,,,0,7,0,0
+Function,"DataStatistics4.DataStatistics4.kurtosis",,0.00,,,0,7,0,0
+Function,"DataStatistics4.DataStatistics4.kurtosis",,0.71,,,5,7,5,0
+Function,"DataStatistics4.DataStatistics4.kurtosis",,0.67,,,3,6,4,0
+Function,"DataStatistics4.DataStatistics4.pdf",,0.00,,,0,2,0,0
+Function,"DataStatistics4.DataStatistics4.pdf",,0.00,,,0,2,0,0
+Function,"DataStatistics4.DataStatistics4.pdf",,0.33,,,1,3,1,0
+Function,"DataStatistics4.DataStatistics4.pdf",,0.33,,,0,3,1,0
+Function,"DataStatistics4.DataStatistics4.skewness",,0.00,,,0,7,0,0
+Function,"DataStatistics4.DataStatistics4.skewness",,0.00,,,0,7,0,0
+Function,"DataStatistics4.DataStatistics4.skewness",,0.71,,,5,7,5,0
+Function,"DataStatistics4.DataStatistics4.skewness",,0.67,,,3,6,4,0
+Module File,"DataStatistics4.py",1,0.00,,,4,30,0,0
+Module File,"DataStatistics4.py",1,0.00,,,4,29,0,0
+Module File,"DataStatistics4.py",2,0.69,,,21,35,24,1
+Module File,"DataStatistics4.py",2,0.47,,,15,38,18,1
+Class,"DatabaseProcessor.DatabaseProcessor",3,0.00,1,5,4,51,0,3
+Class,"DatabaseProcessor.DatabaseProcessor",2,0.00,1,5,4,33,0,1
+Class,"DatabaseProcessor.DatabaseProcessor",2,1.11,1,7,7,45,50,1
+Class,"DatabaseProcessor.DatabaseProcessor",3,0.55,3,5,11,40,22,1
+Function,"DatabaseProcessor.DatabaseProcessor.__init__",,0.00,,,0,2,0,0
+Function,"DatabaseProcessor.DatabaseProcessor.__init__",,0.00,,,0,4,0,0
+Function,"DatabaseProcessor.DatabaseProcessor.__init__",,1.25,,,0,4,5,0
+Function,"DatabaseProcessor.DatabaseProcessor.__init__",,0.67,,,0,3,2,0
+Function,"DatabaseProcessor.DatabaseProcessor.close_connection",,0.50,,,0,2,1,0
+Function,"DatabaseProcessor.DatabaseProcessor.create_table",,0.00,,,0,14,0,2
+Function,"DatabaseProcessor.DatabaseProcessor.create_table",,0.00,,,0,9,0,0
+Function,"DatabaseProcessor.DatabaseProcessor.create_table",,1.00,,,0,10,10,0
+Function,"DatabaseProcessor.DatabaseProcessor.create_table",,0.30,,,0,10,3,0
+Function,"DatabaseProcessor.DatabaseProcessor.delete_from_database",,0.00,,,0,11,0,2
+Function,"DatabaseProcessor.DatabaseProcessor.delete_from_database",,0.00,,,0,6,0,0
+Function,"DatabaseProcessor.DatabaseProcessor.delete_from_database",,1.33,,,0,6,8,0
+Function,"DatabaseProcessor.DatabaseProcessor.delete_from_database",,0.43,,,0,7,3,0
+Function,"DatabaseProcessor.DatabaseProcessor.get_columns",,0.57,,,0,7,4,0
+Function,"DatabaseProcessor.DatabaseProcessor.insert_into_database",,0.00,,,0,12,0,3
+Function,"DatabaseProcessor.DatabaseProcessor.insert_into_database",,0.00,,,0,7,0,1
+Function,"DatabaseProcessor.DatabaseProcessor.insert_into_database",,1.00,,,0,8,8,1
+Function,"DatabaseProcessor.DatabaseProcessor.insert_into_database",,0.45,,,2,11,5,1
+Function,"DatabaseProcessor.DatabaseProcessor.search_database",,0.00,,,0,11,0,2
+Function,"DatabaseProcessor.DatabaseProcessor.search_database",,0.00,,,0,6,0,0
+Function,"DatabaseProcessor.DatabaseProcessor.search_database",,1.57,,,0,7,11,0
+Function,"DatabaseProcessor.DatabaseProcessor.search_database",,0.50,,,0,8,4,0
+Module File,"DatabaseProcessor.py",3,0.00,,,5,53,0,3
+Module File,"DatabaseProcessor.py",2,0.00,,,5,35,0,1
+Module File,"DatabaseProcessor.py",2,1.06,,,8,47,50,1
+Module File,"DatabaseProcessor.py",3,0.46,,,14,50,23,1
+Class,"DecryptionUtils.DecryptionUtils",12,0.05,1,4,6,55,3,3
+Class,"DecryptionUtils.DecryptionUtils",5,0.17,2,4,8,41,7,3
+Class,"DecryptionUtils.DecryptionUtils",7,1.29,0,4,20,48,62,2
+Class,"DecryptionUtils.DecryptionUtils",7,0.70,1,4,18,60,42,3
+Function,"DecryptionUtils.DecryptionUtils.__init__",,0.00,,,0,2,0,0
+Function,"DecryptionUtils.DecryptionUtils.__init__",,0.00,,,0,2,0,0
+Function,"DecryptionUtils.DecryptionUtils.__init__",,2.00,,,0,2,4,0
+Function,"DecryptionUtils.DecryptionUtils.__init__",,0.50,,,0,2,1,0
+Function,"DecryptionUtils.DecryptionUtils.caesar_decipher",,0.00,,,0,9,0,2
+Function,"DecryptionUtils.DecryptionUtils.caesar_decipher",,0.00,,,0,5,0,0
+Function,"DecryptionUtils.DecryptionUtils.caesar_decipher",,1.60,,,2,10,16,2
+Function,"DecryptionUtils.DecryptionUtils.caesar_decipher",,0.71,,,3,17,12,3
+Function,"DecryptionUtils.DecryptionUtils.rail_fence_decipher",,0.10,,,3,30,3,3
+Function,"DecryptionUtils.DecryptionUtils.rail_fence_decipher",,0.41,,,5,17,7,2
+Function,"DecryptionUtils.DecryptionUtils.rail_fence_decipher",,0.95,,,7,20,19,2
+Function,"DecryptionUtils.DecryptionUtils.rail_fence_decipher",,0.67,,,7,18,12,3
+Function,"DecryptionUtils.DecryptionUtils.vigenere_decipher",,0.00,,,0,13,0,2
+Function,"DecryptionUtils.DecryptionUtils.vigenere_decipher",,0.00,,,0,16,0,3
+Function,"DecryptionUtils.DecryptionUtils.vigenere_decipher",,1.33,,,7,15,20,2
+Function,"DecryptionUtils.DecryptionUtils.vigenere_decipher",,0.77,,,5,22,17,3
+Module File,"DecryptionUtils.py",12,0.05,,,6,55,3,3
+Module File,"DecryptionUtils.py",5,0.17,,,8,41,7,3
+Module File,"DecryptionUtils.py",7,1.29,,,20,48,62,2
+Module File,"DecryptionUtils.py",7,0.70,,,18,60,42,3
+Class,"DiscountStrategy.Customer",1,0.00,0,1,0,3,0,0
+Function,"DiscountStrategy.Customer.__init__",,0.00,,,0,2,0,0
+Class,"DiscountStrategy.DiscountStrategy",3,0.00,1,6,5,36,0,2
+Class,"DiscountStrategy.DiscountStrategy",3,0.00,1,6,5,35,0,2
+Class,"DiscountStrategy.DiscountStrategy",3,1.26,1,6,6,38,48,2
+Class,"DiscountStrategy.DiscountStrategy",4,0.21,1,6,5,43,9,2
+Function,"DiscountStrategy.DiscountStrategy.BulkItemPromo",,0.00,,,0,6,0,2
+Function,"DiscountStrategy.DiscountStrategy.BulkItemPromo",,0.00,,,0,6,0,2
+Function,"DiscountStrategy.DiscountStrategy.BulkItemPromo",,1.57,,,0,7,11,2
+Function,"DiscountStrategy.DiscountStrategy.BulkItemPromo",,0.33,,,0,6,2,2
+Function,"DiscountStrategy.DiscountStrategy.FidelityPromo",,0.00,,,0,5,0,1
+Function,"DiscountStrategy.DiscountStrategy.FidelityPromo",,0.00,,,0,5,0,1
+Function,"DiscountStrategy.DiscountStrategy.FidelityPromo",,1.33,,,0,6,8,1
+Function,"DiscountStrategy.DiscountStrategy.FidelityPromo",,0.29,,,0,7,2,1
+Function,"DiscountStrategy.DiscountStrategy.LargeOrderPromo",,0.00,,,0,6,0,1
+Function,"DiscountStrategy.DiscountStrategy.LargeOrderPromo",,0.00,,,0,6,0,1
+Function,"DiscountStrategy.DiscountStrategy.LargeOrderPromo",,1.29,,,0,7,9,1
+Function,"DiscountStrategy.DiscountStrategy.LargeOrderPromo",,0.25,,,0,8,2,1
+Function,"DiscountStrategy.DiscountStrategy.__init__",,0.00,,,0,5,0,0
+Function,"DiscountStrategy.DiscountStrategy.__init__",,0.00,,,0,5,0,0
+Function,"DiscountStrategy.DiscountStrategy.__init__",,1.40,,,0,5,7,0
+Function,"DiscountStrategy.DiscountStrategy.__init__",,0.25,,,0,4,1,0
+Function,"DiscountStrategy.DiscountStrategy.due",,0.00,,,0,7,0,1
+Function,"DiscountStrategy.DiscountStrategy.due",,0.00,,,0,6,0,1
+Function,"DiscountStrategy.DiscountStrategy.due",,0.83,,,0,6,5,1
+Function,"DiscountStrategy.DiscountStrategy.due",,0.09,,,0,11,1,1
+Function,"DiscountStrategy.DiscountStrategy.total",,0.00,,,0,3,0,0
+Function,"DiscountStrategy.DiscountStrategy.total",,0.00,,,0,3,0,0
+Function,"DiscountStrategy.DiscountStrategy.total",,1.67,,,0,3,5,0
+Function,"DiscountStrategy.DiscountStrategy.total",,0.33,,,0,3,1,0
+Class,"DiscountStrategy.Item",1,0.00,0,1,0,5,0,0
+Function,"DiscountStrategy.Item.__init__",,0.00,,,0,4,0,0
+Module File,"DiscountStrategy.py",3,0.00,,,5,36,0,2
+Module File,"DiscountStrategy.py",3,0.00,,,5,35,0,2
+Module File,"DiscountStrategy.py",3,1.26,,,6,38,48,2
+Module File,"DiscountStrategy.py",4,0.16,,,11,63,10,2
+Class,"DocFileHandler.DocFileHandler",4,1.14,3,6,6,56,64,3
+Class,"DocFileHandler.DocFileHandler",3,0.17,2,6,5,36,6,2
+Function,"DocFileHandler.DocFileHandler.__init__",,2.00,,,0,2,4,0
+Function,"DocFileHandler.DocFileHandler.__init__",,0.33,,,0,3,1,0
+Function,"DocFileHandler.DocFileHandler._get_alignment_value",,0.56,,,0,9,5,1
+Function,"DocFileHandler.DocFileHandler._get_alignment_value",,0.13,,,0,8,1,0
+Function,"DocFileHandler.DocFileHandler.add_heading",,1.22,,,0,9,11,1
+Function,"DocFileHandler.DocFileHandler.add_heading",,0.25,,,0,4,1,0
+Function,"DocFileHandler.DocFileHandler.add_table",,0.92,,,0,12,11,3
+Function,"DocFileHandler.DocFileHandler.add_table",,0.14,,,0,7,1,2
+Function,"DocFileHandler.DocFileHandler.read_text",,1.00,,,0,10,10,2
+Function,"DocFileHandler.DocFileHandler.read_text",,0.20,,,0,5,1,1
+Function,"DocFileHandler.DocFileHandler.write_text",,1.15,,,0,13,15,1
+Function,"DocFileHandler.DocFileHandler.write_text",,0.13,,,0,8,1,0
+Module File,"DocFileHandler.py",4,1.08,,,8,59,64,3
+Module File,"DocFileHandler.py",3,0.17,,,10,47,8,2
+Class,"EightPuzzle.EightPuzzle",5,0.00,1,5,4,43,0,3
+Function,"EightPuzzle.EightPuzzle.__init__",,0.00,,,0,3,0,0
+Function,"EightPuzzle.EightPuzzle.find_blank",,0.00,,,0,5,0,3
+Function,"EightPuzzle.EightPuzzle.get_possible_moves",,0.00,,,0,12,0,1
+Function,"EightPuzzle.EightPuzzle.move",,0.00,,,0,12,0,1
+Function,"EightPuzzle.EightPuzzle.solve",,0.00,,,0,10,0,2
+Module File,"EightPuzzle.py",5,0.00,,,4,43,0,3
+Class,"EmailClient.EmailClient",3,0.00,1,6,5,31,0,2
+Class,"EmailClient.EmailClient",3,0.00,1,6,5,31,0,2
+Class,"EmailClient.EmailClient",3,1.37,1,6,7,35,48,2
+Class,"EmailClient.EmailClient",3,0.40,1,6,5,35,14,2
+Function,"EmailClient.EmailClient.__init__",,0.00,,,0,4,0,0
+Function,"EmailClient.EmailClient.__init__",,0.00,,,0,4,0,0
+Function,"EmailClient.EmailClient.__init__",,1.25,,,0,4,5,0
+Function,"EmailClient.EmailClient.__init__",,0.60,,,0,5,3,0
+Function,"EmailClient.EmailClient.clear_inbox",,0.00,,,0,3,0,1
+Function,"EmailClient.EmailClient.clear_inbox",,0.00,,,0,3,0,1
+Function,"EmailClient.EmailClient.clear_inbox",,1.60,,,0,5,8,1
+Function,"EmailClient.EmailClient.clear_inbox",,0.40,,,0,5,2,1
+Function,"EmailClient.EmailClient.fetch",,0.00,,,0,6,0,2
+Function,"EmailClient.EmailClient.fetch",,0.00,,,0,6,0,2
+Function,"EmailClient.EmailClient.fetch",,1.00,,,0,6,6,2
+Function,"EmailClient.EmailClient.fetch",,0.50,,,0,6,3,2
+Function,"EmailClient.EmailClient.get_occupied_size",,0.00,,,0,2,0,0
+Function,"EmailClient.EmailClient.get_occupied_size",,0.00,,,0,2,0,0
+Function,"EmailClient.EmailClient.get_occupied_size",,1.67,,,0,3,5,0
+Function,"EmailClient.EmailClient.get_occupied_size",,0.50,,,0,2,1,0
+Function,"EmailClient.EmailClient.is_full_with_one_more_email",,0.00,,,0,2,0,0
+Function,"EmailClient.EmailClient.is_full_with_one_more_email",,0.00,,,0,2,0,0
+Function,"EmailClient.EmailClient.is_full_with_one_more_email",,2.33,,,0,3,7,0
+Function,"EmailClient.EmailClient.is_full_with_one_more_email",,0.50,,,0,2,1,0
+Function,"EmailClient.EmailClient.send_to",,0.00,,,0,13,0,1
+Function,"EmailClient.EmailClient.send_to",,0.00,,,0,13,0,1
+Function,"EmailClient.EmailClient.send_to",,0.69,,,1,13,9,1
+Function,"EmailClient.EmailClient.send_to",,0.29,,,0,14,4,1
+Module File,"EmailClient.py",3,0.00,,,6,32,0,2
+Module File,"EmailClient.py",3,0.00,,,6,32,0,2
+Module File,"EmailClient.py",3,1.33,,,8,36,48,2
+Module File,"EmailClient.py",3,0.39,,,6,36,14,2
+Class,"EncryptionUtils.EncryptionUtils",5,0.00,1,4,3,39,0,2
+Class,"EncryptionUtils.EncryptionUtils",6,0.78,3,4,21,36,28,2
+Function,"EncryptionUtils.EncryptionUtils.__init__",,0.00,,,0,2,0,0
+Function,"EncryptionUtils.EncryptionUtils.__init__",,0.50,,,0,2,1,0
+Function,"EncryptionUtils.EncryptionUtils.caesar_cipher",,0.00,,,0,9,0,2
+Function,"EncryptionUtils.EncryptionUtils.caesar_cipher",,1.00,,,4,7,7,1
+Function,"EncryptionUtils.EncryptionUtils.rail_fence_cipher",,0.00,,,0,15,0,2
+Function,"EncryptionUtils.EncryptionUtils.rail_fence_cipher",,0.67,,,7,15,10,2
+Function,"EncryptionUtils.EncryptionUtils.vigenere_cipher",,0.00,,,0,12,0,2
+Function,"EncryptionUtils.EncryptionUtils.vigenere_cipher",,0.91,,,7,11,10,1
+Module File,"EncryptionUtils.py",5,0.00,,,3,39,0,2
+Module File,"EncryptionUtils.py",6,0.75,,,23,40,30,2
+Class,"ExcelProcessor.ExcelProcessor",5,0.00,3,4,3,41,0,3
+Class,"ExcelProcessor.ExcelProcessor",4,0.00,4,4,3,40,0,3
+Class,"ExcelProcessor.ExcelProcessor",5,1.19,3,4,4,42,50,4
+Class,"ExcelProcessor.ExcelProcessor",5,0.71,3,4,3,38,27,3
+Function,"ExcelProcessor.ExcelProcessor.__init__",,0.00,,,0,2,0,0
+Function,"ExcelProcessor.ExcelProcessor.__init__",,0.00,,,0,2,0,0
+Function,"ExcelProcessor.ExcelProcessor.__init__",,0.50,,,0,2,1,0
+Function,"ExcelProcessor.ExcelProcessor.__init__",,0.33,,,0,3,1,0
+Function,"ExcelProcessor.ExcelProcessor.process_excel_data",,0.00,,,0,15,0,3
+Function,"ExcelProcessor.ExcelProcessor.process_excel_data",,0.00,,,0,12,0,2
+Function,"ExcelProcessor.ExcelProcessor.process_excel_data",,1.13,,,0,16,18,4
+Function,"ExcelProcessor.ExcelProcessor.process_excel_data",,0.69,,,0,13,9,3
+Function,"ExcelProcessor.ExcelProcessor.read_excel",,0.00,,,0,13,0,3
+Function,"ExcelProcessor.ExcelProcessor.read_excel",,0.00,,,0,14,0,3
+Function,"ExcelProcessor.ExcelProcessor.read_excel",,1.15,,,0,13,15,3
+Function,"ExcelProcessor.ExcelProcessor.read_excel",,0.89,,,0,9,8,1
+Function,"ExcelProcessor.ExcelProcessor.write_excel",,0.00,,,0,10,0,2
+Function,"ExcelProcessor.ExcelProcessor.write_excel",,0.00,,,0,11,0,2
+Function,"ExcelProcessor.ExcelProcessor.write_excel",,1.30,,,0,10,13,2
+Function,"ExcelProcessor.ExcelProcessor.write_excel",,0.75,,,0,12,9,3
+Module File,"ExcelProcessor.py",5,0.00,,,4,42,0,3
+Module File,"ExcelProcessor.py",4,0.00,,,4,41,0,3
+Module File,"ExcelProcessor.py",5,1.16,,,5,43,50,4
+Module File,"ExcelProcessor.py",5,0.74,,,5,39,29,3
+Class,"ExpressionCalculator.ExpressionCalculator",9,0.00,2,7,6,63,0,3
+Class,"ExpressionCalculator.ExpressionCalculator",9,0.00,2,7,6,64,0,3
+Class,"ExpressionCalculator.ExpressionCalculator",9,1.07,0,7,7,57,61,3
+Class,"ExpressionCalculator.ExpressionCalculator",8,0.37,1,7,13,60,22,3
+Function,"ExpressionCalculator.ExpressionCalculator.__init__",,0.00,,,0,3,0,0
+Function,"ExpressionCalculator.ExpressionCalculator.__init__",,0.00,,,0,3,0,0
+Function,"ExpressionCalculator.ExpressionCalculator.__init__",,1.67,,,0,3,5,0
+Function,"ExpressionCalculator.ExpressionCalculator.__init__",,0.67,,,0,3,2,0
+Function,"ExpressionCalculator.ExpressionCalculator._calculate",,0.00,,,0,17,0,2
+Function,"ExpressionCalculator.ExpressionCalculator._calculate",,0.00,,,0,17,0,2
+Function,"ExpressionCalculator.ExpressionCalculator._calculate",,0.73,,,0,11,8,1
+Function,"ExpressionCalculator.ExpressionCalculator._calculate",,0.07,,,0,15,1,2
+Function,"ExpressionCalculator.ExpressionCalculator.calculate",,0.00,,,0,12,0,2
+Function,"ExpressionCalculator.ExpressionCalculator.calculate",,0.00,,,0,13,0,2
+Function,"ExpressionCalculator.ExpressionCalculator.calculate",,0.92,,,0,12,11,2
+Function,"ExpressionCalculator.ExpressionCalculator.calculate",,0.42,,,2,12,5,2
+Function,"ExpressionCalculator.ExpressionCalculator.compare",,0.00,,,0,2,0,0
+Function,"ExpressionCalculator.ExpressionCalculator.compare",,0.00,,,0,2,0,0
+Function,"ExpressionCalculator.ExpressionCalculator.compare",,3.50,,,0,2,7,0
+Function,"ExpressionCalculator.ExpressionCalculator.compare",,0.50,,,0,2,1,0
+Function,"ExpressionCalculator.ExpressionCalculator.is_operator",,0.00,,,0,2,0,0
+Function,"ExpressionCalculator.ExpressionCalculator.is_operator",,0.00,,,0,2,0,0
+Function,"ExpressionCalculator.ExpressionCalculator.is_operator",,2.33,,,0,3,7,0
+Function,"ExpressionCalculator.ExpressionCalculator.is_operator",,0.50,,,0,2,1,0
+Function,"ExpressionCalculator.ExpressionCalculator.prepare",,0.00,,,0,21,0,3
+Function,"ExpressionCalculator.ExpressionCalculator.prepare",,0.00,,,0,21,0,3
+Function,"ExpressionCalculator.ExpressionCalculator.prepare",,0.70,,,0,20,14,3
+Function,"ExpressionCalculator.ExpressionCalculator.prepare",,0.55,,,5,20,11,3
+Function,"ExpressionCalculator.ExpressionCalculator.transform",,0.00,,,0,2,0,0
+Function,"ExpressionCalculator.ExpressionCalculator.transform",,0.00,,,0,2,0,0
+Function,"ExpressionCalculator.ExpressionCalculator.transform",,3.00,,,0,2,6,0
+Function,"ExpressionCalculator.ExpressionCalculator.transform",,0.50,,,0,2,1,0
+Module File,"ExpressionCalculator.py",9,0.00,,,8,66,0,3
+Module File,"ExpressionCalculator.py",9,0.00,,,7,67,0,3
+Module File,"ExpressionCalculator.py",9,1.03,,,8,59,61,3
+Module File,"ExpressionCalculator.py",8,0.35,,,14,62,22,3
+Class,"FitnessTracker.FitnessTracker",5,1.08,1,4,8,36,39,1
+Function,"FitnessTracker.FitnessTracker.__init__",,0.73,,,1,11,8,1
+Function,"FitnessTracker.FitnessTracker.calculate_calorie_intake",,1.31,,,3,13,17,1
+Function,"FitnessTracker.FitnessTracker.condition_judge",,1.13,,,1,8,9,1
+Function,"FitnessTracker.FitnessTracker.get_BMI",,1.67,,,0,3,5,0
+Module File,"FitnessTracker.py",5,1.00,,,9,40,40,1
+Class,"HRManagementSystem.HRManagementSystem",2,0.00,0,6,5,31,0,1
+Class,"HRManagementSystem.HRManagementSystem",2,0.00,0,6,5,42,0,1
+Class,"HRManagementSystem.HRManagementSystem",2,1.39,2,6,6,33,46,1
+Class,"HRManagementSystem.HRManagementSystem",2,0.42,3,6,5,33,14,1
+Function,"HRManagementSystem.HRManagementSystem.__init__",,0.00,,,0,2,0,0
+Function,"HRManagementSystem.HRManagementSystem.__init__",,0.00,,,0,2,0,0
+Function,"HRManagementSystem.HRManagementSystem.__init__",,1.50,,,0,2,3,0
+Function,"HRManagementSystem.HRManagementSystem.__init__",,0.50,,,0,2,1,0
+Function,"HRManagementSystem.HRManagementSystem.add_employee",,0.00,,,0,6,0,1
+Function,"HRManagementSystem.HRManagementSystem.add_employee",,0.00,,,0,11,0,1
+Function,"HRManagementSystem.HRManagementSystem.add_employee",,1.10,,,0,10,11,1
+Function,"HRManagementSystem.HRManagementSystem.add_employee",,0.27,,,0,11,3,1
+Function,"HRManagementSystem.HRManagementSystem.get_employee",,0.00,,,0,5,0,1
+Function,"HRManagementSystem.HRManagementSystem.get_employee",,0.00,,,0,5,0,1
+Function,"HRManagementSystem.HRManagementSystem.get_employee",,1.75,,,0,4,7,1
+Function,"HRManagementSystem.HRManagementSystem.get_employee",,0.60,,,0,5,3,1
+Function,"HRManagementSystem.HRManagementSystem.list_employees",,0.00,,,0,5,0,1
+Function,"HRManagementSystem.HRManagementSystem.list_employees",,0.00,,,0,11,0,1
+Function,"HRManagementSystem.HRManagementSystem.list_employees",,1.17,,,0,6,7,1
+Function,"HRManagementSystem.HRManagementSystem.list_employees",,0.50,,,0,2,1,0
+Function,"HRManagementSystem.HRManagementSystem.remove_employee",,0.00,,,0,6,0,1
+Function,"HRManagementSystem.HRManagementSystem.remove_employee",,0.00,,,0,6,0,1
+Function,"HRManagementSystem.HRManagementSystem.remove_employee",,1.40,,,0,5,7,1
+Function,"HRManagementSystem.HRManagementSystem.remove_employee",,0.50,,,0,6,3,1
+Function,"HRManagementSystem.HRManagementSystem.update_employee",,0.00,,,0,6,0,1
+Function,"HRManagementSystem.HRManagementSystem.update_employee",,0.00,,,0,6,0,1
+Function,"HRManagementSystem.HRManagementSystem.update_employee",,1.60,,,0,5,8,1
+Function,"HRManagementSystem.HRManagementSystem.update_employee",,0.50,,,0,6,3,1
+Module File,"HRManagementSystem.py",2,0.00,,,5,31,0,1
+Module File,"HRManagementSystem.py",2,0.00,,,5,42,0,1
+Module File,"HRManagementSystem.py",2,1.39,,,6,33,46,1
+Module File,"HRManagementSystem.py",2,0.53,,,6,43,23,1
+Class,"Hotel.Hotel",6,0.00,0,5,4,39,0,2
+Class,"Hotel.Hotel",6,0.00,0,5,4,41,0,2
+Class,"Hotel.Hotel",6,1.23,0,5,15,43,53,2
+Class,"Hotel.Hotel",6,0.95,0,5,12,42,40,2
+Function,"Hotel.Hotel.__init__",,0.00,,,0,4,0,0
+Function,"Hotel.Hotel.__init__",,0.00,,,0,4,0,0
+Function,"Hotel.Hotel.__init__",,1.50,,,0,4,6,0
+Function,"Hotel.Hotel.__init__",,2.25,,,0,4,9,0
+Function,"Hotel.Hotel.book_room",,0.00,,,0,14,0,1
+Function,"Hotel.Hotel.book_room",,0.00,,,0,15,0,1
+Function,"Hotel.Hotel.book_room",,1.06,,,5,16,17,2
+Function,"Hotel.Hotel.book_room",,0.92,,,4,13,12,2
+Function,"Hotel.Hotel.check_in",,0.00,,,0,12,0,2
+Function,"Hotel.Hotel.check_in",,0.00,,,0,12,0,2
+Function,"Hotel.Hotel.check_in",,1.17,,,5,12,14,1
+Function,"Hotel.Hotel.check_in",,0.64,,,4,14,9,2
+Function,"Hotel.Hotel.check_out",,0.00,,,0,4,0,1
+Function,"Hotel.Hotel.check_out",,0.00,,,0,5,0,1
+Function,"Hotel.Hotel.check_out",,1.40,,,0,5,7,1
+Function,"Hotel.Hotel.check_out",,1.00,,,0,5,5,1
+Function,"Hotel.Hotel.get_available_rooms",,0.00,,,0,4,0,1
+Function,"Hotel.Hotel.get_available_rooms",,0.00,,,0,4,0,1
+Function,"Hotel.Hotel.get_available_rooms",,1.20,,,0,5,6,1
+Function,"Hotel.Hotel.get_available_rooms",,1.00,,,0,5,5,1
+Module File,"Hotel.py",6,0.00,,,4,39,0,2
+Module File,"Hotel.py",6,0.00,,,4,41,0,2
+Module File,"Hotel.py",6,1.23,,,15,43,53,2
+Module File,"Hotel.py",6,0.95,,,12,42,40,2
+Class,"HtmlUtil.HtmlUtil",2,0.00,0,4,3,26,0,1
+Class,"HtmlUtil.HtmlUtil",3,0.00,0,4,3,28,0,2
+Class,"HtmlUtil.HtmlUtil",2,0.97,0,4,12,31,30,1
+Class,"HtmlUtil.HtmlUtil",2,0.58,2,4,14,26,15,1
+Function,"HtmlUtil.HtmlUtil.__format_line_feed",,0.00,,,0,2,0,0
+Function,"HtmlUtil.HtmlUtil.__format_line_feed",,0.00,,,0,2,0,0
+Function,"HtmlUtil.HtmlUtil.__format_line_feed",,2.00,,,0,3,6,0
+Function,"HtmlUtil.HtmlUtil.__format_line_feed",,0.50,,,0,2,1,0
+Function,"HtmlUtil.HtmlUtil.__init__",,0.00,,,0,10,0,0
+Function,"HtmlUtil.HtmlUtil.__init__",,0.00,,,0,10,0,0
+Function,"HtmlUtil.HtmlUtil.__init__",,0.30,,,0,10,3,0
+Function,"HtmlUtil.HtmlUtil.__init__",,0.33,,,0,3,1,0
+Function,"HtmlUtil.HtmlUtil.extract_code_from_html_text",,0.00,,,0,7,0,1
+Function,"HtmlUtil.HtmlUtil.extract_code_from_html_text",,0.00,,,0,9,0,2
+Function,"HtmlUtil.HtmlUtil.extract_code_from_html_text",,1.00,,,3,8,8,1
+Function,"HtmlUtil.HtmlUtil.extract_code_from_html_text",,0.63,,,4,8,5,1
+Function,"HtmlUtil.HtmlUtil.format_line_html_text",,0.00,,,0,5,0,1
+Function,"HtmlUtil.HtmlUtil.format_line_html_text",,0.00,,,0,5,0,1
+Function,"HtmlUtil.HtmlUtil.format_line_html_text",,1.25,,,5,8,10,1
+Function,"HtmlUtil.HtmlUtil.format_line_html_text",,0.73,,,7,11,8,1
+Module File,"HtmlUtil.py",2,0.00,,,4,30,0,1
+Module File,"HtmlUtil.py",3,0.00,,,4,32,0,2
+Module File,"HtmlUtil.py",2,0.86,,,13,35,30,1
+Module File,"HtmlUtil.py",2,0.52,,,15,29,15,1
+Class,"IPAddress.IPAddress",6,0.58,1,4,15,26,15,2
+Function,"IPAddress.IPAddress.__init__",,0.50,,,0,2,1,0
+Function,"IPAddress.IPAddress.get_binary",,0.67,,,3,6,4,1
+Function,"IPAddress.IPAddress.get_octets",,0.50,,,1,4,2,1
+Function,"IPAddress.IPAddress.is_valid",,0.62,,,6,13,8,2
+Module File,"IPAddress.py",6,0.58,,,15,26,15,2
+Class,"Interpolation.Interpolation",10,0.00,1,3,2,49,0,6
+Class,"Interpolation.Interpolation",6,0.88,2,3,12,40,35,2
+Class,"Interpolation.Interpolation",6,0.54,2,3,14,46,25,2
+Function,"Interpolation.Interpolation.__init__",,0.00,,,0,2,0,0
+Function,"Interpolation.Interpolation.__init__",,0.00,,,0,2,0,0
+Function,"Interpolation.Interpolation.__init__",,0.00,,,0,2,0,0
+Function,"Interpolation.Interpolation.interpolate_1d",,0.00,,,0,15,0,4
+Function,"Interpolation.Interpolation.interpolate_1d",,1.17,,,3,12,14,2
+Function,"Interpolation.Interpolation.interpolate_1d",,0.93,,,5,14,13,2
+Function,"Interpolation.Interpolation.interpolate_2d",,0.00,,,0,29,0,6
+Function,"Interpolation.Interpolation.interpolate_2d",,0.78,,,6,23,18,2
+Function,"Interpolation.Interpolation.interpolate_2d",,0.44,,,7,27,12,2
+Module File,"Interpolation.py",10,0.00,,,2,49,0,6
+Module File,"Interpolation.py",6,0.88,,,12,40,35,2
+Module File,"Interpolation.py",6,0.57,,,15,46,26,2
+Class,"IpUtil.IpUtil",4,0.00,0,4,3,32,0,2
+Class,"IpUtil.IpUtil",3,0.00,1,4,3,29,0,1
+Class,"IpUtil.IpUtil",2,0.45,0,3,3,22,10,1
+Class,"IpUtil.IpUtil",2,0.95,0,3,3,22,21,1
+Function,"IpUtil.IpUtil.get_binary",,0.00,,,0,10,0,2
+Function,"IpUtil.IpUtil.get_binary",,0.00,,,0,7,0,1
+Function,"IpUtil.IpUtil.get_hostname",,0.00,,,0,5,0,1
+Function,"IpUtil.IpUtil.get_hostname",,0.00,,,0,5,0,1
+Function,"IpUtil.IpUtil.get_hostname",,0.33,,,0,6,2,1
+Function,"IpUtil.IpUtil.get_hostname",,1.00,,,0,6,6,1
+Function,"IpUtil.IpUtil.is_valid_ipv4",,0.00,,,0,6,0,1
+Function,"IpUtil.IpUtil.is_valid_ipv4",,0.00,,,0,6,0,1
+Function,"IpUtil.IpUtil.is_valid_ipv4",,0.17,,,0,6,1,1
+Function,"IpUtil.IpUtil.is_valid_ipv4",,1.00,,,0,6,6,1
+Function,"IpUtil.IpUtil.is_valid_ipv6",,0.00,,,0,6,0,1
+Function,"IpUtil.IpUtil.is_valid_ipv6",,0.00,,,0,6,0,1
+Function,"IpUtil.IpUtil.is_valid_ipv6",,0.17,,,0,6,1,1
+Function,"IpUtil.IpUtil.is_valid_ipv6",,1.00,,,0,6,6,1
+Module File,"IpUtil.py",4,0.00,,,5,34,0,2
+Module File,"IpUtil.py",3,0.00,,,4,31,0,1
+Module File,"IpUtil.py",2,0.40,,,5,25,10,1
+Module File,"IpUtil.py",2,0.77,,,8,30,23,1
+Class,"JobMarketplace.JobMarketplace",2,0.00,0,8,7,28,0,1
+Class,"JobMarketplace.JobMarketplace",2,0.00,0,8,7,28,0,1
+Class,"JobMarketplace.JobMarketplace",2,0.46,0,8,8,24,11,1
+Class,"JobMarketplace.JobMarketplace",5,0.98,0,8,7,50,49,4
+Function,"JobMarketplace.JobMarketplace.__init__",,0.00,,,0,3,0,0
+Function,"JobMarketplace.JobMarketplace.__init__",,0.00,,,0,3,0,0
+Function,"JobMarketplace.JobMarketplace.__init__",,0.33,,,0,3,1,0
+Function,"JobMarketplace.JobMarketplace.__init__",,0.33,,,0,3,1,0
+Function,"JobMarketplace.JobMarketplace.get_job_applicants",,0.00,,,0,2,0,0
+Function,"JobMarketplace.JobMarketplace.get_job_applicants",,0.00,,,0,2,0,0
+Function,"JobMarketplace.JobMarketplace.get_job_applicants",,0.33,,,0,3,1,0
+Function,"JobMarketplace.JobMarketplace.get_job_applicants",,1.00,,,0,9,9,4
+Function,"JobMarketplace.JobMarketplace.matches_requirements",,0.00,,,0,2,0,0
+Function,"JobMarketplace.JobMarketplace.matches_requirements",,0.00,,,0,2,0,0
+Function,"JobMarketplace.JobMarketplace.matches_requirements",,0.50,,,0,2,1,0
+Function,"JobMarketplace.JobMarketplace.matches_requirements",,1.40,,,0,5,7,2
+Function,"JobMarketplace.JobMarketplace.post_job",,0.00,,,0,6,0,0
+Function,"JobMarketplace.JobMarketplace.post_job",,0.00,,,0,6,0,0
+Function,"JobMarketplace.JobMarketplace.post_job",,0.33,,,0,3,1,0
+Function,"JobMarketplace.JobMarketplace.post_job",,0.75,,,0,8,6,0
+Function,"JobMarketplace.JobMarketplace.remove_job",,0.00,,,0,3,0,1
+Function,"JobMarketplace.JobMarketplace.remove_job",,0.00,,,0,3,0,1
+Function,"JobMarketplace.JobMarketplace.remove_job",,0.33,,,0,3,1,1
+Function,"JobMarketplace.JobMarketplace.remove_job",,1.20,,,0,5,6,2
+Function,"JobMarketplace.JobMarketplace.search_jobs",,0.00,,,0,2,0,0
+Function,"JobMarketplace.JobMarketplace.search_jobs",,0.00,,,0,2,0,0
+Function,"JobMarketplace.JobMarketplace.search_jobs",,0.33,,,0,3,1,0
+Function,"JobMarketplace.JobMarketplace.search_jobs",,1.33,,,0,6,8,2
+Function,"JobMarketplace.JobMarketplace.submit_resume",,0.00,,,0,6,0,0
+Function,"JobMarketplace.JobMarketplace.submit_resume",,0.00,,,0,6,0,0
+Function,"JobMarketplace.JobMarketplace.submit_resume",,0.33,,,0,3,1,0
+Function,"JobMarketplace.JobMarketplace.submit_resume",,0.75,,,0,8,6,0
+Function,"JobMarketplace.JobMarketplace.withdraw_resume",,0.00,,,0,3,0,1
+Function,"JobMarketplace.JobMarketplace.withdraw_resume",,0.00,,,0,3,0,1
+Function,"JobMarketplace.JobMarketplace.withdraw_resume",,0.33,,,0,3,1,1
+Function,"JobMarketplace.JobMarketplace.withdraw_resume",,1.20,,,0,5,6,2
+Module File,"JobMarketplace.py",2,0.00,,,7,28,0,1
+Module File,"JobMarketplace.py",2,0.00,,,7,28,0,1
+Module File,"JobMarketplace.py",2,0.46,,,8,24,11,1
+Module File,"JobMarketplace.py",5,0.91,,,9,55,50,4
+Class,"KappaCalculator.KappaCalculator",1,0.12,0,2,1,17,2,0
+Class,"KappaCalculator.KappaCalculator",3,0.75,2,2,9,24,18,1
+Class,"KappaCalculator.KappaCalculator",3,1.73,1,2,11,22,38,1
+Class,"KappaCalculator.KappaCalculator",1,1.07,0,2,10,15,16,0
+Function,"KappaCalculator.KappaCalculator.fleiss_kappa",,0.13,,,0,8,1,0
+Function,"KappaCalculator.KappaCalculator.fleiss_kappa",,1.38,,,5,8,11,0
+Function,"KappaCalculator.KappaCalculator.fleiss_kappa",,1.77,,,5,13,23,1
+Function,"KappaCalculator.KappaCalculator.fleiss_kappa",,1.29,,,5,7,9,0
+Function,"KappaCalculator.KappaCalculator.kappa",,0.17,,,0,6,1,0
+Function,"KappaCalculator.KappaCalculator.kappa",,0.54,,,3,13,7,1
+Function,"KappaCalculator.KappaCalculator.kappa",,2.00,,,4,6,12,0
+Function,"KappaCalculator.KappaCalculator.kappa",,1.40,,,3,5,7,0
+Module File,"KappaCalculator.py",1,0.11,,,2,18,2,0
+Module File,"KappaCalculator.py",3,0.72,,,10,25,18,1
+Module File,"KappaCalculator.py",3,1.65,,,12,23,38,1
+Module File,"KappaCalculator.py",1,1.00,,,11,16,16,0
+Class,"Lemmatization.Lemmatization",6,1.68,2,4,18,31,52,2
+Function,"Lemmatization.Lemmatization.__init__",,2.00,,,0,2,4,0
+Function,"Lemmatization.Lemmatization.get_pos_tag",,2.17,,,5,6,13,0
+Function,"Lemmatization.Lemmatization.lemmatize_sentence",,1.22,,,7,18,22,2
+Function,"Lemmatization.Lemmatization.remove_punctuation",,2.50,,,2,4,10,0
+Module File,"Lemmatization.py",6,1.68,,,18,31,52,2
+Class,"LongestWord.LongestWord",3,0.29,0,3,5,14,4,2
+Class,"LongestWord.LongestWord",4,0.80,0,3,6,15,12,2
+Class,"LongestWord.LongestWord",3,1.67,0,3,7,15,25,2
+Class,"LongestWord.LongestWord",3,0.60,0,3,6,15,9,2
+Function,"LongestWord.LongestWord.__init__",,0.00,,,0,2,0,0
+Function,"LongestWord.LongestWord.__init__",,0.50,,,0,2,1,0
+Function,"LongestWord.LongestWord.__init__",,2.00,,,0,2,4,0
+Function,"LongestWord.LongestWord.__init__",,0.50,,,0,2,1,0
+Function,"LongestWord.LongestWord.add_word",,0.00,,,0,2,0,0
+Function,"LongestWord.LongestWord.add_word",,0.50,,,0,2,1,0
+Function,"LongestWord.LongestWord.add_word",,2.50,,,0,2,5,0
+Function,"LongestWord.LongestWord.add_word",,0.50,,,0,2,1,0
+Function,"LongestWord.LongestWord.find_longest_word",,0.44,,,3,9,4,2
+Function,"LongestWord.LongestWord.find_longest_word",,0.70,,,4,10,7,2
+Function,"LongestWord.LongestWord.find_longest_word",,1.30,,,4,10,13,2
+Function,"LongestWord.LongestWord.find_longest_word",,0.70,,,4,10,7,2
+Module File,"LongestWord.py",3,0.25,,,6,16,4,2
+Module File,"LongestWord.py",4,0.71,,,7,17,12,2
+Module File,"LongestWord.py",3,1.47,,,8,17,25,2
+Module File,"LongestWord.py",3,0.53,,,7,17,9,2
+Class,"MahjongConnect.MahjongConnect",5,0.94,1,6,15,48,45,4
+Class,"MahjongConnect.MahjongConnect",6,0.45,2,6,5,44,20,4
+Function,"MahjongConnect.MahjongConnect.__init__",,1.25,,,0,4,5,0
+Function,"MahjongConnect.MahjongConnect.__init__",,0.50,,,0,4,2,0
+Function,"MahjongConnect.MahjongConnect.create_board",,1.00,,,2,6,6,2
+Function,"MahjongConnect.MahjongConnect.create_board",,0.33,,,0,3,1,0
+Function,"MahjongConnect.MahjongConnect.has_path",,0.62,,,2,13,8,4
+Function,"MahjongConnect.MahjongConnect.has_path",,0.69,,,0,16,11,4
+Function,"MahjongConnect.MahjongConnect.is_game_over",,0.83,,,1,6,5,3
+Function,"MahjongConnect.MahjongConnect.is_game_over",,0.17,,,0,6,1,3
+Function,"MahjongConnect.MahjongConnect.is_valid_move",,1.11,,,3,9,10,1
+Function,"MahjongConnect.MahjongConnect.is_valid_move",,0.36,,,0,11,4,1
+Function,"MahjongConnect.MahjongConnect.remove_icons",,0.89,,,1,9,8,2
+Function,"MahjongConnect.MahjongConnect.remove_icons",,0.33,,,0,3,1,0
+Module File,"MahjongConnect.py",5,0.92,,,16,49,45,4
+Module File,"MahjongConnect.py",6,0.44,,,6,45,20,4
+Class,"Manacher.Manacher",3,0.68,1,3,12,22,15,2
+Class,"Manacher.Manacher",3,0.33,1,3,7,21,7,2
+Class,"Manacher.Manacher",3,0.79,1,4,4,33,26,2
+Class,"Manacher.Manacher",3,1.19,1,3,9,21,25,2
+Function,"Manacher.Manacher.__init__",,0.00,,,0,2,0,0
+Function,"Manacher.Manacher.__init__",,0.50,,,0,2,1,0
+Function,"Manacher.Manacher.__init__",,2.00,,,0,2,4,0
+Function,"Manacher.Manacher.__init__",,1.67,,,0,3,5,0
+Function,"Manacher.Manacher.palindromic_length",,0.86,,,4,7,6,1
+Function,"Manacher.Manacher.palindromic_length",,0.20,,,0,5,1,1
+Function,"Manacher.Manacher.palindromic_length",,0.42,,,0,12,5,2
+Function,"Manacher.Manacher.palindromic_length",,1.33,,,2,6,8,1
+Function,"Manacher.Manacher.palindromic_string",,0.75,,,6,12,9,2
+Function,"Manacher.Manacher.palindromic_string",,0.38,,,5,13,5,2
+Function,"Manacher.Manacher.palindromic_string",,0.58,,,0,12,7,2
+Function,"Manacher.Manacher.palindromic_string",,1.09,,,5,11,12,2
+Function,"Manacher.Manacher.preprocess",,0.67,,,0,6,4,1
+Module File,"Manacher.py",3,0.68,,,12,22,15,2
+Module File,"Manacher.py",3,0.33,,,7,21,7,2
+Module File,"Manacher.py",3,0.79,,,4,33,26,2
+Module File,"Manacher.py",3,1.22,,,11,23,28,2
+Class,"MetricsCalculator.MetricsCalculator",7,0.21,1,6,5,78,16,2
+Class,"MetricsCalculator.MetricsCalculator",5,1.34,1,6,11,38,51,2
+Class,"MetricsCalculator.MetricsCalculator",5,0.40,1,6,5,35,14,2
+Function,"MetricsCalculator.MetricsCalculator.__init__",,0.20,,,0,5,1,0
+Function,"MetricsCalculator.MetricsCalculator.__init__",,0.80,,,0,5,4,0
+Function,"MetricsCalculator.MetricsCalculator.__init__",,0.20,,,0,5,1,0
+Function,"MetricsCalculator.MetricsCalculator.accuracy",,0.21,,,0,19,4,2
+Function,"MetricsCalculator.MetricsCalculator.accuracy",,1.33,,,0,6,8,1
+Function,"MetricsCalculator.MetricsCalculator.accuracy",,0.40,,,0,5,2,1
+Function,"MetricsCalculator.MetricsCalculator.f1_score",,0.29,,,0,7,2,1
+Function,"MetricsCalculator.MetricsCalculator.f1_score",,1.33,,,0,6,8,1
+Function,"MetricsCalculator.MetricsCalculator.f1_score",,0.33,,,0,6,2,1
+Function,"MetricsCalculator.MetricsCalculator.precision",,0.22,,,0,18,4,2
+Function,"MetricsCalculator.MetricsCalculator.precision",,1.60,,,0,5,8,1
+Function,"MetricsCalculator.MetricsCalculator.precision",,0.50,,,0,4,2,1
+Function,"MetricsCalculator.MetricsCalculator.recall",,0.22,,,0,18,4,2
+Function,"MetricsCalculator.MetricsCalculator.recall",,1.60,,,0,5,8,1
+Function,"MetricsCalculator.MetricsCalculator.recall",,0.50,,,0,4,2,1
+Function,"MetricsCalculator.MetricsCalculator.update",,0.10,,,0,10,1,2
+Function,"MetricsCalculator.MetricsCalculator.update",,1.20,,,0,10,12,2
+Function,"MetricsCalculator.MetricsCalculator.update",,0.50,,,0,10,5,2
+Module File,"MetricsCalculator.py",7,0.21,,,5,78,16,2
+Module File,"MetricsCalculator.py",5,1.34,,,11,38,51,2
+Module File,"MetricsCalculator.py",5,0.40,,,5,35,14,2
+Class,"MetricsCalculator2.MetricsCalculator2",7,0.00,4,3,2,51,0,3
+Class,"MetricsCalculator2.MetricsCalculator2",7,0.13,4,3,2,48,6,3
+Class,"MetricsCalculator2.MetricsCalculator2",7,0.43,4,3,3,46,20,3
+Class,"MetricsCalculator2.MetricsCalculator2",9,0.70,2,3,2,54,38,4
+Function,"MetricsCalculator2.MetricsCalculator2.__init__",,0.00,,,0,2,0,0
+Function,"MetricsCalculator2.MetricsCalculator2.__init__",,0.00,,,0,2,0,0
+Function,"MetricsCalculator2.MetricsCalculator2.__init__",,0.00,,,0,2,0,0
+Function,"MetricsCalculator2.MetricsCalculator2.__init__",,0.00,,,0,2,0,0
+Function,"MetricsCalculator2.MetricsCalculator2.map",,0.00,,,0,24,0,3
+Function,"MetricsCalculator2.MetricsCalculator2.map",,0.14,,,0,22,3,2
+Function,"MetricsCalculator2.MetricsCalculator2.map",,0.35,,,0,23,8,3
+Function,"MetricsCalculator2.MetricsCalculator2.map",,0.71,,,0,31,22,4
+Function,"MetricsCalculator2.MetricsCalculator2.mrr",,0.00,,,0,22,0,3
+Function,"MetricsCalculator2.MetricsCalculator2.mrr",,0.14,,,0,21,3,3
+Function,"MetricsCalculator2.MetricsCalculator2.mrr",,0.44,,,0,18,8,2
+Function,"MetricsCalculator2.MetricsCalculator2.mrr",,0.89,,,0,18,16,3
+Module File,"MetricsCalculator2.py",7,0.00,,,3,52,0,3
+Module File,"MetricsCalculator2.py",7,0.12,,,3,49,6,3
+Module File,"MetricsCalculator2.py",7,0.43,,,5,47,20,3
+Module File,"MetricsCalculator2.py",9,0.69,,,3,55,38,4
+Class,"MinesweeperGame.MinesweeperGame",8,0.91,1,5,20,46,42,6
+Class,"MinesweeperGame.MinesweeperGame",9,0.81,1,5,14,48,39,6
+Class,"MinesweeperGame.MinesweeperGame",9,0.37,2,5,12,46,17,6
+Class,"MinesweeperGame.MinesweeperGame",8,0.23,2,5,4,44,10,6
+Function,"MinesweeperGame.MinesweeperGame.__init__",,1.00,,,1,6,6,0
+Function,"MinesweeperGame.MinesweeperGame.__init__",,1.00,,,1,6,6,0
+Function,"MinesweeperGame.MinesweeperGame.__init__",,0.83,,,0,6,5,0
+Function,"MinesweeperGame.MinesweeperGame.__init__",,0.40,,,0,5,2,0
+Function,"MinesweeperGame.MinesweeperGame.check_won",,1.33,,,2,6,8,3
+Function,"MinesweeperGame.MinesweeperGame.check_won",,1.33,,,2,6,8,3
+Function,"MinesweeperGame.MinesweeperGame.check_won",,0.17,,,0,6,1,3
+Function,"MinesweeperGame.MinesweeperGame.check_won",,0.17,,,0,6,1,3
+Function,"MinesweeperGame.MinesweeperGame.generate_mine_sweeper_map",,0.50,,,4,16,8,6
+Function,"MinesweeperGame.MinesweeperGame.generate_mine_sweeper_map",,0.44,,,4,18,8,6
+Function,"MinesweeperGame.MinesweeperGame.generate_mine_sweeper_map",,0.17,,,3,18,3,6
+Function,"MinesweeperGame.MinesweeperGame.generate_mine_sweeper_map",,0.19,,,0,16,3,6
+Function,"MinesweeperGame.MinesweeperGame.generate_playerMap",,3.00,,,1,2,6,0
+Function,"MinesweeperGame.MinesweeperGame.generate_playerMap",,3.00,,,1,2,6,0
+Function,"MinesweeperGame.MinesweeperGame.generate_playerMap",,0.50,,,0,2,1,0
+Function,"MinesweeperGame.MinesweeperGame.generate_playerMap",,0.50,,,0,2,1,0
+Function,"MinesweeperGame.MinesweeperGame.sweep",,0.93,,,8,15,14,3
+Function,"MinesweeperGame.MinesweeperGame.sweep",,0.73,,,2,15,11,5
+Function,"MinesweeperGame.MinesweeperGame.sweep",,0.31,,,4,13,4,4
+Function,"MinesweeperGame.MinesweeperGame.sweep",,0.21,,,0,14,3,5
+Module File,"MinesweeperGame.py",8,0.89,,,21,47,42,6
+Module File,"MinesweeperGame.py",9,0.80,,,15,49,39,6
+Module File,"MinesweeperGame.py",9,0.36,,,13,47,17,6
+Module File,"MinesweeperGame.py",8,0.21,,,6,53,11,6
+Class,"MovieBookingSystem.MovieBookingSystem",6,0.55,0,4,3,29,16,4
+Function,"MovieBookingSystem.MovieBookingSystem.__init__",,0.50,,,0,2,1,0
+Function,"MovieBookingSystem.MovieBookingSystem.add_movie",,0.33,,,0,9,3,0
+Function,"MovieBookingSystem.MovieBookingSystem.available_movies",,0.86,,,0,7,6,3
+Function,"MovieBookingSystem.MovieBookingSystem.book_ticket",,0.60,,,0,10,6,4
+Module File,"MovieBookingSystem.py",6,0.46,,,5,37,17,4
+Class,"MovieTicketDB.MovieTicketDB",1,1.21,0,5,9,33,40,0
+Class,"MovieTicketDB.MovieTicketDB",1,0.39,0,5,4,38,15,0
+Function,"MovieTicketDB.MovieTicketDB.__init__",,1.75,,,0,4,7,0
+Function,"MovieTicketDB.MovieTicketDB.__init__",,0.67,,,0,3,2,0
+Function,"MovieTicketDB.MovieTicketDB.create_table",,0.60,,,0,10,6,0
+Function,"MovieTicketDB.MovieTicketDB.create_table",,0.25,,,0,12,3,0
+Function,"MovieTicketDB.MovieTicketDB.delete_ticket",,1.17,,,0,6,7,0
+Function,"MovieTicketDB.MovieTicketDB.delete_ticket",,0.43,,,0,7,3,0
+Function,"MovieTicketDB.MovieTicketDB.insert_ticket",,1.67,,,0,6,10,0
+Function,"MovieTicketDB.MovieTicketDB.insert_ticket",,0.43,,,0,7,3,0
+Function,"MovieTicketDB.MovieTicketDB.search_tickets_by_customer",,1.17,,,0,6,7,0
+Function,"MovieTicketDB.MovieTicketDB.search_tickets_by_customer",,0.50,,,0,8,4,0
+Module File,"MovieTicketDB.py",1,1.21,,,9,33,40,0
+Module File,"MovieTicketDB.py",2,0.34,,,6,47,16,1
+Class,"MusicPlayer.MusicPlayer",4,0.16,0,9,8,58,9,2
+Class,"MusicPlayer.MusicPlayer",4,0.69,0,9,8,59,41,3
+Class,"MusicPlayer.MusicPlayer",4,1.35,0,9,9,63,85,3
+Class,"MusicPlayer.MusicPlayer",4,0.19,0,9,8,69,13,2
+Function,"MusicPlayer.MusicPlayer.__init__",,0.25,,,0,4,1,0
+Function,"MusicPlayer.MusicPlayer.__init__",,0.75,,,0,4,3,0
+Function,"MusicPlayer.MusicPlayer.__init__",,0.75,,,0,4,3,0
+Function,"MusicPlayer.MusicPlayer.__init__",,0.20,,,0,5,1,0
+Function,"MusicPlayer.MusicPlayer.add_song",,0.50,,,0,2,1,0
+Function,"MusicPlayer.MusicPlayer.add_song",,0.50,,,0,4,2,1
+Function,"MusicPlayer.MusicPlayer.add_song",,1.40,,,0,5,7,1
+Function,"MusicPlayer.MusicPlayer.add_song",,0.40,,,0,5,2,1
+Function,"MusicPlayer.MusicPlayer.play",,0.20,,,0,5,1,1
+Function,"MusicPlayer.MusicPlayer.play",,0.50,,,0,2,1,0
+Function,"MusicPlayer.MusicPlayer.play",,1.40,,,0,5,7,1
+Function,"MusicPlayer.MusicPlayer.play",,0.14,,,0,7,1,1
+Function,"MusicPlayer.MusicPlayer.previous_song",,0.10,,,0,10,1,2
+Function,"MusicPlayer.MusicPlayer.previous_song",,0.60,,,0,10,6,2
+Function,"MusicPlayer.MusicPlayer.previous_song",,1.10,,,0,10,11,2
+Function,"MusicPlayer.MusicPlayer.previous_song",,0.11,,,0,9,1,1
+Function,"MusicPlayer.MusicPlayer.remove_song",,0.33,,,0,3,1,1
+Function,"MusicPlayer.MusicPlayer.remove_song",,0.63,,,0,8,5,3
+Function,"MusicPlayer.MusicPlayer.remove_song",,1.13,,,0,8,9,3
+Function,"MusicPlayer.MusicPlayer.remove_song",,0.50,,,0,8,4,2
+Function,"MusicPlayer.MusicPlayer.set_volume",,0.17,,,0,6,1,1
+Function,"MusicPlayer.MusicPlayer.set_volume",,0.50,,,0,6,3,1
+Function,"MusicPlayer.MusicPlayer.set_volume",,1.50,,,0,6,9,1
+Function,"MusicPlayer.MusicPlayer.set_volume",,0.13,,,0,8,1,1
+Function,"MusicPlayer.MusicPlayer.shuffle",,0.14,,,0,7,1,1
+Function,"MusicPlayer.MusicPlayer.shuffle",,0.50,,,0,8,4,1
+Function,"MusicPlayer.MusicPlayer.shuffle",,1.13,,,0,8,9,1
+Function,"MusicPlayer.MusicPlayer.shuffle",,0.10,,,0,10,1,1
+Function,"MusicPlayer.MusicPlayer.stop",,0.17,,,0,6,1,1
+Function,"MusicPlayer.MusicPlayer.stop",,0.33,,,0,6,2,1
+Function,"MusicPlayer.MusicPlayer.stop",,1.33,,,0,6,8,1
+Function,"MusicPlayer.MusicPlayer.stop",,0.14,,,0,7,1,1
+Function,"MusicPlayer.MusicPlayer.switch_song",,0.07,,,0,14,1,2
+Function,"MusicPlayer.MusicPlayer.switch_song",,0.60,,,0,10,6,2
+Function,"MusicPlayer.MusicPlayer.switch_song",,1.10,,,0,10,11,2
+Function,"MusicPlayer.MusicPlayer.switch_song",,0.11,,,0,9,1,1
+Module File,"MusicPlayer.py",4,0.16,,,8,58,9,2
+Module File,"MusicPlayer.py",4,0.69,,,8,59,41,3
+Module File,"MusicPlayer.py",4,1.35,,,9,63,85,3
+Module File,"MusicPlayer.py",4,0.17,,,10,83,14,2
+Class,"NLPDataProcessor.NLPDataProcessor",2,0.19,0,4,3,16,3,1
+Class,"NLPDataProcessor.NLPDataProcessor",2,0.21,0,3,2,14,3,1
+Class,"NLPDataProcessor.NLPDataProcessor",2,0.79,0,3,3,14,11,1
+Class,"NLPDataProcessor.NLPDataProcessor",2,1.33,0,3,3,15,20,1
+Function,"NLPDataProcessor.NLPDataProcessor.__init__",,0.00,,,0,2,0,0
+Function,"NLPDataProcessor.NLPDataProcessor.construct_stop_word_list",,0.33,,,0,3,1,0
+Function,"NLPDataProcessor.NLPDataProcessor.construct_stop_word_list",,0.33,,,0,3,1,0
+Function,"NLPDataProcessor.NLPDataProcessor.construct_stop_word_list",,0.50,,,0,2,1,0
+Function,"NLPDataProcessor.NLPDataProcessor.construct_stop_word_list",,1.67,,,0,3,5,0
+Function,"NLPDataProcessor.NLPDataProcessor.process",,0.33,,,0,3,1,0
+Function,"NLPDataProcessor.NLPDataProcessor.process",,0.33,,,0,3,1,0
+Function,"NLPDataProcessor.NLPDataProcessor.process",,0.67,,,0,3,2,0
+Function,"NLPDataProcessor.NLPDataProcessor.process",,1.50,,,0,4,6,0
+Function,"NLPDataProcessor.NLPDataProcessor.remove_stop_words",,0.14,,,0,7,1,1
+Function,"NLPDataProcessor.NLPDataProcessor.remove_stop_words",,0.14,,,0,7,1,1
+Function,"NLPDataProcessor.NLPDataProcessor.remove_stop_words",,0.63,,,0,8,5,1
+Function,"NLPDataProcessor.NLPDataProcessor.remove_stop_words",,1.29,,,0,7,9,1
+Module File,"NLPDataProcessor.py",2,0.19,,,3,16,3,1
+Module File,"NLPDataProcessor.py",2,0.21,,,2,14,3,1
+Module File,"NLPDataProcessor.py",2,0.79,,,3,14,11,1
+Module File,"NLPDataProcessor.py",2,1.05,,,4,20,21,1
+Class,"NLPDataProcessor2.NLPDataProcessor2",2,1.00,1,3,3,15,15,1
+Function,"NLPDataProcessor2.NLPDataProcessor2.calculate_word_frequency",,0.75,,,0,4,3,0
+Function,"NLPDataProcessor2.NLPDataProcessor2.process",,0.50,,,0,4,2,0
+Function,"NLPDataProcessor2.NLPDataProcessor2.process_data",,0.67,,,0,6,4,1
+Module File,"NLPDataProcessor2.py",2,0.88,,,4,17,15,1
+Class,"NumberConverter.NumberConverter",1,0.63,2,6,5,19,12,0
+Function,"NumberConverter.NumberConverter.binary_to_decimal",,0.50,,,0,2,1,0
+Function,"NumberConverter.NumberConverter.decimal_to_binary",,1.50,,,0,2,3,0
+Function,"NumberConverter.NumberConverter.decimal_to_hex",,1.50,,,0,2,3,0
+Function,"NumberConverter.NumberConverter.decimal_to_octal",,1.50,,,0,2,3,0
+Function,"NumberConverter.NumberConverter.hex_to_decimal",,0.50,,,0,2,1,0
+Function,"NumberConverter.NumberConverter.octal_to_decimal",,0.50,,,0,2,1,0
+Module File,"NumberConverter.py",1,0.63,,,5,19,12,0
+Class,"NumberWordFormatter.NumberWordFormatter",4,0.00,3,8,7,58,0,2
+Class,"NumberWordFormatter.NumberWordFormatter",5,0.36,3,7,6,50,18,2
+Class,"NumberWordFormatter.NumberWordFormatter",9,0.73,2,6,31,85,62,3
+Class,"NumberWordFormatter.NumberWordFormatter",5,0.39,3,8,11,57,22,2
+Function,"NumberWordFormatter.NumberWordFormatter.__init__",,0.00,,,0,7,0,0
+Function,"NumberWordFormatter.NumberWordFormatter.__init__",,0.29,,,0,7,2,0
+Function,"NumberWordFormatter.NumberWordFormatter.__init__",,0.38,,,0,8,3,0
+Function,"NumberWordFormatter.NumberWordFormatter.__init__",,0.21,,,0,14,3,0
+Function,"NumberWordFormatter.NumberWordFormatter.format",,0.00,,,0,7,0,1
+Function,"NumberWordFormatter.NumberWordFormatter.format",,0.43,,,0,7,3,1
+Function,"NumberWordFormatter.NumberWordFormatter.format",,0.78,,,4,9,7,1
+Function,"NumberWordFormatter.NumberWordFormatter.format",,0.50,,,0,2,1,0
+Function,"NumberWordFormatter.NumberWordFormatter.format_decimal",,0.00,,,0,5,0,1
+Function,"NumberWordFormatter.NumberWordFormatter.format_decimal",,0.67,,,0,3,2,0
+Function,"NumberWordFormatter.NumberWordFormatter.format_int",,0.00,,,0,11,0,2
+Function,"NumberWordFormatter.NumberWordFormatter.format_integer",,0.09,,,0,11,1,2
+Function,"NumberWordFormatter.NumberWordFormatter.format_integer",,0.33,,,1,12,4,2
+Function,"NumberWordFormatter.NumberWordFormatter.format_string",,0.00,,,0,6,0,1
+Function,"NumberWordFormatter.NumberWordFormatter.format_string",,1.50,,,0,2,3,0
+Function,"NumberWordFormatter.NumberWordFormatter.format_string",,0.78,,,13,32,25,3
+Function,"NumberWordFormatter.NumberWordFormatter.format_string",,0.50,,,3,10,5,1
+Function,"NumberWordFormatter.NumberWordFormatter.parse_more",,0.00,,,0,2,0,0
+Function,"NumberWordFormatter.NumberWordFormatter.parse_more",,1.50,,,0,2,3,0
+Function,"NumberWordFormatter.NumberWordFormatter.parse_more",,0.50,,,0,2,1,0
+Function,"NumberWordFormatter.NumberWordFormatter.parse_more",,0.20,,,0,5,1,1
+Function,"NumberWordFormatter.NumberWordFormatter.trans_three",,0.00,,,0,8,0,1
+Function,"NumberWordFormatter.NumberWordFormatter.trans_three",,0.27,,,0,11,3,1
+Function,"NumberWordFormatter.NumberWordFormatter.trans_three",,0.65,,,5,20,13,2
+Function,"NumberWordFormatter.NumberWordFormatter.trans_three",,0.60,,,0,5,3,1
+Function,"NumberWordFormatter.NumberWordFormatter.trans_two",,0.00,,,0,11,0,2
+Function,"NumberWordFormatter.NumberWordFormatter.trans_two",,0.33,,,0,9,3,1
+Function,"NumberWordFormatter.NumberWordFormatter.trans_two",,0.69,,,3,13,9,2
+Function,"NumberWordFormatter.NumberWordFormatter.trans_two",,0.60,,,0,5,3,1
+Module File,"NumberWordFormatter.py",4,0.00,,,7,58,0,2
+Module File,"NumberWordFormatter.py",5,0.36,,,6,50,18,2
+Module File,"NumberWordFormatter.py",9,0.73,,,31,85,62,3
+Module File,"NumberWordFormatter.py",5,0.39,,,11,57,22,2
+Class,"NumericEntityUnescaper.NumericEntityUnescaper",9,0.40,2,3,5,42,17,4
+Class,"NumericEntityUnescaper.NumericEntityUnescaper",7,0.81,1,3,4,27,22,3
+Class,"NumericEntityUnescaper.NumericEntityUnescaper",1,1.80,0,3,3,10,18,0
+Class,"NumericEntityUnescaper.NumericEntityUnescaper",1,1.33,0,3,2,9,12,0
+Function,"NumericEntityUnescaper.NumericEntityUnescaper.__init__",,0.00,,,0,2,0,0
+Function,"NumericEntityUnescaper.NumericEntityUnescaper.__init__",,0.50,,,0,2,1,0
+Function,"NumericEntityUnescaper.NumericEntityUnescaper.__init__",,0.50,,,0,2,1,0
+Function,"NumericEntityUnescaper.NumericEntityUnescaper.__init__",,0.50,,,0,2,1,0
+Function,"NumericEntityUnescaper.NumericEntityUnescaper.is_hex_char",,0.50,,,0,2,1,0
+Function,"NumericEntityUnescaper.NumericEntityUnescaper.is_hex_char",,0.50,,,0,2,1,0
+Function,"NumericEntityUnescaper.NumericEntityUnescaper.is_hex_char",,2.33,,,0,3,7,0
+Function,"NumericEntityUnescaper.NumericEntityUnescaper.is_hex_char",,2.50,,,0,2,5,0
+Function,"NumericEntityUnescaper.NumericEntityUnescaper.replace",,0.44,,,3,36,16,4
+Function,"NumericEntityUnescaper.NumericEntityUnescaper.replace",,0.95,,,2,21,20,3
+Function,"NumericEntityUnescaper.NumericEntityUnescaper.replace",,2.33,,,0,3,7,0
+Function,"NumericEntityUnescaper.NumericEntityUnescaper.replace",,2.00,,,0,3,6,0
+Module File,"NumericEntityUnescaper.py",9,0.40,,,5,42,17,4
+Module File,"NumericEntityUnescaper.py",7,0.81,,,4,27,22,3
+Module File,"NumericEntityUnescaper.py",1,1.80,,,3,10,18,0
+Module File,"NumericEntityUnescaper.py",1,1.31,,,4,13,17,0
+Class,"Order.Order",3,0.17,0,4,3,24,4,2
+Class,"Order.Order",4,0.42,0,4,3,26,11,3
+Class,"Order.Order",4,1.50,0,4,4,26,39,3
+Class,"Order.Order",3,0.55,0,4,3,22,12,2
+Function,"Order.Order.__init__",,0.00,,,0,4,0,0
+Function,"Order.Order.__init__",,0.25,,,0,4,1,0
+Function,"Order.Order.__init__",,2.25,,,0,4,9,0
+Function,"Order.Order.__init__",,1.00,,,0,3,3,0
+Function,"Order.Order.add_dish",,0.43,,,0,7,3,2
+Function,"Order.Order.add_dish",,0.50,,,0,8,4,3
+Function,"Order.Order.add_dish",,1.25,,,0,8,10,3
+Function,"Order.Order.add_dish",,0.33,,,0,9,3,2
+Function,"Order.Order.calculate_total",,0.13,,,0,8,1,2
+Function,"Order.Order.calculate_total",,0.38,,,0,8,3,2
+Function,"Order.Order.calculate_total",,1.13,,,0,8,9,2
+Function,"Order.Order.calculate_total",,0.60,,,0,5,3,1
+Function,"Order.Order.checkout",,0.00,,,0,4,0,1
+Function,"Order.Order.checkout",,0.60,,,0,5,3,1
+Function,"Order.Order.checkout",,1.60,,,0,5,8,1
+Function,"Order.Order.checkout",,0.75,,,0,4,3,1
+Module File,"Order.py",3,0.17,,,3,24,4,2
+Module File,"Order.py",4,0.42,,,3,26,11,3
+Module File,"Order.py",4,1.50,,,4,26,39,3
+Module File,"Order.py",3,0.43,,,6,30,13,2
+Class,"PDFHandler.PDFHandler",4,0.00,3,3,2,23,0,3
+Class,"PDFHandler.PDFHandler",4,1.08,3,3,10,24,26,2
+Class,"PDFHandler.PDFHandler",3,1.29,1,3,3,21,27,2
+Function,"PDFHandler.PDFHandler.__init__",,0.00,,,0,3,0,0
+Function,"PDFHandler.PDFHandler.__init__",,2.00,,,1,3,6,0
+Function,"PDFHandler.PDFHandler.__init__",,1.67,,,0,3,5,0
+Function,"PDFHandler.PDFHandler.extract_text_from_pdfs",,0.00,,,0,8,0,2
+Function,"PDFHandler.PDFHandler.extract_text_from_pdfs",,0.78,,,3,9,7,2
+Function,"PDFHandler.PDFHandler.extract_text_from_pdfs",,1.00,,,0,9,9,2
+Function,"PDFHandler.PDFHandler.merge_pdfs",,0.00,,,0,11,0,3
+Function,"PDFHandler.PDFHandler.merge_pdfs",,0.91,,,4,11,10,2
+Function,"PDFHandler.PDFHandler.merge_pdfs",,1.25,,,0,8,10,2
+Module File,"PDFHandler.py",4,0.00,,,3,24,0,3
+Module File,"PDFHandler.py",4,1.04,,,11,25,26,2
+Module File,"PDFHandler.py",3,1.23,,,4,22,27,2
+Class,"PageUtil.PageUtil",1,0.79,1,4,10,34,27,0
+Class,"PageUtil.PageUtil",1,1.00,2,4,10,35,35,0
+Class,"PageUtil.PageUtil",1,0.94,1,4,9,33,31,0
+Class,"PageUtil.PageUtil",1,0.32,1,4,8,25,8,0
+Function,"PageUtil.PageUtil.__init__",,1.20,,,1,5,6,0
+Function,"PageUtil.PageUtil.__init__",,1.20,,,1,5,6,0
+Function,"PageUtil.PageUtil.__init__",,1.00,,,0,5,5,0
+Function,"PageUtil.PageUtil.__init__",,0.33,,,0,3,1,0
+Function,"PageUtil.PageUtil.get_page",,1.75,,,2,4,7,0
+Function,"PageUtil.PageUtil.get_page",,1.75,,,2,4,7,0
+Function,"PageUtil.PageUtil.get_page",,1.75,,,1,4,7,0
+Function,"PageUtil.PageUtil.get_page",,0.50,,,1,4,2,0
+Function,"PageUtil.PageUtil.get_page_info",,0.54,,,2,13,7,0
+Function,"PageUtil.PageUtil.get_page_info",,0.54,,,2,13,7,0
+Function,"PageUtil.PageUtil.get_page_info",,0.57,,,2,14,8,0
+Function,"PageUtil.PageUtil.get_page_info",,0.33,,,2,9,3,0
+Function,"PageUtil.PageUtil.search",,0.64,,,2,11,7,0
+Function,"PageUtil.PageUtil.search",,0.92,,,2,12,11,0
+Function,"PageUtil.PageUtil.search",,0.89,,,2,9,8,0
+Function,"PageUtil.PageUtil.search",,0.25,,,2,8,2,0
+Module File,"PageUtil.py",1,0.79,,,10,34,27,0
+Module File,"PageUtil.py",1,1.00,,,10,35,35,0
+Module File,"PageUtil.py",1,0.94,,,9,33,31,0
+Module File,"PageUtil.py",1,0.32,,,8,25,8,0
+Class,"PushBoxGame.PushBoxGame",6,0.67,2,4,8,48,32,3
+Function,"PushBoxGame.PushBoxGame.__init__",,0.33,,,0,9,3,0
+Function,"PushBoxGame.PushBoxGame.check_win",,2.00,,,0,3,6,0
+Function,"PushBoxGame.PushBoxGame.init_game",,0.64,,,0,11,7,3
+Function,"PushBoxGame.PushBoxGame.move",,0.67,,,5,24,16,3
+Module File,"PushBoxGame.py",6,0.67,,,8,48,32,3
+Class,"RPGCharacter.RPGCharacter",2,0.00,0,6,5,31,0,1
+Class,"RPGCharacter.RPGCharacter",2,0.00,0,6,5,28,0,1
+Class,"RPGCharacter.RPGCharacter",2,1.00,0,6,6,27,27,1
+Class,"RPGCharacter.RPGCharacter",2,0.55,0,6,5,29,16,1
+Function,"RPGCharacter.RPGCharacter.__init__",,0.00,,,0,7,0,0
+Function,"RPGCharacter.RPGCharacter.__init__",,0.00,,,0,7,0,0
+Function,"RPGCharacter.RPGCharacter.__init__",,1.14,,,0,7,8,0
+Function,"RPGCharacter.RPGCharacter.__init__",,0.29,,,0,7,2,0
+Function,"RPGCharacter.RPGCharacter.attack",,0.00,,,0,3,0,0
+Function,"RPGCharacter.RPGCharacter.attack",,0.00,,,0,3,0,0
+Function,"RPGCharacter.RPGCharacter.attack",,0.67,,,0,3,2,0
+Function,"RPGCharacter.RPGCharacter.attack",,0.75,,,0,4,3,0
+Function,"RPGCharacter.RPGCharacter.gain_exp",,0.00,,,0,4,0,1
+Function,"RPGCharacter.RPGCharacter.gain_exp",,0.00,,,0,5,0,1
+Function,"RPGCharacter.RPGCharacter.gain_exp",,0.50,,,0,4,2,1
+Function,"RPGCharacter.RPGCharacter.gain_exp",,0.75,,,0,4,3,1
+Function,"RPGCharacter.RPGCharacter.heal",,0.00,,,0,3,0,0
+Function,"RPGCharacter.RPGCharacter.heal",,0.00,,,0,3,0,0
+Function,"RPGCharacter.RPGCharacter.heal",,0.67,,,0,3,2,0
+Function,"RPGCharacter.RPGCharacter.heal",,0.67,,,0,3,2,0
+Function,"RPGCharacter.RPGCharacter.is_alive",,0.00,,,0,2,0,0
+Function,"RPGCharacter.RPGCharacter.is_alive",,0.00,,,0,2,0,0
+Function,"RPGCharacter.RPGCharacter.is_alive",,0.50,,,0,2,1,0
+Function,"RPGCharacter.RPGCharacter.is_alive",,0.50,,,0,2,1,0
+Function,"RPGCharacter.RPGCharacter.level_up",,0.00,,,0,11,0,1
+Function,"RPGCharacter.RPGCharacter.level_up",,0.00,,,0,7,0,0
+Function,"RPGCharacter.RPGCharacter.level_up",,0.57,,,0,7,4,0
+Function,"RPGCharacter.RPGCharacter.level_up",,0.63,,,0,8,5,0
+Module File,"RPGCharacter.py",2,0.00,,,5,31,0,1
+Module File,"RPGCharacter.py",2,0.00,,,5,28,0,1
+Module File,"RPGCharacter.py",2,1.00,,,6,27,27,1
+Module File,"RPGCharacter.py",2,0.41,,,11,41,17,1
+Class,"RegexUtils.RegexUtils",1,0.00,1,10,9,25,0,0
+Class,"RegexUtils.RegexUtils",1,0.00,1,10,9,21,0,0
+Class,"RegexUtils.RegexUtils",1,1.24,1,10,10,21,26,0
+Class,"RegexUtils.RegexUtils",1,1.19,1,10,10,21,25,0
+Function,"RegexUtils.RegexUtils.extract_email",,0.00,,,0,3,0,0
+Function,"RegexUtils.RegexUtils.extract_email",,0.00,,,0,2,0,0
+Function,"RegexUtils.RegexUtils.extract_email",,0.50,,,0,2,1,0
+Function,"RegexUtils.RegexUtils.extract_email",,0.50,,,0,2,1,0
+Function,"RegexUtils.RegexUtils.findall",,0.00,,,0,2,0,0
+Function,"RegexUtils.RegexUtils.findall",,0.00,,,0,2,0,0
+Function,"RegexUtils.RegexUtils.findall",,0.50,,,0,2,1,0
+Function,"RegexUtils.RegexUtils.findall",,0.50,,,0,2,1,0
+Function,"RegexUtils.RegexUtils.generate_email_pattern",,0.00,,,0,2,0,0
+Function,"RegexUtils.RegexUtils.generate_email_pattern",,0.00,,,0,2,0,0
+Function,"RegexUtils.RegexUtils.generate_email_pattern",,1.00,,,0,2,2,0
+Function,"RegexUtils.RegexUtils.generate_email_pattern",,1.50,,,0,2,3,0
+Function,"RegexUtils.RegexUtils.generate_phone_number_pattern",,0.00,,,0,2,0,0
+Function,"RegexUtils.RegexUtils.generate_phone_number_pattern",,0.00,,,0,2,0,0
+Function,"RegexUtils.RegexUtils.generate_phone_number_pattern",,0.50,,,0,2,1,0
+Function,"RegexUtils.RegexUtils.generate_phone_number_pattern",,1.00,,,0,2,2,0
+Function,"RegexUtils.RegexUtils.generate_split_sentences_pattern",,0.00,,,0,2,0,0
+Function,"RegexUtils.RegexUtils.generate_split_sentences_pattern",,0.00,,,0,2,0,0
+Function,"RegexUtils.RegexUtils.generate_split_sentences_pattern",,1.00,,,0,2,2,0
+Function,"RegexUtils.RegexUtils.generate_split_sentences_pattern",,1.50,,,0,2,3,0
+Function,"RegexUtils.RegexUtils.match",,0.00,,,0,2,0,0
+Function,"RegexUtils.RegexUtils.match",,0.00,,,0,2,0,0
+Function,"RegexUtils.RegexUtils.match",,0.50,,,0,2,1,0
+Function,"RegexUtils.RegexUtils.match",,0.50,,,0,2,1,0
+Function,"RegexUtils.RegexUtils.split",,0.00,,,0,2,0,0
+Function,"RegexUtils.RegexUtils.split",,0.00,,,0,2,0,0
+Function,"RegexUtils.RegexUtils.split",,0.50,,,0,2,1,0
+Function,"RegexUtils.RegexUtils.split",,0.50,,,0,2,1,0
+Function,"RegexUtils.RegexUtils.split_sentences",,0.00,,,0,4,0,0
+Function,"RegexUtils.RegexUtils.split_sentences",,0.00,,,0,2,0,0
+Function,"RegexUtils.RegexUtils.split_sentences",,0.50,,,0,2,1,0
+Function,"RegexUtils.RegexUtils.split_sentences",,0.50,,,0,2,1,0
+Function,"RegexUtils.RegexUtils.sub",,0.00,,,0,2,0,0
+Function,"RegexUtils.RegexUtils.sub",,0.00,,,0,2,0,0
+Function,"RegexUtils.RegexUtils.sub",,0.50,,,0,2,1,0
+Function,"RegexUtils.RegexUtils.sub",,0.50,,,0,2,1,0
+Function,"RegexUtils.RegexUtils.validate_phone_number",,0.00,,,0,3,0,0
+Function,"RegexUtils.RegexUtils.validate_phone_number",,0.00,,,0,2,0,0
+Function,"RegexUtils.RegexUtils.validate_phone_number",,0.50,,,0,2,1,0
+Function,"RegexUtils.RegexUtils.validate_phone_number",,0.50,,,0,2,1,0
+Module File,"RegexUtils.py",1,0.00,,,10,26,0,0
+Module File,"RegexUtils.py",1,0.00,,,10,22,0,0
+Module File,"RegexUtils.py",1,1.18,,,11,22,26,0
+Module File,"RegexUtils.py",2,1.35,,,23,34,46,1
+Class,"SQLGenerator.SQLGenerator",3,0.69,1,7,19,36,25,1
+Function,"SQLGenerator.SQLGenerator.__init__",,0.50,,,0,2,1,0
+Function,"SQLGenerator.SQLGenerator.delete",,0.75,,,2,4,3,0
+Function,"SQLGenerator.SQLGenerator.insert",,0.67,,,4,9,6,0
+Function,"SQLGenerator.SQLGenerator.select",,0.60,,,4,10,6,1
+Function,"SQLGenerator.SQLGenerator.select_by_age_range",,1.00,,,0,2,2,0
+Function,"SQLGenerator.SQLGenerator.select_female_under_age",,1.00,,,0,2,2,0
+Function,"SQLGenerator.SQLGenerator.update",,0.83,,,3,6,5,0
+Module File,"SQLGenerator.py",3,0.69,,,19,36,25,1
+Class,"SQLQueryBuilder.SQLQueryBuilder",2,0.68,0,4,15,28,19,1
+Function,"SQLQueryBuilder.SQLQueryBuilder.delete",,0.60,,,2,5,3,1
+Function,"SQLQueryBuilder.SQLQueryBuilder.insert",,0.67,,,3,6,4,0
+Function,"SQLQueryBuilder.SQLQueryBuilder.select",,0.60,,,2,5,3,1
+Function,"SQLQueryBuilder.SQLQueryBuilder.update",,0.71,,,4,7,5,1
+Module File,"SQLQueryBuilder.py",2,0.64,,,16,33,21,1
+Class,"Server.Server",3,0.00,0,6,5,33,0,1
+Class,"Server.Server",3,0.00,0,6,5,33,0,1
+Class,"Server.Server",3,2.00,0,6,6,32,64,1
+Class,"Server.Server",3,0.82,2,6,5,40,33,1
+Function,"Server.Server.__init__",,0.00,,,0,4,0,0
+Function,"Server.Server.__init__",,0.00,,,0,4,0,0
+Function,"Server.Server.__init__",,1.00,,,0,4,4,0
+Function,"Server.Server.__init__",,0.50,,,0,4,2,0
+Function,"Server.Server.add_white_list",,0.00,,,0,6,0,1
+Function,"Server.Server.add_white_list",,0.00,,,0,6,0,1
+Function,"Server.Server.add_white_list",,2.00,,,0,6,12,1
+Function,"Server.Server.add_white_list",,0.67,,,0,6,4,1
+Function,"Server.Server.del_white_list",,0.00,,,0,6,0,1
+Function,"Server.Server.del_white_list",,0.00,,,0,6,0,1
+Function,"Server.Server.del_white_list",,2.00,,,0,6,12,1
+Function,"Server.Server.del_white_list",,0.67,,,0,6,4,1
+Function,"Server.Server.recv",,0.00,,,0,6,0,1
+Function,"Server.Server.recv",,0.00,,,0,6,0,1
+Function,"Server.Server.recv",,1.83,,,0,6,11,1
+Function,"Server.Server.recv",,0.75,,,0,8,6,1
+Function,"Server.Server.send",,0.00,,,0,3,0,0
+Function,"Server.Server.send",,0.00,,,0,3,0,0
+Function,"Server.Server.send",,4.00,,,0,2,8,0
+Function,"Server.Server.send",,0.75,,,0,8,6,1
+Function,"Server.Server.show",,0.00,,,0,7,0,1
+Function,"Server.Server.show",,0.00,,,0,7,0,1
+Function,"Server.Server.show",,1.86,,,0,7,13,1
+Function,"Server.Server.show",,0.71,,,0,7,5,1
+Module File,"Server.py",3,0.00,,,5,33,0,1
+Module File,"Server.py",3,0.00,,,5,33,0,1
+Module File,"Server.py",3,2.00,,,6,32,64,1
+Module File,"Server.py",3,0.82,,,5,40,33,1
+Class,"ShoppingCart.ShoppingCart",3,0.00,0,5,4,21,0,2
+Class,"ShoppingCart.ShoppingCart",3,0.00,0,5,4,21,0,2
+Class,"ShoppingCart.ShoppingCart",3,1.71,2,5,5,24,41,2
+Class,"ShoppingCart.ShoppingCart",3,0.61,2,5,4,23,14,2
+Function,"ShoppingCart.ShoppingCart.__init__",,0.00,,,0,2,0,0
+Function,"ShoppingCart.ShoppingCart.__init__",,0.00,,,0,2,0,0
+Function,"ShoppingCart.ShoppingCart.__init__",,1.50,,,0,2,3,0
+Function,"ShoppingCart.ShoppingCart.__init__",,0.50,,,0,2,1,0
+Function,"ShoppingCart.ShoppingCart.add_item",,0.00,,,0,5,0,1
+Function,"ShoppingCart.ShoppingCart.add_item",,0.00,,,0,5,0,1
+Function,"ShoppingCart.ShoppingCart.add_item",,2.00,,,0,5,10,1
+Function,"ShoppingCart.ShoppingCart.add_item",,0.60,,,0,5,3,1
+Function,"ShoppingCart.ShoppingCart.remove_item",,0.00,,,0,6,0,2
+Function,"ShoppingCart.ShoppingCart.remove_item",,0.00,,,0,6,0,2
+Function,"ShoppingCart.ShoppingCart.remove_item",,1.38,,,0,8,11,2
+Function,"ShoppingCart.ShoppingCart.remove_item",,0.63,,,0,8,5,2
+Function,"ShoppingCart.ShoppingCart.total_price",,0.00,,,0,5,0,1
+Function,"ShoppingCart.ShoppingCart.total_price",,0.00,,,0,5,0,1
+Function,"ShoppingCart.ShoppingCart.total_price",,1.50,,,0,6,9,1
+Function,"ShoppingCart.ShoppingCart.total_price",,0.80,,,0,5,4,1
+Function,"ShoppingCart.ShoppingCart.view_items",,0.00,,,0,2,0,0
+Function,"ShoppingCart.ShoppingCart.view_items",,0.00,,,0,2,0,0
+Function,"ShoppingCart.ShoppingCart.view_items",,2.50,,,0,2,5,0
+Function,"ShoppingCart.ShoppingCart.view_items",,0.50,,,0,2,1,0
+Function,"ShoppingCart.main",,0.00,,,0,9,0,0
+Module File,"ShoppingCart.py",3,0.00,,,4,21,0,2
+Module File,"ShoppingCart.py",3,0.00,,,4,21,0,2
+Module File,"ShoppingCart.py",3,1.71,,,5,24,41,2
+Module File,"ShoppingCart.py",3,0.44,,,8,34,15,2
+Class,"Snake.Snake",4,0.00,0,5,4,40,0,2
+Class,"Snake.Snake",4,0.00,0,5,4,36,0,2
+Class,"Snake.Snake",5,0.86,0,5,7,43,37,2
+Class,"Snake.Snake",8,0.55,0,5,7,47,26,2
+Function,"Snake.Snake.__init__",,0.00,,,0,8,0,0
+Function,"Snake.Snake.__init__",,0.00,,,0,8,0,0
+Function,"Snake.Snake.__init__",,0.89,,,0,9,8,0
+Function,"Snake.Snake.__init__",,0.70,,,0,10,7,0
+Function,"Snake.Snake.eat_food",,0.00,,,0,4,0,0
+Function,"Snake.Snake.eat_food",,0.00,,,0,4,0,0
+Function,"Snake.Snake.eat_food",,1.25,,,0,4,5,0
+Function,"Snake.Snake.eat_food",,0.75,,,0,4,3,0
+Function,"Snake.Snake.move",,0.00,,,0,14,0,2
+Function,"Snake.Snake.move",,0.00,,,0,10,0,2
+Function,"Snake.Snake.move",,0.69,,,2,16,11,2
+Function,"Snake.Snake.move",,0.47,,,3,19,9,2
+Function,"Snake.Snake.random_food_position",,0.00,,,0,8,0,2
+Function,"Snake.Snake.random_food_position",,0.00,,,0,8,0,2
+Function,"Snake.Snake.random_food_position",,0.75,,,0,8,6,2
+Function,"Snake.Snake.random_food_position",,0.29,,,0,7,2,2
+Function,"Snake.Snake.reset",,0.00,,,0,5,0,0
+Function,"Snake.Snake.reset",,0.00,,,0,5,0,0
+Function,"Snake.Snake.reset",,0.80,,,0,5,4,0
+Function,"Snake.Snake.reset",,0.83,,,0,6,5,0
+Module File,"Snake.py",4,0.00,,,5,41,0,2
+Module File,"Snake.py",4,0.00,,,5,37,0,2
+Module File,"Snake.py",5,0.86,,,7,43,37,2
+Module File,"Snake.py",8,0.54,,,8,48,26,2
+Class,"SplitSentence.SplitSentence",3,0.00,0,4,3,17,0,2
+Class,"SplitSentence.SplitSentence",3,0.00,0,3,2,15,0,2
+Class,"SplitSentence.SplitSentence",3,0.88,0,3,3,16,14,2
+Class,"SplitSentence.SplitSentence",3,0.65,0,3,3,17,11,2
+Function,"SplitSentence.SplitSentence.__init__",,0.00,,,0,2,0,0
+Function,"SplitSentence.SplitSentence.count_words",,0.00,,,0,3,0,0
+Function,"SplitSentence.SplitSentence.count_words",,0.00,,,0,3,0,0
+Function,"SplitSentence.SplitSentence.count_words",,0.75,,,0,4,3,0
+Function,"SplitSentence.SplitSentence.count_words",,0.67,,,0,3,2,0
+Function,"SplitSentence.SplitSentence.process_text_file",,0.00,,,0,8,0,2
+Function,"SplitSentence.SplitSentence.process_text_file",,0.00,,,0,8,0,2
+Function,"SplitSentence.SplitSentence.process_text_file",,0.63,,,0,8,5,2
+Function,"SplitSentence.SplitSentence.process_text_file",,0.75,,,0,8,6,2
+Function,"SplitSentence.SplitSentence.split_sentences",,0.00,,,0,3,0,0
+Function,"SplitSentence.SplitSentence.split_sentences",,0.00,,,0,3,0,0
+Function,"SplitSentence.SplitSentence.split_sentences",,1.00,,,0,3,3,0
+Function,"SplitSentence.SplitSentence.split_sentences",,0.60,,,0,5,3,0
+Module File,"SplitSentence.py",3,0.00,,,4,18,0,2
+Module File,"SplitSentence.py",3,0.00,,,3,16,0,2
+Module File,"SplitSentence.py",3,0.82,,,4,17,14,2
+Module File,"SplitSentence.py",3,0.61,,,4,18,11,2
+Class,"Statistics3.Statistics3",1,0.00,0,7,6,24,0,0
+Class,"Statistics3.Statistics3",1,0.00,0,7,6,24,0,0
+Class,"Statistics3.Statistics3",2,0.42,1,7,16,48,20,1
+Class,"Statistics3.Statistics3",3,0.57,0,7,6,40,23,1
+Function,"Statistics3.Statistics3.correlation",,0.00,,,0,2,0,0
+Function,"Statistics3.Statistics3.correlation",,0.00,,,0,2,0,0
+Function,"Statistics3.Statistics3.correlation",,0.40,,,3,10,4,0
+Function,"Statistics3.Statistics3.correlation",,0.50,,,0,6,3,1
+Function,"Statistics3.Statistics3.correlation_matrix",,0.00,,,0,2,0,0
+Function,"Statistics3.Statistics3.correlation_matrix",,0.00,,,0,2,0,0
+Function,"Statistics3.Statistics3.correlation_matrix",,0.33,,,0,3,1,0
+Function,"Statistics3.Statistics3.correlation_matrix",,0.50,,,0,4,2,1
+Function,"Statistics3.Statistics3.mean",,0.00,,,0,2,0,0
+Function,"Statistics3.Statistics3.mean",,0.00,,,0,2,0,0
+Function,"Statistics3.Statistics3.mean",,0.50,,,1,4,2,0
+Function,"Statistics3.Statistics3.mean",,0.50,,,0,4,2,1
+Function,"Statistics3.Statistics3.median",,0.00,,,0,2,0,0
+Function,"Statistics3.Statistics3.median",,0.00,,,0,2,0,0
+Function,"Statistics3.Statistics3.median",,0.38,,,1,8,3,1
+Function,"Statistics3.Statistics3.median",,0.50,,,0,4,2,1
+Function,"Statistics3.Statistics3.mode",,0.00,,,0,2,0,0
+Function,"Statistics3.Statistics3.mode",,0.00,,,0,2,0,0
+Function,"Statistics3.Statistics3.mode",,0.40,,,1,5,2,0
+Function,"Statistics3.Statistics3.mode",,0.50,,,0,4,2,1
+Function,"Statistics3.Statistics3.standard_deviation",,0.00,,,0,2,0,0
+Function,"Statistics3.Statistics3.standard_deviation",,0.00,,,0,2,0,0
+Function,"Statistics3.Statistics3.standard_deviation",,0.60,,,2,5,3,0
+Function,"Statistics3.Statistics3.standard_deviation",,0.50,,,0,4,2,1
+Function,"Statistics3.Statistics3.z_score",,0.00,,,0,4,0,0
+Function,"Statistics3.Statistics3.z_score",,0.00,,,0,4,0,0
+Function,"Statistics3.Statistics3.z_score",,0.40,,,1,5,2,0
+Function,"Statistics3.Statistics3.z_score",,0.50,,,0,6,3,1
+Module File,"Statistics3.py",1,0.00,,,8,27,0,0
+Module File,"Statistics3.py",1,0.00,,,7,28,0,0
+Module File,"Statistics3.py",2,0.40,,,17,50,20,1
+Module File,"Statistics3.py",3,0.55,,,8,44,24,1
+Class,"Stock.Stock",1,0.60,0,1,0,5,3,0
+Function,"Stock.Stock.__init__",,0.75,,,0,4,3,0
+Class,"Stock.StockPortfolioTracker",4,1.25,0,8,7,52,65,3
+Function,"Stock.StockPortfolioTracker.__init__",,1.67,,,0,3,5,0
+Function,"Stock.StockPortfolioTracker.add_stock",,1.20,,,0,5,6,1
+Function,"Stock.StockPortfolioTracker.buy_stock",,1.25,,,0,8,10,1
+Function,"Stock.StockPortfolioTracker.calculate_portfolio_value",,1.60,,,0,5,8,1
+Function,"Stock.StockPortfolioTracker.get_portfolio_summary",,1.43,,,0,7,10,1
+Function,"Stock.StockPortfolioTracker.get_stock_value",,1.40,,,0,5,7,1
+Function,"Stock.StockPortfolioTracker.remove_stock",,1.20,,,0,5,6,1
+Function,"Stock.StockPortfolioTracker.sell_stock",,1.00,,,0,13,13,3
+Module File,"Stock.py",4,1.14,,,9,66,75,3
+Class,"StockPortfolioTracker.StockPortfolioTracker",3,0.00,0,8,7,37,0,2
+Class,"StockPortfolioTracker.StockPortfolioTracker",3,0.00,0,8,7,38,0,2
+Class,"StockPortfolioTracker.StockPortfolioTracker",3,0.33,0,8,8,40,13,2
+Function,"StockPortfolioTracker.StockPortfolioTracker.__init__",,0.00,,,0,3,0,0
+Function,"StockPortfolioTracker.StockPortfolioTracker.__init__",,0.00,,,0,3,0,0
+Function,"StockPortfolioTracker.StockPortfolioTracker.__init__",,1.00,,,0,3,3,0
+Function,"StockPortfolioTracker.StockPortfolioTracker.add_stock",,0.00,,,0,2,0,0
+Function,"StockPortfolioTracker.StockPortfolioTracker.add_stock",,0.00,,,0,2,0,0
+Function,"StockPortfolioTracker.StockPortfolioTracker.add_stock",,0.50,,,0,2,1,0
+Function,"StockPortfolioTracker.StockPortfolioTracker.buy_stock",,0.00,,,0,7,0,1
+Function,"StockPortfolioTracker.StockPortfolioTracker.buy_stock",,0.00,,,0,7,0,1
+Function,"StockPortfolioTracker.StockPortfolioTracker.buy_stock",,0.14,,,0,7,1,1
+Function,"StockPortfolioTracker.StockPortfolioTracker.calculate_portfolio_value",,0.00,,,0,5,0,1
+Function,"StockPortfolioTracker.StockPortfolioTracker.calculate_portfolio_value",,0.00,,,0,5,0,1
+Function,"StockPortfolioTracker.StockPortfolioTracker.calculate_portfolio_value",,0.20,,,0,5,1,1
+Function,"StockPortfolioTracker.StockPortfolioTracker.get_portfolio_summary",,0.00,,,0,4,0,0
+Function,"StockPortfolioTracker.StockPortfolioTracker.get_portfolio_summary",,0.00,,,0,4,0,0
+Function,"StockPortfolioTracker.StockPortfolioTracker.get_portfolio_summary",,0.14,,,0,7,1,1
+Function,"StockPortfolioTracker.StockPortfolioTracker.get_stock_value",,0.00,,,0,2,0,0
+Function,"StockPortfolioTracker.StockPortfolioTracker.get_stock_value",,0.00,,,0,2,0,0
+Function,"StockPortfolioTracker.StockPortfolioTracker.get_stock_value",,0.50,,,0,2,1,0
+Function,"StockPortfolioTracker.StockPortfolioTracker.remove_stock",,0.00,,,0,6,0,2
+Function,"StockPortfolioTracker.StockPortfolioTracker.remove_stock",,0.00,,,0,6,0,2
+Function,"StockPortfolioTracker.StockPortfolioTracker.remove_stock",,0.17,,,0,6,1,2
+Function,"StockPortfolioTracker.StockPortfolioTracker.sell_stock",,0.00,,,0,7,0,2
+Function,"StockPortfolioTracker.StockPortfolioTracker.sell_stock",,0.00,,,0,8,0,2
+Function,"StockPortfolioTracker.StockPortfolioTracker.sell_stock",,0.14,,,0,7,1,2
+Module File,"StockPortfolioTracker.py",3,0.00,,,7,37,0,2
+Module File,"StockPortfolioTracker.py",3,0.00,,,7,38,0,2
+Module File,"StockPortfolioTracker.py",3,0.33,,,8,40,13,2
+Class,"StudentDatabaseProcessor.StudentDatabaseProcessor",1,0.38,0,5,4,37,14,0
+Function,"StudentDatabaseProcessor.StudentDatabaseProcessor.__init__",,0.67,,,0,3,2,0
+Function,"StudentDatabaseProcessor.StudentDatabaseProcessor.create_student_table",,0.25,,,0,12,3,0
+Function,"StudentDatabaseProcessor.StudentDatabaseProcessor.delete_student_by_name",,0.43,,,0,7,3,0
+Function,"StudentDatabaseProcessor.StudentDatabaseProcessor.insert_student",,0.43,,,0,7,3,0
+Function,"StudentDatabaseProcessor.StudentDatabaseProcessor.search_student_by_name",,0.43,,,0,7,3,0
+Module File,"StudentDatabaseProcessor.py",2,0.38,,,9,47,18,1
+Class,"TextFileProcessor.TextFileProcessor",2,0.00,4,5,4,29,0,2
+Class,"TextFileProcessor.TextFileProcessor",2,1.30,3,5,5,33,43,3
+Class,"TextFileProcessor.TextFileProcessor",2,0.65,3,5,6,20,13,2
+Function,"TextFileProcessor.TextFileProcessor.__init__",,0.00,,,0,2,0,0
+Function,"TextFileProcessor.TextFileProcessor.__init__",,2.00,,,0,2,4,0
+Function,"TextFileProcessor.TextFileProcessor.__init__",,0.50,,,0,2,1,0
+Function,"TextFileProcessor.TextFileProcessor.process_file",,0.00,,,0,9,0,2
+Function,"TextFileProcessor.TextFileProcessor.process_file",,1.00,,,0,10,10,3
+Function,"TextFileProcessor.TextFileProcessor.process_file",,0.75,,,2,4,3,0
+Function,"TextFileProcessor.TextFileProcessor.read_file",,0.00,,,0,7,0,2
+Function,"TextFileProcessor.TextFileProcessor.read_file",,1.00,,,0,7,7,2
+Function,"TextFileProcessor.TextFileProcessor.read_file",,0.33,,,0,3,1,1
+Function,"TextFileProcessor.TextFileProcessor.read_file_as_json",,0.00,,,0,7,0,2
+Function,"TextFileProcessor.TextFileProcessor.read_file_as_json",,1.14,,,0,7,8,2
+Function,"TextFileProcessor.TextFileProcessor.read_file_as_json",,0.29,,,0,7,2,2
+Function,"TextFileProcessor.TextFileProcessor.write_file",,0.00,,,0,3,0,1
+Function,"TextFileProcessor.TextFileProcessor.write_file",,1.17,,,0,6,7,2
+Function,"TextFileProcessor.TextFileProcessor.write_file",,0.33,,,0,3,1,1
+Module File,"TextFileProcessor.py",2,0.00,,,5,30,0,2
+Module File,"TextFileProcessor.py",2,1.26,,,6,34,43,3
+Module File,"TextFileProcessor.py",2,0.62,,,7,21,13,2
+Class,"Thermostat.Thermostat",3,0.00,2,8,7,41,0,2
+Class,"Thermostat.Thermostat",3,0.00,2,8,7,40,0,2
+Class,"Thermostat.Thermostat",3,0.45,2,8,8,38,17,2
+Class,"Thermostat.Thermostat",4,0.26,1,8,7,39,10,2
+Function,"Thermostat.Thermostat.__init__",,0.00,,,0,4,0,0
+Function,"Thermostat.Thermostat.__init__",,0.00,,,0,4,0,0
+Function,"Thermostat.Thermostat.__init__",,1.50,,,0,4,6,0
+Function,"Thermostat.Thermostat.__init__",,0.25,,,0,4,1,0
+Function,"Thermostat.Thermostat.auto_check_conflict",,0.00,,,0,8,0,1
+Function,"Thermostat.Thermostat.auto_check_conflict",,0.00,,,0,8,0,1
+Function,"Thermostat.Thermostat.auto_check_conflict",,0.17,,,0,6,1,1
+Function,"Thermostat.Thermostat.auto_check_conflict",,0.20,,,0,5,1,1
+Function,"Thermostat.Thermostat.auto_set_mode",,0.00,,,0,5,0,1
+Function,"Thermostat.Thermostat.auto_set_mode",,0.00,,,0,5,0,1
+Function,"Thermostat.Thermostat.auto_set_mode",,0.20,,,0,5,1,1
+Function,"Thermostat.Thermostat.auto_set_mode",,0.20,,,0,5,1,1
+Function,"Thermostat.Thermostat.get_mode",,0.00,,,0,2,0,0
+Function,"Thermostat.Thermostat.get_mode",,0.00,,,0,2,0,0
+Function,"Thermostat.Thermostat.get_mode",,0.50,,,0,2,1,0
+Function,"Thermostat.Thermostat.get_mode",,0.50,,,0,2,1,0
+Function,"Thermostat.Thermostat.get_target_temperature",,0.00,,,0,2,0,0
+Function,"Thermostat.Thermostat.get_target_temperature",,0.00,,,0,2,0,0
+Function,"Thermostat.Thermostat.get_target_temperature",,0.50,,,0,2,1,0
+Function,"Thermostat.Thermostat.get_target_temperature",,0.50,,,0,2,1,0
+Function,"Thermostat.Thermostat.set_mode",,0.00,,,0,5,0,1
+Function,"Thermostat.Thermostat.set_mode",,0.00,,,0,5,0,1
+Function,"Thermostat.Thermostat.set_mode",,0.20,,,0,5,1,1
+Function,"Thermostat.Thermostat.set_mode",,0.20,,,0,5,1,1
+Function,"Thermostat.Thermostat.set_target_temperature",,0.00,,,0,2,0,0
+Function,"Thermostat.Thermostat.set_target_temperature",,0.00,,,0,2,0,0
+Function,"Thermostat.Thermostat.set_target_temperature",,0.50,,,0,2,1,0
+Function,"Thermostat.Thermostat.set_target_temperature",,0.50,,,0,2,1,0
+Function,"Thermostat.Thermostat.simulate_operation",,0.00,,,0,12,0,2
+Function,"Thermostat.Thermostat.simulate_operation",,0.00,,,0,11,0,2
+Function,"Thermostat.Thermostat.simulate_operation",,0.18,,,0,11,2,2
+Function,"Thermostat.Thermostat.simulate_operation",,0.23,,,0,13,3,2
+Module File,"Thermostat.py",3,0.00,,,8,42,0,2
+Module File,"Thermostat.py",3,0.00,,,8,41,0,2
+Module File,"Thermostat.py",3,0.45,,,8,38,17,2
+Module File,"Thermostat.py",4,0.34,,,10,47,16,2
+Class,"TimeUtils.TimeUtils",1,0.83,2,8,8,24,20,0
+Function,"TimeUtils.TimeUtils.__init__",,0.00,,,0,2,0,0
+Function,"TimeUtils.TimeUtils.add_seconds",,0.67,,,0,3,2,0
+Function,"TimeUtils.TimeUtils.datetime_to_string",,0.50,,,0,2,1,0
+Function,"TimeUtils.TimeUtils.get_current_date",,0.50,,,0,2,1,0
+Function,"TimeUtils.TimeUtils.get_current_time",,0.50,,,0,2,1,0
+Function,"TimeUtils.TimeUtils.get_format_time",,0.67,,,0,3,2,0
+Function,"TimeUtils.TimeUtils.get_minutes",,0.57,,,0,7,4,0
+Function,"TimeUtils.TimeUtils.string_to_datetime",,0.50,,,0,2,1,0
+Module File,"TimeUtils.py",1,0.77,,,9,26,20,0
+Class,"TriCalculator.TriCalculator",2,0.00,1,6,5,24,0,1
+Class,"TriCalculator.TriCalculator",2,0.00,1,6,5,24,0,1
+Class,"TriCalculator.TriCalculator",2,1.96,1,6,6,24,47,1
+Class,"TriCalculator.TriCalculator",2,1.28,2,6,6,29,37,1
+Function,"TriCalculator.TriCalculator.__init__",,0.00,,,0,2,0,0
+Function,"TriCalculator.TriCalculator.__init__",,0.00,,,0,2,0,0
+Function,"TriCalculator.TriCalculator.__init__",,0.00,,,0,2,0,0
+Function,"TriCalculator.TriCalculator.__init__",,0.50,,,0,2,1,0
+Function,"TriCalculator.TriCalculator.cos",,0.00,,,0,2,0,0
+Function,"TriCalculator.TriCalculator.cos",,0.00,,,0,2,0,0
+Function,"TriCalculator.TriCalculator.cos",,4.50,,,0,2,9,0
+Function,"TriCalculator.TriCalculator.cos",,2.50,,,0,2,5,0
+Function,"TriCalculator.TriCalculator.factorial",,0.00,,,0,5,0,1
+Function,"TriCalculator.TriCalculator.factorial",,0.00,,,0,5,0,1
+Function,"TriCalculator.TriCalculator.factorial",,1.40,,,0,5,7,1
+Function,"TriCalculator.TriCalculator.factorial",,1.20,,,0,5,6,1
+Function,"TriCalculator.TriCalculator.sin",,0.00,,,0,6,0,1
+Function,"TriCalculator.TriCalculator.sin",,0.00,,,0,6,0,1
+Function,"TriCalculator.TriCalculator.sin",,1.33,,,0,6,8,1
+Function,"TriCalculator.TriCalculator.sin",,1.29,,,0,7,9,1
+Function,"TriCalculator.TriCalculator.tan",,0.00,,,0,2,0,0
+Function,"TriCalculator.TriCalculator.tan",,0.00,,,0,2,0,0
+Function,"TriCalculator.TriCalculator.tan",,3.50,,,0,2,7,0
+Function,"TriCalculator.TriCalculator.tan",,1.20,,,0,5,6,1
+Function,"TriCalculator.TriCalculator.taylor",,0.00,,,0,6,0,1
+Function,"TriCalculator.TriCalculator.taylor",,0.00,,,0,6,0,1
+Function,"TriCalculator.TriCalculator.taylor",,1.33,,,0,6,8,1
+Function,"TriCalculator.TriCalculator.taylor",,1.43,,,0,7,10,1
+Module File,"TriCalculator.py",2,0.00,,,6,25,0,1
+Module File,"TriCalculator.py",2,0.00,,,6,25,0,1
+Module File,"TriCalculator.py",2,1.88,,,7,25,47,1
+Module File,"TriCalculator.py",2,1.27,,,8,30,38,1
+Class,"TwentyFourPointGame.TwentyFourPointGame",3,0.05,3,5,4,21,1,2
+Class,"TwentyFourPointGame.TwentyFourPointGame",2,0.00,2,5,4,16,0,1
+Class,"TwentyFourPointGame.TwentyFourPointGame",2,0.68,3,5,5,19,13,1
+Class,"TwentyFourPointGame.TwentyFourPointGame",2,0.50,4,5,4,20,10,1
+Function,"TwentyFourPointGame.TwentyFourPointGame.__init__",,0.00,,,0,2,0,0
+Function,"TwentyFourPointGame.TwentyFourPointGame.__init__",,0.00,,,0,2,0,0
+Function,"TwentyFourPointGame.TwentyFourPointGame.__init__",,0.50,,,0,2,1,0
+Function,"TwentyFourPointGame.TwentyFourPointGame.__init__",,0.50,,,0,2,1,0
+Function,"TwentyFourPointGame.TwentyFourPointGame._generate_cards",,0.00,,,0,2,0,0
+Function,"TwentyFourPointGame.TwentyFourPointGame._generate_cards",,0.00,,,0,2,0,0
+Function,"TwentyFourPointGame.TwentyFourPointGame._generate_cards",,0.50,,,0,2,1,0
+Function,"TwentyFourPointGame.TwentyFourPointGame._generate_cards",,0.50,,,0,2,1,0
+Function,"TwentyFourPointGame.TwentyFourPointGame.answer",,0.14,,,0,7,1,2
+Function,"TwentyFourPointGame.TwentyFourPointGame.answer",,0.00,,,0,2,0,0
+Function,"TwentyFourPointGame.TwentyFourPointGame.answer",,0.50,,,0,4,2,1
+Function,"TwentyFourPointGame.TwentyFourPointGame.answer",,0.50,,,0,4,2,1
+Function,"TwentyFourPointGame.TwentyFourPointGame.evaluate_expression",,0.00,,,0,6,0,1
+Function,"TwentyFourPointGame.TwentyFourPointGame.evaluate_expression",,0.00,,,0,6,0,1
+Function,"TwentyFourPointGame.TwentyFourPointGame.evaluate_expression",,0.67,,,0,6,4,1
+Function,"TwentyFourPointGame.TwentyFourPointGame.evaluate_expression",,0.57,,,0,7,4,1
+Function,"TwentyFourPointGame.TwentyFourPointGame.get_my_cards",,0.00,,,0,3,0,0
+Function,"TwentyFourPointGame.TwentyFourPointGame.get_my_cards",,0.00,,,0,3,0,0
+Function,"TwentyFourPointGame.TwentyFourPointGame.get_my_cards",,0.50,,,0,4,2,1
+Function,"TwentyFourPointGame.TwentyFourPointGame.get_my_cards",,0.50,,,0,4,2,1
+Module File,"TwentyFourPointGame.py",3,0.05,,,5,22,1,2
+Module File,"TwentyFourPointGame.py",2,0.00,,,5,17,0,1
+Module File,"TwentyFourPointGame.py",2,0.65,,,6,20,13,1
+Module File,"TwentyFourPointGame.py",2,0.42,,,6,26,11,1
+Class,"URLHandler.URLHandler",4,0.05,0,7,6,42,2,3
+Class,"URLHandler.URLHandler",4,0.06,0,7,6,33,2,3
+Class,"URLHandler.URLHandler",1,2.21,0,6,6,19,42,0
+Class,"URLHandler.URLHandler",1,0.54,0,6,5,13,7,0
+Function,"URLHandler.URLHandler.__init__",,0.00,,,0,2,0,0
+Function,"URLHandler.URLHandler.__init__",,0.00,,,0,2,0,0
+Function,"URLHandler.URLHandler.__init__",,1.50,,,0,2,3,0
+Function,"URLHandler.URLHandler.__init__",,0.50,,,0,2,1,0
+Function,"URLHandler.URLHandler._get_scheme",,0.00,,,0,2,0,0
+Function,"URLHandler.URLHandler._get_scheme",,0.00,,,0,2,0,0
+Function,"URLHandler.URLHandler.get_fragment",,0.17,,,0,6,1,1
+Function,"URLHandler.URLHandler.get_fragment",,0.17,,,0,6,1,1
+Function,"URLHandler.URLHandler.get_fragment",,2.00,,,0,3,6,0
+Function,"URLHandler.URLHandler.get_fragment",,0.50,,,0,2,1,0
+Function,"URLHandler.URLHandler.get_host",,0.00,,,0,7,0,1
+Function,"URLHandler.URLHandler.get_host",,0.00,,,0,2,0,0
+Function,"URLHandler.URLHandler.get_host",,2.00,,,0,3,6,0
+Function,"URLHandler.URLHandler.get_host",,0.50,,,0,2,1,0
+Function,"URLHandler.URLHandler.get_path",,0.00,,,0,10,0,2
+Function,"URLHandler.URLHandler.get_path",,0.00,,,0,6,0,1
+Function,"URLHandler.URLHandler.get_path",,2.00,,,0,3,6,0
+Function,"URLHandler.URLHandler.get_path",,0.50,,,0,2,1,0
+Function,"URLHandler.URLHandler.get_query_params",,0.08,,,0,12,1,3
+Function,"URLHandler.URLHandler.get_query_params",,0.08,,,0,12,1,3
+Function,"URLHandler.URLHandler.get_query_params",,1.75,,,0,4,7,0
+Function,"URLHandler.URLHandler.get_query_params",,1.00,,,0,2,2,0
+Function,"URLHandler.URLHandler.get_scheme",,0.00,,,0,2,0,0
+Function,"URLHandler.URLHandler.get_scheme",,0.00,,,0,2,0,0
+Function,"URLHandler.URLHandler.get_scheme",,2.00,,,0,3,6,0
+Function,"URLHandler.URLHandler.get_scheme",,0.50,,,0,2,1,0
+Module File,"URLHandler.py",4,0.05,,,6,42,2,3
+Module File,"URLHandler.py",4,0.06,,,6,33,2,3
+Module File,"URLHandler.py",1,2.10,,,7,20,42,0
+Module File,"URLHandler.py",2,0.45,,,7,22,10,1
+Class,"UrlPath.UrlPath",1,0.00,0,4,3,12,0,0
+Class,"UrlPath.UrlPath",2,0.00,0,4,3,14,0,1
+Class,"UrlPath.UrlPath",3,1.78,0,4,4,18,32,2
+Class,"UrlPath.UrlPath",3,0.54,0,6,5,26,14,1
+Function,"UrlPath.UrlPath.__init__",,0.00,,,0,3,0,0
+Function,"UrlPath.UrlPath.__init__",,0.00,,,0,5,0,1
+Function,"UrlPath.UrlPath.__init__",,1.67,,,0,3,5,0
+Function,"UrlPath.UrlPath.__init__",,0.33,,,0,3,1,0
+Function,"UrlPath.UrlPath.__str__",,0.50,,,0,2,1,0
+Function,"UrlPath.UrlPath.add",,0.00,,,0,2,0,0
+Function,"UrlPath.UrlPath.add",,0.00,,,0,2,0,0
+Function,"UrlPath.UrlPath.add",,2.50,,,0,2,5,0
+Function,"UrlPath.UrlPath.add",,0.67,,,0,3,2,1
+Function,"UrlPath.UrlPath.build",,0.57,,,0,7,4,1
+Function,"UrlPath.UrlPath.fix_path",,0.00,,,0,2,0,0
+Function,"UrlPath.UrlPath.fix_path",,0.00,,,0,2,0,0
+Function,"UrlPath.UrlPath.fix_path",,2.00,,,0,4,8,0
+Function,"UrlPath.UrlPath.fix_path",,0.50,,,0,6,3,1
+Function,"UrlPath.UrlPath.parse",,0.00,,,0,3,0,0
+Function,"UrlPath.UrlPath.parse",,0.00,,,0,3,0,0
+Function,"UrlPath.UrlPath.parse",,1.57,,,0,7,11,2
+Function,"UrlPath.UrlPath.parse",,1.00,,,0,3,3,0
+Module File,"UrlPath.py",1,0.00,,,5,13,0,0
+Module File,"UrlPath.py",2,0.17,,,7,24,4,1
+Module File,"UrlPath.py",3,1.68,,,5,19,32,2
+Module File,"UrlPath.py",3,0.52,,,6,27,14,1
+Class,"UserLoginDB.UserLoginDB",1,0.00,0,6,5,22,0,0
+Class,"UserLoginDB.UserLoginDB",1,0.00,0,6,5,22,0,0
+Class,"UserLoginDB.UserLoginDB",1,1.30,0,6,6,27,35,0
+Class,"UserLoginDB.UserLoginDB",2,0.52,0,6,5,27,14,1
+Function,"UserLoginDB.UserLoginDB.__del__",,0.00,,,0,2,0,0
+Function,"UserLoginDB.UserLoginDB.__init__",,0.00,,,0,3,0,0
+Function,"UserLoginDB.UserLoginDB.__init__",,0.00,,,0,3,0,0
+Function,"UserLoginDB.UserLoginDB.__init__",,1.33,,,0,3,4,0
+Function,"UserLoginDB.UserLoginDB.__init__",,0.50,,,0,8,4,0
+Function,"UserLoginDB.UserLoginDB.create_table",,0.00,,,0,6,0,0
+Function,"UserLoginDB.UserLoginDB.create_table",,0.00,,,0,6,0,0
+Function,"UserLoginDB.UserLoginDB.create_table",,0.14,,,0,7,1,0
+Function,"UserLoginDB.UserLoginDB.delete_user_by_username",,0.00,,,0,3,0,0
+Function,"UserLoginDB.UserLoginDB.delete_user_by_username",,0.00,,,0,3,0,0
+Function,"UserLoginDB.UserLoginDB.delete_user_by_username",,1.50,,,0,4,6,0
+Function,"UserLoginDB.UserLoginDB.delete_user_by_username",,0.67,,,0,3,2,0
+Function,"UserLoginDB.UserLoginDB.insert_user",,0.00,,,0,3,0,0
+Function,"UserLoginDB.UserLoginDB.insert_user",,0.00,,,0,3,0,0
+Function,"UserLoginDB.UserLoginDB.insert_user",,1.75,,,0,4,7,0
+Function,"UserLoginDB.UserLoginDB.insert_user",,0.67,,,0,3,2,0
+Function,"UserLoginDB.UserLoginDB.search_user_by_username",,0.00,,,0,3,0,0
+Function,"UserLoginDB.UserLoginDB.search_user_by_username",,0.00,,,0,3,0,0
+Function,"UserLoginDB.UserLoginDB.search_user_by_username",,1.50,,,0,4,6,0
+Function,"UserLoginDB.UserLoginDB.search_user_by_username",,0.67,,,0,3,2,0
+Function,"UserLoginDB.UserLoginDB.validate_user_login",,0.00,,,0,3,0,0
+Function,"UserLoginDB.UserLoginDB.validate_user_login",,0.00,,,0,3,0,0
+Function,"UserLoginDB.UserLoginDB.validate_user_login",,1.75,,,0,4,7,0
+Function,"UserLoginDB.UserLoginDB.validate_user_login",,0.43,,,0,7,3,1
+Module File,"UserLoginDB.py",1,0.00,,,6,23,0,0
+Module File,"UserLoginDB.py",1,0.00,,,6,23,0,0
+Module File,"UserLoginDB.py",2,1.06,,,8,36,38,1
+Module File,"UserLoginDB.py",2,0.50,,,6,28,14,1
+Class,"VectorUtil.VectorUtil",2,0.00,1,4,3,21,0,1
+Class,"VectorUtil.VectorUtil",1,0.00,1,4,3,13,0,0
+Class,"VectorUtil.VectorUtil",3,0.65,0,4,4,17,11,2
+Class,"VectorUtil.VectorUtil",2,1.15,0,4,12,26,30,1
+Function,"VectorUtil.VectorUtil.compute_idf_weight_dict",,0.00,,,0,6,0,1
+Function,"VectorUtil.VectorUtil.compute_idf_weight_dict",,0.00,,,0,2,0,0
+Function,"VectorUtil.VectorUtil.compute_idf_weight_dict",,1.00,,,0,2,2,0
+Function,"VectorUtil.VectorUtil.compute_idf_weight_dict",,1.50,,,3,6,9,1
+Function,"VectorUtil.VectorUtil.cosine_similarities",,0.00,,,0,6,0,1
+Function,"VectorUtil.VectorUtil.cosine_similarities",,0.00,,,0,2,0,0
+Function,"VectorUtil.VectorUtil.cosine_similarities",,1.00,,,0,2,2,0
+Function,"VectorUtil.VectorUtil.cosine_similarities",,1.40,,,2,5,7,0
+Function,"VectorUtil.VectorUtil.n_similarity",,0.00,,,0,2,0,0
+Function,"VectorUtil.VectorUtil.n_similarity",,0.00,,,0,2,0,0
+Function,"VectorUtil.VectorUtil.n_similarity",,0.33,,,0,6,2,2
+Function,"VectorUtil.VectorUtil.n_similarity",,1.40,,,2,5,7,0
+Function,"VectorUtil.VectorUtil.similarity",,0.00,,,0,2,0,0
+Function,"VectorUtil.VectorUtil.similarity",,0.00,,,0,2,0,0
+Function,"VectorUtil.VectorUtil.similarity",,1.00,,,0,2,2,0
+Function,"VectorUtil.VectorUtil.similarity",,1.40,,,2,5,7,0
+Module File,"VectorUtil.py",2,0.00,,,4,24,0,1
+Module File,"VectorUtil.py",1,0.00,,,4,15,0,0
+Module File,"VectorUtil.py",3,0.55,,,5,20,11,2
+Module File,"VectorUtil.py",2,1.03,,,13,29,30,1
+Class,"VendingMachine.VendingMachine",4,0.00,0,6,5,36,0,3
+Class,"VendingMachine.VendingMachine",3,0.00,0,6,5,30,0,1
+Class,"VendingMachine.VendingMachine",4,1.39,0,6,6,36,50,3
+Class,"VendingMachine.VendingMachine",4,1.32,0,7,6,41,54,3
+Function,"VendingMachine.VendingMachine.__init__",,0.00,,,0,3,0,0
+Function,"VendingMachine.VendingMachine.__init__",,0.00,,,0,3,0,0
+Function,"VendingMachine.VendingMachine.__init__",,1.67,,,0,3,5,0
+Function,"VendingMachine.VendingMachine.__init__",,1.67,,,0,3,5,0
+Function,"VendingMachine.VendingMachine.add_item",,0.00,,,0,2,0,0
+Function,"VendingMachine.VendingMachine.add_item",,0.00,,,0,2,0,0
+Function,"VendingMachine.VendingMachine.add_item",,4.00,,,0,2,8,0
+Function,"VendingMachine.VendingMachine.add_item",,1.40,,,0,5,7,1
+Function,"VendingMachine.VendingMachine.display_items",,0.00,,,0,8,0,2
+Function,"VendingMachine.VendingMachine.display_items",,0.00,,,0,7,0,1
+Function,"VendingMachine.VendingMachine.display_items",,0.75,,,0,8,6,2
+Function,"VendingMachine.VendingMachine.display_items",,1.25,,,0,8,10,2
+Function,"VendingMachine.VendingMachine.insert_coin",,0.00,,,0,3,0,0
+Function,"VendingMachine.VendingMachine.insert_coin",,0.00,,,0,3,0,0
+Function,"VendingMachine.VendingMachine.insert_coin",,2.00,,,0,3,6,0
+Function,"VendingMachine.VendingMachine.insert_coin",,2.00,,,0,3,6,0
+Function,"VendingMachine.VendingMachine.purchase_item",,0.00,,,0,13,0,3
+Function,"VendingMachine.VendingMachine.purchase_item",,0.00,,,0,8,0,1
+Function,"VendingMachine.VendingMachine.purchase_item",,1.00,,,0,13,13,3
+Function,"VendingMachine.VendingMachine.purchase_item",,1.00,,,0,13,13,3
+Function,"VendingMachine.VendingMachine.restock_item",,0.00,,,0,6,0,1
+Function,"VendingMachine.VendingMachine.restock_item",,0.00,,,0,6,0,1
+Function,"VendingMachine.VendingMachine.restock_item",,1.50,,,0,6,9,1
+Function,"VendingMachine.VendingMachine.restock_item",,1.33,,,0,6,8,1
+Function,"VendingMachine.VendingMachine.view_balance",,2.50,,,0,2,5,0
+Module File,"VendingMachine.py",4,0.00,,,5,36,0,3
+Module File,"VendingMachine.py",3,0.00,,,5,30,0,1
+Module File,"VendingMachine.py",4,1.39,,,6,36,50,3
+Module File,"VendingMachine.py",4,1.08,,,8,51,55,3
+Class,"Warehouse.Warehouse",2,0.00,1,7,6,37,0,1
+Class,"Warehouse.Warehouse",2,1.41,1,7,6,37,52,1
+Function,"Warehouse.Warehouse.__init__",,0.00,,,0,3,0,0
+Function,"Warehouse.Warehouse.__init__",,1.67,,,0,3,5,0
+Function,"Warehouse.Warehouse.add_product",,0.00,,,0,5,0,1
+Function,"Warehouse.Warehouse.add_product",,1.40,,,0,5,7,1
+Function,"Warehouse.Warehouse.change_order_status",,0.00,,,0,6,0,1
+Function,"Warehouse.Warehouse.change_order_status",,1.33,,,0,6,8,1
+Function,"Warehouse.Warehouse.create_order",,0.00,,,0,7,0,1
+Function,"Warehouse.Warehouse.create_order",,1.57,,,0,7,11,1
+Function,"Warehouse.Warehouse.get_product_quantity",,0.00,,,0,5,0,1
+Function,"Warehouse.Warehouse.get_product_quantity",,1.60,,,0,5,8,1
+Function,"Warehouse.Warehouse.track_order",,0.00,,,0,5,0,1
+Function,"Warehouse.Warehouse.track_order",,1.40,,,0,5,7,1
+Function,"Warehouse.Warehouse.update_product_quantity",,0.00,,,0,5,0,1
+Function,"Warehouse.Warehouse.update_product_quantity",,1.20,,,0,5,6,1
+Module File,"Warehouse.py",2,0.00,,,6,37,0,1
+Module File,"Warehouse.py",2,1.27,,,8,44,56,1
+Class,"WeatherSystem.WeatherSystem",4,0.00,0,5,4,30,0,2
+Class,"WeatherSystem.WeatherSystem",4,0.00,0,5,4,29,0,2
+Class,"WeatherSystem.WeatherSystem",4,0.76,0,5,7,29,22,2
+Class,"WeatherSystem.WeatherSystem",5,0.21,1,5,5,28,6,2
+Function,"WeatherSystem.WeatherSystem.__init__",,0.00,,,0,5,0,0
+Function,"WeatherSystem.WeatherSystem.__init__",,0.00,,,0,5,0,0
+Function,"WeatherSystem.WeatherSystem.__init__",,0.60,,,0,5,3,0
+Function,"WeatherSystem.WeatherSystem.__init__",,0.25,,,0,4,1,0
+Function,"WeatherSystem.WeatherSystem.celsius_to_fahrenheit",,0.00,,,0,5,0,1
+Function,"WeatherSystem.WeatherSystem.celsius_to_fahrenheit",,0.00,,,0,5,0,1
+Function,"WeatherSystem.WeatherSystem.celsius_to_fahrenheit",,0.60,,,0,5,3,1
+Function,"WeatherSystem.WeatherSystem.celsius_to_fahrenheit",,0.20,,,0,5,1,1
+Function,"WeatherSystem.WeatherSystem.fahrenheit_to_celsius",,0.00,,,0,5,0,1
+Function,"WeatherSystem.WeatherSystem.fahrenheit_to_celsius",,0.00,,,0,5,0,1
+Function,"WeatherSystem.WeatherSystem.fahrenheit_to_celsius",,0.60,,,0,5,3,1
+Function,"WeatherSystem.WeatherSystem.fahrenheit_to_celsius",,0.50,,,0,2,1,0
+Function,"WeatherSystem.WeatherSystem.query",,0.00,,,0,12,0,2
+Function,"WeatherSystem.WeatherSystem.query",,0.00,,,0,11,0,2
+Function,"WeatherSystem.WeatherSystem.query",,0.45,,,2,11,5,2
+Function,"WeatherSystem.WeatherSystem.query",,0.17,,,1,12,2,2
+Function,"WeatherSystem.WeatherSystem.set_city",,0.00,,,0,2,0,0
+Function,"WeatherSystem.WeatherSystem.set_city",,0.00,,,0,2,0,0
+Function,"WeatherSystem.WeatherSystem.set_city",,0.50,,,0,2,1,0
+Function,"WeatherSystem.WeatherSystem.set_city",,0.25,,,0,4,1,0
+Module File,"WeatherSystem.py",4,0.00,,,4,30,0,2
+Module File,"WeatherSystem.py",4,0.00,,,4,29,0,2
+Module File,"WeatherSystem.py",4,0.76,,,7,29,22,2
+Module File,"WeatherSystem.py",5,0.26,,,8,35,9,2
+Class,"Words2Numbers.Words2Numbers",6,0.00,3,3,4,42,0,3
+Class,"Words2Numbers.Words2Numbers",5,0.00,2,3,4,39,0,3
+Class,"Words2Numbers.Words2Numbers",9,0.81,3,3,9,62,50,5
+Class,"Words2Numbers.Words2Numbers",7,0.54,4,3,10,52,28,4
+Function,"Words2Numbers.Words2Numbers.__init__",,0.00,,,2,18,0,1
+Function,"Words2Numbers.Words2Numbers.__init__",,0.00,,,2,18,0,1
+Function,"Words2Numbers.Words2Numbers.__init__",,0.17,,,2,18,3,1
+Function,"Words2Numbers.Words2Numbers.__init__",,0.17,,,2,18,3,1
+Function,"Words2Numbers.Words2Numbers.is_valid_input",,0.00,,,0,6,0,1
+Function,"Words2Numbers.Words2Numbers.is_valid_input",,0.00,,,0,5,0,2
+Function,"Words2Numbers.Words2Numbers.is_valid_input",,1.13,,,1,16,18,5
+Function,"Words2Numbers.Words2Numbers.is_valid_input",,0.91,,,1,11,10,4
+Function,"Words2Numbers.Words2Numbers.text2int",,0.00,,,0,17,0,3
+Function,"Words2Numbers.Words2Numbers.text2int",,0.00,,,0,15,0,3
+Function,"Words2Numbers.Words2Numbers.text2int",,0.96,,,1,27,26,5
+Function,"Words2Numbers.Words2Numbers.text2int",,0.68,,,2,22,15,4
+Module File,"Words2Numbers.py",6,0.00,,,4,42,0,3
+Module File,"Words2Numbers.py",5,0.00,,,4,39,0,3
+Module File,"Words2Numbers.py",9,0.81,,,9,62,50,5
+Module File,"Words2Numbers.py",7,0.56,,,12,55,31,4
+Class,"XMLProcessor.XMLProcessor",2,0.06,0,5,4,31,2,1
+Class,"XMLProcessor.XMLProcessor",3,0.34,1,5,4,32,11,2
+Function,"XMLProcessor.XMLProcessor.__init__",,0.00,,,0,3,0,0
+Function,"XMLProcessor.XMLProcessor.__init__",,0.40,,,0,10,4,1
+Function,"XMLProcessor.XMLProcessor.find_element",,0.00,,,0,6,0,1
+Function,"XMLProcessor.XMLProcessor.find_element",,0.40,,,0,5,2,1
+Function,"XMLProcessor.XMLProcessor.process_xml_data",,0.29,,,0,7,2,1
+Function,"XMLProcessor.XMLProcessor.process_xml_data",,0.38,,,0,8,3,2
+Function,"XMLProcessor.XMLProcessor.read_xml",,0.00,,,0,7,0,1
+Function,"XMLProcessor.XMLProcessor.read_xml",,0.50,,,0,2,1,0
+Function,"XMLProcessor.XMLProcessor.write_xml",,0.00,,,0,7,0,1
+Function,"XMLProcessor.XMLProcessor.write_xml",,0.17,,,0,6,1,1
+Module File,"XMLProcessor.py",2,0.06,,,5,32,2,1
+Module File,"XMLProcessor.py",3,0.35,,,9,43,15,2
