@@ -1,0 +1,75 @@
+a. Understand the Overall Purpose:
+    - The PushBoxGame implements a functionality of a sokoban game, where the player needs to move boxes to designated targets in order to win.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the push box game with the map and various attributes (__init__)
+        - Initialize the game (init_game)
+        - Check if the game is won (check_win)
+        - Move the player based on the specified direction (move)
+c. Detail each method:
+    - __init__(self, map):
+        - This method will act as the constructor.
+        - This method will initialize the push box game with the map and various attributes.
+        - This method will get "map" as list[str] (list of strings) which is the map of the push box game.
+        - Example Usage: 
+        - >>> Each character on the map represents a different element, including the following:
+            - '#' represents a wall that neither the player nor the box can pass through;
+            - 'O' represents the initial position of the player;
+            - 'G' represents the target position;
+            - 'X' represents the initial position of the box.
+        - >>> map = ["#####", "#O  #", "# X #", "#  G#", "#####"]   
+        - >>> game = PushBoxGame(map)
+        - self.map = map
+        - self.player_row = 0
+        - self.player_col = 0
+        - self.targets = []
+        - self.boxes = []
+        - self.target_count = 0
+        - self.is_game_over = False
+        - self.init_game()
+    - init_game(self):
+        - This method will initialize the game by setting the positions of the player, targets, and boxes based on the map.
+        - Example Usage: 
+        - >>> game = PushBoxGame(["#####", "#O  #", "# X #", "#  G#", "#####"]) 
+        - >>> game.targets
+        - >>> The expected input value for example usage is :  [(3, 3)]
+        - >>> game.boxes
+        - >>> The expected input value for example usage is : [(2, 2)]
+        - >>> game.player_row
+        - >>> The expected input value for example usage is : 1
+        - >>> game.player_col
+        - >>> The expected input value for example usage is : 1
+    - check_win(self):    
+        - This method will check if the game is won. The game is won when all the boxes are placed on target positions and update the value of self.is_game_over.
+        - This method will return True if all the boxes are placed on target positions, or False if otherwise and update self.is_game_over with the return value.
+        - Example Usage: 
+        ->>> game = PushBoxGame(["#####", "#O  #", "# X #", "#  G#", "#####"]) 
+        - >>> game.check_win()
+    - move(self, direction):
+        - This method will move the player based on the specified direction and check if the game is won.
+        - This method will get  "direction" as str which is the direction of the player's movement. The values can be 'w', 's', 'a', or 'd' representing up, down, left, or right respectively.
+        - This method will return True if the game is won, False if otherwise.
+        - Example Usage:
+        - >>> game = PushBoxGame(["#####", "#O  #", "# X #", "#  G#", "#####"])       
+        - >>> game.print_map()
+        - >>> The expected output value for example usage is :  # # # # # 
+                                                                # O     #
+                                                                #   X   #
+                                                                #     G #
+                                                                # # # # #
+        - game.move('d')  
+        - >>> The expected return value for example usage is : False  
+        - game.move('s')  
+        - >>> The expected return value for example usage is : False   
+        - game.move('a')  
+        - >>> The expected return value for example usage is : False   
+        - game.move('s')  
+        - >>> The expected return value for example usage is : False   
+        - game.move('d')  
+        - >>> The expected return value for example usage is : True
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.    

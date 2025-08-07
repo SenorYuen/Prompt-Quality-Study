@@ -1,0 +1,34 @@
+a. Understand the Overall Purpose:
+    - The Manacher is a class that implements a manacher algorithm to find the Longest palindromic substring in a given string.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initializes the Manacher class with the given input_string. (__init__)
+        - Recursively calculates the length of the palindromic substring (palindromic_length)
+        - Finds the longest palindromic substring (palindromic_string)
+c. Detail each method:
+    -  __init__(self):
+        - This method will act as the constructor.
+        - This method will initialize the Manacher class with the given input_string.
+        - This method will get "input_string" as str which is The input_string to be searched.
+        - self.input_string = input_string
+    - palindromic_length(self, center, diff, string):
+        - This method will recursively calculate the length of the palindromic substring based on a given center, difference value, and input string.
+        - This method will get "center" as int which is the center of the palindromic substring, "diff" as int which is the difference between the center and the current position, "string" as str which is the string to be searched.
+        - The method will return the length of the palindromic substring as int. 
+        - Example Usage:    
+        - >>> manacher = Manacher('ababa')
+        - >>> manacher.palindromic_length(2, 1, 'a|b|a|b|a')
+        - The expected return value for example usage is : 2
+    - palindromic_string(self):
+        - This method will find the longest palindromic substring in the given string.
+        - The method will return the longest palindromic substring as str.
+        - Example Usage:    
+        - >>> manacher = Manacher('ababaxse')
+        - >>> manacher.palindromic_string()
+        - The expected return value for example usage is : 'ababa'
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.

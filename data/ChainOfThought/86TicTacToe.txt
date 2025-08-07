@@ -1,0 +1,45 @@
+a. Understand the Overall Purpose:
+    - The TicTacToe class represents a game of Tic-Tac-Toe and its functions include making a move on the board, checking for a winner, and determining if the board is full.
+b. To ensure the function of this class, it will need all of these methods:
+    - Initialize a 3x3 game board with all empty spaces and current symbol player (__init__)
+    - Place the current player's mark at the specified position (make_move)
+    - Check if there is a winner on the board (check_winner)
+    - Check if the game board is completely filled (is_board_full)
+c. Detail each method:
+    - __init__(self, N=3):
+        - This method will act as the constructor.
+        - This method will initialize a 3x3 game board with all empty spaces and current player symbol, default is 'X'.
+        - self.board = [[' ' for _ in range(N)] for _ in range(3)]
+        - self.current_player = 'X'
+    - make_move(self, row, col):
+        - This method will place the current player's mark at the specified position on the board and switch the mark.
+        - This method will get "row" as int which is the row index of the position, "col" as int which is the column index of the position
+        - This method will return True or False indicating whether the move was successful or not.
+        - Example Usage:   
+        - >>> ttt.current_player
+        - >>> The expected output value for example usage is : 'X'
+        - >>> ttt.make_move(1, 1)
+        - >>> The expected return value for example usage is : 'True'
+        - >>> ttt.current_player
+        - >>> The expected output value for example usage is : '0'
+    - check_winner(self):
+        - This method will check if there is a winner on the board in rows, columns and diagonals (three directions).
+        - This method will return the mark of the winner ('X' or 'O') as str, or None if there is no winner yet.
+        - Example Usage:   
+        - >>> moves = [(1, 0), (2, 0), (1, 1), (2, 1), (1, 2)]
+        - >>> for move in moves:
+        ...     ttt.make_move(move[0], move[1])
+        - >>> ttt.check_winner()
+        - >>> The expected output value for example usage is : 'X' 
+    - is_board_full(self):
+        - This method will check if the game board is completely filled.
+        - This method will return True or False indicating whether the game board is full or not. 
+        - Example Usage:   
+        - >>> ttt.is_board_full()
+        - >>> The expected output value for example usage is : False
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.           

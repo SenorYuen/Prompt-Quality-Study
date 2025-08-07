@@ -1,0 +1,41 @@
+a. Understand the Overall Purpose:
+    - The ExcelProcessor is a class for processing excel files, including reading and writing excel data, as well as processing specific operations and saving as a new excel file.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Reading data from Excel files (read_excel)
+        - Write data to the specified Excel filer (write_excel)
+        - Change the specified column in the Excel file to uppercase (process_excel_data)
+c. Detail each method:
+    - __init__(self):
+        - pass
+    - read_excel(self, file_name):
+        - This method will read data from Excel files.
+        - This method will get "file_name" as str which is the Excel file name to read.
+        - This method will return list of data which is Data in Excel.
+    - write_excel(self, data, file_name):
+        - This method will Write data to the specified Excel file.
+        - This method will get "data" as list which is the Data to be written, "file_name" as str which is the excel file name to write to.
+        - This method will return 0 or 1, 1 represents successful writing, 0 represents failed writing.
+        - Example Usage:
+        - >>> processor = ExcelProcessor()
+        - >>> new_data = [
+             ('Name', 'Age', 'Country'),
+             ('John', 25, 'USA'),
+            ('Alice', 30, 'Canada'),
+            ('Bob', 35, 'Australia'),
+            ('Julia', 28, 'Germany')
+        ]
+        - >>> data = processor.write_excel(new_data, 'test_data.xlsx')  
+    - process_excel_data(self, N, save_file_name):
+        - This method will Change the specified column in the Excel file to uppercase.
+        - This method will get "N" as int which is the serial number of the column that want to change, "save_file_name" as str which is the source file name.
+        - This method will return (int, str), The former is the return value of write_excel, while the latter is the saved file name of the processed data. 
+        - Example Usage:
+        - >>> processor = ExcelProcessor() 
+        - >>> success, output_file = processor.process_excel_data(1, 'test_data.xlsx')
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import openpyxl
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.            

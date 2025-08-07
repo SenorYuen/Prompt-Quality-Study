@@ -1,0 +1,65 @@
+a. Understand the Overall Purpose:
+    - The ClassRegistrationSystem is a class as a class registration system, allowing to register students, register them for classes, retrieve students by major, get a list of all majors, and determine the most popular class within a specific major.
+b. Identify the Required Methods:  
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the registration system (__init__)
+        - Register a student to the system ( register_student)
+        - Register a class to the student. (register_class)
+        - Get all students with the major (get_students_by_major)
+        - Get all majors in the system (get_all_major)
+        - Get the class with the highest enrollment in the major(get_most_popular_class_in_major)
+c. Detail each method:
+    -  __init__(self):
+        - This method will act as the constructor. 
+        - Initialize the registration system with the attribute students and students_registration_class. students is a list of student dictionaries, each student dictionary has the key of name and major. students_registration_class is a dictionaries, key is the student name, value is a list of class names
+        -  self.students = []
+        - self.students_registration_classes = {}
+    - register_student(self, student):
+        - This method will register a student to the system, add the student to the students list.
+        - This method will get "student" as list.
+        - This method will return 0 if the student is already registered; else return 1. 
+    - register_class(self, student_name, class_name):
+        - This method will register a class to the student.
+        - This method will get "student_name" as str, "class_name" as str. 
+        - This method will return a list of class names that the student has registered.     
+        - Example Usage:
+        - >>> registration_system = ClassRegistrationSystem()
+        - >>> registration_system.register_class(student_name="John", class_name="CS101")
+        - >>> registration_system.register_class(student_name="John", class_name="CS102")  
+        - >>> The expected return value for example usage is : ["CS101", "CS102"] 
+    - get_students_by_major(self, major):
+        - This method will get all students in the major.
+        - This method will get "major" as str. 
+        - This method will return a list of student name in the major.     
+        - Example Usage:
+        - >>> registration_system = ClassRegistrationSystem()
+        - >>> student1 = {"name": "John", "major": "Computer Science"}
+        - >>> registration_system.register_student(student1)
+        - >>> registration_system.get_students_by_major("Computer Science")  
+        - >>> The expected return value for example usage is :  ["John"]  
+    - get_all_major(self):
+        - This method will get all majors in the system.
+        - This method will return a list of majors.     
+        - Example Usage:
+        - registration_system = ClassRegistrationSystem()
+        - >>> registration_system.students = [{"name": "John", "major": "Computer Science"}],
+        - >>> registration_system.get_all_major(student1)
+        - >>> The expected return value for example usage is : ["Computer Science"]
+    - get_most_popular_class_in_major(self, major):
+        - This method will get the class with the highest enrollment in the major.
+        - This method will return a string of the most popular class in this major     
+        - Example Usage:
+        - >>> registration_system = ClassRegistrationSystem()
+        - >>> registration_system.students = [{"name": "John", "major": "Computer Science"},
+                                             {"name": "Bob", "major": "Computer Science"},
+                                             {"name": "Alice", "major": "Computer Science"}]
+        - >>> registration_system.students_registration_classes = {"John": ["Algorithms", "Data Structures"],
+                                            "Bob": ["Operating Systems", "Data Structures", "Algorithms"]}
+        - >>> registration_system.get_most_popular_class_in_major("Computer Science") 
+        - >>> The expected return value for example usage is : "Data Structures"  
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.

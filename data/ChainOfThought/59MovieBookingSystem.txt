@@ -1,0 +1,56 @@
+a. Understand the Overall Purpose:
+    - The MovieBookingSystem is a class that acts as a movie booking system, which allows adding movies, booking tickets and checking the available movies within a given time range. 
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize movies with information (__init__)
+        - Add a new movie (add_movie)
+        - Book tickets for a movie (book_ticket)
+        - Get a list of available movies (available_movies)
+c. Detail each method:
+    -  __init__(self):
+        - This method will act as the constructor.
+        - This method will Initialize movies contains the information about movies
+        - self.movies = []
+        - Example Usage:
+        -  >>> system.movies
+            [{'name': 'Batman', 'price': 49.9, 'start_time': datetime.datetime(1900, 1, 1, 17, 5), 'end_time': datetime.datetime(1900, 1, 1, 19, 25),
+            'seats': array([[0., 0., 0.],
+                [0., 0., 0.],
+                [0., 0., 0.]])}]
+    - add_movie(self, name, price, start_time, end_time, n):
+        - This method will add a new movie into self.movies.
+        - This method will get "name" as str which is the movie name, "price" as float which is the price for one ticket, "start_time" as str which is the movie start time, "end_time" as str which is the movie end time, "n" as int which is the size of seats(n*n).
+        - Example Usage:    
+        - >>>system.add_movie('Batman', 49.9, '17:05', '19:25', 3)
+        - >>> system.movies
+        - >>> The expected output of example usage is : [{'name': 'Batman', 'price': 49.9, 'start_time': datetime.datetime(1900, 1, 1, 17, 5), 'end_time': datetime.datetime(1900, 1, 1, 19, 25),
+            'seats': array([[0., 0., 0.],
+            [0., 0., 0.],
+            [0., 0., 0.]])}]
+    - book_ticket(self, name, seats_to_book):
+        - This method will book tickets for a movie. Change the seats value in self.movies if booked successfully.
+        - This method will get "name" as str which is the movie name, "seats_to_book" as list of tuples which represents seats to book [(row1, col1), (row2, col2), ...]
+        - This method will return the booking status message. "Movie not found." for no such movie, "Booking success." for successfully booking, or "Booking failed." otherwise.
+        - Example Usage:    
+        - >>> system.add_movie('Batman', 49.9, '17:05', '19:25', 3)
+        - >>> system.book_ticket('Batman', [(0, 0), (0, 1)])
+        - >>> The expected return value of example usage is :'Booking success.'
+        - >>> system.book_ticket('Batman', [(0, 0)]) 
+        - >>> The expected return value of example usage is : 'Booking failed.
+        - >>> system.book_ticket('batman', [(0, 0)])
+        - >>> The expected return value of example usage is :  'Movie not found.'
+    - available_movies(self, start_time, end_time):
+        - This method will get a list of available movies within the specified time range.
+        - This method will get "start_time" as str which is the movie start time, "end_time" as str which is the movie end time.
+        - This method will return the names of available movies as list of str
+        - Example Usage:    
+        - >>> system.add_movie('Batman', 49.9, '17:05', '19:25', 3)
+        - >>> system.available_movies('12:00', '22:00')
+        - >>> The expected return value of example usage is :  ['Batman']
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - from datetime import datetime
+    - import numpy as np
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.

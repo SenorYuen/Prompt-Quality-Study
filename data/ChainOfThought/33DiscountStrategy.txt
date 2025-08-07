@@ -1,0 +1,77 @@
+a. Understand the Overall Purpose:
+    - The DiscountStrategy is a class that asupports using different discount strategies based on shopping credit or the shopping cart in the supermarket.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the DiscountStrategy (__init__)
+        - Calculate the total cost (total)
+        - Calculate the final amount to be paid (due)
+        - Calculate the discount based on the fidelity points (FidelityPromo)
+        - Calculate the discount based on bulk item quantity (BulkItemPromo)
+        - Calculate the discount based on the number of different products (LargeOrderPromo)
+c. Detail each method:
+    - __init__(self, customer, cart, promotion=None):
+        - This method will act as the constructor. 
+        - This method will iInitialize the DiscountStrategy with customer information, a cart of items, and an optional promotion.
+        - This mMethod will accept "customer" as dict which is the customer information, "cart" as list of dicts which is a cart of items with details, "promotion" as a function which is optional promotion applied to the order.
+        - Example Usages:
+        - >>> customer = {'name': 'John Doe', 'fidelity': 1200}
+        - >>> cart = [{'product': 'product', 'quantity': 14, 'price': 23.5}]
+        - >>> DiscountStrategy(customer, cart, DiscountStrategy.FidelityPromo)
+        - self.customer = customer
+        - self.cart = cart
+        - self.promotion = promotion
+        - self.total()
+    - total(self):
+        - This method will  Calculate the total cost of items in the cart.
+        - This method will return the total cost of items as float.
+        - Example Usages:
+        - >>> customer = {'name': 'John Doe', 'fidelity': 1200}
+        - >>> cart = [{'product': 'product', 'quantity': 14, 'price': 23.5}]
+        - >>> ds = DiscountStrategy(customer, cart)
+        - >>> ds.total()
+        - >>> The expected return value for example usage is :  329.0
+    - due(self):
+        - This method will Calculate the final amount to be paid after applying the discount.
+        - This method will return the final amount to be paid as float.
+        - Example Usages:
+        - >>> customer = {'name': 'John Doe', 'fidelity': 1200}
+        - >>> cart = [{'product': 'product', 'quantity': 14, 'price': 23.5}]
+        - >>> ds = DiscountStrategy(customer, cart, DiscountStrategy.FidelityPromo)
+        - >>> ds.due()
+        - >>> The expected return value for example usage is : 312.55    
+    - @staticmethod FidelityPromo(order):
+        - This method will Calculate the discount based on the fidelity points of the customer.Customers with over 1000 points can enjoy a 5% discount on the entire order.
+        - This method will get "order" as object which is the order to apply the discount to.
+        - This method will return the discount amount as float.
+        - Example Usages:
+        - >>> customer = {'name': 'John Doe', 'fidelity': 1200}
+        - >>> cart = [{'product': 'product', 'quantity': 14, 'price': 23.5}]
+        - >>> order = DiscountStrategy(customer, cart, DiscountStrategy.FidelityPromo)
+        - >>> DiscountStrategy.FidelityPromo(order)
+        - >>> The expected return value for example usage is : 16.45
+    - @staticmethod BulkItemPromo(order):
+        - This method will Calculate the discount based on bulk item quantity in the order.In the same order, if the quantity of a single item reaches 20 or more, each item will enjoy a 10% discount.
+        - This method will get "order" as object which is the order to apply the discount to.
+        - This method will return the discount amount as float.
+        - Example Usages:
+        - >>> customer = {'name': 'John Doe', 'fidelity': 1200}
+        - >>> cart = [{'product': 'product', 'quantity': 20, 'price': 23.5}]
+        - >>> order = DiscountStrategy(customer, cart, DiscountStrategy.BulkItemPromo)
+        - >>> DiscountStrategy.BulkItemPromo(order)
+        - >>> The expected return value for example usage is : 47.0 
+    - @staticmethod LargeOrderPromo(order):
+        - This method will Calculate the discount based on the number of different products in the order. If the quantity of different products in the order reaches 10 or more, the entire order will enjoy a 7% discount.
+        - This method will get "order" as object which is the order to apply the discount to.
+        - This method will return the discount amount as float.
+        - Example Usages:
+        - >>> customer = {'name': 'John Doe', 'fidelity': 1200}
+        - >>> cart = [{'product': 'product', 'quantity': 14, 'price': 23.5}]
+        - >>> order = DiscountStrategy(customer, cart, DiscountStrategy.LargeOrderPromo)
+        - >>> DiscountStrategy.LargeOrderPromo(order)
+        - >>> The expected return value for example usage is : 0.0  
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 

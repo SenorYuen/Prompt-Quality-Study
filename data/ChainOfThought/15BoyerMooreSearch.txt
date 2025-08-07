@@ -1,0 +1,45 @@
+a. Understand the Overall Purpose:
+    - The BoyerMooreSearch is a class that implements the Boyer-Moore algorithm for string searching, which is used to find occurrences of a pattern within a given text.
+b. Identify the Required Methods:    
+    - To ensure the function of this class, it will need all of these methods:
+        - Initializes the BoyerMooreSearch class with the given text and pattern (__init__)
+        - Finds the rightmost occurrence of a character in the pattern (match_in_pattern)
+        - Determines the position of the first mismatch (mismatch_in_text)
+        - Finds all occurrences of the pattern in the text (bad_character_heuristic) 
+c. Detail each method:
+    - __init__(self, db_name):
+        - This method will act as the constructor. 
+        - This method will initialize the BoyerMooreSearch class with the given text and pattern.
+        - This method will accept "text" as str which is the text to be searched, "pattern" as str which is the pattern to be searched for.
+        - self.text, self.pattern = text, pattern
+        - self.textLen, self.patLen = len(text), len(pattern)
+    - match_in_pattern(self, char):
+        - This method will find the rightmost occurrence of a character in the pattern.
+        - This method will accept "char" as str which is the character to be searched for.
+        - This method will return the index of the rightmost occurrence of the character in the pattern as int.
+        - Example Usage:
+        - >>>boyerMooreSearch = BoyerMooreSearch("ABAABA", "AB")
+        - >>> boyerMooreSearch.match_in_pattern("A")
+        - >>> The expected return value for example usage is : 0  
+    - match_in_pattern(self, char):
+        - This method will determine the position of the first mismatch between the pattern and the text.
+        - This method will accept "currentPos" as int which is the current position in the text.
+        - This method will return the position of the first mismatch between the pattern and the text as int,otherwise -1.
+        - Example Usage:
+        - >>> boyerMooreSearch = BoyerMooreSearch("ABAABA", "ABC")
+        - >>> boyerMooreSearch.mismatch_in_text(0)
+        - >>> The expected return value for example usage is : 2   
+    - bad_character_heuristic(self):
+        - This method will find all occurrences of the pattern in the text.
+        - This method will accept "currentPos" as int which is the current position in the text.
+        - This method will return A list of all positions of the pattern in the text as list.
+        - Example Usage:
+        - >>> boyerMooreSearch = BoyerMooreSearch("ABAABA", "AB")
+        - >>> boyerMooreSearch.bad_character_heuristic()
+        - >>> The expected return value for example usage is : [0, 3]       
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 

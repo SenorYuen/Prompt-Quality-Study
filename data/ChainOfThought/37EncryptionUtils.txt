@@ -1,0 +1,44 @@
+a. Understand the Overall Purpose:
+    - The EncryptionUtils is a class that provides methods for encryption, including the Caesar cipher, Vigenere cipher, and Rail Fence cipher.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initializes the class with a key (__init__)
+        - Encrypts the plaintext using the Caesar cipher (caesar_cipher)
+        - Encrypts the plaintext using the Vigenere cipher (vigenere_cipher)
+        - Encrypts the plaintext using the Rail Fence cipher (rail_fence_cipher)
+c. Detail each method:
+    - __init__(self, key):
+        - This method will act as the constructor. 
+        - This method will initialize the class with a key.
+        - This Method will get "key" as str which is the key to use for encryption.
+        - self.key = key
+    - caesar_cipher(self, plaintext, shift):
+        - This method will encrypt the plaintext using the Caesar cipher.
+        - This method will get "plaintext" as str which is the plaintext to encrypt, "shift" as int which is the number of characters to shift each character in the plaintext.
+        - This method will return the ciphertext as str.
+        - Example Usage:
+        - >>> e = EncryptionUtils("key")
+        - >>> e.caesar_cipher("abc", 1)
+        - >>> The expected return value for example usage is : 'bcd'
+    - vigenere_cipher(self, plaintext):
+        - This method will encrypt the plaintext using the Vigenere cipher.
+        - This method will get "plaintext" as str which is the plaintext to encrypt.
+        - This method will return The ciphertext as str.
+        - Example Usage:
+        - >>> e = EncryptionUtils("key")
+        - >>> e.vigenere_cipher("abc")
+        - >>> The expected return value for example usage is : 'kfa'
+    - rail_fence_cipher(self,plain_text, rails):
+        - This method will encrypt the plaintext using the Rail Fence cipher.
+        - This method will get "plaintext" as str which is the plaintext to encrypt.
+        - This method will return The ciphertext as str.
+        - Example Usage:
+        - >>>e = EncryptionUtils("key")
+        - >>> e.rail_fence_cipher("abc", 2)
+        - >>> The expected return value for example usage is : 'acb'  
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.

@@ -1,0 +1,48 @@
+a. Understand the Overall Purpose:
+    - The BinaryDataProcessor is a class used to process binary data, which includes functions such as clearing non 0 or 1 characters, counting binary string information, and converting to corresponding strings based on different encoding methods.
+
+b. Identify the Required Methods:
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the class with a binary string (__init__)
+        - clean_non_binary_chars (clean_non_binary_chars)
+        - Calculate the binary string information (calculate_binary_info)
+        - Convert the binary string to ascii string ( convert_to_ascii)
+        - Convert the binary string to utf-8 string (convert_to_utf8)       
+c. Detail each method:
+    - __init__(self, binary_string):
+        - This method will act as the constructor. 
+        - This method will initialize the class with a binary string and clean it by removing all non 0 or 1 characters.
+        - This method will accept "binary_string" as str.
+        - self.binary_string = binary_string
+        - self.clean_non_binary_chars()
+    - clean_non_binary_chars(self):
+        - This method will  clean the binary string by removing all non 0 or 1 characters.
+        - Example Usage:
+        - >>>  bdp = BinaryDataProcessor("01101000daf3e4r01100101011011000110110001101111")
+        - >>> bdp.clean_non_binary_chars()
+        - >>> bdp.binary_string
+        - >>> The expected output for example usage is : '0110100001100101011011000110110001101111'
+    - calculate_binary_info(self):
+        - This method will calculate the binary string information, including the percentage of 0 and 1, and the total length of the binary string.
+        - Example Usage:
+        - >>> bdp = BinaryDataProcessor("0110100001100101011011000110110001101111")
+        - >>> bdp.calculate_binary_info()
+        - >>> The expected output value for example usage is :  {'Zeroes': 0.475, 'Ones': 0.525, 'Bit length': 40}  
+    - convert_to_ascii(self):
+        - This method will Convert the binary string to ascii string.
+        - Example Usage:
+        - >>> bdp = BinaryDataProcessor("0110100001100101011011000110110001101111")
+        - >>> bdp.convert_to_ascii()
+        - >>> The expected output value for example usage is: 'hello'
+    - convert_to_utf8(self):
+        - This method will Convert the binary string to utf-8 string.
+        - Example Usage:
+        - >>> bdp = BinaryDataProcessor("0110100001100101011011000110110001101111")
+        - >>> bdp.convert_to_utf8()
+        - >>> The expected output value for example usage is: 'hello'
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.

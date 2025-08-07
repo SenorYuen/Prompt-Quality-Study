@@ -1,0 +1,5 @@
+# Ignore the env file for API keys
+.env
+__pycache__/
+*.__pycache__/
+*.pyc

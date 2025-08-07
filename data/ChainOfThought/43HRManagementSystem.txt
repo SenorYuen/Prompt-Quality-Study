@@ -1,0 +1,72 @@
+a. Understand the Overall Purpose:
+    - The HRManagementSystem is a class as a personnel management system that implements functions such as adding, deleting, querying, and updating employees.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the HRManagementSystem with an attribute employees (__init__)
+        - Add a new employee (add_employee)
+        - Remove an employee (remove_employee)
+        - Update an employee's information (update_employee)
+        - Get an employee's information (get_employee)
+        - List all employees' information (list_employees)
+c. Detail each method:
+    - __init__(self):
+        - This method will act as the constructor. 
+        - This method will initialize the HRManagementSystem with an attribute employees, which is an empty dictionary.
+        - self.employees = {}
+    - add_employee(self, employee_id, name, position, department, salary):
+        - This method will add a new employee to the HRManagementSystem.
+        - This method will get "employee_id" as int which is the employee's id, "name" as str which is the employee's name, "position" as str which is the employee's position, "department" as str which is the employee's department, "salary" as int which is the employee's salary.
+        - This method will return false If the employee is already in the HRManagementSystem, otherwise, returns True.
+        - Example Usage:
+        - >>> hrManagementSystem = HRManagementSystem()
+        - >>> hrManagementSystem.add_employee(1, 'John', 'Manager', 'Sales', 100000)
+        - >>> The expected return value for example usage is : True
+        - >>> hrManagementSystem.add_employee(1, 'John', 'Manager', 'Sales', 100000)
+        - >>> The expected return value for example usage is : False
+    - remove_employee(self, employee_id):
+        - This method will remove an employee from the HRManagementSystem.
+        - This method will get "employee_id" as int which is the employee's id.
+        - This method will return True If the employee is already in the HRManagementSystem, otherwise, returns False.
+        - Example Usage:
+        - >>>  hrManagementSystem = HRManagementSystem()
+        - >>> hrManagementSystem.employees = {1: {'name': 'John', 'position': 'Manager', 'department': 'Sales', 'salary': 100000}}
+        - >>> hrManagementSystem.remove_employee(1)
+        - >>> The expected return value for example usage is : True
+        - >>> hrManagementSystem.remove_employee(2)
+        - >>> The expected return value for example usage is : False    
+    - update_employee(self, employee_id: int, employee_info: dict):
+        - This method will update an employee's information in the HRManagementSystem.
+        - This method will get "employee_id" as int which is the employee's id, "employee_info" as dict which is the employee's information.
+        - This method will return True If the employee is already in the HRManagementSystem, otherwise, returns False.
+        - Example Usage:
+        - >>> hrManagementSystem = HRManagementSystem()
+        - >>> hrManagementSystem.employees = {1: {'name': 'John', 'position': 'Manager', 'department': 'Sales', 'salary': 100000}}
+        - >>> hrManagementSystem.update_employee(1, {'name': 'John', 'position': 'Manager', 'department': 'Sales', 'salary': 20000})
+        - >>> The expected return value for example usage is : True
+        - >>> hrManagementSystem.update_employee(2, {'name': 'John', 'position': 'Manager', 'department': 'Sales', 'salary': 20000})
+        - >>> The expected return value for example usage is : False 
+    -  get_employee(self, employee_id):
+        - This method will Get an employee's information from the HRManagementSystem.
+        - This method will get "employee_id" as int which is the employee's id.
+        - This method will return the employee's information If the employee is already in the HRManagementSystem, otherwise, returns False.
+        - Example Usage:
+        - >>>  hrManagementSystem = HRManagementSystem()
+        - >>> hrManagementSystem.employees = {1: {'name': 'John', 'position': 'Manager', 'department': 'Sales', 'salary': 100000}}
+        - >>> hrManagementSystem.get_employee(1)
+        - >>> The expected return value for example usage is : {'name': 'John', 'position': 'Manager', 'department': 'Sales', 'salary': 100000}
+        - >>> hrManagementSystem.get_employee(2)
+        - >>> The expected return value for example usage is : False
+    -  list_employees(self):
+        - This method will List all employees' information in the HRManagementSystem.
+        - This method will return A list of all employees' information as dict.
+        - Example Usage:
+        - >>> hrManagementSystem = HRManagementSystem()
+        - >>> hrManagementSystem.employees = {1: {'name': 'John', 'position': 'Manager', 'department': 'Sales', 'salary': 100000}}
+        - >>> hrManagementSystem.list_employees()
+        - >>> The expected return value for example usage is : {1: {'employee_ID': 1, 'name': 'John', 'position': 'Manager', 'department': 'Sales', 'salary': 100000}}
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 

@@ -1,0 +1,70 @@
+a. Understand the Overall Purpose:
+    - The SignInSystem is a class that acts as a sign in system, including adding users, signing in/out, checking sign-in status, and retrieving signed-in/not signed-in users.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the sign-in system (__init__)
+        - Add a user to the sign-in system (add_user)
+        - Sign in a user (sign_in)
+        - Check if a user is signed in (check_sign_in)
+        - Check if all users are signed in (all_signed_in)
+        - Get a list of usernames that are not signed in (all_not_signed_in)
+c. Detail each method:
+    - __init__(self):
+        - This method will act as the constructor.
+        - This method will initialize the sign-in system.
+        - self.users = {}
+    - add_user(self, username):
+        - This method will add a user to the sign-in system if the user wasn't in the self.users.
+        - This method will get "username" as str which is the username to be added.
+        - This method will return True if the user is added successfully, False if the user already exists.
+        - Example Usage: 
+        - >>> signInSystem.add_user("mike")
+        - >>> The expected return value for example usage is : True
+        - >>> signInSystem.add_user("mike")
+        - >>> The expected return value for example usage is : False
+    - sign_in(self, username):
+        - This method will sign in a user if the user is in the self.users and change the state to True.
+        - This method will get "username" as str which is the username to be signed in.
+        - This method will return True if the user is signed in successfully, False if the user does not exist.
+        - Example Usage: 
+        - >>> signInSystem.sign_in("mike")
+        - >>> The expected return value for example usage is : True
+        - >>> signInSystem.sign_in("mik")
+        - >>> The expected return value for example usage is : False  
+    - check_sign_in(self, username):
+        - This method will check if a user is signed in.
+        - This method will get "username" as str which is the username to be checked.
+        - This method will return True if the user is signed in, False if the user does not exist or is not signed in.
+        - Example Usage: 
+        - >>> signInSystem.check_sign_in("jack")
+        - >>> The expected return value for example usage is : False
+        - >>> signInSystem.add_user("jack")
+        - >>> signInSystem.check_sign_in("jack")
+        - >>> signInSystem.sign_in("jack")
+        - >>> signInSystem.check_sign_in("jack")
+        - >>> The expected return value for example usage is : True 
+    - all_signed_in(self):
+        - This method will check if all users are signed in.
+        - This method will return True if all users are signed in, False otherwise.
+        - Example Usage: 
+        - >>> signInSystem.add_user("jack")
+        - >>> The expected return value for example usage is : True
+        - >>> signInSystem.sign_in("jack")
+        - >>> The expected return value for example usage is : True
+    - all_not_signed_in(self):
+        - This method will get a list of usernames that are not signed in.
+        - This method will return a list of usernames that are not signed in as list[str].
+        - Example Usage: 
+        - >>> signInSystem = SignInSystem()
+        - >>> signInSystem.add_user("a")
+        - >>> The expected return value for example usage is : True
+        - >>> signInSystem.add_user("b")
+        - >>> The expected return value for example usage is : True
+        - >>> signInSystem.all_not_signed_in()
+        - >>> The expected return value for example usage is : ['a', 'b']
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.           

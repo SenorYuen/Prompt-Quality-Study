@@ -1,0 +1,49 @@
+a. Understand the Overall Purpose:
+    - The BitStatusUtil is a utility class that provides methods for manipulating and checking status using bitwise operations.
+b. Identify the Required Methods:
+    - To ensure the function of this class, it will need all of these methods:
+        - Add a status to the current status (add)
+        - Check if the current status contains the specified status (has)
+        - Remove the specified status from the current status (remove)
+        - Check if the parameters are legal (check)     
+c. Detail each method:
+    - @staticmethod add(states, stat):
+        - This method will Add a status to the current status,and check the parameters whether they are legal.
+        - This method will accept "states" as int which is the current status, "stat" as int which is Status to be added.
+        - This method will return The status after adding the status as int. 
+        - Example Usage:
+        - >>> bit_status_util = BitStatusUtil()
+        - >>> bit_status_util.add(2,4)
+        - >>> The expected return value for example usage is : 6
+    - @staticmethod has(states, stat):
+        - This method will Check if the current status contains the specified status,and check the parameters whether they are legal.
+        - This method will accept "states" as int which is the current status, "stat" as int which is Specified status.
+        - This method will return True if the current status contains the specified status,otherwise False.
+        - Example Usage:
+        - >>> bit_status_util = BitStatusUtil()
+        - >>> bit_status_util.has(6,2)
+        - >>> The expected return value for example usage is : True
+    - @staticmethod remove(states, stat):
+        - This method will Remove the specified status from the current status,and check the parameters whether they are legal.
+        - This method will accept "states" as int which is the current status, "stat" as int which is Specified status.
+        - This method will return The status after removing the specified status as int.
+        - Example Usage:
+        - >>> bit_status_util = BitStatusUtil()
+        - >>> bit_status_util.remove(6,2)
+        - >>> The expected return value for example usage is : 4
+    - @staticmethod check(args):
+        - This method will check if the parameters are legal, args must be greater than or equal to 0 and must even,if not,raise ValueError.
+        - This method will accept "args" as list which is the Parameters to be checked. 
+        - This method will return None
+        - Example Usage:
+        - >>> bit_status_util = BitStatusUtil()
+        - >>>  bit_status_util.check([2,3,4])
+        - >>> The expected return value for example usage is : Traceback (most recent call last):
+        - >>> ...
+        - >>> ValueError: 3 not even    
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.

@@ -1,0 +1,45 @@
+a. Understand the Overall Purpose:
+    - The BookManagement is a class for managing a book system, which supports adding and removing books from the inventory dict, viewing the inventory, and checking the quantity of a specific book.
+b. Identify the Required Methods:  
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the inventory of Book Manager (BookManagement)
+        - Add one or several books to inventory which is sorted by book title (add_book)
+        - Remove one or several books from inventory (remove_book)
+        - Get the inventory of the Book Management (view_inventory) 
+        - Get the quantity of a book (view_book_quantity)
+c. Detail each method:
+    - __init__(self):
+         - This method will act as the constructor. 
+        - This method will initialize the inventory of the Book Manager.
+        - self.inventory = {}
+    - add_book(self, title, quantity=1)
+        - This method will add one or several books to inventory which is sorted by book title.
+        - This method will accept "title" as str which is the book title, "quantity" as int and default value is 1.
+    - remove_book(self, title, quantity):  
+        - This method will remove one or several books from inventory which is sorted by book title.
+        - This method will accept "title" as str which is the book title, "quantity" as int.
+        - This method will return false while getting invalid input.
+    - view_inventory(self):
+        - This method will get the inventory of the Book Management.
+        - This method will return self.inventory: dictionary, {title(str): quantity(int), ...}
+        - Example Usage:
+        - >>> bookManagement = BookManagement()
+        - >>> bookManagement.add_book("book1", 1)
+        - >>> bookManagement.add_book("book2", 1)
+        - >>> bookManagement.view_inventory()
+        - >>> The expected return value for example usage is : {'book1': 1, 'book2': 1}
+    - view_book_quantity(self, title):
+        - This method will Get the quantity of a book.
+        - This method will accept "title" as str which is the book title.
+        - This method will return quantity as int which is the quantity of this book title. return 0 when the title does not exist in self.inventory
+        - Example Usage:
+        - >>> bookManagement = BookManagement()
+        - >>> bookManagement.add_book("book1", 1)
+        - >>> bookManagement.view_book_quantity("book3")
+        - >>> The expected return value for example usage is : 0 
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.

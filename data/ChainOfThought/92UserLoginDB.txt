@@ -1,0 +1,59 @@
+a. Understand the Overall Purpose:
+    - The UserLoginDB is a database management class for user login verification, providing functions for inserting user information, searching user information, deleting user information, and validating user login.
+    - To ensure the function of this class, it will need all of these methods:
+        - Initializes the UserLoginDB object ( __init__)
+        - Inserts a new user into the "users" table (insert_user)
+        - Searches for users in the "users" table (search_user_by_username)
+        - Deletes a user from the "users" table (delete_user_by_username)
+        - Determine whether the user can log in (validate_user_login)
+c. Detail each method:
+    - __init__(self, db_name):
+        - This method will act as the constructor.
+        - This method will initialize the UserLoginDB object with the specified database name.
+        - This method get "db_name" as str which is the name of the SQLite database.
+        - self.connection = sqlite3.connect(db_name)
+        - self.cursor = self.connection.cursor()
+    - insert_user(self, username, password):
+        - This method will insert a new user into the "users" table.
+        - This method will get "username" as str which is the username of the user,  "password" as str which is the password of the user.
+        - this method will return None.
+        - Example Usage:   
+        - >>> user_db = UserLoginDB("user_database.db")
+        - >>> user_db.create_table()
+        - >>> user_db.insert_user('user1', 'pass1')
+    - search_user_by_username(self, username):
+        - This method will search for users in the "users" table by username.
+        - This method will get "username" as str which is the username of the user to search for.
+        - this method will return the rows from the "users" table that match the search criteria as a list of tuples.
+        - Example Usage:   
+        - >>> user_db = UserLoginDB("user_database.db")
+        - >>> user_db.create_table()
+        - >>> user_db.insert_user('user1', 'pass1')
+        - >>> result = user_db.search_user_by_username('user1') 
+        - >>> len(result)
+        - >>> The expected output value for example usage is : 1
+    - delete_user_by_username(self, username):
+        - This method will delete a user from the "users" table by username.
+        - This method will get "username" as str which the username of the user to delete.
+        - this method will return None.
+        - Example Usage:   
+        - >>> user_db = UserLoginDB("user_database.db")
+        - >>> user_db.create_table()
+        - >>> user_db.insert_user('user1', 'pass1')
+        - >>> user_db.delete_user_by_username('user1')
+ - validate_user_login(self, username, password):
+    - This method will determine whether the user can log in, that is, the user is in the database and the password is correct.
+       - This method will get "username" as str which is the username of the user to validate,  "password" as str which the password of the user to validate.
+        - This method will return True or False representing whether the user can log in correctly.
+        - Example Usage:   
+        - >>> user_db = UserLoginDB("user_database.db")
+        - >>> user_db.create_table()
+        - >>> user_db.insert_user('user1', 'pass1')
+        - >>> user_db.validate_user_login('user1', 'pass1')
+        - >>> The expected return value for example usage is : True
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import sqlite3
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.     

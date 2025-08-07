@@ -1,0 +1,96 @@
+a. Understand the Overall Purpose:
+    - The MusicPlayer is a class as a music player that provides to play, stop, add songs, remove songs, set volume, shuffle, and switch to the next or previous song.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initializes the music player with an empty playlist (__init__)
+        - Adds a song to the playlist (add_song)
+        - Removes a song from the playlist (remove_song)
+        - Plays the current song (stop)
+        - Stops the current song (delete_ticket)
+        - Switches to the next song (switch_song)
+        - Switches to the previous song (previous_song)
+        - Sets the volume of the music player (set_volume)
+        - Shuffles the playlist (shuffle)
+c. Detail each method:
+    - __init__(self):
+        - This method will act as the constructor.
+        - This method will Initialize the music player with an empty playlist, no current song, and a default volume of 50.
+        - self.playlist = []
+        - self.current_song = None
+        - self.volume = 50
+    - add_song(self, song):
+        - This method will add a song to the playlist.
+        - This method will get "song" as str which is the song to add to the playlist.
+        - Example Usage:
+        - >>> musicPlayer = MusicPlayer()
+        - >>> musicPlayer.add_song("song1")
+        - >>> musicPlayer.playlist
+        - >>> The expected output value for example usage is : ['song1']
+    - remove_song(self, song):
+        - This method will remove a song from the playlist.
+        - This method will get "song" as str which is the song to remove from the playlist.
+        - Example Usage:
+        - >>>musicPlayer = MusicPlayer()
+        - >>> musicPlayer.playlist = ["song1", "song2"]
+        - >>> musicPlayer.remove_song("song1")
+        - >>> musicPlayer.playlist
+        - >>> The expected output value for example usage is : ['song2'] 
+    - play(self):
+        - This method will Play the current song in the playlist.
+        - This method will return the current song in the playlist, or False if there is no current song.
+        - Example Usage:
+        - >>>musicPlayer = MusicPlayer()
+        - >>> musicPlayer.playlist = ["song1", "song2"]
+        - >>> musicPlayer.current_song = "song1"
+        - >>> musicPlayer.play()
+        - >>> The expected return value for example usage is : ['song1'] 
+    - stop(self):
+        - This method will stop the current song in the playlist.
+        - This method will return True if the current song was stopped, False if there was no current song.
+        - Example Usage:
+        - >>>musicPlayer = MusicPlayer()
+        - >>> musicPlayer.playlist = ["song1", "song2"]
+        - >>> musicPlayer.current_song = "song1"
+        - >>> musicPlayer.stop()
+        - >>> The expected return value for example usage is : True
+    - switch_song(self):
+        - This method will switch to the next song in the playlist.
+        - This method will return True if the next song was switched to, False if there was no next song.
+        - Example Usage:
+        - >>>musicPlayer = MusicPlayer()
+        - >>> musicPlayer.playlist = ["song1", "song2"]
+        - >>> musicPlayer.current_song = "song1"
+        - >>> musicPlayer.switch_song()
+        - >>> The expected return value for example usage is : True
+    - previous_song(self):
+        - This method will switch to the previous song in the playlist.
+        - This method will return True if the previous song was switched to, False if there was no previous song.
+        - Example Usage:
+        - >>>musicPlayer = MusicPlayer()
+        - >>> musicPlayer.playlist = ["song1", "song2"]
+        - >>> musicPlayer.current_song = "song2"
+        - >>> musicPlayer.previous_song()
+        - >>> The expected return value for example usage is : True    
+    - set_volume(self, volume):
+        - This method will set the volume of the music player, if the volume is between 0 and 100 is valid.
+        - This method will get "volume" as int which is The volume to set the music player to.
+        - This method will return True if the volume was set, False if the volume was invalid.
+        - Example Usage:
+        - >>> musicPlayer = MusicPlayer()
+        - >>> musicPlayer.set_volume(50)
+        - >>> musicPlayer.volume
+        - >>> The expected return value for example usage is: 50  
+    - shuffle(self):
+        - This method will shuffle the playlist.
+        - This method will return True if the playlist was shuffled, False if the playlist was empty.
+        - Example Usage:
+        - >>> musicPlayer = MusicPlayer()
+        - >>> musicPlayer.playlist = ["song1", "song2"]
+        - >>> musicPlayer.shuffle()
+        - >>> The expected return value for example usage is: True
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    -  No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.   

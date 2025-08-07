@@ -1,0 +1,51 @@
+a. Understand the Overall Purpose:
+    - The VectorUtil is a class that provides vector operations, including calculating similarity, cosine similarities, average similarity, and IDF weights.
+    - To ensure the function of this class, it will need all of these methods:
+        - Compute the cosine similarity between two vectors (similarity)
+        - Compute cosine similarities between one vector and a set of other vectors (cosine_similarities)
+        - Compute cosine similarity between two sets of vectors (n_similarity)
+        - Calculate log(total_num+1/count+1) for each count in number_dict (compute_idf_weight_dict)
+c. Detail each method:
+    - @staticmethod similarity(vector_1, vector_2):
+        - This method will compute the cosine similarity between one vector and another vector.
+        - This method get "vector_1" as numpy.ndarray which is the Vector from which similarities are to be computed, expected shape (dim,), "vector_2" as numpy.ndarray which is the Vector from which similarities are to be computed, expected shape (dim,).
+        - This method will return a numpy.ndarray that contains the cosine distance between `vector_1` and `vector_2`.
+        - Example Usage:
+        - >>> vector_1 = np.array([1, 1])
+        - >>> vector_2 = np.array([1, 0])
+        - >>> VectorUtil.similarity(vector_1, vector_2)
+        - >>> The expected return value for example usage is : 0.7071067811865475
+    - @staticmethod cosine_similarities(vector_1, vectors_all):
+        - This method will compute cosine similarities between one vector and a set of other vectors.
+        - This method will get "vector_1" as numpy.ndarray which is the Vector from which similarities are to be computed, expected shape (dim,), "vector_all" as a list of numpy.ndarray. For each row in vectors_all, distance from vector_1 is computed, expected shape (num_vectors, dim).
+        - This method will return a list of numpy.ndarray that contains the cosine distance between `vector_1` and each row in `vectors_all`, shape (num_vectors,).
+        - Example Usage:
+        - >>> vector1 = np.array([1, 2, 3])
+        - >>> vectors_all = [np.array([4, 5, 6]), np.array([7, 8, 9])]
+        - >>> VectorUtil.cosine_similarities(vector1, vectors_all)
+        - >>> The expected return value for example usage is : [0.97463185 0.95941195]
+    - @staticmethod n_similarity(vector_list_1, vector_list_2):
+        - This method will compute cosine similarity between two sets of vectors.
+        - This method will get "vector_list_1" which is the first list of numpy vector, "vector_list_2" which is the second list of numpy vector.
+        - This method will return a numpy.ndarray that contains the Similarities between vector_list_1 and vector_list_2.
+        - Example Usage:
+        - >>> vector_list1 = [np.array([1, 2, 3]), np.array([4, 5, 6])]
+        - >>> vector_list2 = [np.array([7, 8, 9]), np.array([10, 11, 12])]
+        - >>> VectorUtil.n_similarity(vector_list1, vector_list2)
+        - >>> The expected return value for example usage is :  0.9897287473881233
+    - @staticmethod compute_idf_weight_dict(total_num, number_dict):
+        - This method will calculate log(total_num+1/count+1) for each count in number_dict.
+        - This method will get "total_num" as int, "number_dict" as dict.
+        - This method will return a dict.
+        - Example Usage:
+        - >>> num_dict = {'key1':0.1, 'key2':0.5}
+        - >>> VectorUtil.compute_idf_weight_dict(2, num_dict)
+        - >>> The expected return value for example usage is : {'key1': 1.0033021088637848, 'key2': 0.6931471805599453}
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import numpy as np
+    - from gensim import matutils
+    - from numpy import dot, array
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.     

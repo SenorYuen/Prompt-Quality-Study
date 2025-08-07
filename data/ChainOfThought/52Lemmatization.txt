@@ -1,0 +1,49 @@
+a. Understand the Overall Purpose:
+    - The Lemmatization is a class about Lemmatization, which utilizes the nltk library to perform lemmatization and part-of-speech tagging on sentences, as well as remove punctuation.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Creates a WordNetLemmatizer object and stores it ( __init__)
+        - Remove punctuations of the sentence and tokenizing the input sentence (lemmatize_sentence)
+        - Remove punctuations of the sentence and tokenizing the input sentence (get_pos_tag)
+        - Removes punctuation from the input text (remove_punctuation)
+c. Detail each method:
+    - __init__(self):
+        - This method will act as the constructor.
+        - This method will create a WordNetLemmatizer object and stores it in the self.lemmatizer member variable.
+        - self.lemmatizer = WordNetLemmatizer()
+    - lemmatize_sentence(self, sentence):
+        - This method will remove punctuations of the sentence and tokenizing the input sentence, mark the part of speech tag of each word, lemmatizes the words with different parameters based on their parts of speech, and stores in a list.   
+        - This method will get "sentence" as str  which is a sentence.
+        - This method will return a list of words which have been lemmatized.
+        - Example Usage:
+        - >>> lemmatization = Lemmatization()
+        - >>> lemmatization.lemmatize_sentence("I am running in a race.")
+        - >>> The expected output return for example usage is : ['I', 'be', 'run', 'in', 'a', 'race']
+    - get_pos_tag(self, sentence):
+        - This method will remove punctuations of the sentence and tokenize the input sentence, mark the part of speech tag of each word.
+        - This method will get "sentence" as str which is a sentence.
+        - This method will return part of speech tag of each word in the sentence as list.
+        - Example Usage:
+        - >>> lemmatization = Lemmatization()
+        - >>> lemmatization.get_pos_tag("I am running in a race.")
+        - >>> The expected output return for example usage is :  ['PRP', 'VBP', 'VBG', 'IN', 'DT', 'NN']
+    - remove_punctuation(self, sentence):
+        - This method will remove punctuation from the input text.
+        - This method will get "sentence" as str which is a sentence.
+        - This method will return the input text without any punctuation as str.
+        - Example Usage:
+        - >>> lemmatization = Lemmatization()
+        - >>> lemmatization.remove_punctuation("I am running in a race.")
+        - >>> The expected output return for example usage is : 'I am running in a race'
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import nltk
+    - from nltk.stem import WordNetLemmatizer
+    - from nltk import pos_tag, word_tokenize
+    - import string
+    - nltk.download('averaged_perceptron_tagger')
+    - nltk.download('punkt')
+    - nltk.download('wordnet')
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.

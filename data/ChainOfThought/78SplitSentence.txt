@@ -1,0 +1,35 @@
+a. Understand the Overall Purpose:
+    - The SplitSentence is a class that supports splitting sentences, counting words in a sentence, and processing a text file to find the maximum word count.
+b. To ensure the function of this class, it will need all of these methods:
+    - Split a string into a list of sentences (split_sentences)
+    - Count the number of words in a sentence (count_words)
+    - Given a text, return the number of words in the longest sentence (process_text_file)
+c. Detail each method:
+    - split_sentences(self, sentences_string):
+        - This method will split a string into a list of sentences. Sentences end with . or ? and with a space after that. Please note that Mr. also end with . but are not sentences.
+        - This method will get "sentences_string" as str which is the string to split.
+        - This method will return the split sentence list as list. 
+        - Example Usage: 
+        - >>> ss = SplitSentence()
+        - >>> ss.split_sentences("aaa aaaa. bb bbbb bbb? cccc cccc. dd ddd?")
+        - >>> The expected return value for example usage is :  ['aaa aaaa.', 'bb bbbb bbb?', 'cccc cccc.', 'dd ddd?']
+    - count_words(self, sentence):
+        - This method will count the number of words in a sentence. Note that words are separated by spaces and that punctuation marks and numbers are not counted as words.
+        - This method will get "sentences" as str which is the sentence to be counted where words are separated by spaces.
+        - This method will return the number of words in the sentence as int. 
+        - Example Usage: 
+        - >>> ss.count_words("abc def")
+        - >>> The expected return value for example usage is : 2
+    - process_text_file(self, sentences_string):
+        - This method will return the number of words in the longest sentence in a given text.
+        - This method will get "sentences_string" as str which is the undivided long sentence.
+        - This method will return the number of words in the longest sentence as int. 
+        - Example Usage: 
+        >>> ss.process_text_file("aaa aaaa. bb bbbb bbb? cccc ccccccc cc ccc. dd ddd?")
+        - >>> The expected return value for example usage is : 4
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import re
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.         

@@ -1,0 +1,58 @@
+a. Understand the Overall Purpose:
+    - The PageUtil is a versatile utility for handling pagination and search functionalities in an efficient and convenient manner.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the PageUtil object (__init__)
+        - Retrieve a specific page of data (get_page)
+        - Retrieve information about a specific page (get_page_info)
+        - Search for items in the data (search)
+c. Detail each method:
+    - __init__(self, data, page_size):
+       - This method will act as the constructor.
+        - This method will Initialize the PageUtil object with the given data and page size.
+        - This method will get "data" as list which is the data to be paginated, "page_size" as int which is the number of items per page.
+        - self.data = data
+        - self.page_size = page_size
+        - self.total_items = len(data)
+        - self.total_pages = (self.total_items + page_size - 1) // page_size
+    - get_page(self, page_number):
+        - This method will retrieve a specific page of data.
+        - This method will get "page_number" as int which is the page number to fetch.
+        - This method will return the data on the specified page as list.
+        - Example Usage:
+        - >>> page_util = PageUtil([1, 2, 3, 4], 1)
+        - >>> page_util.get_page(1)
+        - >>> The expected output value for example usage is : [1]
+    - get_page_info(self, page_number):
+        - This method will retrieve information about a specific page.
+        - This method will get "page_number" as int which is the page number to fetch information about.
+        - This method will return the page information such as current page number, total pages, etc. as dict. 
+        - Example Usage:
+        - >>> page_util = PageUtil([1, 2, 3, 4], 1)
+        - >>> page_util.get_page_info(1)
+        - >>> The expected output value for example usage is : { "current_page": 1,
+                                                                 "per_page": 1,
+                                                                "total_pages": 4,
+                                                                "total_items": 4,
+                                                                "has_previous": False,
+                                                                "has_next": True,
+                                                                "data": [1]
+                                                                }
+    - search(self, keyword):
+        - This method will search for items in the data that contain the given keyword.
+        - This method will get "keyword" as str which is the keyword to search for.
+        - This method will return the search information such as total results and matching items as dict. 
+        - Example Usage:
+        - >>> page_util = PageUtil([1, 2, 3, 4], 1)
+        - >>> page_util.search("1")
+        - >>> The expected output value for example usage is : search_info = { "keyword": "1",
+                                                                 "total_results": 1,
+                                                                "total_pages": 1,
+                                                                "results": [1]
+                                                                } 
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.

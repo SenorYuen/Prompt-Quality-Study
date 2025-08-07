@@ -1,0 +1,72 @@
+a. Understand the Overall Purpose:
+    - The ExpressionCalculator is a class in Python that can perform calculations with basic arithmetic operations, including addition, subtraction, multiplication, division, and modulo.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the expression calculator (__init__)
+        - Calculate the result of the expression (calculate)
+        - Prepare the infix expression ( prepare)
+        - Check if a character is an operator (is_operator)
+        - Compare the precedence of two operators (compare)
+        - Perform the mathematical calculation (_calculate)
+        - Transform the infix expression (transform)
+c. Detail each method:
+    - __init__(self):
+        - This method will act as the constructor. 
+        - This method will initialize the expression calculator.
+        - self.postfix_stack = deque()
+        - self.operat_priority = [0, 3, 2, 1, -1, 1, 0, 2]
+    - calculate(self, expression):
+        - This method will calculate the result of the given postfix expression.
+        - This method will get "expression" as str which is the postfix expression to be calculated.
+        - This method will return the calculated result as float.
+        - Example Usage:
+        - >>>expression_calculator = ExpressionCalculator()
+        - >>> expression_calculator.calculate("2 + 3 * 4")
+        - >>> The expected return value for example usage is : 14.0
+    - prepare(self, expression):
+        - This method will prepare the infix expression for conversion to postfix notation.
+        - This method will get "expression" as str which is the postfix expression to be prepared.
+        - Example Usage:
+        - >>> expression_calculator = ExpressionCalculator()
+        - >>> expression_calculator.prepare("2+3*4")
+        - >>> The expected output value for example usage is : expression_calculator.postfix_stack = ['2', '3', '4', '*', '+']
+    - @staticmethod is_operator(c):
+        - This method will check if a character is an operator in {'+', '-', '*', '/', '(', ')', '%'}
+        - This method will get "c" as str which is the character to be checked.
+        - This method will return True if the character is an operator, False otherwise.
+        - Example Usage:
+        - >>>  expression_calculator = ExpressionCalculator()
+        - >>> expression_calculator.is_operator("+")
+        - >>> The expected return value for example usage is : True
+    - compare(self, cur, peek): 
+        - This method will compare the precedence of two operators.
+        - This method will get "cur" as str which is the current operator, "peek" as str which is the operator at the top of the operator stack.
+        - This method will return True if the current operator has higher or equal precedence, False otherwise.
+        - Example Usage:
+        - >>> expression_calculator = ExpressionCalculator()
+        - >>> expression_calculator.compare("+", "-")
+        - >>> The expected return value for example usage is : True 
+    -  @staticmethod _calculate(first_value, second_value, current_op): 
+        - This method will Perform the mathematical calculation based on the given operands and operator.
+        - This method will get "first_value" as str which is the first operand, "second_value" as str which is the second operand, "current_op" as str which is the operator.
+        - This method will return the calculated result as float.
+        - Example Usage:
+        - >>> expression_calculator = ExpressionCalculator()
+        - >>> expression_calculator._calculate("2", "3", "+")
+        - >>> The expected return value for example usage is : 5.0  
+    -  @staticmethod transform(expression):
+        - This method will transform the infix expression to a format suitable for conversion.
+        - This method will get "expression" as str which is the infix expression to be transformed.
+        - This method will return the transformed expression as str.
+        - Example Usage:
+        - >>> expression_calculator = ExpressionCalculator()
+        - >>> expression_calculator.transform("2 + 3 * 4")
+        - >>> The expected return value for example usage is :  "2+3*4" 
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import re
+    - from collections import deque
+    - from decimal import Decimal
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.

@@ -1,0 +1,49 @@
+a. Understand the Overall Purpose:
+    - The BlackjackGame is a class representing a game of blackjack, which includes creating a deck, calculating the value of a hand, and determine the winner based on the hand values of the player and dealer.
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the Blackjack Game with the attribute deck (__init__)
+        - Create a deck of 52 cards (create_deck)
+        - Calculate the value of the poker cards stored in hand (calculate_hand_value)
+        - Determines the winner of a game (check_winner) 
+c. Detail each method:
+    -  __init__(self):
+        - This method will act as the constructor. 
+        - This method will initialize the Blackjack Game with the attribute deck, player_hand and dealer_hand.
+        - While initializing the deck attribute, call the create_deck method to generate.The deck stores 52 random order poker with the Jokers removed, format is ['AS', '2S', ...]. player_hand is a list which stores player's hand cards. dealer_hand is is a list which stores dealer's hand cards.
+        - self.deck = self.create_deck()
+        - self.player_hand = []
+        - self.dealer_hand = []
+    - create_deck(self):
+        - This method will Create a deck of 52 cards, which stores 52 random order poker with the Jokers removed.
+        - This method will return a list of 52 random order poker with the Jokers removed, format is ['AS', '2S', ...].
+        - Example Usage:
+        - >>> black_jack_game = BlackjackGame()
+        - >>> black_jack_game.create_deck()
+        - >>> The expected return value for example usage is :  ['QD', '9D', 'JC', 'QH', '2S', 'JH', '7D', '6H', '9S', '5C', '7H', 'QS', '5H',
+        '6C', '7C', '3D', '10C', 'AD', '4C', '5D', 'AH', '2D', 'QC', 'KH', '9C', '9H',
+        '4H', 'JS', '6S', '8H', '8C', '4S', '3H', '10H', '7S', '6D', '3C', 'KC', '3S',
+        '2H', '10D', 'KS', '4D', 'AC', '10S', '2C', 'KD', '5S', 'JD', '8S', 'AS', '8D']
+     - calculate_hand_value(self, hand):
+        - This method will Calculate the value of the poker cards stored in the hand list according to the rules of the Blackjack Game.
+        - If the card is a digit, its value is added to the total hand value.
+        - Value of J, Q, or K is 10, while Aces are worth 11.
+        - If the total hand value exceeds 21 and there are Aces present, one Ace is treated as having a value of 1 instead of 11, until the hand value is less than or equal to 21, or all Aces have been counted as value of 1.
+        - This method will accept "hand" as list.
+        - This method will return the value of the poker cards stored in the hand list as int. 
+        - Example Usage:
+        - >>> black_jack_game.calculate_hand_value(['QD', '9D', 'JC', 'QH', 'AS'])
+        - >>> The expected return value for example usage is :  40    
+    - check_winner(self, player_hand, dealer_hand):
+        - This method will determine the winner of a game by comparing the hand values of the player and dealer.
+        -  rule: If both players have hand values that are equal to or less than 21, the winner is the one whose hand value is closer to 21. Otherwise, the winner is the one with the lower hand value.
+        - This method will accept "player_hand" as list, " dealer_hand" as list
+        - This method will return the result of the game, and only will return one of two str: 'Dealer wins' or 'Player wins'. 
+        - Example Usage:
+        - >>> black_jack_game.check_winner(['QD', '9D', 'JC', 'QH', 'AS'], ['QD', '9D', 'JC', 'QH', '2S'])
+        - >>> The expected return value for example usage is :  'Player wins'
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.

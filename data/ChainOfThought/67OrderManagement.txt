@@ -1,0 +1,61 @@
+a. Understand the Overall Purpose:
+    - The Order class is a class that manages restaurant orders by allowing the addition of dishes, calculation of the total cost, and checkout.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the order management system (__init__)
+        - Check the self.menu and add into self.selected_dish if the dish count is valid (add_dish)
+        - Calculate the total price of dishes (calculate_total)
+        - Check out the dished ordered (checkout)
+c. Detail each method:
+    - __init__(self):
+     - This method will act as the constructor.
+        - This method will Initialize the order management system.
+        -  self.menu = []
+        - self.selected_dishes = []
+        - self.sales = {}
+        - self.menu stores the dishes of restaurant inventory.
+        - Example Usage: 
+        - >>> menu = [{"dish": dish name, "price": price, "count": count}, ...]
+        - self.selected_dishes stores the dished selected by customer
+        - Example Usage: 
+        - >>> selected_dish = {"dish": dish name, "count": count, price: price}
+        - self.sales stores the sales of each dish.
+        - Example Usage:
+        - >>> sales = {dish name: sales}
+    - add_dish(self, dish):
+        - This method will check the self.menu and add into self.selected_dish if the dish count is valid, and if the dish has successfully been added, change the count in self.menu.
+        - This method will get "dish" as dict which is the information of the dish. dish is formatted like {"dish": dish name, "count": count, price: price}
+        - This method will return True if successfully added, or False otherwise.
+        - Example Usage: 
+        - >>> order = Order()
+        - >>> order.menu.append({"dish": "dish1", "price": 10, "count": 5})
+        - >>> order.add_dish({"dish": "dish1", "price": 10, "count": 3}) 
+        - >>> The expected return value for example usage is : True  
+    - calculate_total(self):
+        - This method will calculate the total price of dishes that have been ordered. Multiply the count, price and sales.
+        - This method will return the final total price as float.
+        - Example Usage: 
+        - >>> order = Order()
+        - >>> order.menu.append({"dish": "dish1", "price": 10, "count": 5})
+        - >>> order.sales = {"dish1": 0.8}
+        - >>> order.add_dish({"dish": "dish1", "price": 10, "count": 4})
+        - >>> The expected return value for example usage is : True
+        - >>> order.calculate_total()
+        - >>> The expected return value for example usage is : 32.0 
+    - checkout(self):
+        - This method will check out the dishes ordered. IF the self.selected_dishes is not empty, invoke the calculate_total method to check out.
+        - This method will return False if the self.selected_dishes is empty, or total (return value of calculate_total) otherwise.
+        - Example Usage: 
+        - >>> order = Order()
+        - >>> order.menu.append({"dish": "dish1", "price": 10, "count": 5})
+        - >>> order.sales = {"dish1": 0.8}
+        - >>> order.add_dish({"dish": "dish1", "price": 10, "count": 4})
+        - >>> The expected return value for example usage is : True
+        - >>> order.checkout()
+        - >>> The expected return value for example usage is : 32.0  
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.

@@ -1,0 +1,55 @@
+a. Understand the Overall Purpose:
+    - The BookManagementDB is a database class as a book management system, used to handle the operations of adding, removing, updating, and searching books.
+b. Identify the Required Methods:  
+    - To ensure the function of this class, it will need all of these methods:
+        - Initializes the class by creating a database ( __init__)
+        - Creates the book table (create_table)
+        - Adds a book to the database (add_book)
+        - Removes a book from the database (remove_book) 
+        - Marks a book as borrowed in the database (borrow_book)
+        - Marks a book as returned (return_book)
+        - Retrieves all books from the database (search_books)
+c. Detail each method:
+    - __init__(self, db_name):
+ - This method will act as the constructor. 
+        - This method will initialize the class by creating a database connection and cursor, and creates the book table if it does not already exist.
+        - This method will accept "db_name" as str which is the name of the db file.
+        - self.connection = sqlite3.connect(db_name)
+        - self.cursor = self.connection.cursor()
+        - self.create_table()
+    - create_table(self):
+        - This method will create the book table in the database if it does not already exist.
+        - Example Usage:
+        -  >>> book_db = BookManagementDB("test.db")
+        - >>> book_db.create_table()
+    - add_book(self, title, author):
+        - This method will add a book to the database with the specified title and author, setting its availability to 1 as free to borrow.
+        - This method will accept "title" as str which is the book title, "author" as str which is the author name.  
+        - Example Usage:
+        - >>> book_db = BookManagementDB("test.db")
+        - >>> book_db.create_table()
+        - >>> book_db.add_book('book1', 'author')
+    - remove_book(self, book_id):
+        - This method will remove a book from the database based on the given book ID.
+        - This method will accept "book_id" as int which is the book id.
+        - Example Usage:
+        - >>> book_db = BookManagementDB("test.db")
+        - >>> book_db.borrow_book(1)
+    - return_book(self, book_id):
+        - This method will mark a book as returned in the database based on the given book ID.
+        - This method will accept "book_id" as int which is the book id.
+        - Example Usage:
+        - >>> book_db = BookManagementDB("test.db")
+        - >>>book_db.return_book(1)
+    - search_books(self):
+        - This method will retrieve all books from the database and return their information.
+        - This method will return books as list[tuple] which is the information of all books in database.
+        - Example Usage:
+        - >>> book_db.search_books()
+        - >>> The expected return value for example usage is :  [(1, 'book1', 'author', 1)]
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import sqlite3
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 

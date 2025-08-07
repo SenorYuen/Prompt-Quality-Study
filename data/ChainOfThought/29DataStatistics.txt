@@ -1,0 +1,38 @@
+a. Understand the Overall Purpose:
+    - The DataStatistics is for processing a database, supporting to create tables, insert data into the database, search for data based on name, and delete data from the database.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Calculate the average value of a group of data (mean)
+        - Calculate the median of a group of data (median)
+        - Calculate the mode of a set of data  (mode)
+c. Detail each method:
+    - mean(self, data):
+        - This method will calculate the average value of a group of data, accurate to two digits after the Decimal separator 
+        - This method will get "data" as list which is the data list.
+        - This method will return the mean value as float.
+        - Example Usage:
+        - >>> ds = DataStatistics()
+        - >>> ds.mean([1, 2, 3, 4, 5])
+        - >>> The expected return value for example usage is : 3.00
+    - median(self, data):
+        - This method will calculate the median of a group of data, accurate to two digits after the decimal separator 
+        - This method will get "data" as list which is the data list.
+        - This method will return the median value as float.
+        - Example Usage:
+        - >>> ds = DataStatistics()
+        - >>> ds.median([2, 5, 1, 3, 4])
+        - >>> The expected return value for example usage is : 3.00   
+    - mode(self, data):
+        - This method will Calculate the mode of a group of data, accurate to two digits after the Decimal separator 
+        - This method will get "data" as list which is the data list.
+        - This method will return the mode value as float.
+        - Example Usage:
+        - >>> ds = DataStatistics()
+        - >>> ds.mode([2, 2, 3, 3, 4])
+        - >>> The expected return value for example usage is :  [2, 3]  
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - from collections import Counter
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 

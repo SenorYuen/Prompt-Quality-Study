@@ -1,0 +1,7 @@
+,CountClassCoupled,MaxCyclomatic,MaxNesting,CountLineBlank,CountLineCode,CountLineComment,RatioCommentToCode,CountDeclMethod,Number
+,median,median,median,median,median,median,median,median,median
+Category,,,,,,,,,
+COT,1.0,3.0,2.0,4.5,31.0,0.0,0.0,5.0,52.0
+COTFewShot,1.0,3.0,2.0,4.0,31.0,0.0,0.0,5.0,50.5
+FewShot,1.0,3.0,2.0,7.0,30.0,35.0,1.36,5.0,49.0
+ZeroShot,1.0,3.0,2.0,6.0,30.0,27.0,0.91,5.0,54.0

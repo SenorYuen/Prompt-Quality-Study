@@ -1,0 +1,53 @@
+a. Understand the Overall Purpose:
+    - The ShoppingCart is a class which manages items, their prices, quantities, and allows for adding, removing, viewing items, and calculating the total price.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the items representing the shopping list (__init__)
+        - Add item information to the shopping list items (add_item)
+        - Subtract the specified quantity of item from the shopping list items (remove_item)
+        - Return the current shopping list items (view_items)
+        - Calculate the total price of all items in the shopping list (total_price)
+c. Detail each method:
+    - __init__(self):
+        - This method will act as the constructor.
+        - This method will initialize the items representing the shopping list as an empty dictionary.
+        -  self.items = {}
+    - add_item(self, item, price, quantity=1):
+        - This method will add item information to the shopping list items, including price and quantity. The default quantity is 1.
+        - This method will get "item" as str which is the Item to be added, "price" as float which is the price of the item, "quantity" as int which is the number of items and defaults to 1.
+        - This method will return None.
+        - Example Usage: 
+        - >>> shoppingcart = ShoppingCart()
+        - >>> shoppingcart.add_item("apple", 1, 5)
+        - >>> The expected output value for example usage is : self.items = {"apple":{"price":1, "quantity":5}}
+    - remove_item(self, item, quantity=1):
+        - This method will subtract the specified quantity of item from the shopping list items.
+        - This method will get "item" as str which is the subtracted, "quantity" as int which is the quantity to be subtracted.
+        - This method will return None.
+        - Example Usage: 
+        - >>> shoppingcart.add_item("apple", 1, 5)
+        - >>> shoppingcart.remove_item("apple", 3)
+        - >>> The expected output value for example usage is : self.items = {"apple":{"price":1, "quantity":2}}
+    - view_items(self) -> dict:
+        - This method will return the current shopping list items as dict.
+        - This method will return None.
+        - Example Usage:
+        - >>> shoppingcart.add_item("apple", 1, 5)
+        - >>> shoppingcart.remove_item("apple", 3)
+        - >>> shoppingcart.view_items()
+        - >>> The expected return value for example usage is : {"apple":{"price":1, "quantity":2}}
+    - total_price(self) -> float:
+        - This method will calculate the total price of all items in the shopping list, which is the quantity of each item multiplied by the price.
+        - This method will return the total price of all items in the shopping list as float.
+        - Example Usage:
+        - >>> shoppingcart = ShoppingCart()
+        - >>> shoppingcart.add_item("apple", 1, 5)
+        - >>> shoppingcart.add_item("banana", 2, 3)
+        - >>> shoppingcart.total_price()
+        - >>> The expected return value for example usage is : 11.0   
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.           

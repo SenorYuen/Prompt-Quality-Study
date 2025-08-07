@@ -1,0 +1,55 @@
+a. Understand the Overall Purpose:
+    - The URLHandler class supports handling URLs, including extracting the scheme, host, path, query parameters, and fragment.
+b. To ensure the function of this class, it will need all of these methods:
+    - Initialize URLHandler's URL ( __init__)
+    - Get the scheme of the URL (_get_scheme)
+    - Get the second part of the URL (get_host)
+    - Get the third part of the URL (get_path)
+    - Get the request parameters for the URL (get_query_params)
+    - Get the fragment after '#' in the URL (get_fragment)
+c. Detail each method:
+    - __init__(self, url):
+        - This method will act as the constructor.
+        - This method will get "url" as str which is the url that the class will support.
+        - self.url = url
+    - get_scheme(self):
+        - This method will get the scheme of the URL.
+        - This method will return the scheme of the URL as str if successful. 
+        - Example Usage:   
+        - >>> urlhandler = URLHandler("https://www.baidu.com/s?wd=aaa&rsv_spt=1#page")
+        - >>> urlhandler.get_scheme()
+        - >>> The expected return value for example usage is: "https"
+    - get_host(self):
+        - This method will get the second part of the URL, which is the host domain name.
+        - This method will return the host domain name of the URL as str if successful. 
+        - Example Usage:   
+        - >>> urlhandler = URLHandler("https://www.baidu.com/s?wd=aaa&rsv_spt=1#page")
+        - >>> urlhandler.get_host()
+        - >>> The expected return value for example usage is: "www.baidu.com"
+    - get_path(self):
+        - This method will get the third part of the URL, which is the address of the resource.
+        - This method will return the address of the resource of the URL as str if successful. 
+        - Example Usage:   
+        - >>> urlhandler = URLHandler("https://www.baidu.com/s?wd=aaa&rsv_spt=1#page")
+        - >>> urlhandler.get_path()
+        - >>> The expected return value for example usage is: "/s?wd=aaa&rsv_spt=1#page"   
+    - get_query_params(self):
+        - This method will get the request parameters for the URL.
+        - This method will return the request parameters of the URL as str if successful. 
+        - Example Usage:   
+        - >>> urlhandler = URLHandler("https://www.baidu.com/s?wd=aaa&rsv_spt=1#page")
+        - >>> urlhandler.get_query_params()
+        - >>> The expected return value for example usage is: {"wd": "aaa", "rsv_spt": "1"}
+    - get_fragment(self):
+        - This method will get the fragment after '#' in the URL.
+        - This method will return the fragment after '#' of the URL as str if successful. 
+        - Example Usage:   
+        - >>> urlhandler = URLHandler("https://www.baidu.com/s?wd=aaa&rsv_spt=1#page")
+        - >>> urlhandler.get_fragment()
+        - >>> The expected return value for example usage is: "page"
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.           

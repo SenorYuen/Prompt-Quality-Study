@@ -1,0 +1,46 @@
+a. Understand the Overall Purpose:
+    - The TwentyFourPointGame class ia a game of twenty-four points, which will generate four numbers and check whether player's expression is equal to 24.
+b. To ensure the function of this class, it will need all of these methods:
+    - Initialize the class ( __init__)
+    - Generate random numbers between 1 and 9 for the cards (_generate_cards)
+    - Get a list of four random numbers (get_my_cards)
+    - Check if a given mathematical expression using the cards can evaluate to 24 (answer)
+    - Evaluate a mathematical expression  (evaluate_expression)
+c. Detail each method:
+    - __init__(self) -> None:
+        - This method will act as the constructor.
+        - self.nums = []
+    - _generate_cards(self):
+        - This method will generate random numbers between 1 and 9 for the cards.    
+    - get_my_cards(self):
+        - This method will get a list of four random numbers between 1 and 9 representing the player's cards.
+        - This method will return a list of integers, representing the player's cards.
+        - Example Usage:   
+        - >>> game = TwentyFourPointGame()
+        - >>> game.get_my_cards()
+    - answer(self, expression):
+        - This method will check if a given mathematical expression using the cards can evaluate to 24.
+        - This method will get "expression" as str which is the mathematical expression using the cards. 
+        - This method will return True if the expression evaluates to 24, False otherwise.
+        - Example Usage:   
+        - >>> game = TwentyFourPointGame()
+        - >>> game.nums = [4, 3, 6, 6]
+        - >>> ans = "4*3+6+6"
+        - >>> ret = game.answer(ans)
+        - >>> The expected return value for example usage is: True
+    - evaluate_expression(self, expression):
+        - This method will evaluate a mathematical expression and check if the result is 24.
+        - This method will get "expression" as str which is the mathematical expression using the cards. 
+        - This method will return True if the expression evaluates to 24, False otherwise.
+        - Example Usage:   
+        - >>> game = TwentyFourPointGame()
+        - >>> nums = [4, 3, 6, 6]
+        - >>> ans = "4*3+6+6"
+        - >>> ret = game.evaluate_expression(ans)
+        - >>> The expected return value for example usage is: True
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import random 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.           

@@ -1,0 +1,42 @@
+a. Understand the Overall Purpose:
+    - The JSONProcessor is a class to process JSON files, including reading and writing JSON files, as well as processing JSON data by removing a specified key from the JSON object.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Read a JSON file and return the data (read_json)
+        - Write data to a JSON file (write_json)
+        - read a JSON file and process the data (process_json)
+c. Detail each method:
+    - read_json(self, file_path):
+        - This method will Read a JSON file and return the data.
+        - This method will get "file_path" as str which is the path of the JSON file.
+        - This method will return the data from the JSON file as dict if read successfully, or return -1 if an error occurs during the reading process, return 0 if the file does not exist.
+        - Example Usage:
+        - >>> json.read_json('test.json')
+        - >>> The expected output return for example usage is : {'name': 'test', 'age': 14}
+    - write_json(self, data, file_path):
+        - This method will be used to write data to a JSON file and save it to the given path.
+        - This method will get "data" as dict which is the data to be written to the JSON file, "file_path" as str which is the path of the JSON file.
+        - The method will return 1 if the writing process is successful, or -1, if an error occurs during the writing process. 
+        - Example Usage:
+        - >>> json.write_json({'key1': 'value1', 'key2': 'value2'}, 'test.json')
+        - >>> The expected return value for example usage is : 1
+        - >>> json.read_json('test.json')
+        - >>> The expected return value for example usage is : {'key1': 'value1', 'key2': 'value2'}
+    - process_json(self, file_path, remove_key):
+        - This method will read a JSON file and process the data by removing a specified key and rewriting the modified data back to the file.
+        - This method will get "file_path" as str which is the path of the JSON file, "remove_key" as str which is the key to be removed.
+        - The method will return 1 if the specified key is successfully removed and the data is written back, 0 if the file does not exist or the specified key does not exist in the data.
+        - Example Usage:
+        - >>> json.read_json('test.json')
+        - >>> The expected return value for example usage is :  {'key1': 'value1', 'key2': 'value2'}
+        - >>> json.process_json('test.json', 'key1')
+        - >>> The expected return value for example usage is : 1  
+        - >>> json.read_json('test.json')
+        - >>> The expected return value for example usage is :  {'key2': 'value2'}
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import json
+    - import os
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.

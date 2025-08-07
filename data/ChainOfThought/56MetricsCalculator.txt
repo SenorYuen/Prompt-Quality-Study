@@ -1,0 +1,64 @@
+a. Understand the Overall Purpose:
+    - The MetricsCalculator calculates precision, recall, F1 score, and accuracy based on predicted and true labels.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the number of all four samples to 0 (__init__)
+        - Update number of all four samples (update)
+        - Calculate precision (precision)
+        - Calculate recall (recall)
+        - Calculate f1 score (f1_score)
+        - Calculate accuracy (accuracy)
+c. Detail each method:
+    -  __init__(self):
+        - This method will act as the constructor.
+        - This method will Initialize the number of all four samples to 0.
+        - self.true_positives = 0
+        - self.false_positives = 0
+        - self.false_negatives = 0
+        - self.true_negatives = 0
+    - update(self, predicted_labels, true_labels):
+        - This method will update the number of all four samples(true_positives, false_positives, false_negatives, true_negatives).
+        - This method will get "predicted_labels" as list which is the predicted results, "true_labels" as list which is the true labels.
+        - The method will return nothing. 
+        - Example Usage:    
+        - >>> mc = MetricsCalculator()
+        - >>> mc.update([1, 1, 0, 0], [1, 0, 0, 1])
+        - The expected output of example usage is : (self.true_positives, self.false_positives, self.false_negatives, self.true_negatives) = (1, 1, 1, 1)
+    - precision(self, predicted_labels, true_labels):
+        - This method will calculate precision.
+        - This method will get "predicted_labels" as list which is the predicted results, "true_labels" as list which is the true labels.
+        - The method will return the precision as float. 
+        - Example Usage:    
+        - mc = MetricsCalculator()
+        - >>> mc.precision([1, 1, 0, 0], [1, 0, 0, 1])
+        - The expected return value of example usage is :  0.5 
+    - recall(self, predicted_labels, true_labels):
+        - This method will calculate recall.
+        - This method will get "predicted_labels" as list which is the predicted results, "true_labels" as list which is the true labels.
+        - The method will return the recall as float. 
+        - Example Usage:    
+        - mc = MetricsCalculator()
+        - >>> mc.recall([1, 1, 0, 0], [1, 0, 0, 1])
+        - The expected return value of example usage is :  0.5    
+    - f1_score(self, predicted_labels, true_labels):
+        - This method will calculate f1 score, which is the harmonic mean of precision and recall.
+        - This method will get "predicted_labels" as list which is the predicted results, "true_labels" as list which is the true labels.
+        - The method will return the f1_score as float. 
+        - Example Usage:    
+        - mc = MetricsCalculator()
+        - >>> mc.f1_score([1, 1, 0, 0], [1, 0, 0, 1])
+        - The expected return value of example usage is :  0.5    
+    - accuracy(self, predicted_labels, true_labels):
+        - This method will calculate accuracy. 
+        - This method will get "predicted_labels" as list which is the predicted results, "true_labels" as list which is the true labels.
+        - The method will return the accuracy as float. 
+        - Example Usage:    
+        - mc = MetricsCalculator()
+        - >>> mc.accuracy([1, 1, 0, 0], [1, 0, 0, 1])
+        - The expected return value of example usage is: 0.5  
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.

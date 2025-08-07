@@ -1,0 +1,43 @@
+a. Understand the Overall Purpose:
+    - The DataStatistics4 is a class that performs advanced mathematical calculations and statistics, including correlation coefficient, skewness, kurtosis, and probability density function (PDF) for a normal distribution.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Calculate the correlation coefficient (correlation_coefficient)
+        - Calculate the skewness (skewness)
+        - Calculate the kurtosis (kurtosis)
+        - Calculate the probability density function (pdf)
+c. Detail each method:
+    - @staticmethod correlation_coefficient(data1, data2):
+        - This method will initialize Data List.Calculate the correlation coefficient of two sets of data.
+        - This method will get "data1" as list which is the first set of data, "data2" as list which is the second set of data.
+        - This method will return the correlation coefficient as float.
+        - Example Usages:
+        - DataStatistics4.correlation_coefficient([1, 2, 3], [4, 5, 6])
+        - >>> The expected return value for example usage is :  0.9999999999999998
+    - @staticmethod skewness(data):
+        - This method will Calculate the skewness of a set of data.
+        - This method will get "data" as list which is the The input data list.
+        - This method will return The skewness as float.
+        - Example Usages:
+        - DataStatistics4.skewness([1, 2, 5])
+        - >>> The expected return value for example usage is :  2.3760224064818463
+    - @staticmethod kurtosis(data):
+        - This method will Calculate the kurtosis of a set of data.
+        - This method will get "data" as list which is the The input data list.
+        - This method will return The kurtosis as float.
+        - Example Usages:
+        - DataStatistics4.kurtosis([1, 20,100])
+        - >>> The expected return value for example usage is : -1.5000000000000007
+    - @staticmethod pdf(data, mu, sigma):
+        - This method will Calculate the probability density function (PDF) of a set of data under a normal distribution.
+        - This method will get "data" as list which is the The input data list, "mus" as float which is The mean of the normal distribution, "sigma" as float which is The standard deviation of the normal distribution.
+        - This method will return The probability density function (PDF) as list.
+        - Example Usages:
+        - DataStatistics4.pdf([1, 2, 3], 1, 1)
+        - >>> The expected return value for example usage is : [0.3989422804014327, 0.24197072451914337, 0.05399096651318806]
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import math
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 

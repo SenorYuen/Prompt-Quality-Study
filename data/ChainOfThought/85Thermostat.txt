@@ -1,0 +1,71 @@
+a. Understand the Overall Purpose:
+    - The Thermostat is a class that manages temperature control, including setting and retrieving the target temperature, adjusting the mode, and simulating temperature operation.
+b. To ensure the function of this class, it will need all of these methods:
+    - initialize instances of the Thermostat class (__init__)
+    - Get the target temperature of an instance of the Thermostat class (get_target_temperature)
+    - Set the target temperature (set_target_temperature)
+    - Get the current work mode (get_mode)
+    - Set the current work mode (set_mode)
+    - Automatically set the operating mode (auto_set_mode)
+    - Check if there is a conflict between the operating mode and the relationship between the current temperature and the target temperature(auto_check_conflict)
+    - Simulate the operation of Thermostat(simulate_operation)
+c. Detail each method:
+    - __init__(self, current_temperature, target_temperature, mode):
+        - This method will act as the constructor.
+        - This method will initialize instances of the Thermostat class, including the current temperature, target temperature, and operating mode.
+        - This method will get "current_temperature" as float, "target_temperature" as float, "mode" as str which is the work mode. 
+        - self.current_temperature = current_temperature
+        - self.target_temperature = target_temperature
+        - self.mode = mode
+    - get_target_temperature(self):
+        - This method will get the target temperature of an instance of the Thermostat class.
+        - This method will return the self.current_temperature as int.
+        - Example Usage:   
+        - >>> thermostat.get_target_temperature()
+        - >>> The expected return value for example usage is : 37.5
+    - set_target_temperature(self, temperature):
+        - This method will set the target temperature.
+        - This method will get "temperature" as float which is the target temperature and set the self.target_temperature to "temperature".
+        - Example Usage:   
+        - >>> thermostat.set_target_temperature(37.6)
+        - >>> thermostat.target_temperature
+        - >>> The expected output value for example usage is : 37.6
+    - get_mode(self):
+        - This method will get the current work mode.
+        - This method will return mode as str which represents the working mode. The only possible values are ['heat', 'cool'].
+    - set_mode(self, mode):
+        - This method will set the current work mode.
+        - This method will get "mode" as str which is the working mode. only ['heat', 'cool']
+        - Example Usage:   
+        - >>> thermostat.set_mode('cool')
+        - >>> thermostat.mode
+        - >>> The expected output value for example usage is : 'cool'
+    - auto_set_mode(self):
+        - This method will automatically set the operating mode by comparing with the current temperature and target temperature. If the current temperature is lower than the target temperature, the operating mode is set to 'heat', otherwise it is set to 'cool'.
+        - Example Usage:   
+        - >>> thermostat = Thermostat(20.4, 37.5, 'cool')
+        - >>> thermostat.auto_set_mode()
+        - >>> thermostat.mode
+        - >>> The expected output value for example usage is : 'heat'
+    - auto_check_conflict(self):
+        - This method will check if there is a conflict between the operating mode and the relationship between the current temperature and the target temperature. If there is a conflict, the operating mode will be adjusted automatically.
+        - This method will return True if the mode doesn’t conflict with the relationship between the current temperature and the target temperature, or False otherwise.
+        - Example Usage:   
+        - >>> thermostat = Thermostat(20.4, 37.5, 'cool')
+        - >>> thermostat.auto_check_conflict()
+        - >>> The expected return value for example usage is: False
+        - >>> thermostat.mode  
+        - >>> The expected output value for example usage is: 'heat'
+    - simulate_operation(self):
+        - This method will simulate the operation of Thermostat. It will automatically start the auto_set_mode method to set the operating mode, and then automatically adjust the current temperature according to the operating mode until the target temperature is reached.
+        - This method will return time as int which is the time it took to complete the simulation.
+        - Example Usage:   
+        - >>> thermostat = Thermostat(20.4, 37.5, 'cool')
+        - >>> thermostat.simulate_operation()
+        - >>> The expected return value for example usage is: 18
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import time 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.           

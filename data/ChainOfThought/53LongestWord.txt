@@ -1,0 +1,31 @@
+a. Understand the Overall Purpose:
+    - The LongestWord is a class that allows adding words to a list and finding the longest word in a given sentence by comparing the words with the ones in the word list.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize a list of word ( __init__)
+        - append the input word (add_word)
+        - Remove punctuation marks and split a sentence into a list of word (find_longest_word)
+c. Detail each method:
+    - __init__(self):
+        - This method will act as the constructor.
+        - This method will initialize a list of word.
+        - self.word_list = []
+    - add_word(self, word):
+        - This method will append the input word into self.word_list.
+        - This method will get "word" as str  which is the input word.
+    - find_longest_word(self, sentence):
+        - This method will remove punctuation marks and split a sentence into a list of word. Find the longest splitted word that is in the self.word_list. Words are strictly case sensitive.
+        - This method will get "sentence" as str which is a sentence. 
+        - This method will return the longest splitted word that is in the self.word_list as str, return '' if self.word_list is empty.   
+        - ExalongestWord = LongestWord()
+        - >>> longestWord.add_word('A')
+        - >>> longestWord.add_word('aM')
+        - >>> longestWord.find_longest_word('I am a student.')
+        - >>> The expected output return for example usage is : 'am'
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import re
+    - import string
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.

@@ -1,0 +1,58 @@
+a. Understand the Overall Purpose:
+    - The Snake class is a snake game, which allows a snake to move and eat food, and also enables it to reset, and generate a random food position.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the sign-in system ( __init__)
+        - Move the snake in the specified direction (move)
+        - Randomly generate a new food position (random_food_position)
+        - Reset the snake to its initial state (reset)
+        - Increase the length of the snake by 1 and increase the score by 10 (eat_food)
+c. Detail each method:
+    - __init__(self, SCREEN_WIDTH, SCREEN_HEIGHT, BLOCK_SIZE, food_position):
+        - This method will act as the constructor.
+        - This method will initialize the length of the snake, screen width, screen height, block size, snake head position, score, and food position.
+        - This method will get "SCREEN_WIDTH" as int, "SCREEN_HEIGHT" as int, "BLOCK_SIZE" as itn which is the Size of moving units, "food_position" as tuple which represents the position(x, y) of food.
+        - self.length = 1
+        - self.SCREEN_WIDTH = SCREEN_WIDTH
+        - self.SCREEN_HEIGHT = SCREEN_HEIGHT
+        - self.BLOCK_SIZE = BLOCK_SIZE
+        - self.positions = [((SCREEN_WIDTH / 2), (SCREEN_HEIGHT / 2))]
+        - self.score = 0
+        - self.food_position = food_position
+    - move(self, direction):
+        - This method will move the snake in the specified direction. If the new position of the snake's head is equal to the position of the food, then eat the food; If the position of the snake's head is equal to the position of its body, then start over, otherwise its own length plus one.
+        - This method will get "direction" as tuple which represents the direction of movement (x, y).
+        - This method will return None.
+        - Example Usage: 
+        - snake.move((1,1))
+        - self.length = 1
+        - self.positions = [(51, 51), (50, 50)]
+        - self.score = 10
+    - random_food_position(self):
+        - This method will randomly generate a new food position, but will not place it on the snake.
+        - This method will return None, it will only change the food position.
+    - reset(self):
+        - This method will reset the snake to its initial state. Set the length to 1, the snake head position to ((SCREEN_WIDTH/2), (SCREEN_HEIGHT/2)), the score to 0, and randomly generate a new food position.
+        - This method will return None.
+        - Example Usage:  
+        - >>> snake = Snake(100, 100, 1, (51, 51))
+        - >>> snake.reset() 
+        - self.length = 1
+        - self.positions = [(50, 50)]
+        - self.score = 0
+        - self.random_food_position()
+    - eat_food(self):
+        - This method will increase the length of the snake by 1 and increase the score by 100. Randomly generate a new food position, but don't place it on the snake.
+        - This method will return None.
+        - Example Usage:
+        - >>> snake = Snake(100, 100, 1, (51, 51))
+        - >>> snake.move((1,1))
+        - >>> snake.eat_food()
+        - self.length = 2  
+        - self.score = 10
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import random
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.       

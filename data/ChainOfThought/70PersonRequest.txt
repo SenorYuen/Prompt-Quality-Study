@@ -1,0 +1,34 @@
+a. Understand the Overall Purpose:
+    - The PersonRequest class validates input personal information data and sets invalid fields to None based on specific rules.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize PersonRequest object (__init__)
+        - Validate the name and return it (_validate_name)
+        - Validate the sex and return it (_validate_sex)
+        - Validate the phone number and return it (_validate_phoneNumber)
+c. Detail each method:
+    - __init__(self, name: str, sex: str, phoneNumber: str):
+        - This method will act as the constructor.
+        - This method will initialize PersonRequest object with the provided information.
+        - This method will get "name" as str which is the name of the person, "sex" as str which is the sex of the person, "phoneNumber" as str which is the phone number of the person.
+        - self.name = self._validate_name(name)
+        - self.sex = self._validate_sex(sex)
+        - self.phoneNumber = self._validate_phoneNumber(phoneNumber)
+    - _validate_name(self, name: str) -> str:
+        - This method will validate the name and return it. If name is empty or exceeds 33 characters in length, set to None.
+        - This method will get "name" as str which is the name to validate.
+        - This method will return  the validated name as str or None if invalid.
+    - _validate_sex(self, sex: str) -> str:
+        - This method will validate the sex and return it. If sex is not Man, Woman, or UGM, set to None.
+        - This method will get "sex" as str which is the sex to validate.
+        - This method will return the validated sex or None if invalid.
+    - _validate_phoneNumber(self, phoneNumber: str) -> str:
+        - This method will validate the phone number and return it. If phoneNumber is empty or not an 11 digit number, set to None.
+        - This method will get "phoneNumber" as str which is the phone number to validate.
+        - This method will return the validated phone number or None if invalid.    
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.     

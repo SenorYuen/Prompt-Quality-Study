@@ -1,0 +1,36 @@
+a. Understand the Overall Purpose:
+    - The NLPDataProcessor2 is a class that processes NLP data by extracting words from a list of strings, calculating the frequency of each word, and returning the top 5 most frequent words.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - keep only English letters and spaces in the string (process_data)
+        - Calculate the word frequency of each word (calculate_word_frequency)
+        - keep only English letters and spaces in the string (process)
+c. Detail each method:
+    - process_data(self, string_list):
+        - This method will keep only English letters and spaces in the string, then convert the string to lower case, and then split the string into a list of words.
+        - This method will get "string_list" as list which is a list of strings.
+        This method will return words_list: a list of words lists
+        - Example Usage:
+        - >>> NLPDataProcessor.process_data(['This is a test.'])
+        - >>> The expected return value for example usage is :[['this', 'is', 'a', 'test']]
+    - calculate_word_frequency(self, words_list):
+        - This method will calculate the word frequency of each word in the list of words list, and sort the word frequency dictionary by value in descending order.
+        - This method will get "word_list" as list of lists which is a list of words list.
+        - This method will return the top 5 word frequency dictionary, a dictionary of word frequency, key is word, value is frequency.
+        - Example Usage:
+        - >>> NLPDataProcessor.calculate_word_frequency([['this', 'is', 'a', 'test'], ['this', 'is', 'another', 'test']])
+        - >>> The expected return value for example usage is :{'this': 2, 'is': 2, 'test': 2, 'a': 1, 'another': 1} 
+    - process(self, string_list):
+        - This method will keep only English letters and spaces in the string, then convert the string to lower case, and then split the string into a list of words. Calculate the word frequency of each word in the list of words list, and sort the word frequency dictionary by value in descending order.
+        - This method will get "string_list" as list which is a list of strings. 
+        - This method will return the top 5 word frequency dictionary, a dictionary of word frequency, key is word, value is frequency.
+        - Example Usage:
+        - >>> NLPDataProcessor.process(['This is a test.', 'This is another test.'])
+        - >>> The expected return value for example usage is : {'this': 2, 'is': 2, 'test': 2, 'a': 1, 'another': 1}
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - from collections import Counter
+    - import re
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.

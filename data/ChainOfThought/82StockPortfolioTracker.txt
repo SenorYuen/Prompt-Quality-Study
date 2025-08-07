@@ -1,0 +1,87 @@
+a. Understand the Overall Purpose:
+    - The StockPortfolioTracker is a class as StockPortfolioTracker that allows to add stocks, remove stocks, buy stocks, sell stocks, calculate the total value of the portfolio, and obtain a summary of the portfolio. 
+b. To ensure the function of this class, it will need all of these methods:
+    - Initialize the StockPortfolioTracker class (__init__)
+    - Add a stock to the portfolio (add_stock)
+    - Remove a stock from the portfolio (remove_stock)
+    - Buy a stock and add it to the portfolio (buy_stock)
+    - Sell a stock and remove it from the portfolio (sell_stock)
+    - Calculate the total value of the portfolio (calculate_portfolio_value)
+    - Get a summary of the portfolio (get_portfolio_summary)
+    - Get the value of a stock (get_stock_value)
+c. Detail each method:
+    - __init__(self, cash_balance):
+        - This method will act as the constructor.
+        - This method will initialize the StockPortfolioTracker class with a cash balance and an empty portfolio.
+        - This method will get "cash_balance" as a parameter. 
+        - self.portfolio = []
+        - self.cash_balance = cash_balance
+    - add_stock(self, stock):
+        - This method will add a stock to the portfolio.
+        - This method will get "stock" as dict which is a dictionary with keys "name", "price", and "quantity".
+        - Example Usage:   
+        - >>> tracker = StockPortfolioTracker(10000.0)
+        - >>> tracker.add_stock({"name": "AAPL", "price": 150.0, "quantity": 10})
+        - >>> tracker.portfolio
+        - >>> The expected output value for example usage is : [{'name': 'AAPL', 'price': 150.0, 'quantity': 10}]
+    - remove_stock(self, stock):
+        - This method will remove a stock from the portfolio.
+        - This method will get "stock" as dict which is a dictionary with keys "name", "price", and "quantity".
+        - Example Usage:   
+        - >>> tracker = StockPortfolioTracker(10000.0)
+        - >>> tracker.portfolio = [{'name': 'AAPL', 'price': 150.0, 'quantity': 10}]
+        - >>> tracker.remove_stock({"name": "AAPL", "price": 150.0, "quantity": 10})
+        - >>> The expected output value for example usage is : True
+        - >>> tracker.portfolio
+        - >>> The expected output value for example usage is : []
+    - buy_stock(self, stock):
+        - This method will Buy a stock and add it to the portfolio.
+        - This method will get "stock" as dict which is a dictionary with keys "name", "price", and "quantity" where "quantity" as int which is the quantity of the stock to buy.
+        - This method will return True if the stock was bought successfully, False if the cash balance is not enough.
+        - Example Usage:   
+        - >>> tracker = StockPortfolioTracker(10000.0)
+        - >>> tracker.buy_stock({"name": "AAPL", "price": 150.0, "quantity": 10})
+        - >>> The expected return value for example usage is: True
+        - >>> tracker.portfolio
+        - >>> The expected output value for example usage is: [{'name': 'AAPL', 'price': 150.0, 'quantity': 10}]
+    - sell_stock(self, stock):
+        - This method will sell a stock and remove it from the portfolio and add the cash to the cash balance.
+        - This method will get "stock" as dict which is a dictionary with keys "name", "price", and "quantity"where "quantity" as int which is the quantity of the stock to buy.
+        - This method will return True if the stock was sold successfully, False if the quantity of the stock is not enough.
+        - Example Usage:   
+        - >>> tracker = StockPortfolioTracker(10000.0)
+        - >>> tracker.portfolio = [{'name': 'AAPL', 'price': 150.0, 'quantity': 10}]
+        - >>> tracker.sell_stock({"name": "AAPL", "price": 150.0, "quantity": 10})
+        - >>> The expected return value for example usage is: True
+        - >>> tracker.portfolio
+        - >>> The expected output value for example usage is: []
+    - calculate_portfolio_value(self):
+        - This method will Calculate the total value of the portfolio.
+        - This method will return the total value of the portfolio as float. 
+        - Example Usage:   
+        - >>> tracker = StockPortfolioTracker(10000.0)
+        - >>> tracker.portfolio = [{'name': 'AAPL', 'price': 150.0, 'quantity': 10}]
+        - >>> tracker.calculate_portfolio_value()
+        - >>> The expected return value for example usage is: 11500.0
+    - get_portfolio_summary(self):
+        - This method will Get a summary of the portfolio.
+        - This method will return a tuple of the total value of the portfolio and a list of dictionaries with keys "name" and "value". 
+        - Example Usage:   
+        - >>> tracker = StockPortfolioTracker(10000.0)
+        - >>> tracker.portfolio = [{'name': 'AAPL', 'price': 150.0, 'quantity': 10}]
+        - >>> tracker.get_portfolio_summary()
+        - >>> The expected return value for example usage is: (11500.0, [{'name': 'AAPL', 'value': 1500.0}])
+    - get_stock_value(self, stock):
+        - This method will Get the value of a stock.
+        - This method will get "stock" as dict which is a dictionary with keys "name", "price", and "quantity".
+        - This method will return the value of the stock as float.
+        - Example Usage:   
+        - >>> tracker = StockPortfolioTracker(10000.0)
+        - >>> tracker.get_stock_value({"name": "AAPL", "price": 150.0, "quantity": 10})
+        - >>> The expected return value for example usage is:   1500.0   
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 

@@ -1,0 +1,67 @@
+a. Understand the Overall Purpose:
+    - The RPGCharacter represents a role-playing game character, which supports attacking other characters, healing, gaining experience, level up, and checking if the character is alive.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize an RPG character object (__init__)
+        - Attack another character (attack)
+        - Heal the character (heal)
+        - Gain experience points for the character (gain_exp)
+        - Level up the character and return to zero experience points (level_up)
+        - Check if player is alive (is_alive)
+c. Detail each method:
+    - __init__(self, name, hp, attack_power, defense, level=1):
+        - This method will act as the constructor.
+        - This method will initialize an RPG character object.
+        - This method will get "name" as str which is the name of the character, "hp" as int which is the health points of the character, "attack_power" as int which is the attack power of the character, "defense" as int which is the defense points of the character, "level" as int which is the level of the character and Default is 1.
+        - self.name = name
+        - self.hp = hp
+        - self.attack_power = attack_power
+        - self.defense = defense
+        - self.level = level
+        - self.exp = 0
+    - attack(self, other_character):
+        - This method will attack another character. The damage caused needs to offset the defense value.
+        - This method will get "other_character" as str which is the character being attacked.
+        - Example Usage: 
+        - >>> player_1 = RPGCharacter('player 1', 100, 10, 3)
+        - >>> player_2 = RPGCharacter('player 2', 100, 7, 2)
+        - >>> player_1.attack(player_2)
+        - >>> player_2.hp  
+        - >>> The expected output value for example usage is : 92
+    - heal(self):
+        - This method will heal the character with 10 hp and the max hp is 100.
+        - This method will return the current health points after healing as int. 
+        - Example Usage: 
+        - >>>  player_1 = RPGCharacter('player 1', 93, 10, 3)
+        - >>> player_1.heal() 
+        - >>> The expected return value for example usage is : 100
+    - gain_exp(self, amount):
+        - This method will gain experience points for the character and level_up when the exp has reached the value that is 100 times the current level. The experience that overflows should be used to calculate the next level up until exhausts
+        - This method will get "amount" as int which is the amount of experience points to gain.
+        - Example Usage: 
+        - >>> player_1 = RPGCharacter('player 1', 100, 10, 3)
+        - >>> player_1.gain_exp(1100)
+        - >>> player_1.exp
+        - >>> The expected output value for example usage is : 100
+        - >>> player_1.level
+        - >>> The expected output value for example usage is : 5   
+    - level_up(self):
+        - This method will Level up the character and return to zero experience points, increase hp by 20 points, attack power and defense points by 5 points. max level is 100
+        - This method will return tuple[int, int, int, int], the new level, health points, attack power, and defense points after leveling up.
+        - Example Usage: 
+        - >>> player_1 = RPGCharacter('player 1', 100, 10, 3)
+        - >>> player_1.level_up()
+        - >>> The expected return value for example usage is : (2, 120, 15, 8) 
+    - is_alive(self):
+        - This method will check if the player is alive.
+        - This method will return True if the hp is larger than 0, or False otherwise.
+        - Example Usage: 
+        - >>> player_1 = RPGCharacter('player 1', 100, 10, 3)
+        - >>> player_1.is_alive()
+        - >>> The expected return value for example usage is : True
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.         

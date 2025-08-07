@@ -1,0 +1,89 @@
+a. Understand the Overall Purpose:
+    - The MahjongConnect is a class that represents a game board for Mahjong Connect with features like creating the board, checking valid moves, finding paths, removing icons, and checking if the game is over.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - initialize the board size and the icon list (__init__)
+        - create the game board with the given board size and icons (create_board)
+        - check if the move of two icons is valid (is_valid_move)
+        - check if there is a path between two icons (has_path)
+        - remove the connected icons (remove_icons)
+        - Check if the game is over (is_game_over)
+c. Detail each method:
+    -  __init__(self):
+        - This method will act as the constructor.
+        - This method will initialize the board size and the icon list, and create the game board.
+        - This method will get "BOARD_SIZE" as a list of two integer numbers which represents the number of rows and columns of the game board, "ICONS" as a list of string which represents the icons.
+        - Example Usage:
+        - >>> mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+            mc.BOARD_SIZE = [4, 4]
+            mc.ICONS = ['a', 'b', 'c']
+            mc.board = mc.create_board()
+        - self.BOARD_SIZE = BOARD_SIZE
+        - self.ICONS = ICONS
+        - self.board = self.create_board()
+    -  create_board(self):
+        - This method will create the game board with the given board size and icons
+        - The method will return 2-dimensional list, the game board
+        - Example Usage:
+        - mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+        - >>> mc.create_board()
+       -  The expected return value of the sample usage is: mc.board = [['a', 'b', 'c', 'a'],
+                    ['a', 'b', 'c', 'a'],
+                    ['a', 'b', 'c', 'a'],
+                    ['a', 'b', 'c', 'a']]
+    - is_valid_move(self, pos1, pos2):
+        - This method will check if the move of two icons is valid (i.e. positions are within the game board range, the two positions are not the same, the two positions have the same icon, and there is a valid path between the two positions).
+        - This method will get "pos1" as tuple (x,y) which is the position of the first icon, "pos2" as tuple (x,y) which is the position of the second icon.
+        - This method will return True or False representing whether the move of two icons is valid.
+        - Example Usage:  
+        - >>> mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+            mc.board = [['a', 'b', 'c', 'a'],
+                    ['a', 'b', 'c', 'a'],
+                    ['a', 'b', 'c', 'a'],
+                    ['a', 'b', 'c', 'a']]
+        - >>> mc.is_valid_move((0, 0), (1, 0))   
+        - >>> The expected return value for example usage is :  True  
+    -  has_path(self, pos1, pos2):
+        - This method will check if there is a path between two icons.
+        - This method will get "pos1" as tuple (x,y) which is the position of the first icon, "pos2" as tuple (x,y) which is the position of the second icon.
+        - This method will return True or False representing whether there is a path between two icons.
+        - Example Usage:  
+        - >>> mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+            mc.board = [['a', 'b', 'c', 'a'],
+                    ['a', 'b', 'c', 'a'],
+                    ['a', 'b', 'c', 'a'],
+                    ['a', 'b', 'c', 'a']]
+        - >>> mc.has_path((0, 0), (1, 0))   
+        - >>> The expected return value for example usage is : True   
+    - remove_icons(self, pos1, pos2):
+        - This method will remove the connected icons on the game board.
+        - This method will get "pos1" as tuple (x,y) which is the position of the first icon, "pos2" as tuple (x,y) which is the position of the second icon.
+        - This method will return Nothing.
+        - Example Usage:  
+        - >>> mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+            mc.board = [['a', 'b', 'c', 'a'],
+                    ['a', 'b', 'c', 'a'],
+                    ['a', 'b', 'c', 'a'],
+                    ['a', 'b', 'c', 'a']]
+        - >>> mc.remove_icons((0, 0), (1, 0))
+            mc.board = [[' ', 'b', 'c', 'a'],
+                    [' ', 'b', 'c', 'a'],
+                    ['a', 'b', 'c', 'a'],
+                    ['a', 'b', 'c', 'a']]   
+    - is_game_over(self):
+        - This method will check if the game is over (i.e., if there are no more icons on the game board).
+        - This method will return True or False, representing whether the game is over.
+        - Example Usage: 
+        - >>> mc = MahjongConnect([4, 4] ['a', 'b', 'c'])
+        - >>> mc.board = [[' ', ' ', ' ', ' '],
+                [' ', ' ', ' ', ' '],
+                [' ', ' ', ' ', ' '],
+                [' ', ' ', ' ', ' ']]
+        - >>> mc.is_game_over() 
+        - >>> The expected return value for example usage is : True   
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import random
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.

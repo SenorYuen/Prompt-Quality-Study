@@ -1,0 +1,35 @@
+a. Understand the Overall Purpose:
+    - The AutomaticGuitarSimulator class is an automatic guitar simulator that can interpret and play based on the input guitar sheet music.
+b. Identify the Required Methods:
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the score to be played (__init__)
+        - Interpret the music score to be played (interpret)
+        - Print out chord and play tune (display)
+c. Detail each method:
+    - __init__(self, text) -> None:
+        - This method will act as the constructor. 
+        - This method Initialize the score to be played
+        - This Method will "text" as str, which is the score to be played
+        - self.play_text = text
+    - interpret(self, display=False):
+        - This method will  Interpret the music score to be played
+        - This Method will get the "display" as a bool which is representing whether to print the interpreted score
+        - This method will return list of dict as dict which includes two fields, Chore and Tune, which are letters and numbers, respectively
+        - Example Usage:
+        - >>> context = AutomaticGuitarSimulator("C53231323 Em43231323 F43231323 G63231323")
+        - >>> play_list = context.interpret(display = False)
+        - The expected return value for example usage is : [{'Chord': 'C', 'Tune': '53231323'}, {'Chord': 'Em', 'Tune': '43231323'}, {'Chord': 'F', 'Tune': '43231323'}, {'Chord': 'G', 'Tune': '63231323'}]
+    -display(self, key, value):
+        - This method will Print out chord and play tune with following format: Normal Guitar Playing -- Chord: %s, Play Tune: %s
+        - This Method will get the "key" as a str which represents chord, "value" as a str which represents play tune
+        - This method will return a string
+        - Example Usage:
+        - >>> context = AutomaticGuitarSimulator("C53231323 Em43231323 F43231323 G63231323")
+        - >>> context.display("C", "53231323")
+        - The expected return value for example usage is : Normal Guitar Playing -- Chord: C, Play Tune: 53231323
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.  

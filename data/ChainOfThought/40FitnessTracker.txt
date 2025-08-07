@@ -1,0 +1,47 @@
+a. Understand the Overall Purpose:
+    - The FitnessTracker is a class with height, weight, age, and sex, and calculates the BMI standard based on sex, and male is 20-25, female is 19-24.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the class with height, weight, age, and sex, and calculate the BMI (__init__)
+        - Calculate the BMI (get_BMI)
+        - Judge the condition (condition_judge)
+        - Calculate the calorie intake based on the user's condition and BMR (calculate_calorie_intake)
+c. Detail each method:
+    -  __init__(self, height, weight, age, sex) -> None:
+        - This method will act as the constructor. 
+        - This method will initialize the class with height, weight, age, and sex, and calculate the BMI standard based on sex, and male is 20-25, female is 19-24.
+        - self.height = height
+        - self.weight = weight
+        - self.age = age
+        - self.sex = sex
+        - self.BMI_std = [
+            {"male": [20, 25]},
+            {"female": [19, 24]}
+        ]
+    - get_BMI(self):
+        - This method will calculate the BMI based on the height and weight.
+        - This method will return BMI as float, which is the weight divided by the square of height.
+        - Example Usage:
+        - >>> fitnessTracker = FitnessTracker(1.8, 70, 20, "male")
+        - >>> fitnessTracker.get_BMI()
+        - >>> The expected return value for example usage is : 21.604938271604937 
+    - condition_judge(self):
+        - This method will judge the condition of the user based on the BMI standard.
+        - This method will return 1 if the user is too fat, -1 if the user is too thin, 0 if the user is normal.
+        - Example Usage:
+        - >>> fitnessTracker = FitnessTracker(1.8, 70, 20, "male")
+        - >>> fitnessTracker.condition_judge()
+        - >>> The expected return value for example usage is : -1 
+    - calculate_calorie_intake(self):
+        - This method will calculate the calorie intake based on the user's condition and BMR (Basal Metabolic Rate),BMR is calculated based on the user's height, weight, age, and sex,male is10 * self.weight + 6.25 * self.height - 5 * self.age + 5,female is 10 * self.weight + 6.25 * self.height - 5 * self.age - 161, and the calorie intake is calculated based on the BMR and the user's condition,if the user is too fat, the calorie intake is BMR * 1.2, if the user is too thin, the calorie intake is BMR * 1.6, if the user is normal, the calorie intake is BMR * 1.4.
+        - This method will return calorie intake as float.
+        - Example Usage:
+        - >>> ftnessTracker = FitnessTracker(1.8, 70, 20, "male")
+        - >>> fitnessTracker.calculate_calorie_intake()
+        - >>> The expected return value for example usage is : 986.0 
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 
