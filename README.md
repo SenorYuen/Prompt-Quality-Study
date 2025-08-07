@@ -1,15 +1,20 @@
 # Prompting Matters: Assessing the Effect of Prompting Techniques on LLM-Generated Class Code
 
+Preprint can be found here: https://aabdllatif.github.io/papers/Adam_ICSME2025.pdf
+
 ## Repository Directory:
 - In data, you will find the prompts this study uses. 
   - data\ChainOfThought contains our handwritten Chain of Thought prompts 
   - data\ZeroShot contains the Zero Shot prompts. Our pipeline only selects the docstring part of these files. 
-  - Few Shot prompts are creted dynamically in the pipeline (see below).
+  - Few Shot prompts are created dynamically in the pipeline (see below).
 - To view the full prompts used by this study, look at the ICSME-25 Results folder.
-- In results, you will find the raw output files we used to conduct our analysis. 
-  - in output_Code, our different LLM-generated code snippet are sorted by the prompts that were used to generate them. 
-  - results\run_20250327_095016\results.csv is auto-generated to sort all of our data, and the identically named excel file was used to sort the results. 
-  - results\run_20250327_095016\rq1and3Results.xlsx contains the outputs of running the test cases from ClassEval on our LLM generated code, as well as the error analysis we conducted. This contains the data we used for our RQ1 and RQ3 results. 
+- In the ICSME-25-Results, you will find the raw output files we used to conduct our analysis. 
+  - GPT
+    - in ICSME-25-Results\GPT-4o_Raw_Results\output_Code, our different LLM-generated code snippet are sorted by the prompts that were used to generate them. 
+    - ICSME-25-Results\GPT-4o_Raw_Results\results.csv is auto-generated to sort all of our data, and the identically named excel file was used to sort the results. 
+    - ICSME-25-Results\GPT-4o_Raw_Results\rq1and3Results.xlsx contains the outputs of running the test cases from ClassEval on our LLM generated code, as well as the error analysis we conducted. This contains the data we used for our RQ1 and RQ3 results. 
+  - Llama:
+    - This directory is far less confusing, and can be found in the ICSME-25-Results\Llama3_Raw_Results. 
 - In src, we have the pipeline logic. To run the pipeline, simply run the pipelineOrchestrator file to generate the outputs. They will appear in the results file in a new directory. 
 
 
