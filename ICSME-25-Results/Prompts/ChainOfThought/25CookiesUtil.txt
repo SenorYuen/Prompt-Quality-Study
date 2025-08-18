@@ -1,0 +1,44 @@
+a. Understand the Overall Purpose:
+    - The CookiesUtil is a class as a utility for managing and manipulating Cookies, including methods for retrieving, saving, and setting Cookies data.
+b. Identify the Required Methods:  
+    - To ensure the function of this class, it will need all of these methods:
+        - Initializes the CookiesUtil (__init__)
+        - Gets the cookies from the specified response (get_cookies)
+        - Loads the cookies from the cookies_file (load_cookies)
+        - Saves the cookies to the cookies_file (_save_cookies)
+c. Detail each method:
+    - __init__(self, cookies_file):
+        - This method will act as the constructor. 
+        - This method will initialize the CookiesUtil with the specified cookies file.
+        - This method will get "cookies_file" as str which is the cookies file to use.
+        - self.cookies_file = cookies_file
+        - self.cookies = None
+    - get_cookies(self, reponse):
+        - This method will get the cookies from the specified response,and save it to cookies_file.
+        - This method will get "reponse" as dict which is The response to get cookies from.    
+        - Example Usage:
+        - >>> cookies_util = CookiesUtil('cookies.json')
+        - >>> cookies_util.get_cookies({'cookies': {'key1': 'value1', 'key2': 'value2'}})
+        - >>> cookies_util.cookies
+        - >>> The expected output value for example usage is : {'key1': 'value1', 'key2': 'value2'}
+    - load_cookies(self):
+        - This method will Load the cookies from the cookies_file to the cookies data.
+        - This method will return the cookies data as dict. 
+        - Example Usage:
+        - >>> cookies_util = CookiesUtil('cookies.json')
+        - >>> cookies_util.load_cookies()
+        - >>> The expected return value for example usage is : {'key1': 'value1', 'key2': 'value2'}
+    - _save_cookies(self):
+        - This method will save the cookies to the cookies_file, and returns True if successful, False otherwise.
+        - This method will return True if successful, False otherwise.
+        - Example Usage:
+        - >>> cookies_util = CookiesUtil('cookies.json')
+        - >>> cookies_util.cookies = {'key1': 'value1', 'key2': 'value2'}
+        - >>> cookies_util._save_cookies()
+        - >>> The expected return value for example usage is: True
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import json
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 

@@ -1,0 +1,138 @@
+System Prompt:
+Provided are instructions for generating the code for a class. Please provide the only code in your response.
+
+User Prompt:
+a. Understand the Overall Purpose:
+    - The BoyerMooreSearch is a class that implements the Boyer-Moore algorithm for string searching, which is used to find occurrences of a pattern within a given text.
+b. Identify the Required Methods:    
+    - To ensure the function of this class, it will need all of these methods:
+        - Initializes the BoyerMooreSearch class with the given text and pattern (__init__)
+        - Finds the rightmost occurrence of a character in the pattern (match_in_pattern)
+        - Determines the position of the first mismatch (mismatch_in_text)
+        - Finds all occurrences of the pattern in the text (bad_character_heuristic) 
+c. Detail each method:
+    - __init__(self, db_name):
+        - This method will act as the constructor. 
+        - This method will initialize the BoyerMooreSearch class with the given text and pattern.
+        - This method will accept "text" as str which is the text to be searched, "pattern" as str which is the pattern to be searched for.
+        - self.text, self.pattern = text, pattern
+        - self.textLen, self.patLen = len(text), len(pattern)
+    - match_in_pattern(self, char):
+        - This method will find the rightmost occurrence of a character in the pattern.
+        - This method will accept "char" as str which is the character to be searched for.
+        - This method will return the index of the rightmost occurrence of the character in the pattern as int.
+        - Example Usage:
+        - >>>boyerMooreSearch = BoyerMooreSearch("ABAABA", "AB")
+        - >>> boyerMooreSearch.match_in_pattern("A")
+        - >>> The expected return value for example usage is : 0  
+    - match_in_pattern(self, char):
+        - This method will determine the position of the first mismatch between the pattern and the text.
+        - This method will accept "currentPos" as int which is the current position in the text.
+        - This method will return the position of the first mismatch between the pattern and the text as int,otherwise -1.
+        - Example Usage:
+        - >>> boyerMooreSearch = BoyerMooreSearch("ABAABA", "ABC")
+        - >>> boyerMooreSearch.mismatch_in_text(0)
+        - >>> The expected return value for example usage is : 2   
+    - bad_character_heuristic(self):
+        - This method will find all occurrences of the pattern in the text.
+        - This method will accept "currentPos" as int which is the current position in the text.
+        - This method will return A list of all positions of the pattern in the text as list.
+        - Example Usage:
+        - >>> boyerMooreSearch = BoyerMooreSearch("ABAABA", "AB")
+        - >>> boyerMooreSearch.bad_character_heuristic()
+        - >>> The expected return value for example usage is : [0, 3]       
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 
+
+ Use the following prompt and solution pair as context for generating the previously mentioned class: 
+a. Understand the Overall Purpose:
+    - The ZipFileProcessor class can read and decompress zip files. The ZipFileProcessor class also can compress a list of specified files into a zip file. 
+b. Identify the Required Methods:
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize file name (__init__)
+        - Read files (read_zip_file)
+        - Extract all files (extract_all)
+        - Extract a specific file identified by name (extract_file)
+        - Compress files into zip (create_zip_file)
+c. Detail each method:
+    - __init__(self, file_name):
+        - This method will act as the constructor.
+        - This method will initialize the file name.
+        - This Method will accept "file_name" as str ehich is the name of the file to be processed.
+        - self.file_name = file_name
+    - read_zip_file(self):
+        - This method will get open file object, and return the open file object if successful; otherwise, returns None
+        - Example Usage: 
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> file = zfp.read_zip_file()
+    - extract_all(self, output_path):
+        - This method will extract all zip files and place them in the specified path
+        - This method will get the "output_path" as str which is the location of the extracted file.
+        - This method will return True or False to represent if the extraction operation was successful. 
+        - Example Usage:
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.extract_all("result/aaa")
+    - extract_file(self, file_name, output_path):  
+        - This method will extract the file with the specified name from the zip file and place it in the specified path  
+        - This method will get "file_name" as str whcih is the name of the file to be uncompressed, "output_path" as str which is the location of the extracted file. 
+        - The method will return True or False, representing whether the extraction operation was successful
+        - Example usage: 
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.extract_file("bbb.txt", "result/aaa")
+    - create_zip_file(self, files, output_file_name):
+        - This method will compress the specified file list into a zip file and place it in the specified path. 
+        - This method will get "files" as a list of string which is the List of files to compress, "output_file_name" as str which specifies output path.
+        - This method will return True or False, representing whether the compression operation was successful 
+        - Example Usage:
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.create_zip_file(["bbb.txt", "ccc,txt", "ddd.txt"], "output/bcd") 
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import zipfile
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 
+
+
+import zipfile
+
+
+class ZipFileProcessor:
+    def __init__(self, file_name):
+        self.file_name = file_name
+
+    def read_zip_file(self):
+        try:
+            zip_file = zipfile.ZipFile(self.file_name, 'r')
+            return zip_file
+        except:
+            return None
+
+    def extract_all(self, output_path):
+        try:
+            with zipfile.ZipFile(self.file_name, 'r') as zip_file:
+                zip_file.extractall(output_path)
+            return True
+        except:
+            return False
+
+    def extract_file(self, file_name, output_path):
+        try:
+            with zipfile.ZipFile(self.file_name, 'r') as zip_file:
+                zip_file.extract(file_name, output_path)
+            return True
+        except:
+            return False
+
+    def create_zip_file(self, files, output_file_name):
+        try:
+            with zipfile.ZipFile(output_file_name, 'w') as zip_file:
+                for file in files:
+                    zip_file.write(file)
+            return True
+        except:
+            return False

@@ -1,0 +1,47 @@
+a. Understand the Overall Purpose:
+    - The DatabaseProcessor is for processing a database, supporting to create tables, insert data into the database, search for data based on name, and delete data from the database.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize database name (__init__)
+        - Create a new table (create_table)
+        - Insert data into the specified table  (insert_into_database)
+        - Search the specified table in the database  (search_database)
+        - Delete rows from the specified table (delete_from_database)
+c. Detail each method:
+    - __init__(self, database_name):
+        - This method will act as the constructor. 
+        - This method will Initialize the database name of the database processor. 
+        - This method will get "database_name" as str.
+        - self.database_name = database_name
+    - create_table(self, table_name, key1, key2):
+        - This method will create a new table in the database if it doesn't exist. And make id (INTEGER) as PRIMARY KEY, make key1 as TEXT, key2 as INTEGER.
+        - This method will get "table_name" as str which is the name of the table to create, "key1" as str which is the name of the first column in the table, "key2" as str which is the name of the second column in the table
+        - Example Usage:
+        - >>> db.create_table('user', 'name', 'age') 
+    - insert_into_database(self, table_name, data):
+        - This method will insert data into the specified table in the database.
+        - This method will get "table_name" as str which is the name of the table to insert data into, "data" as list which is a list of dictionaries where each dictionary represents a row of data.
+        - Example Usage:
+        - >>>  db.insert_into_database('user', [
+                {'name': 'John', 'age': 25},
+                {'name': 'Alice', 'age': 30}
+            ])
+    - search_database(self, table_name, name):
+        - This method will Search the specified table in the database for rows with a matching name.
+        - This method will get "table_name" as str which is the name of the table to search, "name" as str which is the name to search for.
+        - This method will return a list of tuples representing the rows with matching name, if any;
+        - Example Usage:
+        - >>>  db.search_database('user', 'John')
+        - >>> The expected return value for example usage is : [(1, 'John', 25)]
+    - delete_from_database(self, table_name, name):
+        - This method will delete rows from the specified table in the database with a matching name.
+        - This method will get "table_name" as str which is the name of the table to delete rows from, "name" as str which is the name to match for deletion.
+        - Example Usage:
+        - >>> db.delete_from_database('user', 'John')    
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import sqlite3
+    - import pandas as pd
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.

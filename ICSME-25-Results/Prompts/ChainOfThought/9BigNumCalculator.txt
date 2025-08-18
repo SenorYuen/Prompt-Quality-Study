@@ -1,0 +1,38 @@
+a. Understand the Overall Purpose:
+    - The BigNumCalculator is a class that implements big number calculations, including adding, subtracting and multiplying.
+b. Identify the Required Methods:
+    - To ensure the function of this class, it will need all of these methods:
+        - Adds two big numbers (add)
+        - Subtracts two big numbers (subtract)
+        - Multiplies two big numbers (multiply)
+c. Detail each method:
+    -  @staticmethod add(num1, num2):
+        - This method adds two big numbers.
+        - This method accept "num1" str which is the first number to add, and "num2", a str which is the second number to add.
+        - This method will return the sum of the two numbers as str. 
+        - Example Usage:
+        - >>> bigNum = BigNumCalculator()
+        - >>> bigNum.add("12345678901234567890", "98765432109876543210")
+        - The expected return value for example usage is : '111111111011111111100'
+    -  @staticmethod subtract(num1, num2):
+        - This method subtracts two big numbers.
+        - This method accept "num1" str which is the first number to subtract, and "num2" str which is the second number to subtract.
+        - This method will return the difference of the two numbers as str. 
+        - Example Usage:
+        - >>> bigNum = BigNumCalculator()
+        - >>> bigNum.subtract("12345678901234567890", "98765432109876543210")
+        - The expected return value for example usage is : '-86419753208641975320'
+    -  @staticmethod multiply(num1, num2):
+        - This method multiplies two big numbers.
+        - This method accept "num1" str which is the first number to multiply, and "num2" str which is the second number to multiply.
+        - This method will return the product of the two numbers as str. 
+        - Example Usage:
+        - >>> bigNum = BigNumCalculator()
+        - >>> bigNum.multiply("12345678901234567890", "98765432109876543210")
+        - The expected return value for example usage is : '1219326311370217952237463801111263526900'  
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.

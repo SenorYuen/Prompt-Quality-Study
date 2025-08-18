@@ -1,0 +1,66 @@
+a. Understand the Overall Purpose:
+    - The NumberWordFormatter is a class that converts numbers into their corresponding English word representation, including handling the conversion of both the integer and decimal parts, and incorporating appropriate connectors and units.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize NumberWordFormatter object (__init__)
+        - Converts a number into words (format)
+        - Converts a string representation of a number into words (format_string)
+        - Converts a two-digit number into words(trans_two)
+        - Converts a three-digit number into words (trans_three)
+        - Parses the thousand/million/billion suffix (parse_more)
+c. Detail each method:
+    - __init__(self):
+       - This method will act as the constructor.
+        - This method will Initialize a NumberWordFormatter object.
+        - self.NUMBER = ["", "ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN", "EIGHT", "NINE"]
+        - self.NUMBER_TEEN = ["TEN", "ELEVEN", "TWELVE", "THIRTEEN", "FOURTEEN", "FIFTEEN", "SIXTEEN", "SEVENTEEN",
+                            "EIGHTEEN", "NINETEEN"]
+        - self.NUMBER_TEN = ["TEN", "TWENTY", "THIRTY", "FORTY", "FIFTY", "SIXTY", "SEVENTY", "EIGHTY", "NINETY"]
+        - self.NUMBER_MORE = ["", "THOUSAND", "MILLION", "BILLION"]
+        - self.NUMBER_SUFFIX = ["k", "w", "", "m", "", "", "b", "", "", "t", "", "", "p", "", "", "e"]
+    - format(self, x):
+        - This method will convert a number into words format.
+        - This method will get "x" as int or float which is the number to be converted into words format.
+        - This method will return the number in words format as str.
+        - Example Usage:
+        - >>> formatter = NumberWordFormatter()
+        - >>> formatter.format(123456)
+        - >>> The expected return value for example usage is : "ONE HUNDRED AND TWENTY THREE THOUSAND FOUR HUNDRED AND FIFTY SIX ONLY" 
+    - format_string(self, x):
+        - This method will convert a string representation of a number into words format.
+        - This method will get "x" as str which is the string representation of a number.
+        - This method will return the number in words format as str.
+        - Example Usage:
+        - >>> formatter = NumberWordFormatter()
+        - >>> formatter.format_string("123456")
+        - >>> The expected return value for example usage is :  "ONE HUNDRED AND TWENTY THREE THOUSAND FOUR HUNDRED AND FIFTY SIX ONLY"   
+    - trans_two(self, s):
+        - This method will convert a two-digit number into words format.
+        - This method will get "s" as str which is the two-digit number.
+        - This method will return the number in words format as str.
+        - Example Usage:
+        - >>> formatter = NumberWordFormatter()
+        - >>> formatter.trans_two("23")
+        - >>> The expected return value for example usage is :  "TWENTY THREE"
+    - trans_three(self, s):
+        - This method will Convert a three-digit number into words format.
+        - This method will get "s" as str which is the three-digit number.
+        - This method will return the number in words format as str.
+        - Example Usage:
+        - >>> formatter = NumberWordFormatter()
+        - >>> formatter.trans_three("123")
+        - >>> The expected return value for example usage is :  "ONE HUNDRED AND TWENTY THREE"
+    - parse_more(self, i):
+        - This method will Parse the thousand/million/billion suffix based on the index.
+        - This method will get "i" as int which is the index representing the magnitude (thousand, million, billion).
+        - This method will return the corresponding suffix for the magnitude as str.
+        - Example Usage:
+        - >>> formatter = NumberWordFormatter()
+        - >>> formatter.parse_more(1)
+        - >>> The expected return value for example usage is :  "THOUSAND"   
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.

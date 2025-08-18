@@ -1,0 +1,164 @@
+System Prompt:
+Provided are instructions for generating the code for a class. Please provide the only code in your response.
+
+User Prompt:
+a. Understand the Overall Purpose:
+    - The VendingMachine is a class that provides vector operations, including calculating similarity, cosine similarities, average similarity, and IDF weights.
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the vending machines (__init__)
+        - Add a product to the vending machine (add_item)
+        - Insert coins into the vending machine (insert_coin)
+        - Purchase a product from the vending machine (purchase_item)
+        - Replenish the inventory of a product already in the vending machine(restock_item)
+        - Display the products in the vending machine (display_items)
+c. Detail each method:
+    - __init__(self):
+        - This method will act as the constructor.
+        - This method will initialize the vending machine's inventory and balance.
+        - self.inventory = {}
+        - self.balance = 0
+    - add_item(self, item_name, price, quantity):
+        - This method will add a product to the vending machine's inventory.
+        - This method will get "item_name" as str which is the name of the product to be added, "price" as float which is the price of the product to be added.
+        - This method will return None.
+        - Example Usage:
+        - >>> vendingMachine = VendingMachine()
+        - >>> vendingMachine.add_item('Coke', 1.25, 10)
+        - >>> vendingMachine.inventory
+        - >>> The expected return value for example usage is : {'Coke': {'price': 1.25, 'quantity': 10}}
+    - insert_coin(self, amount):
+        - This method will inserts coins into the vending machine.
+        - This method will get "amount" as float which is the amount of coins to be inserted.
+        - This method will return The balance of the vending machine after the coins are inserted as float.
+        - Example Usage:
+        - >>> vendingMachine = VendingMachine()
+        - >>> vendingMachine.insert_coin(1.25)
+        - >>> The expected return value for example usage is : 1.25
+    - purchase_item(self, item_name):
+        - This method will purchase a product from the vending machine and returns the balance after the purchase and displays purchase unsuccessful if the product is out of stock.
+        - This method will get "item_name" as str which is the name of the product to be purchased.
+        - This method will return the balance of the vending machine after the product is purchased as float if successful, otherwise returns False.
+        - Example Usage:
+        - >>> vendingMachine = VendingMachine()
+        - >>> vendingMachine.inventory = {'Coke': {'price': 1.25, 'quantity': 10}}
+        - >>> vendingMachine.balance = 1.25
+        - >>> vendingMachine.purchase_item('Coke')  
+        - >>> The expected output value for example usage is : 0.0  
+        - >>> vendingMachine.purchase_item('Pizza')
+        - >>> The expected return value for example usage is : False
+    - restock_item(self, item_name, quantity):
+        - This method will replenish the inventory of a product already in the vending machine.
+        - This method will get "item_name" as str which is the name of the product to be replenished, "quantity" as int which is the quantity of the product to be replenished.
+        - This method will return True if the product is already in the vending machine, otherwise returns False.
+        - Example Usage:
+        - >>> vendingMachine = VendingMachine()
+        - >>> vendingMachine.inventory = {'Coke': {'price': 1.25, 'quantity': 10}}
+        - >>> vendingMachine.restock_item('Coke', 10)
+        - >>> The expected return value for example usage is : True
+        - >>> vendingMachine.restock_item('Pizza', 10)  
+        - >>> The expected return value for example usage is : False
+    - display_items(self):
+        - This method will display the products in the vending machine.
+        - This method will return a list of the products in the vending machine, If the vending machine is empty the method returns False.
+        - Example Usage:
+        - >>> vendingMachine = VendingMachine()
+        - >>> vendingMachine.display_items()
+        - >>> The expected return value for example usage is : False  
+        - >>> vendingMachine.inventory = {'Coke': {'price': 1.25, 'quantity': 10} }
+        - >>> vendingMachine.display_items()
+        - >>> The expected return value for example usage is : 'Coke - $1.25 [10]'
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.       
+
+ Use the following prompt and solution pair as context for generating the previously mentioned class: 
+a. Understand the Overall Purpose:
+    - The ZipFileProcessor class can read and decompress zip files. The ZipFileProcessor class also can compress a list of specified files into a zip file. 
+b. Identify the Required Methods:
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize file name (__init__)
+        - Read files (read_zip_file)
+        - Extract all files (extract_all)
+        - Extract a specific file identified by name (extract_file)
+        - Compress files into zip (create_zip_file)
+c. Detail each method:
+    - __init__(self, file_name):
+        - This method will act as the constructor.
+        - This method will initialize the file name.
+        - This Method will accept "file_name" as str ehich is the name of the file to be processed.
+        - self.file_name = file_name
+    - read_zip_file(self):
+        - This method will get open file object, and return the open file object if successful; otherwise, returns None
+        - Example Usage: 
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> file = zfp.read_zip_file()
+    - extract_all(self, output_path):
+        - This method will extract all zip files and place them in the specified path
+        - This method will get the "output_path" as str which is the location of the extracted file.
+        - This method will return True or False to represent if the extraction operation was successful. 
+        - Example Usage:
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.extract_all("result/aaa")
+    - extract_file(self, file_name, output_path):  
+        - This method will extract the file with the specified name from the zip file and place it in the specified path  
+        - This method will get "file_name" as str whcih is the name of the file to be uncompressed, "output_path" as str which is the location of the extracted file. 
+        - The method will return True or False, representing whether the extraction operation was successful
+        - Example usage: 
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.extract_file("bbb.txt", "result/aaa")
+    - create_zip_file(self, files, output_file_name):
+        - This method will compress the specified file list into a zip file and place it in the specified path. 
+        - This method will get "files" as a list of string which is the List of files to compress, "output_file_name" as str which specifies output path.
+        - This method will return True or False, representing whether the compression operation was successful 
+        - Example Usage:
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.create_zip_file(["bbb.txt", "ccc,txt", "ddd.txt"], "output/bcd") 
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import zipfile
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 
+
+
+import zipfile
+
+
+class ZipFileProcessor:
+    def __init__(self, file_name):
+        self.file_name = file_name
+
+    def read_zip_file(self):
+        try:
+            zip_file = zipfile.ZipFile(self.file_name, 'r')
+            return zip_file
+        except:
+            return None
+
+    def extract_all(self, output_path):
+        try:
+            with zipfile.ZipFile(self.file_name, 'r') as zip_file:
+                zip_file.extractall(output_path)
+            return True
+        except:
+            return False
+
+    def extract_file(self, file_name, output_path):
+        try:
+            with zipfile.ZipFile(self.file_name, 'r') as zip_file:
+                zip_file.extract(file_name, output_path)
+            return True
+        except:
+            return False
+
+    def create_zip_file(self, files, output_file_name):
+        try:
+            with zipfile.ZipFile(output_file_name, 'w') as zip_file:
+                for file in files:
+                    zip_file.write(file)
+            return True
+        except:
+            return False

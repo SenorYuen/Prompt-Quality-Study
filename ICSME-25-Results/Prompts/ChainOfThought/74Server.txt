@@ -1,0 +1,62 @@
+a. Understand the Overall Purpose:
+    - The Server is a class as a server, which handles a white list, message sending and receiving, and information display.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the whitelist, the sending and receiving information (__init__)
+        - Add an address to the whitelist (add_white_list)
+        - Remove an address from the whitelist (del_white_list)
+        - Receive information containing address and content (recv)
+        - Send information containing address and content (send)
+        - Returns struct of the specified type (show)
+c. Detail each method:
+    - __init__(self):
+        - This method will act as the constructor.
+        - This method will initialize the whitelist as an empty list, and initialize the sending and receiving information as an empty dictionary
+        - self.white_list = []
+        - self.send_struct = {}
+        - self.receive_struct = {}
+    - add_white_list(self, addr):
+        - This method will add an address to the whitelist and do nothing if it already exists. 
+        - This method will get "addr" as int which is the address to be added.
+        - This method will return the new whitelist as list or False if the address already exists. 
+        - Example Usage: 
+        - >>> server = Server()
+        - >>> server.add_white_list(88) 
+        - >>> The expected return value for example usage is : [88]   
+    - del_white_list(self, addr):
+        - This method will remove an address to the whitelist and do nothing if it already exists. 
+        - This method will get "addr" as int which is the address to be deleted.
+        - This method will return the new whitelist as list or False if the address does not exists. 
+        - Example Usage: 
+        - >>> server.add_white_list(88)
+        - >>> server.del_white_list(88)
+        - >>> The expected return value for example usage is : [] 
+    - recv(self, info):
+        - This method will receive information containing address and content. If the address is on the whitelist, receive the content; otherwise, do not receive it.
+        - This method will get "info" as dict which is the information dictionary containing address and content.
+        - This method will return the content of the information if successfully received; otherwise, return False. 
+        - Example Usage: 
+        - >>> server.recv({"addr":88,"content":"abc"})
+        - >>> The expected return value for example usage is : abc
+    - send(self, info):
+        - This method will send information containing address and content.
+        - This method will get "info" as dict which is the information dictionary containing address and content.
+        - This method will return nothing if successfully sent; otherwise, return a string indicating an error message. 
+        - Example Usage: 
+        - >>> server.send({"addr":66,"content":"ABC"})
+        - self.send_struct = {"addr":66,"content":"ABC"}  
+    -  show(self, type):
+        - This method will return a struct of the specified type.
+        - This method will get "type" as str which is the type of struct to be returned, which can be 'send' or 'receive'.
+        - This method will return the corresponding struct if type is equal to 'send' or 'receive; otherwise, return False. 
+        - Example Usage: 
+        - >>> server.recv({"addr":88,"content":"abc"})
+        - >>> server.send({"addr":66,"content":"ABC"})
+        - >>> server.show("send") 
+        - >>> The expected return value for example usage is : {"addr":66,"content":"ABC"}
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 

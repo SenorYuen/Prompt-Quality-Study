@@ -1,0 +1,192 @@
+System Prompt:
+Provided are instructions for completing the code for a class. Please provide only code with comments in the response.
+
+User Prompt:
+Using the example solution included later, please complete the class Hotel in the subsequent code: 
+class Hotel:
+    """
+    This is a class as hotel management system, managing the booking, check-in, check-out, and availability of rooms in a hotel with different room types.
+    """
+
+    def __init__(self, name, rooms):
+        """
+        Initialize the three fields in Hotel System.
+        name is the hotel name.
+        available_rooms stores the remaining rooms in the hotel
+        booked_rooms stores the rooms that have been booked and the person's name who booked rooms.
+        >>> hotel.name
+        'peace hotel'
+        >>> hotel.available_rooms
+        available_rooms = {'single': 5, 'double': 3}
+        >>> hotel.booked_rooms
+        {'single': {'guest 1': 2, 'guest 2':1}, 'double': {'guest1': 1}}
+        """
+        self.name = name
+        self.available_rooms = rooms
+        self.booked_rooms = {}
+
+    def book_room(self, room_type, room_number, name):
+        """
+        Check if there are any rooms of the specified type available.
+        if rooms are adequate, modify available_rooms and booked_rooms and finish booking, or fail to book otherwise.
+        :param room_type: str
+        :param room_number: int, the expected number of specified type rooms to be booked
+        :param name: str, guest name
+        :return: if number of rooms about to be booked doesn't exceed the remaining rooms, return str 'Success!'
+                if exceeds but quantity of available rooms is not equal to zero, return int(the remaining quantity of this room type).
+                if exceeds and quantity is zero or the room_type isn't in available_room, return False.
+        >>> hotel = Hotel('peace hotel', {'single': 5, 'double': 3})
+        >>> hotel.book_room('single', 1, 'guest 1')
+        'Success!'
+        >>> hotel.book_room('single', 5, 'guest 1')
+        4
+        >>> hotel.book_room('single', 4, 'guest 1')
+        'Success!'
+        >>> hotel.book_room('single', 1, 'guest 1')
+        False
+        >>> hotel.book_room('triple', 1, 'guest 1')
+        False
+        """
+    
+    def check_in(self, room_type, room_number, name):
+        """
+        Check if the room of the specified type and number is booked by the person named name.
+        Remove this name when check in successfuly(room_number is equal to specific person's booked_rooms. When the actual check in quantity (room_number) is less than the booked quantity, number in booked_rooms will be booked quantity minus actual quantity
+        :param room_type: str, check in room type
+        :param room_number: int, check in room number
+        :param name: str, person name
+        :return False: only if the room_type is not in the booked_rooms or room_number is higher than quantity in booked rooms.
+        >>> hotel = Hotel('peace hotel', {'single': 5, 'double': 3})
+        >>> hotel.book_room('single', 1, 'guest 1')
+        'Success!'
+        >>> hotel.check_in('single', 2, 'guest 1')
+        False
+        >>> hotel.check_in('single', 1, 'guest 1')
+        >>> hotel.booked_rooms
+        {'single': {}}
+        """
+
+    def check_out(self, room_type, room_number):
+        """
+        Check out rooms, add number for specific type in available_rooms.
+        If room_type is new, add new type in available_rooms.
+        :param room_type: str, check out room type
+        :param room_number: int, check out room number
+        >>> hotel = Hotel('peace hotel', {'single': 5, 'double': 3})
+        >>> hotel.check_out('single', 2)
+        >>> hotel.available_rooms
+        {'single': 7, 'double': 3}
+        >>> hotel.check_out('triple', 2)
+        >>> hotel.available_rooms
+        {'single': 7, 'double': 3, 'triple': 2}
+        """
+
+    def get_available_rooms(self, room_type):
+        """
+        Get the number of specific type of available rooms.
+        :param room_type: str, the room type that want to know
+        :return: int, the remaining number of this type rooms.
+        >>> hotel = Hotel('peace hotel', {'single': 5, 'double': 3})
+        >>> hotel.get_available_rooms('single')
+        5
+        """. Here is an included question and solution to base a response off of: import xml.etree.ElementTree as ET
+
+
+class XMLProcessor:
+    """
+    This is a class as XML files handler, including reading, writing, processing as well as finding elements in a XML file.
+    """
+
+    def __init__(self, file_name):
+        """
+        Initialize the XMLProcessor object with the given file name.
+        :param file_name:string, the name of the XML file to be processed.
+        """
+        self.file_name = file_name
+        self.root = None
+
+    def read_xml(self):
+        """
+        Reads the XML file and returns the root element.
+        :return: Element, the root element of the XML file.
+        >>> xml_processor = XMLProcessor('test.xml')
+        >>> root_element = xml_processor.read_xml()
+        >>> print(root_element)
+        <Element 'root' at 0x7f8e3b7eb180>
+        """
+
+
+    def write_xml(self, file_name):
+        """
+        Writes the XML data to the specified file.
+        :param file_name: string, the name of the file to write the XML data.
+        :return: bool, True if the write operation is successful, False otherwise.
+        >>> xml_processor = XMLProcessor('test.xml')
+        >>> root = xml_processor.read_xml()
+        >>> success = xml_processor.write_xml('output.xml')
+        >>> print(success)
+        True
+        """
+
+
+    def process_xml_data(self, file_name):
+        """
+        Modifies the data in XML elements and writes the updated XML data to a new file.
+        :param file_name: string, the name of the file to write the modified XML data.
+        :return: bool, True if the write operation is successful, False otherwise.
+        >>> xml_processor = XMLProcessor('test.xml')
+        >>> root = xml_processor.read_xml()
+        >>> success = xml_processor.process_xml_data('processed.xml')
+        >>> print(success)
+        True
+        """
+
+
+    def find_element(self, element_name):
+        """
+        Finds the XML elements with the specified name.
+        :param element_name: string, the name of the elements to find.
+        :return: list, a list of found elements with the specified name.
+        >>> xml_processor = XMLProcessor('test.xml')
+        >>> root = xml_processor.read_xml()
+        >>> items = xml_processor.find_element('item')
+        >>> for item in items:
+        >>>     print(item.text)
+        apple
+        banana
+        orange
+        """
+
+ import xml.etree.ElementTree as ET
+
+
+class XMLProcessor:
+    def __init__(self, file_name):
+        self.file_name = file_name
+        self.root = None
+
+    def read_xml(self):
+        try:
+            tree = ET.parse(self.file_name)
+            self.root = tree.getroot()
+            return self.root
+        except:
+            return None
+
+    def write_xml(self, file_name):
+        try:
+            tree = ET.ElementTree(self.root)
+            tree.write(file_name)
+            return True
+        except:
+            return False
+
+    def process_xml_data(self, file_name):
+        for element in self.root.iter('item'):
+            text = element.text
+            element.text = text.upper()
+        return self.write_xml(file_name)
+
+    def find_element(self, element_name):
+        elements = self.root.findall(element_name)
+        return elements

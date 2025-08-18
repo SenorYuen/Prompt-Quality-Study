@@ -1,0 +1,133 @@
+System Prompt:
+Provided are instructions for generating the code for a class. Please provide the only code in your response.
+
+User Prompt:
+a. Understand the Overall Purpose:
+    - The IpUtil is a class as a tool for ip that can be used to obtain the local IP address, validate its validity, and also provides the functionality to retrieve the corresponding hostname.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Check if the given IP address is a valid IPv4 address (is_valid_ipv4)
+        - Check if the given IP address is a valid IPv6 address (is_valid_ipv6)
+        - Get the hostname (get_hostname)
+        - Return the binary form of the IP address (get_binary)
+c. Detail each method:
+    -  @staticmethod is_valid_ipv4(ip_address):
+        - This method will check if the given IP address is a valid IPv4 address.
+        - This method will get "ip_address" as str which is the IP address to check.
+        - The method will return True if the IP address is valid, False otherwise. 
+        - Example Usage:
+        - >>> IpUtil.is_valid_ipv4('192.168.0.123')
+        - >>> The expected return value for example usage is : True
+        - >>> IpUtil.is_valid_ipv4('256.0.0.0')
+        - >>> The expected return value for example usage is : False
+    -  @staticmethod is_valid_ipv6(ip_address):
+        - This method will check if the given IP address is a valid IPv6 address.
+        - This method will get "ip_address" as str which is the IP address to check.
+        - The method will return True if the IP address is valid, False otherwise. 
+        - Example Usage:
+        - >>> IpUtil.is_valid_ipv6('2001:0db8:85a3:0000:0000:8a2e:0370:7334')
+        - >>> The expected return value for example usage is : True
+        - >>> IpUtil.is_valid_ipv6('2001:0db8:85a3:::8a2e:0370:7334')
+        - >>> The expected return value for example usage is : True  
+    -  @staticmethod get_hostname(ip_address):
+        - This method will get the hostname associated with the given IP address.
+        - This method will get "ip_address" as str which is the IP address to get the hostname for.
+        - The method will return the hostname associated with the IP address as str.
+        - Example Usage:
+        - >>> IpUtil.get_hostname('110.242.68.3')
+        - >>> The expected return value for example usage is : 'www.baidu.com'
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import socket
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 
+
+ Use the following prompt and solution pair as context for generating the previously mentioned class: 
+a. Understand the Overall Purpose:
+    - The ZipFileProcessor class can read and decompress zip files. The ZipFileProcessor class also can compress a list of specified files into a zip file. 
+b. Identify the Required Methods:
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize file name (__init__)
+        - Read files (read_zip_file)
+        - Extract all files (extract_all)
+        - Extract a specific file identified by name (extract_file)
+        - Compress files into zip (create_zip_file)
+c. Detail each method:
+    - __init__(self, file_name):
+        - This method will act as the constructor.
+        - This method will initialize the file name.
+        - This Method will accept "file_name" as str ehich is the name of the file to be processed.
+        - self.file_name = file_name
+    - read_zip_file(self):
+        - This method will get open file object, and return the open file object if successful; otherwise, returns None
+        - Example Usage: 
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> file = zfp.read_zip_file()
+    - extract_all(self, output_path):
+        - This method will extract all zip files and place them in the specified path
+        - This method will get the "output_path" as str which is the location of the extracted file.
+        - This method will return True or False to represent if the extraction operation was successful. 
+        - Example Usage:
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.extract_all("result/aaa")
+    - extract_file(self, file_name, output_path):  
+        - This method will extract the file with the specified name from the zip file and place it in the specified path  
+        - This method will get "file_name" as str whcih is the name of the file to be uncompressed, "output_path" as str which is the location of the extracted file. 
+        - The method will return True or False, representing whether the extraction operation was successful
+        - Example usage: 
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.extract_file("bbb.txt", "result/aaa")
+    - create_zip_file(self, files, output_file_name):
+        - This method will compress the specified file list into a zip file and place it in the specified path. 
+        - This method will get "files" as a list of string which is the List of files to compress, "output_file_name" as str which specifies output path.
+        - This method will return True or False, representing whether the compression operation was successful 
+        - Example Usage:
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.create_zip_file(["bbb.txt", "ccc,txt", "ddd.txt"], "output/bcd") 
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import zipfile
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 
+
+
+import zipfile
+
+
+class ZipFileProcessor:
+    def __init__(self, file_name):
+        self.file_name = file_name
+
+    def read_zip_file(self):
+        try:
+            zip_file = zipfile.ZipFile(self.file_name, 'r')
+            return zip_file
+        except:
+            return None
+
+    def extract_all(self, output_path):
+        try:
+            with zipfile.ZipFile(self.file_name, 'r') as zip_file:
+                zip_file.extractall(output_path)
+            return True
+        except:
+            return False
+
+    def extract_file(self, file_name, output_path):
+        try:
+            with zipfile.ZipFile(self.file_name, 'r') as zip_file:
+                zip_file.extract(file_name, output_path)
+            return True
+        except:
+            return False
+
+    def create_zip_file(self, files, output_file_name):
+        try:
+            with zipfile.ZipFile(output_file_name, 'w') as zip_file:
+                for file in files:
+                    zip_file.write(file)
+            return True
+        except:
+            return False

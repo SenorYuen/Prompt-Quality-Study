@@ -1,0 +1,73 @@
+a. Understand the Overall Purpose:
+    - The Statistics3 class provides to build SQL queries, including SELECT, INSERT, UPDATE, and DELETE statements. 
+b. To ensure the function of this class, it will need all of these methods:
+    - Calculates the median of the given list (median)
+    - Calculates the mode of the given list (mode)
+    - Calculates the correlation of the given list (correlation)
+    - Calculates the mean of the given list (mean)
+    - Calculates the correlation matrix of the given list (correlation_matrix)
+    - Calculates the standard deviation of the given list(standard_deviation)
+    - Calculates the z-score of the given list (z_score)
+c. Detail each method:
+    - @staticmethod median(data):
+        - This method will calculate the median of the given list.
+        - This method will get "data" as list which is the given list.
+        - This method will return the median of the given list as float. 
+        - Example Usage:   
+        - >>> statistics3 = Statistics3()
+        - >>> statistics3.median([1, 2, 3, 4])
+        - >>> The expected return value for example usage is : 2.5
+    - @staticmethod mode(data):
+        - This method will calculate the mode of the given list.
+        - This method will get "data" as list which is the given list.
+        - This method will return the mode of the given list as list. 
+        - Example Usage:   
+        - >>> statistics3 = Statistics3()
+        - >>> statistics3.mode([1, 2, 3, 3])
+        - >>> The expected return value for example usage is : [3]
+    - @staticmethod correlation(x, y):
+        - This method will calculate the correlation of the given list.
+        - This method will get "x" as list which is the given list, "y" as list which is the given list.
+        - This method will return the correlation of the given list as float. 
+        - Example Usage:   
+        - >>> statistics3 = Statistics3()
+        - >>> statistics3.correlation([1, 2, 3], [4, 5, 6])
+        - >>> The expected return value for example usage is : 1.0
+    - @staticmethod mean(data):
+        - This method will calculate the mean of the given list.
+        - This method will get "data" as list which is the given list.
+        - This method will return the mean of the given list as float. 
+        - Example Usage:   
+        - >>> statistics3 = Statistics3()
+        - >>> statistics3.mean([1, 2, 3])
+        - >>> The expected return value for example usage is : 2.0
+    - @staticmethod correlation_matrix(data):
+        - This method will calculate the correlation matrix of the given list.
+        - This method will get "data" as list which is the given list.
+        - This method will return the correlation matrix of the given list as list. 
+        - Example Usage:   
+        - >>> statistics3 = Statistics3()
+        - >>> statistics3.correlation_matrix([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+        - >>> The expected return value for example usage is : [[1.0, 1.0, 1.0], [1.0, 1.0, 1.0], [1.0, 1.0, 1.0]]
+    - @staticmethod standard_deviation(data):
+        - This method will calculate the standard deviation of the given list.
+        - This method will get "data" as list which is the given list.
+        - This method will return the standard deviation of the given list as float. 
+        - Example Usage:   
+        - >>> statistics3 = Statistics3()
+        - >>> statistics3.standard_deviation([1, 2, 3])
+        - >>> The expected return value for example usage is : 1.0   
+    - @staticmethod z_score(data):
+        - This method will calculate the z-score of the given list.
+        - This method will get "data" as list which is the given list.
+        - This method will return the z-score of the given list as list. 
+        - Example Usage:   
+        - >>> statistics3 = Statistics3()
+        - >>> statistics3.z_score([1, 2, 3, 4])
+        - >>> The expected return value for example usage is : [-1.161895003862225, -0.3872983346207417, 0.3872983346207417, 1.161895003862225]
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import math
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.           

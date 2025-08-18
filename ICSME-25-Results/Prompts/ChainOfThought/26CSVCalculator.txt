@@ -1,0 +1,44 @@
+a. Understand the Overall Purpose:
+    - The CSVProcessor is a class for processing CSV files, including reading and writing CSV data, as well as processing specific operations and saving as a new CSV file.
+b. Identify the Required Methods:  
+    - To ensure the function of this class, it will need all of these methods:
+        - Read the csv file (read_csv)
+        - Write data into a csv file (write_csv)
+        -  Read a csv file (process_csv_data)
+c. Detail each method:
+    - __init__(self):
+        - pass
+    - read_csv(self, file_name):
+        - This method will read the csv file by file_name, get the title and data from it.
+        - This method will get "file_name" as str which is the name of the csv file.  
+        - This method will return title, data: (list, list), first row is title, the rest is data.  
+        - Example Usage:
+        - >>> csvProcessor = CSVProcessor()
+        - >>> csvProcessor.read_csv('read_test.csv')
+        - >>> The expected return value for example usage is :  (['a', 'b', 'c', 'd'], [['hElLo', 'YoU', 'ME', 'LoW']])
+    - write_csv(self, data, file_name):   
+        - This method will write data into a csv file.
+        - This method will get "file_name" as str which is the name of the csv file.  
+        - This method will return 1 if successful; or 0 otherwise
+        - Example Usage:
+        - >>> csvProcessor = CSVProcessor()
+        - >>> csvProcessor.write_csv([['a', 'b', 'c', 'd'], ['1', '2', '3', '4']], 'write_test.csv')
+        - >>> The expected return value for example usage is : 1
+    - process_csv_data(self, N, save_file_name): 
+        - This method will read a csv file into variable title and data. Only retain the N th (from 0) column data and Capitalize them, store the title and new data into a new csv file. Add '_process' suffix after the old file name, as a new file name.
+        - This method will get "N" as int which is tth column(from 0), "save_file_name" as str which is the name of the file that needs to be processed. 
+        - This method will return 1 if successful; or 0 otherwise
+        - Example Usage:
+        - >>> csvProcessor = CSVProcessor()
+        - >>> csvProcessor.read_csv('read_test.csv')
+        - >>> The expected output value for example usage is : (['a', 'b', 'c', 'd'], [['hElLo', 'YoU', 'ME', 'LoW']])
+        - >>> csvProcessor.process_csv_data(0, 'read_test.csv')  
+        - >>> The expected output value for example usage is : 1
+        - >>> csvProcessor.read_csv('read_test_process.csv')
+        - >>> The expected output value for example usage is (['a', 'b', 'c', 'd'], [['HELLO']]): 
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import csv
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 

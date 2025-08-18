@@ -1,0 +1,59 @@
+a. Understand the Overall Purpose:
+    - The MinesweeperGame is a class that implements mine sweeping games including minesweeping and winning judgment.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initializes the MinesweeperGame class with the size of the board and the number of mines (__init__)
+        - Generates a minesweeper map with the given size of the board and the number of mines (generate_mine_sweeper_map)
+        - Generates a player map with the given size of the board (generate_playerMap)
+        - Checks whether the player has won the game (check_won)
+        - Sweeps the given position (sweep)
+c. Detail each method:
+    -  __init__(self):
+        - This method will act as the constructor.
+        - This method will Initialize the MinesweeperGame class with the size of the board and the number of mines.
+        - This method will get "n" as int which is the size of the board, "m" as int which is the number of mines. 
+        - self.n = n
+        - self.k = k
+        - self.minesweeper_map = self.generate_mine_sweeper_map()
+        - self.player_map = self.generate_playerMap()
+        - self.score = 0
+    - generate_mine_sweeper_map(self):
+        - This method will generate a minesweeper map with the given size of the board and the number of mines,the given parameter n is the size of the board,the size of the board is n*n,the parameter k is the number of mines,'X' represents the mine,other numbers represent the number of mines around the position.
+        - The method will return the minesweeper map as list.
+        - Example Usage:    
+        - >>> minesweeper_game = MinesweeperGame(3, 1)
+        - >>> minesweeper_game.generate_mine_sweeper_map()
+        - The expected return value of example usage is : [['X', 1, 0], [1, 1, 0], [0, 0, 0]]
+    - generate_playerMap(self):
+        - This method will generate a player map with the given size of the board, the given parameter n is the size of the board,the size of the board is n*n,the parameter k is the number of mines,'-' represents the unknown position.
+        - The method will return the player map as list.
+        - Example Usage:    
+        - >>> minesweeper_game = MinesweeperGame(3, 1)
+        - >>> minesweeper_game.generate_playerMap()
+        - The expected return value of example usage is :  [['-', '-', '-'], ['-', '-', '-'], ['-', '-', '-']]
+    - check_won(self,map):
+        - This method will check whether the player has won the game, if there are just mines in the player map.
+        - This method will get the "map" as a list which is the player map.
+        - The method will return True if the player has won the game, False otherwise.
+        - Example Usage:    
+        - >>> minesweeper_game = MinesweeperGame(3, 1)
+        - >>> minesweeper_game.minesweeper_map = [['X', 1, 0], [1, 1, 0], [0, 0, 0]]
+        - >>> minesweeper_game.player_map = [['-', '-', '-'], ['-', '-', '-'], ['-', '-', '-']]
+        - >>> minesweeper_game.check_won(minesweeper_game.player_map)
+        - The expected return value of example usage is :  False     
+    - sweep(self, x, y):
+        - This method will sweep the given position.
+        - This method will get the "x" as int which is the x coordinate of the position, "y" as int which is the y coordinate of the position.
+        - The method will return True if the player has won the game, False otherwise,if the game still continues, return the player map, list.
+        - Example Usage:    
+        - >>> minesweeper_game = MinesweeperGame(3, 1)
+        - >>> minesweeper_game.minesweeper_map = [['X', 1, 0], [1, 1, 0], [0, 0, 0]]
+        - >>> minesweeper_game.player_map = [['-', '-', '-'], ['-', '-', '-'], ['-', '-', '-']]
+        - >>> minesweeper_game.sweep(1, 1)
+        - The expected return value of example usage is :  [['-', '-', '-'], ['-', 1, '-'], ['-', '-', '-']]
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import random
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.

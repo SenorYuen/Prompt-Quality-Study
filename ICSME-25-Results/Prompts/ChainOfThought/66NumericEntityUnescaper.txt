@@ -1,0 +1,30 @@
+a. Understand the Overall Purpose:
+    - The NumericEntityUnescaper is a class that provides functionality to replace numeric entities with their corresponding characters in a given string.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Replaces numeric character references (replace)
+        - Determines whether a given character is a hexadecimal digit (is_hex_char)
+c. Detail each method:
+    - __init__(self):
+        - pass
+    - replace(self, string):
+        - This method will replace numeric character references (HTML entities) in the input string with their corresponding Unicode characters.
+        - This method will get "string" as str which is the input string containing numeric character references.
+        - This method will return the input string with numeric character references replaced with their corresponding Unicode characters.
+        - Example Usage: 
+        - >>> unescaper = NumericEntityUnescaper()
+        - >>> unescaper.replace("&#65;&#66;&#67;")  
+        - >>> The expected return value for example usage is : 'ABC'
+    - @staticmethod is_hex_char(char):
+        - This method will determine whether a given character is a hexadecimal digit.
+        - This method will get "char" as str which is the character to check.
+        - This method will return True if the character is a hexadecimal digit, False otherwise.
+        - Example Usage: 
+        - >>> NumericEntityUnescaper.is_hex_char('a')
+        - >>> The expected return value for example usage is : True
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.  

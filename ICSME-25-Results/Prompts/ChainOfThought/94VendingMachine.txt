@@ -1,0 +1,71 @@
+a. Understand the Overall Purpose:
+    - The VendingMachine is a class that provides vector operations, including calculating similarity, cosine similarities, average similarity, and IDF weights.
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the vending machines (__init__)
+        - Add a product to the vending machine (add_item)
+        - Insert coins into the vending machine (insert_coin)
+        - Purchase a product from the vending machine (purchase_item)
+        - Replenish the inventory of a product already in the vending machine(restock_item)
+        - Display the products in the vending machine (display_items)
+c. Detail each method:
+    - __init__(self):
+        - This method will act as the constructor.
+        - This method will initialize the vending machine's inventory and balance.
+        - self.inventory = {}
+        - self.balance = 0
+    - add_item(self, item_name, price, quantity):
+        - This method will add a product to the vending machine's inventory.
+        - This method will get "item_name" as str which is the name of the product to be added, "price" as float which is the price of the product to be added.
+        - This method will return None.
+        - Example Usage:
+        - >>> vendingMachine = VendingMachine()
+        - >>> vendingMachine.add_item('Coke', 1.25, 10)
+        - >>> vendingMachine.inventory
+        - >>> The expected return value for example usage is : {'Coke': {'price': 1.25, 'quantity': 10}}
+    - insert_coin(self, amount):
+        - This method will inserts coins into the vending machine.
+        - This method will get "amount" as float which is the amount of coins to be inserted.
+        - This method will return The balance of the vending machine after the coins are inserted as float.
+        - Example Usage:
+        - >>> vendingMachine = VendingMachine()
+        - >>> vendingMachine.insert_coin(1.25)
+        - >>> The expected return value for example usage is : 1.25
+    - purchase_item(self, item_name):
+        - This method will purchase a product from the vending machine and returns the balance after the purchase and displays purchase unsuccessful if the product is out of stock.
+        - This method will get "item_name" as str which is the name of the product to be purchased.
+        - This method will return the balance of the vending machine after the product is purchased as float if successful, otherwise returns False.
+        - Example Usage:
+        - >>> vendingMachine = VendingMachine()
+        - >>> vendingMachine.inventory = {'Coke': {'price': 1.25, 'quantity': 10}}
+        - >>> vendingMachine.balance = 1.25
+        - >>> vendingMachine.purchase_item('Coke')  
+        - >>> The expected output value for example usage is : 0.0  
+        - >>> vendingMachine.purchase_item('Pizza')
+        - >>> The expected return value for example usage is : False
+    - restock_item(self, item_name, quantity):
+        - This method will replenish the inventory of a product already in the vending machine.
+        - This method will get "item_name" as str which is the name of the product to be replenished, "quantity" as int which is the quantity of the product to be replenished.
+        - This method will return True if the product is already in the vending machine, otherwise returns False.
+        - Example Usage:
+        - >>> vendingMachine = VendingMachine()
+        - >>> vendingMachine.inventory = {'Coke': {'price': 1.25, 'quantity': 10}}
+        - >>> vendingMachine.restock_item('Coke', 10)
+        - >>> The expected return value for example usage is : True
+        - >>> vendingMachine.restock_item('Pizza', 10)  
+        - >>> The expected return value for example usage is : False
+    - display_items(self):
+        - This method will display the products in the vending machine.
+        - This method will return a list of the products in the vending machine, If the vending machine is empty the method returns False.
+        - Example Usage:
+        - >>> vendingMachine = VendingMachine()
+        - >>> vendingMachine.display_items()
+        - >>> The expected return value for example usage is : False  
+        - >>> vendingMachine.inventory = {'Coke': {'price': 1.25, 'quantity': 10} }
+        - >>> vendingMachine.display_items()
+        - >>> The expected return value for example usage is : 'Coke - $1.25 [10]'
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.       

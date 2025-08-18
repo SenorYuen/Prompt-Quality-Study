@@ -1,0 +1,58 @@
+a. Understand the Overall Purpose:
+    - The TextFileProcessor class handles reading, writing, and processing text files. It can read the file as JSON, read the raw text, write content to the file, and process the file by removing non-alphabetic characters.
+
+b. To ensure the function of this class, it will need all of these methods:
+    - Read file as json (read_file_as_json)
+    - Read and return content from a path (read_file)
+    - Write content to path and overwrite if it already exists (write_file)
+    - Read a file and filter out non-alphabetical characters (process_file)
+
+c. Detail each method:
+    - __init__(self, file_path):
+        - The constructor will initialize the file path.
+        - The constructor will accept the parameter file_path (a string containing the file path), and will have the following field: self.file_path = file_path.
+
+    - read_file_as_json(self):
+        - This method will read the self.file_path file as a JSON. If the content of the file is not compliant with JSON rules, then the code will raise an error.
+        - The method will not accept any additional parameters, but will return data (a dictionary if the file is stored as a JSON format, or a string/integer/float according to the file content).
+        >>> textFileProcessor = TextFileProcessor('test.json')
+        >>> textFileProcessor.read_file_as_json()
+        This should return: {'name': 'test', 'age': 12}
+        >>> type(textFileProcessor.read_file_as_json())
+        This should return: <class 'dict'>
+
+    - read_file(self):
+        - This method will read and return the content of the self.file_path file.
+        - The method will not accept any additional parameters, but will return the same result as the read() method.
+        Example use:
+        >>> textFileProcessor = TextFileProcessor('test.json')
+        >>> textFileProcessor.read_file()
+        This should return: '{\n    "name": "test",\n    "age": 12\n}'
+
+    - write_file(self, content):
+        - This method will write content into the self.file_path file, and overwrite if the file already exists.
+        - The method will accept the parameter content (any content), and will not have a return type.
+        Example use:
+        >>> textFileProcessor = TextFileProcessor('test.json')
+        >>> textFileProcessor.write_file('Hello world!')
+        >>> textFileProcessor.read_file()
+        This should return: 'Hello world!'
+
+    - process_file(self):
+        - This method will read the self.file_path file and filter out non-alphabetic characters from the content string. It will also overwrite the processed data into the same self.file_path file.
+        Example use:
+        >>> textFileProcessor = TextFileProcessor('test.json')
+        >>> textFileProcessor.read_file()
+        This should return: '{\n    "name": "test",\n    "age": 12\n}'
+        >>> textFileProcessor.process_file()
+        This should return: 'nametestage'
+
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome.
+
+e. Import statements:
+    - import json
+
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in
+

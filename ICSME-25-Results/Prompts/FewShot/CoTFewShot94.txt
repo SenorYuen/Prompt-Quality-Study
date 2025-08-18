@@ -1,0 +1,170 @@
+System Prompt:
+Provided are instructions for generating the code for a class. Please provide the only code in your response.
+
+User Prompt:
+a. Understand the Overall Purpose:
+    - The Warehouse is a class that manages inventory and orders, including adding products, updating product quantities, retrieving product quantities, creating orders, changing order statuses, and tracking orders.
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize self.inventory and  self.orders (__init__)
+        - Add product to inventory (add_product)
+        - Add the quantity to the corresponding product (update_product_quantity)
+        - Get the quantity of specific product (get_product_quantity)
+        - Create a order (create_order)
+        - Change the status of order (change_order_status)
+        - Get the status of specific order (track_order)
+c. Detail each method:
+    - __init__(self):
+        - This method will act as the constructor.
+        - This method will initialize two fields- self.inventory is a dict that stores the products and self.orders is a dict that stores the products in an order.
+        - self.inventory = {} # Product ID: Product
+        - self.orders = {}  # Order ID: Order
+    - add_product(self, product_id, name, quantity):
+        - This method will add product to inventory and plus the quantity if it has existed in inventory. Or it will just add the new product to dict otherwise.
+        - This method will get "product_id" as int which is the product id of the product to be added, "name" as str which is the name of the product to be added, "quantity" as int which is the quantity of the product to be added.
+        - Example Usage:
+        - >>> warehouse.add_product(1, "product1", 3)
+        - >>> warehouse.inventory
+        - >>> The expected output value for example usage is: {1: {'name': 'product1', 'quantity': 3}}
+    - update_product_quantity(self, product_id, quantity):
+        - This method will add the quantity to the corresponding product in inventory according to product_id.
+        - This method will get "product_id" as int which is the product id of the product to be updated, "quantity" as int which is the quantity of the product to be updated.
+        - Example Usage:
+        - >>> warehouse.add_product(1, "product1", 3)
+        - >>> warehouse.update_product_quantity(1, -1)
+        - >>> warehouse.inventory
+        - >>> The expected output value for example usage is: {1: {'name': 'product1', 'quantity': 2}}
+    - get_product_quantity(self, product_id):
+        - This method will get the quantity of a specific product by product_id.
+        - This method will get "product_id" as int which is the product id of the product.
+        - This method will return the product_id and the corresponding quantity if the product_id is in inventory, or False otherwise. 
+        - Example Usage:
+        -  >>> warehouse.add_product(1, "product1", 3)
+        - >>> warehouse.get_product_quantity(1)
+        - >>> The expected return value for example usage is: 3 
+        - >>> warehouse.get_product_quantity(2)
+        - >>> The expected return value for example usage is: False
+    - create_order(self, order_id, product_id, quantity):
+        - This method will create an order which includes the information of a product, like id and quantity. And put the new order into self.orders. The default value of status is 'Shipped'.
+        - This method will get "order_id" as int which is the id of the order that will be created, "product_id" as int which is the product id of the order that will be created, "quantity" as int which is the quantity of product that be selected.
+        - This method will return False only if product_id is not in inventory or the quantity is not adequate.
+        - Example Usage:
+        - >>> warehouse.add_product(1, "product1", 3)
+        - >>> warehouse.create_order(1, 1, 2)
+        - >>> warehouse.orders
+        - >>> The expected output value for example usage is: {1: {'product_id': 1, 'quantity': 2, 'status': 'Shipped'}} 
+        - >>> warehouse.create_order(1, 2, 2) 
+        - >>> The expected output value for example usage is: False
+    - change_order_status(self, order_id, status):
+        - This method will change the status of order if the input order_id is in self.orders.
+        - This method will get "order_id" as int which is the id of the order whose status will be changed, "status" as str which is the state that is going to change to.
+        - This method will return False only if product_id is not in self.orders.
+        - Example Usage:
+        - >>> warehouse.add_product(1, "product1", 3)
+        - >>> warehouse.create_order(1, 1, 2)
+        - >>> warehouse.change_order_status(1, "done")
+        - >>> warehouse.orders
+        - >>> The expected output value for example usage is: {1: {'product_id': 1, 'quantity': 2, 'status': 'done'}}
+    - track_order(self, order_id):
+        - This method will get the status of a specific order.
+        - This method will get "order_id" as int which is the id of the order that will be tracked.
+        - This method will return False only if product_id is not in self.orders.
+        - Example Usage:
+        - >>> warehouse.add_product(1, "product1", 3)
+        - >>> warehouse.create_order(1, 1, 2)
+        - >>> warehouse.track_order(1)
+        - >>> The expected output value for example usage is: 'Shipped'
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.   
+
+ Use the following prompt and solution pair as context for generating the previously mentioned class: 
+a. Understand the Overall Purpose:
+    - The ZipFileProcessor class can read and decompress zip files. The ZipFileProcessor class also can compress a list of specified files into a zip file. 
+b. Identify the Required Methods:
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize file name (__init__)
+        - Read files (read_zip_file)
+        - Extract all files (extract_all)
+        - Extract a specific file identified by name (extract_file)
+        - Compress files into zip (create_zip_file)
+c. Detail each method:
+    - __init__(self, file_name):
+        - This method will act as the constructor.
+        - This method will initialize the file name.
+        - This Method will accept "file_name" as str ehich is the name of the file to be processed.
+        - self.file_name = file_name
+    - read_zip_file(self):
+        - This method will get open file object, and return the open file object if successful; otherwise, returns None
+        - Example Usage: 
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> file = zfp.read_zip_file()
+    - extract_all(self, output_path):
+        - This method will extract all zip files and place them in the specified path
+        - This method will get the "output_path" as str which is the location of the extracted file.
+        - This method will return True or False to represent if the extraction operation was successful. 
+        - Example Usage:
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.extract_all("result/aaa")
+    - extract_file(self, file_name, output_path):  
+        - This method will extract the file with the specified name from the zip file and place it in the specified path  
+        - This method will get "file_name" as str whcih is the name of the file to be uncompressed, "output_path" as str which is the location of the extracted file. 
+        - The method will return True or False, representing whether the extraction operation was successful
+        - Example usage: 
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.extract_file("bbb.txt", "result/aaa")
+    - create_zip_file(self, files, output_file_name):
+        - This method will compress the specified file list into a zip file and place it in the specified path. 
+        - This method will get "files" as a list of string which is the List of files to compress, "output_file_name" as str which specifies output path.
+        - This method will return True or False, representing whether the compression operation was successful 
+        - Example Usage:
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.create_zip_file(["bbb.txt", "ccc,txt", "ddd.txt"], "output/bcd") 
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import zipfile
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 
+
+
+import zipfile
+
+
+class ZipFileProcessor:
+    def __init__(self, file_name):
+        self.file_name = file_name
+
+    def read_zip_file(self):
+        try:
+            zip_file = zipfile.ZipFile(self.file_name, 'r')
+            return zip_file
+        except:
+            return None
+
+    def extract_all(self, output_path):
+        try:
+            with zipfile.ZipFile(self.file_name, 'r') as zip_file:
+                zip_file.extractall(output_path)
+            return True
+        except:
+            return False
+
+    def extract_file(self, file_name, output_path):
+        try:
+            with zipfile.ZipFile(self.file_name, 'r') as zip_file:
+                zip_file.extract(file_name, output_path)
+            return True
+        except:
+            return False
+
+    def create_zip_file(self, files, output_file_name):
+        try:
+            with zipfile.ZipFile(output_file_name, 'w') as zip_file:
+                for file in files:
+                    zip_file.write(file)
+            return True
+        except:
+            return False

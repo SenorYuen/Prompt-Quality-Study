@@ -1,0 +1,51 @@
+a. Understand the Overall Purpose:
+    - The Words2Numbers is a class that provides a text-to-number conversion utility, allowing conversion of written numbers (in words) to their numerical representation.
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the word lists and dictionaries (__init__)
+        - Convert the word string to the corresponding integer string (text2int)
+        - Check if the input text contains only valid words (is_valid_input)
+c. Detail each method:
+    - __init__(self, city) -> None:
+        - This method will act as the constructor.
+        - This method will initialize the word lists and dictionaries required for conversion.
+        - self.numwords = {}
+        - self.units = [
+            "zero", "one", "two", "three", "four", "five", "six", "seven", "eight",
+            "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen",
+            "sixteen", "seventeen", "eighteen", "nineteen",
+        ]
+        - self.tens = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"]
+        - self.scales = ["hundred", "thousand", "million", "billion", "trillion"]
+
+        - self.numwords["and"] = (1, 0)
+        - for idx, word in enumerate(self.units):
+            - self.numwords[word] = (1, idx)
+        - for idx, word in enumerate(self.tens):
+            - self.numwords[word] = (1, idx * 10)
+        - for idx, word in enumerate(self.scales):
+            - self.numwords[word] = (10 ** (idx * 3 or 2), 0)
+
+        - self.ordinal_words = {'first': 1, 'second': 2, 'third': 3, 'fifth': 5, 'eighth': 8, 'ninth': 9, 'twelfth': 12}
+        - self.ordinal_endings = [('ieth', 'y'), ('th', '')]
+    - text2int(self, textnum):
+        - This method will convert the word string to the corresponding integer string.
+        - This method will get "textnum" as str which is the word string to be converted.
+        - This method will return the final converted integer string as str.
+        - Example Usage:
+        - >>> w2n = Words2Numbers()
+        - >>> w2n.text2int("thirty-two")
+        - >>> The expected return value for example usage is: "32"
+    - is_valid_input(self, textnum):
+        - This method will check if the input text contains only valid words that can be converted into numbers.
+        - This method will get "textnum" as str which is the input text containing words representing numbers.
+        - This method will return True if input is valid, False otherwise.
+        - Example Usage:
+        - >>> w2n = Words2Numbers()
+        - >>> w2n.is_valid_input("thirty-two")
+        - >>> The expected return value for example usage is: False
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.   

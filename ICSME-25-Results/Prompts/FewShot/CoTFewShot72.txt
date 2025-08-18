@@ -1,0 +1,146 @@
+System Prompt:
+Provided are instructions for generating the code for a class. Please provide the only code in your response.
+
+User Prompt:
+a. Understand the Overall Purpose:
+    - The ShoppingCart is a class which manages items, their prices, quantities, and allows for adding, removing, viewing items, and calculating the total price.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the items representing the shopping list (__init__)
+        - Add item information to the shopping list items (add_item)
+        - Subtract the specified quantity of item from the shopping list items (remove_item)
+        - Return the current shopping list items (view_items)
+        - Calculate the total price of all items in the shopping list (total_price)
+c. Detail each method:
+    - __init__(self):
+        - This method will act as the constructor.
+        - This method will initialize the items representing the shopping list as an empty dictionary.
+        -  self.items = {}
+    - add_item(self, item, price, quantity=1):
+        - This method will add item information to the shopping list items, including price and quantity. The default quantity is 1.
+        - This method will get "item" as str which is the Item to be added, "price" as float which is the price of the item, "quantity" as int which is the number of items and defaults to 1.
+        - This method will return None.
+        - Example Usage: 
+        - >>> shoppingcart = ShoppingCart()
+        - >>> shoppingcart.add_item("apple", 1, 5)
+        - >>> The expected output value for example usage is : self.items = {"apple":{"price":1, "quantity":5}}
+    - remove_item(self, item, quantity=1):
+        - This method will subtract the specified quantity of item from the shopping list items.
+        - This method will get "item" as str which is the subtracted, "quantity" as int which is the quantity to be subtracted.
+        - This method will return None.
+        - Example Usage: 
+        - >>> shoppingcart.add_item("apple", 1, 5)
+        - >>> shoppingcart.remove_item("apple", 3)
+        - >>> The expected output value for example usage is : self.items = {"apple":{"price":1, "quantity":2}}
+    - view_items(self) -> dict:
+        - This method will return the current shopping list items as dict.
+        - This method will return None.
+        - Example Usage:
+        - >>> shoppingcart.add_item("apple", 1, 5)
+        - >>> shoppingcart.remove_item("apple", 3)
+        - >>> shoppingcart.view_items()
+        - >>> The expected return value for example usage is : {"apple":{"price":1, "quantity":2}}
+    - total_price(self) -> float:
+        - This method will calculate the total price of all items in the shopping list, which is the quantity of each item multiplied by the price.
+        - This method will return the total price of all items in the shopping list as float.
+        - Example Usage:
+        - >>> shoppingcart = ShoppingCart()
+        - >>> shoppingcart.add_item("apple", 1, 5)
+        - >>> shoppingcart.add_item("banana", 2, 3)
+        - >>> shoppingcart.total_price()
+        - >>> The expected return value for example usage is : 11.0   
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.           
+
+ Use the following prompt and solution pair as context for generating the previously mentioned class: 
+a. Understand the Overall Purpose:
+    - The ZipFileProcessor class can read and decompress zip files. The ZipFileProcessor class also can compress a list of specified files into a zip file. 
+b. Identify the Required Methods:
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize file name (__init__)
+        - Read files (read_zip_file)
+        - Extract all files (extract_all)
+        - Extract a specific file identified by name (extract_file)
+        - Compress files into zip (create_zip_file)
+c. Detail each method:
+    - __init__(self, file_name):
+        - This method will act as the constructor.
+        - This method will initialize the file name.
+        - This Method will accept "file_name" as str ehich is the name of the file to be processed.
+        - self.file_name = file_name
+    - read_zip_file(self):
+        - This method will get open file object, and return the open file object if successful; otherwise, returns None
+        - Example Usage: 
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> file = zfp.read_zip_file()
+    - extract_all(self, output_path):
+        - This method will extract all zip files and place them in the specified path
+        - This method will get the "output_path" as str which is the location of the extracted file.
+        - This method will return True or False to represent if the extraction operation was successful. 
+        - Example Usage:
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.extract_all("result/aaa")
+    - extract_file(self, file_name, output_path):  
+        - This method will extract the file with the specified name from the zip file and place it in the specified path  
+        - This method will get "file_name" as str whcih is the name of the file to be uncompressed, "output_path" as str which is the location of the extracted file. 
+        - The method will return True or False, representing whether the extraction operation was successful
+        - Example usage: 
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.extract_file("bbb.txt", "result/aaa")
+    - create_zip_file(self, files, output_file_name):
+        - This method will compress the specified file list into a zip file and place it in the specified path. 
+        - This method will get "files" as a list of string which is the List of files to compress, "output_file_name" as str which specifies output path.
+        - This method will return True or False, representing whether the compression operation was successful 
+        - Example Usage:
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.create_zip_file(["bbb.txt", "ccc,txt", "ddd.txt"], "output/bcd") 
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import zipfile
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 
+
+
+import zipfile
+
+
+class ZipFileProcessor:
+    def __init__(self, file_name):
+        self.file_name = file_name
+
+    def read_zip_file(self):
+        try:
+            zip_file = zipfile.ZipFile(self.file_name, 'r')
+            return zip_file
+        except:
+            return None
+
+    def extract_all(self, output_path):
+        try:
+            with zipfile.ZipFile(self.file_name, 'r') as zip_file:
+                zip_file.extractall(output_path)
+            return True
+        except:
+            return False
+
+    def extract_file(self, file_name, output_path):
+        try:
+            with zipfile.ZipFile(self.file_name, 'r') as zip_file:
+                zip_file.extract(file_name, output_path)
+            return True
+        except:
+            return False
+
+    def create_zip_file(self, files, output_file_name):
+        try:
+            with zipfile.ZipFile(output_file_name, 'w') as zip_file:
+                for file in files:
+                    zip_file.write(file)
+            return True
+        except:
+            return False

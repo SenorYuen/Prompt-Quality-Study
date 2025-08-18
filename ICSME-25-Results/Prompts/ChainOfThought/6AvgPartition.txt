@@ -1,0 +1,34 @@
+a. Understand the Overall Purpose:
+    - The AvgPartition is a class that partitions the given list into different blocks by specifying the number of partitions, with each block having a uniformly distributed length.
+b. Identify the Required Methods:
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the class ( __init__)
+        - Calculate the size of each block (setNum)
+        - Get the size of each block (get)
+c. Detail each method:
+    - __init__(self, lst, limit):
+        - This method will act as the constructor. 
+        - This method will Initialize the class with the given list and the number of partitions, and check if the number of partitions is greater than 0.
+        - self.lst = lst
+        - self.limit = limit
+    - setNum(self):
+        - This method will calculate the size of each block and the remainder of the division.
+        - This method will return the size of each block and the remainder of the division as tuple.
+        - Example Usage:
+        - >>> a = AvgPartition([1, 2, 3, 4], 2)
+        - >>> a.setNum()
+        - >>> The expected return value for example usage is : (2, 0)
+    - get(self, index):
+        - This method will calculate the size of each block and the remainder of the division, and calculate the corresponding start and end positions based on the index of the partition.
+        - The method will accept "index" as int which is the  index of the partition
+        - This method will return the corresponding block as list.
+        - Example Usage:
+        - >>> a = AvgPartition([1, 2, 3, 4], 2)
+        - >>> a.get(0)
+        - >>> The expected return value for example usage is : [1, 2]
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.  

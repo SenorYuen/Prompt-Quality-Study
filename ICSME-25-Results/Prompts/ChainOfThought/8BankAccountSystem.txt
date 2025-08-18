@@ -1,0 +1,41 @@
+a. Understand the Overall Purpose:
+    - The BankAccount class is a class as a bank account system, which supports deposit money, withdraw money, view balance, and transfer money.
+b. Identify the Required Methods:
+    - To ensure the function of this class, it will need all of these methods:
+        - This method will act as the constructor.
+        - Initialize a bank account object ( __init__)
+        - Deposits a certain amount into the account (deposit)
+        - Withdraws a certain amount from the account (withdraw)
+        - Return the account balance (view_balance)
+        - Transfers a certain amount from the current account (transfer)
+c. Detail each method:
+    - __init__(self, balance=0):
+        - This method initializes a bank account object with an attribute balance, default value is 0.
+        - self.balance = balance
+    - deposit(self, amount):
+        - This method will deposit a certain amount into the account, increasing the account balance, return the current account balance.
+        - This method accept "amount" as int which is the amount to be deposited.
+        - This method will return current balance as int. 
+        - If the amount is negative, raise a ValueError("Invalid amount").
+    - withdraw(self, amount):
+        - This method will withdraw a certain amount from the account, decreasing the account balance, return the current account balance.
+        - This method accept "amount" as int which is the amount to be withdrawn.
+        - This method will return current balance as int. 
+        - If the amount is negative, raise a ValueError("Invalid amount").
+    - view_balance(self):
+        - This method will return the account balance.
+    - transfer(self, other_account, amount):
+        - This method will transfers a certain amount from the current account to another account. 
+        - This method accept "amount" as int which is the amount to be transferred, "other_account" as BankAccount where the money will be transferred.
+        - Example Usage:
+        - >>> account1 = BankAccount()
+        - >>> account2 = BankAccount()
+        - >>> account1.deposit(1000)
+        - >>> account1.transfer(account2, 300) 
+        - The expected return value for example usage is : account1.balance = 700 account2.balance = 300
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.

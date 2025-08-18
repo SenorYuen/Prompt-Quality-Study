@@ -1,0 +1,41 @@
+a. Understand the Overall Purpose:
+    - The SQLQueryBuilder class provides functions to build SQL queries, including SELECT, INSERT, UPDATE, and DELETE statements. 
+b. To ensure the function of this class, it will need all of these methods:
+    - Generates a SELECT SQL statement (select)
+    - Generates an INSERT SQL statement (insert)
+    - Generates a DELETE SQL statement (delete)
+    - Generates an UPDATE SQL statement (update)
+c. Detail each method:
+    - @staticmethod select(table, columns='*', where=None):
+        - This method will generate the SELECT SQL statement from the given parameters.
+        - This method will get "table" as str which is the query table in database, "columns" as list of str -> ['col1', 'col2'], "where" as dict which is the query condition -> {key1: value1, key2: value2 ...}.
+        - This method will return the SQL query statement as str. 
+        - Example Usage:   
+        - >>> SQLQueryBuilder.select('table1', columns = ["col1","col2"], where = {"age": 15})
+        - >>> The expected return value for example usage is : "SELECT col1, col2 FROM table1 WHERE age='15'"
+    - @staticmethod insert(table, data):
+        - This method will generate the INSERT SQL statement from the given parameters.
+        - This method will get "table" as str which is the table to be inserted in the database, "data" as dict which is the key and value in SQL insert statement.
+        - This method will return the generated SQL insert statement as str. 
+        - Example Usage:   
+        - >>> SQLQueryBuilder.insert('table1', {'name': 'Test', 'age': 14})
+        - >>> The expected return value for example usage is : "INSERT INTO table1 (name, age) VALUES ('Test', '14')"
+    - @staticmethod delete(table, where=None):
+        - This method will generate the DELETE SQL statement from the given parameters.
+        - This method will get "table" as str which is the table that will be executed with DELETE operation in database, "where" as dict which is the query condition -> {key1: value1, key2: value2 ...}.
+        - This method will return the generated SQL delete statement as str. 
+        - Example Usage:   
+        - >>> SQLQueryBuilder.delete('table1', {'name': 'Test', 'age': 14})
+        - >>> The expected return value for example usage is : "DELETE FROM table1 WHERE name='Test' AND age='14'"
+    - @staticmethod update(table, data, where=None):
+        - This method will create anUPDATE SQL statement from the given parameters.
+        - This method will get "table" as str which is the table that will be executed with UPDATE operation in database, "data" as dict which is the key and value in SQL update statement, "where" as dict which is the query condition -> {key1: value1, key2: value2 ...}.
+        - Example Usage:   
+        - >>> SQLQueryBuilder.update('table1', {'name': 'Test2', 'age': 15}, where = {'name':'Test'})
+        - >>> The expected return value for example usage is : "UPDATE table1 SET name='Test2', age='15' WHERE name='Test'"
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.

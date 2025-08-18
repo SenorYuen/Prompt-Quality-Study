@@ -1,0 +1,148 @@
+System Prompt:
+Provided are instructions for completing the code for a class. Please provide only code with comments in the response.
+
+User Prompt:
+Using the example solution included later, please complete the class MetricsCalculator2 in the subsequent code: 
+import numpy as np
+
+
+class MetricsCalculator2:
+    """
+    The class provides to calculate Mean Reciprocal Rank (MRR) and Mean Average Precision (MAP) based on input data, where MRR measures the ranking quality and MAP measures the average precision.
+    """
+
+    def __init__(self):
+        pass
+
+    @staticmethod
+    def mrr(data):
+        """
+        compute the MRR of the input data. MRR is a widely used evaluation index. It is the mean of reciprocal rank.
+        :param data: the data must be a tuple, list 0,1,eg.([1,0,...],5).  In each tuple (actual result,ground truth num),ground truth num is the total ground num.
+         ([1,0,...],5),
+        or list of tuple eg. [([1,0,1,...],5),([1,0,...],6),([0,0,...],5)].
+        1 stands for a correct answer, 0 stands for a wrong answer.
+        :return: if input data is list, return the recall of this list. if the input data is list of list, return the
+        average recall on all list. The second return value is a list of precision for each input.
+        >>> MetricsCalculator2.mrr(([1, 0, 1, 0], 4))
+        >>> MetricsCalculator2.mrr([([1, 0, 1, 0], 4), ([0, 1, 0, 1], 4)])
+        1.0, [1.0]
+        0.75, [1.0, 0.5]
+        """
+
+
+    @staticmethod
+    def map(data):
+        """
+        compute the MAP of the input data. MAP is a widely used evaluation index. It is the mean of AP (average precision).
+        :param data: the data must be a tuple, list 0,1,eg.([1,0,...],5).  In each tuple (actual result,ground truth num),ground truth num is the total ground num.
+         ([1,0,...],5),
+        or list of tuple eg. [([1,0,1,...],5),([1,0,...],6),([0,0,...],5)].
+        1 stands for a correct answer, 0 stands for a wrong answer.
+        :return: if input data is list, return the recall of this list. if the input data is list of list, return the
+        average recall on all list. The second return value is a list of precision for each input.
+        >>> MetricsCalculator2.map(([1, 0, 1, 0], 4))
+        >>> MetricsCalculator2.map([([1, 0, 1, 0], 4), ([0, 1, 0, 1], 4)])
+        0.41666666666666663, [0.41666666666666663]
+        0.3333333333333333, [0.41666666666666663, 0.25]
+        """. Here is an included question and solution to base a response off of: import xml.etree.ElementTree as ET
+
+
+class XMLProcessor:
+    """
+    This is a class as XML files handler, including reading, writing, processing as well as finding elements in a XML file.
+    """
+
+    def __init__(self, file_name):
+        """
+        Initialize the XMLProcessor object with the given file name.
+        :param file_name:string, the name of the XML file to be processed.
+        """
+        self.file_name = file_name
+        self.root = None
+
+    def read_xml(self):
+        """
+        Reads the XML file and returns the root element.
+        :return: Element, the root element of the XML file.
+        >>> xml_processor = XMLProcessor('test.xml')
+        >>> root_element = xml_processor.read_xml()
+        >>> print(root_element)
+        <Element 'root' at 0x7f8e3b7eb180>
+        """
+
+
+    def write_xml(self, file_name):
+        """
+        Writes the XML data to the specified file.
+        :param file_name: string, the name of the file to write the XML data.
+        :return: bool, True if the write operation is successful, False otherwise.
+        >>> xml_processor = XMLProcessor('test.xml')
+        >>> root = xml_processor.read_xml()
+        >>> success = xml_processor.write_xml('output.xml')
+        >>> print(success)
+        True
+        """
+
+
+    def process_xml_data(self, file_name):
+        """
+        Modifies the data in XML elements and writes the updated XML data to a new file.
+        :param file_name: string, the name of the file to write the modified XML data.
+        :return: bool, True if the write operation is successful, False otherwise.
+        >>> xml_processor = XMLProcessor('test.xml')
+        >>> root = xml_processor.read_xml()
+        >>> success = xml_processor.process_xml_data('processed.xml')
+        >>> print(success)
+        True
+        """
+
+
+    def find_element(self, element_name):
+        """
+        Finds the XML elements with the specified name.
+        :param element_name: string, the name of the elements to find.
+        :return: list, a list of found elements with the specified name.
+        >>> xml_processor = XMLProcessor('test.xml')
+        >>> root = xml_processor.read_xml()
+        >>> items = xml_processor.find_element('item')
+        >>> for item in items:
+        >>>     print(item.text)
+        apple
+        banana
+        orange
+        """
+
+ import xml.etree.ElementTree as ET
+
+
+class XMLProcessor:
+    def __init__(self, file_name):
+        self.file_name = file_name
+        self.root = None
+
+    def read_xml(self):
+        try:
+            tree = ET.parse(self.file_name)
+            self.root = tree.getroot()
+            return self.root
+        except:
+            return None
+
+    def write_xml(self, file_name):
+        try:
+            tree = ET.ElementTree(self.root)
+            tree.write(file_name)
+            return True
+        except:
+            return False
+
+    def process_xml_data(self, file_name):
+        for element in self.root.iter('item'):
+            text = element.text
+            element.text = text.upper()
+        return self.write_xml(file_name)
+
+    def find_element(self, element_name):
+        elements = self.root.findall(element_name)
+        return elements

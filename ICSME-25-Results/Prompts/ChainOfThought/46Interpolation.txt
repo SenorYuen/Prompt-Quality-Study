@@ -1,0 +1,31 @@
+a. Understand the Overall Purpose:
+    - The Interpolation is a class that implements the Linear interpolation operation of one-dimensional and two-dimensional data.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Perform Linear interpolation of one-dimensional data (interpolate_1d)
+        - Perform Linear interpolation of two-dimensional data (interpolate_2d)
+c. Detail each method:
+    - __init__(self):
+        - pass
+    -  @staticmethod interpolate_1d(x, y, x_interp):
+        - This method will perform linear interpolation of one-dimensional data. 
+        - This method will get "x" as list which is the x-coordinate of the data point, "y" as list which is the y-coordinate of the data point, "x_interp" as list which is the x-coordinate of the interpolation point.
+        - The method will return a list which is the y-coordinate of the interpolation point.
+        - Example Usage:
+        - >>> interpolation = Interpolation()
+        - >>> interpolation.interpolate_1d([1, 2, 3], [1, 2, 3], [1.5, 2.5])
+        - >>> The expected return value for example usage is : [1.5, 2.5]
+    -  @staticmethod interpolate_2d(x, y, z, x_interp, y_interp):
+        - This method will compute linear interpolation of two-dimensional data. 
+        - This method will get "x" as list which is the x-coordinate of the data point, "y" as list which is the y-coordinate of the data point, "z" as list which is the z-coordinate of the data point, "x_interp" as list which is the x-coordinate of the interpolation point, "y_interp" as list which is the y-coordinate of the interpolation point
+        - The method will return a list which is the z-coordinate of the interpolation point.
+        - Example Usage:
+        - >>> interpolation = Interpolation()
+        - >>> interpolation.interpolate_2d([1, 2, 3], [1, 2, 3], [[1, 2, 3], [4, 5, 6], [7, 8, 9]], [1.5, 2.5], [1.5, 2.5])
+        - >>> The expected return value for example usage is : [3.0, 7.0]   
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 

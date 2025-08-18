@@ -1,0 +1,59 @@
+a. Understand the Overall Purpose:
+    - The NumberConverter is a class that allows conversions of decimal to binary, octal and hexadecimal respectively and contrarily.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Convert a number from decimal to binary (decimal_to_binary)
+        - Convert a number from binary to decimal (binary_to_decimal)
+        - Convert a number from decimal to octal (decimal_to_octal)
+        - Convert a number from octal to decimal (octal_to_decimal)
+        - Convert a number from decimal to hexadecimal (decimal_to_hex)
+        - Convert a number from hexadecimal to decimal (hex_to_decimal)
+c. Detail each method:
+    - @staticmethod decimal_to_binary(decimal_num):
+        - This method will convert a number from decimal format to binary format.
+        - This method will get "decimal_num" as int which is a decimal number.
+        - This method will return the binary representation of an integer as str.
+        - Example Usage:
+        - >>> NumberConverter.decimal_to_binary(42423)
+        - >>> The expected return value for example usage is : '1010010110110111'
+    - @staticmethod binary_to_decimal(binary_num):
+        - This method will convert a number from binary format to decimal format.
+        - This method will get "binary_num" as str which is a binary number.
+        This method will return the decimal representation of the binary number as int.
+        - Example Usage:
+        - >>> NumberConverter.binary_to_decimal('1010010110110111')
+        - >>> The expected return value for example usage is : 42423
+    - @staticmethod decimal_to_octal(decimal_num):
+        - This method will convert a number from decimal format to octal format.
+        - This method will get "decimal_num" as int which is a binary number.
+        - This method will return the octal representation of an integer as str.
+        - Example Usage:
+        - >>> NumberConverter.decimal_to_octal(42423)
+        - >>> The expected return value for example usage is : '122667'
+    - @staticmethod octal_to_decimal(octal_num):
+        - This method will convert a number from decimal format to octal format.
+        - This method will get "octal_num" as str which is an octal number.
+        - This method will return the decimal representation of the octal number as int.
+        - Example Usage:
+        - >>> NumberConverter.octal_to_decimal('122667')
+        - >>> The expected return value for example usage is : 42423
+    - @staticmethod decimal_to_hex(decimal_num):
+        - This method will convert a number from decimal format to hex format.
+        - This method will get "decimal_num" as int which is a decimal number.
+        - This method will return the hex representation of a decimal as str.
+        - Example Usage:
+        - >>> NumberConverter.decimal_to_hex(42423)
+        - >>> The expected return value for example usage is : 'a5b7'
+    - @staticmethod hex_to_decimal(hex_num):
+        - This method will Convert a number from hex format to decimal format.
+        - This method will get "hex_num" as str which is a hex number.
+        - This method will return the decimal representation of the hex number as int.
+        - Example Usage:
+        - >>> NumberConverter.hex_to_decimal('a5b7')
+        - >>> The expected return value for example usage is : 42423  
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.

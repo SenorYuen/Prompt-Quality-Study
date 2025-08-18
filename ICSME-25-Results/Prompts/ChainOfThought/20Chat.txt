@@ -1,0 +1,64 @@
+a. Understand the Overall Purpose:
+    - The Chat is a chat class with the functions of adding users, removing users, sending messages, and obtaining messages.
+b. Identify the Required Methods:    
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the Chat with an attribute users (__init__)
+        - Add a new user to the Chat (add_user)
+        - Remove a user from the Chat (remove_user)
+        - Send a message from a user(send_message)
+        - Get all the messages of a user (get_messages)
+c. Detail each method:
+    -  __init__(self):
+        - This method will act as the constructor. 
+        - This method will Initialize the Chat with an attribute users, which is an empty dictionary.
+        - self.users = {}
+    - add_user(self, username):
+        - This method will Add a new user to the Chat.
+        - This method will get "username" as str which is the user's name.
+        - This method will return False If the user is already in the Chat; otherwise returns True.
+        - Example Usage:
+        - >>> chat = Chat()
+        - >>> chat.add_user('John')
+        - >>> The expected return value for example usage is : True
+        - >>> self.users = {'John': []}
+        - >>> chat.add_user('John')   
+        - >>> The expected return value for example usage is : False 
+    - remove_user(self, username):
+        - This method will remove a user from the Chat.
+        - This method will get "username" as str which is The user's name.
+        - This method will return True If the user is already in the Chat; otherwise returns False.
+        - Example Usage:
+        - >>> chat = Chat()
+        - >>> chat.users = {'John': []}
+        - >>> chat.remove_user('John')
+        - >>> The expected return value for example usage is : True
+        - >>> chat.remove_user('John')
+        - >>> The expected return value for example usage is : False     
+    - send_message(self, sender, receiver, message):
+        - This method will send a message from a user to another user.
+        - This method will get "sender" as str which is the sender's name, "receiver" as str which is the receiver's name, "message" as str which is the message. 
+        - This method will return False If the sender or the receiver is not in the Chat; otherwise returns True.
+        - Example Usage:
+        - >>> chat = Chat()
+        - >>> chat.users = {'John': [], 'Mary': []}
+        - >>> chat.send_message('John', 'Mary', 'Hello')
+        - >>> The expected return value for example usage is : True
+        - >>> chat.send_message('John', 'Tom', 'Hello')
+        - >>> The expected return value for example usage is : False 
+    - get_messages(self, username):
+        - This method will Get all the messages of a user from the Chat.
+        - This method will get "username" as str which is The user's name.
+        - This method will return A list of messages, each message is a dictionary with keys 'sender', 'receiver', 'message', 'timestamp'.
+        - Example Usage:
+        - >>> chat = Chat()
+        - >>> chat.users = {'John': [{'sender': 'John', 'receiver': 'Mary', 'message': 'Hello', 'timestamp': '2023-01-01 00:00:00'}]}
+        - >>> chat.get_messages('John')
+        - >>> The expected return value for example usage is : [{'sender': 'John', 'receiver': 'Mary', 'message': 'Hello', 'timestamp': '2023-01-01 00:00:00'}]
+        - >>> chat.get_messages('Mary')
+        - >>> The expected return value for example usage is : []  
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - from datetime import datetime
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.

@@ -1,0 +1,172 @@
+System Prompt:
+Provided are instructions for generating the code for a class. Please provide the only code in your response.
+
+User Prompt:
+a. Understand the Overall Purpose:
+    - The Hotel is a class as a hotel management system, managing the booking, check-in, check-out, and availability of rooms in a hotel with different room types.
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the three fields in Hotel System (__init__)
+        - Check if there are any rooms of the specified type available (book_room)
+        - Check if the room of the specified type and number is already booked (check_in)
+        - Check out room (check_out)
+        - Get the number of specific type of available rooms (get_available_rooms)
+c. Detail each method:
+    - __init__(self, name, rooms):
+         - This method will act as the constructor. 
+        - This method will initialize the three fields in the Hotel System.
+        - This method will get " name" as str which is the hotel name.
+        - "available_rooms" stores the remaining rooms in the hotel
+        - "booked_rooms" stores the rooms that have been booked and the person's name who booked the rooms.
+        - self.name = name
+        - self.available_rooms = rooms
+        - self.booked_rooms = {}
+        - Example Usages:
+        - >>> hotel.name
+        - >>> The expected return value for example usage is : 'peace hotel'
+        - >>> hotel.available_rooms
+        - >>> The expected return value for example usage is : available_rooms = {'single': 5, 'double': 3}
+        - >>> hotel.booked_rooms
+        - >>> The expected return value for example usage is : {'single': {'guest 1': 2, 'guest 2':1}, 'double': {'guest1': 1}}
+    -  book_room(self, room_type, room_number, name):
+        - This method will check if there are any rooms of the specified type available. If rooms are adequate, modify available_rooms and booked_rooms and finish booking, or fail to book otherwise.
+        - This method will get "room_type" as str which is the type of room, "room_number" as int which is the expected number of specified type rooms to be booked, "name" as str which is the guest name.
+        - This method will return a str 'Success!' if number of rooms about to be booked doesn't exceed the remaining rooms, return int(the remaining quantity of this room type) if number of rooms about to be booked exceeds but quantity of available rooms is not equal to zero,  return False if number of rooms about to be booked exceeds and quantity is zero or the room_type isn't in available_room. 
+        - Example Usage:
+        - >>> hotel = Hotel('peace hotel', {'single': 5, 'double': 3})
+        - >>> hotel.book_room('single', 1, 'guest 1')
+        - >>> The expected return value for example usage is : 'Success!'
+        - >>> hotel.book_room('single', 5, 'guest 1')
+        - >>> The expected return value for example usage is : 4
+        - >>> hotel.book_room('single', 4, 'guest 1')
+        - >>> The expected return value for example usage is : Success!'
+        - >>> hotel.book_room('single', 1, 'guest 1')
+        - >>> The expected return value for example usage is : False
+        - >>> hotel.book_room('triple', 1, 'guest 1')
+        - >>> The expected return value for example usage is : False
+    -  check_in(self, room_type, room_number, name):
+        - This method will Check if the room of the specified type and number is booked by the person named name. Remove this name when check in successfully (room_number is equal to specific person's booked_rooms. When the actual check in quantity (room_number) is less than the booked quantity, number in booked_rooms will be booked quantity minus actual quantity
+        - This method will get "room_type" as str which is the check in room type, "room_number" as int which is the check in room number, "name" as str which is the guest name.
+        - This method will return False only if the room_type is not in the booked_rooms or room_number is higher than the quantity in booked rooms.
+        - Example Usage:
+        - >>> hotel = Hotel('peace hotel', {'single': 5, 'double': 3})
+        - >>> hotel.book_room('single', 1, 'guest 1')
+        - >>> The expected output value for example usage is : 'Success!'
+        - >>> hotel.check_in('single', 2, 'guest 1')
+        - >>> The expected return value for example usage is : False
+        - >>> hotel.check_in('single', 1, 'guest 1')
+        - >>> hotel.booked_rooms
+        - >>> The expected return value for example usage is : {'single': {}}    
+    - check_out(self, room_type, room_number):
+        - This method will check out rooms, and add a number for a specific type in available_rooms. If room_type is new, add a new type in available_rooms.
+        - This method will get "room_type" as str which is the check out room type, "room_number" as int which is the check out room number.
+        - Example Usage:
+        - >>>  hotel = Hotel('peace hotel', {'single': 5, 'double': 3})
+        - >>> hotel.check_out('single', 2)
+        - >>> hotel.available_rooms
+        - >>> The expected output value for example usage is : {'single': 7, 'double': 3}
+        - >>> hotel.check_out('triple', 2)
+        - >>> hotel.available_rooms
+        - >>> The expected output value for example usage is : {'single': 7, 'double': 3, 'triple': 2}
+   - get_available_rooms(self, room_type):
+        - This method will Get the number of specific type of available rooms.
+        - This method will get "room_type" as str which is the room type that needs to be known.
+        - This method will return the remaining number of this type rooms as int. 
+        - Example Usage:
+        - >>> hotel = Hotel('peace hotel', {'single': 5, 'double': 3})
+        - >>> hotel.get_available_rooms('single')
+        - >>> The expected output value for example usage is : 5
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 
+
+ Use the following prompt and solution pair as context for generating the previously mentioned class: 
+a. Understand the Overall Purpose:
+    - The ZipFileProcessor class can read and decompress zip files. The ZipFileProcessor class also can compress a list of specified files into a zip file. 
+b. Identify the Required Methods:
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize file name (__init__)
+        - Read files (read_zip_file)
+        - Extract all files (extract_all)
+        - Extract a specific file identified by name (extract_file)
+        - Compress files into zip (create_zip_file)
+c. Detail each method:
+    - __init__(self, file_name):
+        - This method will act as the constructor.
+        - This method will initialize the file name.
+        - This Method will accept "file_name" as str ehich is the name of the file to be processed.
+        - self.file_name = file_name
+    - read_zip_file(self):
+        - This method will get open file object, and return the open file object if successful; otherwise, returns None
+        - Example Usage: 
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> file = zfp.read_zip_file()
+    - extract_all(self, output_path):
+        - This method will extract all zip files and place them in the specified path
+        - This method will get the "output_path" as str which is the location of the extracted file.
+        - This method will return True or False to represent if the extraction operation was successful. 
+        - Example Usage:
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.extract_all("result/aaa")
+    - extract_file(self, file_name, output_path):  
+        - This method will extract the file with the specified name from the zip file and place it in the specified path  
+        - This method will get "file_name" as str whcih is the name of the file to be uncompressed, "output_path" as str which is the location of the extracted file. 
+        - The method will return True or False, representing whether the extraction operation was successful
+        - Example usage: 
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.extract_file("bbb.txt", "result/aaa")
+    - create_zip_file(self, files, output_file_name):
+        - This method will compress the specified file list into a zip file and place it in the specified path. 
+        - This method will get "files" as a list of string which is the List of files to compress, "output_file_name" as str which specifies output path.
+        - This method will return True or False, representing whether the compression operation was successful 
+        - Example Usage:
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.create_zip_file(["bbb.txt", "ccc,txt", "ddd.txt"], "output/bcd") 
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import zipfile
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 
+
+
+import zipfile
+
+
+class ZipFileProcessor:
+    def __init__(self, file_name):
+        self.file_name = file_name
+
+    def read_zip_file(self):
+        try:
+            zip_file = zipfile.ZipFile(self.file_name, 'r')
+            return zip_file
+        except:
+            return None
+
+    def extract_all(self, output_path):
+        try:
+            with zipfile.ZipFile(self.file_name, 'r') as zip_file:
+                zip_file.extractall(output_path)
+            return True
+        except:
+            return False
+
+    def extract_file(self, file_name, output_path):
+        try:
+            with zipfile.ZipFile(self.file_name, 'r') as zip_file:
+                zip_file.extract(file_name, output_path)
+            return True
+        except:
+            return False
+
+    def create_zip_file(self, files, output_file_name):
+        try:
+            with zipfile.ZipFile(output_file_name, 'w') as zip_file:
+                for file in files:
+                    zip_file.write(file)
+            return True
+        except:
+            return False

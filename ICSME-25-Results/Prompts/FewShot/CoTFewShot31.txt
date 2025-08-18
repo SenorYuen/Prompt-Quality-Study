@@ -1,0 +1,134 @@
+System Prompt:
+Provided are instructions for generating the code for a class. Please provide the only code in your response.
+
+User Prompt:
+a. Understand the Overall Purpose:
+    - The ExcelProcessor is a class for processing excel files, including reading and writing excel data, as well as processing specific operations and saving as a new excel file.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Reading data from Excel files (read_excel)
+        - Write data to the specified Excel filer (write_excel)
+        - Change the specified column in the Excel file to uppercase (process_excel_data)
+c. Detail each method:
+    - __init__(self):
+        - pass
+    - read_excel(self, file_name):
+        - This method will read data from Excel files.
+        - This method will get "file_name" as str which is the Excel file name to read.
+        - This method will return list of data which is Data in Excel.
+    - write_excel(self, data, file_name):
+        - This method will Write data to the specified Excel file.
+        - This method will get "data" as list which is the Data to be written, "file_name" as str which is the excel file name to write to.
+        - This method will return 0 or 1, 1 represents successful writing, 0 represents failed writing.
+        - Example Usage:
+        - >>> processor = ExcelProcessor()
+        - >>> new_data = [
+             ('Name', 'Age', 'Country'),
+             ('John', 25, 'USA'),
+            ('Alice', 30, 'Canada'),
+            ('Bob', 35, 'Australia'),
+            ('Julia', 28, 'Germany')
+        ]
+        - >>> data = processor.write_excel(new_data, 'test_data.xlsx')  
+    - process_excel_data(self, N, save_file_name):
+        - This method will Change the specified column in the Excel file to uppercase.
+        - This method will get "N" as int which is the serial number of the column that want to change, "save_file_name" as str which is the source file name.
+        - This method will return (int, str), The former is the return value of write_excel, while the latter is the saved file name of the processed data. 
+        - Example Usage:
+        - >>> processor = ExcelProcessor() 
+        - >>> success, output_file = processor.process_excel_data(1, 'test_data.xlsx')
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import openpyxl
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.            
+
+ Use the following prompt and solution pair as context for generating the previously mentioned class: 
+a. Understand the Overall Purpose:
+    - The ZipFileProcessor class can read and decompress zip files. The ZipFileProcessor class also can compress a list of specified files into a zip file. 
+b. Identify the Required Methods:
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize file name (__init__)
+        - Read files (read_zip_file)
+        - Extract all files (extract_all)
+        - Extract a specific file identified by name (extract_file)
+        - Compress files into zip (create_zip_file)
+c. Detail each method:
+    - __init__(self, file_name):
+        - This method will act as the constructor.
+        - This method will initialize the file name.
+        - This Method will accept "file_name" as str ehich is the name of the file to be processed.
+        - self.file_name = file_name
+    - read_zip_file(self):
+        - This method will get open file object, and return the open file object if successful; otherwise, returns None
+        - Example Usage: 
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> file = zfp.read_zip_file()
+    - extract_all(self, output_path):
+        - This method will extract all zip files and place them in the specified path
+        - This method will get the "output_path" as str which is the location of the extracted file.
+        - This method will return True or False to represent if the extraction operation was successful. 
+        - Example Usage:
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.extract_all("result/aaa")
+    - extract_file(self, file_name, output_path):  
+        - This method will extract the file with the specified name from the zip file and place it in the specified path  
+        - This method will get "file_name" as str whcih is the name of the file to be uncompressed, "output_path" as str which is the location of the extracted file. 
+        - The method will return True or False, representing whether the extraction operation was successful
+        - Example usage: 
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.extract_file("bbb.txt", "result/aaa")
+    - create_zip_file(self, files, output_file_name):
+        - This method will compress the specified file list into a zip file and place it in the specified path. 
+        - This method will get "files" as a list of string which is the List of files to compress, "output_file_name" as str which specifies output path.
+        - This method will return True or False, representing whether the compression operation was successful 
+        - Example Usage:
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.create_zip_file(["bbb.txt", "ccc,txt", "ddd.txt"], "output/bcd") 
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import zipfile
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 
+
+
+import zipfile
+
+
+class ZipFileProcessor:
+    def __init__(self, file_name):
+        self.file_name = file_name
+
+    def read_zip_file(self):
+        try:
+            zip_file = zipfile.ZipFile(self.file_name, 'r')
+            return zip_file
+        except:
+            return None
+
+    def extract_all(self, output_path):
+        try:
+            with zipfile.ZipFile(self.file_name, 'r') as zip_file:
+                zip_file.extractall(output_path)
+            return True
+        except:
+            return False
+
+    def extract_file(self, file_name, output_path):
+        try:
+            with zipfile.ZipFile(self.file_name, 'r') as zip_file:
+                zip_file.extract(file_name, output_path)
+            return True
+        except:
+            return False
+
+    def create_zip_file(self, files, output_file_name):
+        try:
+            with zipfile.ZipFile(output_file_name, 'w') as zip_file:
+                for file in files:
+                    zip_file.write(file)
+            return True
+        except:
+            return False

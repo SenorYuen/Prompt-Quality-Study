@@ -1,0 +1,55 @@
+a. Understand the Overall Purpose:
+    - The GomokuGame is an implementation of a Gomoku game, supporting making moves, checking for a winner, and checking if there are five consecutive symbols on the game board.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initializes the game with a given board size (__init__)
+        - Makes a move at the given row and column (make_move)
+        - Checks if there is a winner (check_winner)
+        - Checks if there are five consecutive symbols of the same player (_check_five_in_a_row)
+c. Detail each method:
+    -  __init__(self, board_size):
+        - This method will act as the constructor. 
+        - This method will initialize the game with a given board size. It initializes the board with empty spaces and sets the current player symbol as 'X'.
+        - This method will get "board_size" as int.
+        - self.board_size = board_size
+        - self.board = [[' ' for _ in range(board_size)] for _ in range(board_size)]
+        - self.current
+    - make_move(self, row, col):
+        - This method will make a move at the given row and column. If the move is valid, it places the current player's symbol on the board and changes the current player to the other player (if the current player is 'X', then it becomes 'O' and vice versa).
+        - This method will get "row" as int which is the row index of this move, "col" as int which is the column index of the move.
+        - This method will return True if the move is valid, or False otherwise.
+        - Example Usage:
+        - >>> gomokuGame = GomokuGame(10)
+        - >>> gomokuGame.make_move(5, 5)
+        - >>> The expected return value for example usage is : True
+        - >>> gomokuGame.make_move(5, 5)
+        - >>> The expected return value for example usage is : False
+    - check_winner(self):
+        - This method will Check if there is a winner by looking for five in a row in all directions (horizontal, vertical, diagonal).
+        - This method will return the symbol of the winning player (either 'X' or 'O') if there is a winner, or None otherwise.
+        - Example Usage:
+        - >>> gomokuGame = GomokuGame(10)
+        - >>> moves = [(5, 5), (0, 0), (5, 4), (0, 1), (5, 3), (0, 2), (5, 2), (0, 3), (5, 1)]
+        - >>> for move in moves:
+            ...     gomokuGame.make_move(move[0], move[1])
+        - >>> gomokuGame.check_winner()
+        - >>> The expected return value for example usage is : 'X'   
+    - _check_five_in_a_row(self, row, col, direction):
+        - This method will check if there are five consecutive symbols of the same player in a row starting from a given cell in a given direction (horizontal, vertical, diagonal). Count the number of consecutive symbols in that direction starting from the given cell.
+        - This method will get "row" as int which is the row of the given cell, "col" as int which is the column of the given cell, "direction" as tuple, (int, int), named as (dx, dy) where Row and col will plus several dx and dy respectively.
+        - This method will return True if there are five consecutive symbols of the same player, and False otherwise.
+        - Example Usage:
+        - >>>gomokuGame = GomokuGame(10)
+        - >>> moves = [(5, 5), (0, 0), (5, 4), (0, 1), (5, 3), (0, 2), (5, 2), (0, 3), (5, 1)]
+        - >>> for move in moves:
+            ...     gomokuGame.make_move(move[0], move[1])
+        - >>> gomokuGame._check_five_in_a_row(5, 1, (0, 1))    
+        - >>> The expected return value for example usage is : True
+        - >>> gomokuGame._check_five_in_a_row(5, 1, (1, 1))  
+        - >>> The expected return value for example usage is : False 
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 

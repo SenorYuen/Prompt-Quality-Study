@@ -1,0 +1,55 @@
+a. Understand the Overall Purpose:
+    - The Classroom is a class representing a classroom, capable of adding and removing courses, checking availability at a given time, and detecting conflicts when scheduling new courses.
+b. Identify the Required Methods:  
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the classroom management system (__init__)
+        - Add course to self.courses list (add_course)
+        - Remove course from self.courses (remove_course)
+        - Check the time is free or not (is_free_at)
+        - Check if the new course time conflicts (check_course_conflict)
+c. Detail each method:
+    -  __init__(self, id):
+        - This method will act as the constructor. 
+        - This method will Initialize the classroom management system.
+        - This method will get "id" as int which is the id of the classroom.  
+        - self.id = id
+        - self.courses = []
+    - add_course(self, course):
+        - This method will add the course to self.courses list if the course wasn't in it.
+        - This method will get "course" as dict which is the information of the course, including 'start_time', 'end_time' and 'name'. 
+        - Example Usage:
+        - >>> classroom = Classroom(1)
+        - >>> classroom.add_course({'name': 'math', 'start_time': '8:00', 'end_time': '9:40'}) 
+    - remove_course(self, course):
+        - This method will remove course from the self.courses list if the course was in it.
+        - This method will get "course" as dict which is the information of the course, including 'start_time', 'end_time' and 'name'. 
+        - Example Usage:
+        - >>> classroom = Classroom(1)
+        - >>> classroom.add_course({'name': 'math', 'start_time': '8:00', 'end_time': '9:40'})
+        - >>> classroom.add_course({'name': 'math', 'start_time': '8:00', 'end_time': '9:40'})
+    - is_free_at(self, check_time):   
+        - This method will change the time format as '%H:%M' and check if the time is free or not in the classroom.
+        - This method will get "check_time" as str which is the time needed to be checked.
+        - This method will return True if the check_time does not conflict with every course time, or False otherwise.
+        - Example Usage:
+        - >>> classroom = Classroom(1)
+        - >>> classroom.add_course({'name': 'math', 'start_time': '8:00', 'end_time': '9:40'})
+        - >>> classroom.is_free_at('10:00')
+        - >>> The expected return value for example usage is : True 
+        - >>> classroom.is_free_at('9:00')
+        - >>> The expected return value for example usage is : False
+    - check_course_conflict(self, new_course):  
+        - Before adding a new course, this method will check if the new course time conflicts with any other course.
+        - This method will get "new_course" as dict which is the information of the course, including 'start_time', 'end_time' and 'name'.
+        - This method will return False if the new course time conflicts(including two courses having the same boundary time) with other courses, or True otherwise.
+        - Example Usage:
+        - >>> classroom = Classroom(1)
+        - >>> classroom.add_course({'name': 'math', 'start_time': '8:00', 'end_time': '9:40'})
+        - >>> classroom.check_course_conflict({'name': 'SE', 'start_time': '9:40', 'end_time': '10:40'})
+        - >>> The expected return value for example usage is : False  
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - datetime import datetime
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 

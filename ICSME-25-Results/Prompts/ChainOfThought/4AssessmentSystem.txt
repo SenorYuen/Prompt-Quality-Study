@@ -1,0 +1,67 @@
+a. Understand the Overall Purpose:
+    - The AssessmentSystem is a class as an student assessment system, which supports add student, add course score, calculate GPA, and other functions for students and courses.
+b. Identify the Required Methods:
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the student dict (__init__)
+        - Add a new student (add_student)
+        - Add score of specific course for student in self.students (add_course_score)
+        - Get average grade of one student (get_gpa)
+        - Get all students who have any score below 60 (get_all_students_with_fail_course)
+        - Get the average score of a specific course (get_course_average)
+        - Find the student with highest gpa (get_top_student)
+c. Detail each method:
+    - __init__(self):
+        - This method will act as the constructor. 
+        - This method will Initialize the students dict in the assessment system.
+        - self.students = {}
+    - add_student(self, name, grade, major):
+        - This method will Add a new student into self.students dict
+        - This method will Get "name" as str which is the student name, "grade" as str which is the student grade, "major" as str which is the student major
+        - Example Usage: 
+        - >>> system.add_student('student 1', 3, 'SE')
+        - >>> system.students
+        -  {'student 1': {'name': 'student 1', 'grade': 3, 'major': 'SE', 'courses': {}}}
+    - add_course_score(self, name, course, score):
+        - This method will add score of specific course for student in self.students
+        - This method will Get "name" as str which is the student name, "course" as str which is the course name, "score" as str which is the course score
+        - Example Usage:
+        - >>> system.add_student('student 1', 3, 'SE')
+        - >>> system.add_course_score('student 1', 'math', 94)
+        - >>> system.students
+        - {'student 1': {'name': 'student 1', 'grade': 3, 'major': 'SE', 'courses': {'math': 94}}}
+    - get_gpa(self, name):
+        - This method will Get average grade of one student.
+        - This method will Get "name" as str which is the student name.
+        - If name is in students and this students have courses grade, return average grade(float) or None otherwise
+        - Example Usage:
+        - >>> system.add_student('student 1', 3, 'SE')
+        - >>> system.add_course_score('student 1', 'math', 94)
+        - >>> system.add_course_score('student 1', 'Computer Network', 92)
+        - >>> system.get_gpa('student 1')
+        - The return value for this example usage is: 93.0
+    - get_all_students_with_fail_course(self):
+        - This method will get all students who have any score below 60
+        - This method will return list of str which represents the student name
+        - Example Usage:
+        - >>> system.add_course_score('student 1', 'Society', 59)
+        - >>> system.get_all_students_with_fail_course()
+        - The expected return value for example usage is : ['student 1'] 
+    - get_course_average(self, course):
+        - This method will Get the average score of a specific course.
+        - This method will Get "course" as str which is the course name
+        - This method will return average scores of this course as float if anyone has a score of this course, or None if nobody has records.
+    - get_top_student(self):
+        - This method will Calculate every student's gpa with get_gpa method, and find the student with highest gpa
+        - This method will return name of a student as str whose gpa is highest
+        - >>> system.add_student('student 1', 3, 'SE')
+        - >>> system.add_student('student 2', 2, 'SE')
+        - >>> system.add_course_score('student 1', 'Computer Network', 92)
+        - >>> system.add_course_score('student 2', 'Computer Network', 97)
+        - >>> system.get_top_student() 
+        - The expected return value for example usage is : 'student 2'
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code. 

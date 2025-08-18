@@ -1,0 +1,35 @@
+a. Understand the Overall Purpose:
+    - The BalancedBrackets is a class that checks for bracket matching.
+b. Identify the Required Methods:
+    - To ensure the function of this class, it will need all of these methods:
+        - Initializes the class with an expression ( __init__)
+        - Calculate the are of a circle (clear_expr)
+        - Checks if the expression has balanced brackets (check_balanced_brackets)
+c. Detail each method:
+    -  __init__(self, expr):
+        - This method will act as the constructor.
+        - This method will initialize the class with an expression.
+        - Method will accept "expr" as str which is the expression to check for balanced bracket
+        - self.stack = []
+        - self.left_brackets = ["(", "{", "["]
+        - self.right_brackets = [")", "}", "]"]
+        - self.expr = expr
+    - clear_expr(self):
+        - This method will clear the expression of all characters that are not brackets.
+        - Example Usage:
+        - >>> b = BalancedBrackets("a(b)c")
+        - >>> b.expr
+        - >>> The expected output value for example usage is : '()'
+     - check_balanced_brackets(self):
+        - This method will check if the expression has balanced brackets.
+        - This method will return True if the expression has balanced brackets, False otherwise.
+        - Example Usage:
+        - >>> b = BalancedBrackets("a(b)c")
+        - >>> b.check_balanced_brackets()
+        - >>> The expected return value for example usage is : True    
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.

@@ -1,0 +1,51 @@
+a. Understand the Overall Purpose:
+    - The EightPuzzle class is an implementation of the classic 8-puzzle game, including methods for finding the blank tile, making moves, getting possible moves, and solving the puzzle using a breadth-first search algorithm.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initializing the initial state of Eight Puzzle Game (__init__)
+        - Find the blank position of current state (move)
+        - Find the blank block, then makes the board moves forward the given direction (write_text)
+        - According the current state, find all the possible moving directions (get_possible_moves)
+        - Use BFS algorithm to find the path solution which makes the initial state to the goal method (solve)
+c. Detail each method:
+    - __init__(self, file_path):
+        - This method will act as the constructor. 
+        - This method will initialize the initial state of Eight Puzzle Game, stored in attribute self.initial_state. And set the goal state of this game, stored in self.goal_state. In this case, set the size as 3*3
+        - This Method will get "initial_state" as 3*3 size list of Integer which stores the initial state.
+        - self.initial_state = initial_state
+        - self.goal_state = [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
+    - find_blank(self, state):
+        - This method will Find the blank position of the current state, which is the 0 element.
+        - This method will get "state" as 3*3 size list of Integer which stores the current state.
+        - This method will return i, j: two Integers, representing the coordinate of the blank block.
+        - Example Usage:
+        - >>> eightPuzzle = EightPuzzle([[2, 3, 4], [5, 8, 1], [6, 0, 7]])
+        - >>> eightPuzzle.find_blank([[2, 3, 4], [5, 8, 1], [6, 0, 7]])
+        - >>> The expected return value for example usage is : (2, 1)
+    - move(self, state, direction):
+        - This method will find the blank block, then makes the board moves forward the given direction.
+        - This method will get "state" as 3*3 size list of Integer which stores the state before moving, "direction" as str which only has 4 directions: 'up', 'down', 'left', 'right'.
+        - This method will return new_state: a 3*3 size list of Integer, stores the state after moving.
+        - Example Usage:
+        - >>> eightPuzzle.move([[2, 3, 4], [5, 8, 1], [6, 0, 7]], 'left')
+        - >>> The expected return value for example usage is :  [[2, 3, 4], [5, 8, 1], [0, 6, 7]]
+    - get_possible_moves(self, state):
+        - This method will According the current state, find all the possible moving directions. Only has 4 directions: 'up', 'down', 'left', 'right'.
+        - This method will get "state" as 3*3 size list of Integer which stores the current state, "moves" as a list of str which stores all the possible moving directions according to the current state.
+        - This method will return moves: a list of str, store all the possible moving directions according to the current state.
+        - Example Usage:
+        - >>> eightPuzzle.get_possible_moves([[2, 3, 4], [5, 8, 1], [6, 0, 7]])
+        - >>> The expected return value for example usage is : ['up', 'left', 'right'] 
+    - solve(self):
+        - This method will use BFS algorithm to find the path solution which makes the initial state to the goal method. Maintain a list as a queue, named as open_list, append the initial state. Always visit and pop the 0 index element, invoke get_possible_moves method to find all the possible directions. Traversal the possible_moves list and invoke move method to get several new states.Then append them. redo the above steps until the open_list is empty or the state has changed to the goal state.
+        - This method will return path as list of str, the solution to the goal state.
+        - Example Usage:
+        - >>> eightPuzzle = EightPuzzle([[1, 2, 3], [4, 5, 6], [7, 0, 8]])
+        - >>> eightPuzzle.solve()
+        - >>> The expected return value for example usage is : ['right']
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.

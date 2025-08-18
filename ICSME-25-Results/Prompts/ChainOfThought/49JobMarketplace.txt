@@ -1,0 +1,80 @@
+a. Understand the Overall Purpose:
+    - The JobMarketplace is a class that provides functionalities to publish positions, remove positions, submit resumes, withdraw resumes, search for positions, and obtain candidate information.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+       - Initialize the job_listing and resumes lists(__init__)
+        - Publish positions,and add the position information to the job_listings (post_job)
+        - Remove the position information from the job_listings (remove_job)
+        - Submit resumes,and add the resume information to the resumes list (submit_resume)
+        - Withdraw resumes,and remove the resume information from the resumes list (withdraw_resume)
+        - Search for positions(search_jobs)
+        - Obtain candidate information(get_job_applicants)
+c. Detail each method:
+    -  __init__(self):
+        - This method will act as the constructor. 
+        - This method will initialize the job_listing and resumes lists. 
+        - self.job_listings = []
+        - self.resumes = []
+    -  post_job(self, job_title, company, requirements):
+        - This method will be used to publish positions,and add the position information to the job_listings list.
+        - This method will get "job_title" as str which is the title of the position, "company" as str which is the company of the position, "company" as str which is the requirements.
+        - The method will return Nothing. 
+        - Example Usage:
+        - >>> jobMarketplace = JobMarketplace()
+        - >>> jobMarketplace.post_job("Software Engineer", "ABC Company", ['requirement1', 'requirement2'])
+        - >>> jobMarketplace.job_listings
+        - >>> The expected output value for example usage is : [{'job_title': 'Software Engineer', 'company': 'ABC Company', 'requirements': ['requirement1', 'requirement2']}]
+    -  remove_job(self, job):
+        - This method will be used to remove positions,and remove the position information from the job_listings list.
+        - This method will get "job" as dict which is the position information to be removed.
+        - The method will return Nothing. 
+        - Example Usage:
+        - >>> jobMarketplace = JobMarketplace()
+        - >>> jobMarketplace.job_listings = [{"job_title": "Software Engineer", "company": "ABC Company", "requirements": ['requirement1', 'requirement2']}]
+        - >>> jobMarketplace.remove_job(jobMarketplace.job_listings[0])
+        - >>> jobMarketplace.job_listings
+        - >>> The expected output value for example usage is :  []  
+    -  submit_resume(self, name, skills, experience):
+        - This method will be used to submit resumes, and add the resume information to the resumes list.
+        - This method will get "name" as str which is the name of the resume, "skills" as list which is The skills of the resume, "experience" as str which is The experience of the resume.
+        - The method will return Nothing. 
+        - Example Usage:
+        - >>> jobMarketplace = JobMarketplace()
+        - >>> jobMarketplace.submit_resume("Tom", ['skill1', 'skill2'], "experience")
+        - >>> jobMarketplace.resumesbMarketplace.job_listings[0])
+        - >>> The expected output value for example usage is : [{'name': 'Tom', 'skills': ['skill1', 'skill2'], 'experience': 'experience'}]
+    -  withdraw_resume(self, resume):
+        - This method will be used to withdraw resumes, and remove the resume information from the resumes list.
+        - This method will get "resume" as str which is the resume information to be removed.
+        - The method will return Nothing. 
+        - Example Usage:
+        - >>> jobMarketplace = JobMarketplace()
+        - >>> jobMarketplace.resumes = [{"name": "Tom", "skills": ['skill1', 'skill2'], "experience": "experience"}]
+        - >>> jobMarketplace.withdraw_resume(jobMarketplace.resumes[0])
+        - >>> jobMarketplace.resumes
+        - >>> The expected output value for example usage is : [] 
+    - search_jobs(self, criteria):
+        - This method will be used to search for positions,and return the position information that meets the requirements.
+        - This method will get "criteria" as str which is the requirements of the position.
+        - The method will return The position information that meets the requirements as list.
+        - Example Usage:
+        - >>> jobMarketplace = JobMarketplace()
+        - >>> jobMarketplace.job_listings = [{"job_title": "Software Engineer", "company": "ABC Company", "requirements": ['skill1', 'skill2']}]
+        - >>> jobMarketplace.search_jobs("skill1")
+        - >>> The expected return value for example usage is : [{'job_title': 'Software Engineer', 'company': 'ABC Company', 'requirements': ['skill1', 'skill2']}]
+    - get_job_applicants(self, job):
+        - This method will be used to obtain candidate information,and return the candidate information that meets the requirements by calling the matches_requirements function.
+        - This method will get "job" as dict which is position information.
+        - The method will return The candidate information that meets the requirement as list.
+        - Example Usage:
+        - >>> jobMarketplace = JobMarketplace()
+        - >>> jobMarketplace.resumes = [{"name": "Tom", "skills": ['skill1', 'skill2'], "experience": "experience"}]
+        - >>> jobMarketplace.job_listings = [{"job_title": "Software Engineer", "company": "ABC Company", "requirements": ['skill1', 'skill2']}]
+        - >>> jobMarketplace.get_job_applicants(jobMarketplace.job_listings[0])
+        - >>> The expected return value for example usage is :  [{'name': 'Tom', 'skills': ['skill1', 'skill2'], 'experience': 'experience'}]
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 

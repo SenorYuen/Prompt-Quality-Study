@@ -1,0 +1,36 @@
+a. Understand the Overall Purpose:
+    - The KappaCalculator is a class as KappaCalculator, supporting calculations of Cohen's and Fleiss' kappa coefficients.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Calculate the cohen's kappa value (kappa)
+        - Calculate the Fleiss kappa value (fleiss_kappa)
+c. Detail each method:
+    - @staticmethod kappa(testData, k):
+        - This method will Calculate the Cohen's kappa value of a k-dimensional matrix.
+        - This method will get "testData" as list of lists which is The k-dimensional matrix that needs to calculate the Cohen's kappa value, "k" as int which is the Matrix dimension. 
+        - This method will return the cohen's kappa value of the matrix as float.
+        - Example Usage:
+        - >>> KappaCalculator.kappa([[2, 1, 1], [1, 2, 1], [1, 1, 2]], 3)
+        - >>> The expected output return for example usage is : 0.25
+    - @staticmethod fleiss_kappa(testData, N, k, n):
+        - This method will calculate the Fleiss kappa value of an N * k matrix.
+        - This method will get "testData" as list of lists which is Input data matrix, N * k, "N" as int which is the Number of samples, "k" as int which is the number of categories, "n" as int which is the Number of raters.
+        - This method will return Fleiss kappa value as float.
+        - Example Usage:
+        - >>> KappaCalculator.fleiss_kappa([[0, 0, 0, 0, 14],
+                                     [0, 2, 6, 4, 2],
+                                     [0, 0, 3, 5, 6],
+                                     [0, 3, 9, 2, 0],
+                                     [2, 2, 8, 1, 1],
+                                     [7, 7, 0, 0, 0],
+                                     [3, 2, 6, 3, 0],
+                                     [2, 5, 3, 2, 2],
+                                     [6, 5, 2, 1, 0],
+                                     [0, 2, 2, 3, 7]], 10, 5, 14)
+        - >>> The expected output return for example usage is : 0.20993070442195522
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import numpy as np 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.

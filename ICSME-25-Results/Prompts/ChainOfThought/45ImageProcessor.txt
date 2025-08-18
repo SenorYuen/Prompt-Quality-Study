@@ -1,0 +1,56 @@
+a. Understand the Overall Purpose:
+    - The ImageProcessor is a class to process images, including loading, saving, resizing, rotating, and adjusting the brightness of images.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize self.image (__init__)
+        - Use to open an image (load_image)
+        - Save image (save_image)
+        - Resize the image (resize_imager)
+        - rotate image (rotate_image)
+        - Adjust the brightness of image (adjust_brightness)
+c. Detail each method:
+    - __init__(self):
+        - This method will act as the constructor. 
+        - This method will initialize self.image.
+        - self.image = None
+    - load_image(self, image_path):
+        - This method will Use Image util in PIL to open a image
+        - This method will get "image_path" as str which is the path of the image which is going to be loaded.
+        - Example Usage:
+        - >>> processor.load_image('test.jpg')
+        - >>> processor.image
+        - >>> The expected return value for example usage is : <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=3072x4096 at 0x194F2412A48>
+    - save_image(self, save_path):
+        - This method will Save image to a path if image has opened.
+        - This method will get "save_path" as str which is the path that the image will be saved.
+        - Example Usage:
+        - >>> processor.load_image('test.jpg')
+        - >>> processor.save_image('test2.jpg') 
+    - resize_image(self, width, height):
+        - This method will resize the image if image has been opened.
+        - This method will get "width" as int which is the target width of image, "height" as int which is the target height of image.
+        - Example Usage:
+        - >>> processor.load_image('test.jpg')
+        - >>> processor.resize_image(300, 300)
+        - >>> processor.image.width 
+        - >>> The expected output value for example usage is : 300
+        - >>> processor.image.height
+        - >>> The expected output value for example usage is : 300
+    - rotate_image(self, degrees):
+        - This method will rotate the image if the image has opened. 
+        - This method will get "degrees" as float which is the degrees that the image will be rotated.
+        - Example Usage:
+        - >>> processor.load_image('test.jpg')
+        - >>> processor.resize_image(90)  
+    - adjust_brightness(self, factor):
+        - This method will adjust the brightness of the image if the image has opened.
+        - This method will get "factor" as float , which is the brightness of an image. A factor of 0.0 gives a black image. A factor of 1.0 gives the original image.
+        - Example Usage:
+        -  >>> processor.load_image('test.jpg')
+        - >>> processor.adjust_brightness(0.5) 
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    -from PIL import Image, ImageEnhance, ImageChops
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 

@@ -1,0 +1,154 @@
+System Prompt:
+Provided are instructions for generating the code for a class. Please provide the only code in your response.
+
+User Prompt:
+a. Understand the Overall Purpose:
+    - The Order class is a class that manages restaurant orders by allowing the addition of dishes, calculation of the total cost, and checkout.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the order management system (__init__)
+        - Check the self.menu and add into self.selected_dish if the dish count is valid (add_dish)
+        - Calculate the total price of dishes (calculate_total)
+        - Check out the dished ordered (checkout)
+c. Detail each method:
+    - __init__(self):
+     - This method will act as the constructor.
+        - This method will Initialize the order management system.
+        -  self.menu = []
+        - self.selected_dishes = []
+        - self.sales = {}
+        - self.menu stores the dishes of restaurant inventory.
+        - Example Usage: 
+        - >>> menu = [{"dish": dish name, "price": price, "count": count}, ...]
+        - self.selected_dishes stores the dished selected by customer
+        - Example Usage: 
+        - >>> selected_dish = {"dish": dish name, "count": count, price: price}
+        - self.sales stores the sales of each dish.
+        - Example Usage:
+        - >>> sales = {dish name: sales}
+    - add_dish(self, dish):
+        - This method will check the self.menu and add into self.selected_dish if the dish count is valid, and if the dish has successfully been added, change the count in self.menu.
+        - This method will get "dish" as dict which is the information of the dish. dish is formatted like {"dish": dish name, "count": count, price: price}
+        - This method will return True if successfully added, or False otherwise.
+        - Example Usage: 
+        - >>> order = Order()
+        - >>> order.menu.append({"dish": "dish1", "price": 10, "count": 5})
+        - >>> order.add_dish({"dish": "dish1", "price": 10, "count": 3}) 
+        - >>> The expected return value for example usage is : True  
+    - calculate_total(self):
+        - This method will calculate the total price of dishes that have been ordered. Multiply the count, price and sales.
+        - This method will return the final total price as float.
+        - Example Usage: 
+        - >>> order = Order()
+        - >>> order.menu.append({"dish": "dish1", "price": 10, "count": 5})
+        - >>> order.sales = {"dish1": 0.8}
+        - >>> order.add_dish({"dish": "dish1", "price": 10, "count": 4})
+        - >>> The expected return value for example usage is : True
+        - >>> order.calculate_total()
+        - >>> The expected return value for example usage is : 32.0 
+    - checkout(self):
+        - This method will check out the dishes ordered. IF the self.selected_dishes is not empty, invoke the calculate_total method to check out.
+        - This method will return False if the self.selected_dishes is empty, or total (return value of calculate_total) otherwise.
+        - Example Usage: 
+        - >>> order = Order()
+        - >>> order.menu.append({"dish": "dish1", "price": 10, "count": 5})
+        - >>> order.sales = {"dish1": 0.8}
+        - >>> order.add_dish({"dish": "dish1", "price": 10, "count": 4})
+        - >>> The expected return value for example usage is : True
+        - >>> order.checkout()
+        - >>> The expected return value for example usage is : 32.0  
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.
+
+ Use the following prompt and solution pair as context for generating the previously mentioned class: 
+a. Understand the Overall Purpose:
+    - The ZipFileProcessor class can read and decompress zip files. The ZipFileProcessor class also can compress a list of specified files into a zip file. 
+b. Identify the Required Methods:
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize file name (__init__)
+        - Read files (read_zip_file)
+        - Extract all files (extract_all)
+        - Extract a specific file identified by name (extract_file)
+        - Compress files into zip (create_zip_file)
+c. Detail each method:
+    - __init__(self, file_name):
+        - This method will act as the constructor.
+        - This method will initialize the file name.
+        - This Method will accept "file_name" as str ehich is the name of the file to be processed.
+        - self.file_name = file_name
+    - read_zip_file(self):
+        - This method will get open file object, and return the open file object if successful; otherwise, returns None
+        - Example Usage: 
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> file = zfp.read_zip_file()
+    - extract_all(self, output_path):
+        - This method will extract all zip files and place them in the specified path
+        - This method will get the "output_path" as str which is the location of the extracted file.
+        - This method will return True or False to represent if the extraction operation was successful. 
+        - Example Usage:
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.extract_all("result/aaa")
+    - extract_file(self, file_name, output_path):  
+        - This method will extract the file with the specified name from the zip file and place it in the specified path  
+        - This method will get "file_name" as str whcih is the name of the file to be uncompressed, "output_path" as str which is the location of the extracted file. 
+        - The method will return True or False, representing whether the extraction operation was successful
+        - Example usage: 
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.extract_file("bbb.txt", "result/aaa")
+    - create_zip_file(self, files, output_file_name):
+        - This method will compress the specified file list into a zip file and place it in the specified path. 
+        - This method will get "files" as a list of string which is the List of files to compress, "output_file_name" as str which specifies output path.
+        - This method will return True or False, representing whether the compression operation was successful 
+        - Example Usage:
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.create_zip_file(["bbb.txt", "ccc,txt", "ddd.txt"], "output/bcd") 
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import zipfile
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 
+
+
+import zipfile
+
+
+class ZipFileProcessor:
+    def __init__(self, file_name):
+        self.file_name = file_name
+
+    def read_zip_file(self):
+        try:
+            zip_file = zipfile.ZipFile(self.file_name, 'r')
+            return zip_file
+        except:
+            return None
+
+    def extract_all(self, output_path):
+        try:
+            with zipfile.ZipFile(self.file_name, 'r') as zip_file:
+                zip_file.extractall(output_path)
+            return True
+        except:
+            return False
+
+    def extract_file(self, file_name, output_path):
+        try:
+            with zipfile.ZipFile(self.file_name, 'r') as zip_file:
+                zip_file.extract(file_name, output_path)
+            return True
+        except:
+            return False
+
+    def create_zip_file(self, files, output_file_name):
+        try:
+            with zipfile.ZipFile(output_file_name, 'w') as zip_file:
+                for file in files:
+                    zip_file.write(file)
+            return True
+        except:
+            return False

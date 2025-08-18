@@ -1,0 +1,62 @@
+a. Understand the Overall Purpose:
+    - The XMLProcessor is a class that acts as an XML file handler, including reading, writing, processing as well as finding elements in a XML file.
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the XMLProcessor object (__init__)
+        - Reads the XML file (read_xml)
+        - Writes the XML data to a file (write_xml)
+        - Modifies the data in XML elements (process_xml_data)
+        - Finds the XML elements with the specified name (find_element)
+c. Detail each method:
+    - __init__(self, file_name):
+        - This method will act as the constructor.
+        - This method will initialize the XMLProcessor object with the given file name.
+        - This method will get "file_name" as str which is the name of the XML file to be processed.
+        - self.file_name = file_name
+        - self.root = None 
+    - read_xml(self):
+        - This method will read the XML file and returns the root element.
+        - This method will return the root element of the XML file.
+        - Example Usage:
+        - >>> xml_processor = XMLProcessor('test.xml')
+        - >>> root_element = xml_processor.read_xml()
+        - >>> print(root_element)
+        - >>> The expected return value for example usage is: <Element 'root' at 0x7f8e3b7eb180>
+    - write_xml(self):
+        - This method will write the XML file and returns the root element.
+        - This method will get "file_name" as str which is the name of the file to write the XML data.
+        - This method will return True if the write operation is successful, False otherwise.
+        - Example Usage:
+        - >>> xml_processor = XMLProcessor('test.xml')
+        - >>> root = xml_processor.read_xml()
+        - >>> success = xml_processor.write_xml('output.xml')
+        - >>> print(success)
+        - >>> The expected return value for example usage is: True
+    - process_xml_data(self, file_name):
+        - This method will modify the data in XML elements and writes the updated XML data to a new file.
+        - This method will get "file_name" as str which is the name of the file to write the modified XML data.
+        - This method will return True if the write operation is successful, False otherwise.
+        - Example Usage:
+        - >>> xml_processor = XMLProcessor('test.xml')
+        - >>> root = xml_processor.read_xml()
+        - >>> success = xml_processor.process_xml_data('processed.xml')
+        - >>> print(success)
+        - >>> The expected return value for example usage is: True  
+    - find_element(self, element_name):
+        - This method will find the XML elements with the specified name.
+        - This method will get "element_name" as str which is the name of the elements to find.
+        - This method will return a list of found elements with the specified name.
+        - Example Usage:
+        - >>> xml_processor = XMLProcessor('test.xml')
+        - >>> root = xml_processor.read_xml()
+        - >>> items = xml_processor.find_element('item')
+        - >>> for item in items:
+        - >>>     print(item.text)
+        - >>> The expected output value for example usage is: apple
+                                                                banana
+                                                                orange 
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import xml.etree.ElementTree as ET
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.  

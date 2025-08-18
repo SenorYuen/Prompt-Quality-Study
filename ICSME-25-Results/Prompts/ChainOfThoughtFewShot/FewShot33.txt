@@ -1,0 +1,195 @@
+System Prompt:
+Provided are instructions for completing the code for a class. Please provide only code with comments in the response.
+
+User Prompt:
+Using the example solution included later, please complete the class DiscountStrategy in the subsequent code: 
+class DiscountStrategy:
+    """
+    This is a class that allows to use different discount strategy based on shopping credit or shopping cart in supermarket.
+    """
+
+    def __init__(self, customer, cart, promotion=None):
+        """
+        Initialize the DiscountStrategy with customer information, a cart of items, and an optional promotion.
+        :param customer: dict, customer information
+        :param cart: list of dicts, a cart of items with details
+        :param promotion: function, optional promotion applied to the order
+        >>> customer = {'name': 'John Doe', 'fidelity': 1200}
+        >>> cart = [{'product': 'product', 'quantity': 14, 'price': 23.5}]
+        >>> DiscountStrategy(customer, cart, DiscountStrategy.FidelityPromo)
+
+        """
+        self.customer = customer
+        self.cart = cart
+        self.promotion = promotion
+        self.total()
+
+    def total(self):
+        """
+        Calculate the total cost of items in the cart.
+        :return: float, total cost of items
+        >>> customer = {'name': 'John Doe', 'fidelity': 1200}
+        >>> cart = [{'product': 'product', 'quantity': 14, 'price': 23.5}]
+        >>> ds = DiscountStrategy(customer, cart)
+        >>> ds.total()
+        329.0
+
+        """
+
+
+    def due(self):
+        """
+        Calculate the final amount to be paid after applying the discount.
+        :return: float, final amount to be paid
+        >>> customer = {'name': 'John Doe', 'fidelity': 1200}
+        >>> cart = [{'product': 'product', 'quantity': 14, 'price': 23.5}]
+        >>> ds = DiscountStrategy(customer, cart, DiscountStrategy.FidelityPromo)
+        >>> ds.due()
+        312.55
+
+        """
+
+
+    @staticmethod
+    def FidelityPromo(order):
+        """
+        Calculate the discount based on the fidelity points of the customer.Customers with over 1000 points can enjoy a 5% discount on the entire order.
+        :param order: object, the order to apply the discount to
+        :return: float, discount amount
+        >>> customer = {'name': 'John Doe', 'fidelity': 1200}
+        >>> cart = [{'product': 'product', 'quantity': 14, 'price': 23.5}]
+        >>> order = DiscountStrategy(customer, cart, DiscountStrategy.FidelityPromo)
+        >>> DiscountStrategy.FidelityPromo(order)
+        16.45
+
+        """
+
+
+    @staticmethod
+    def BulkItemPromo(order):
+        """
+        Calculate the discount based on bulk item quantity in the order.In the same order, if the quantity of a single item reaches 20 or more, each item will enjoy a 10% discount.
+        :param order: object, the order to apply the discount to
+        :return: float, discount amount
+        >>> customer = {'name': 'John Doe', 'fidelity': 1200}
+        >>> cart = [{'product': 'product', 'quantity': 20, 'price': 23.5}]
+        >>> order = DiscountStrategy(customer, cart, DiscountStrategy.BulkItemPromo)
+        >>> DiscountStrategy.BulkItemPromo(order)
+        47.0
+
+        """
+
+
+    @staticmethod
+    def LargeOrderPromo(order):
+        """
+        Calculate the discount based on the number of different products in the order.If the quantity of different products in the order reaches 10 or more, the entire order will enjoy a 7% discount.
+        :param order: object, the order to apply the discount to
+        :return: float, discount amount
+        >>> customer = {'name': 'John Doe', 'fidelity': 1200}
+        >>> cart = [{'product': 'product', 'quantity': 14, 'price': 23.5}]
+        >>> order = DiscountStrategy(customer, cart, DiscountStrategy.LargeOrderPromo)
+        >>> DiscountStrategy.LargeOrderPromo(order)
+        0.0
+
+        """. Here is an included question and solution to base a response off of: import xml.etree.ElementTree as ET
+
+
+class XMLProcessor:
+    """
+    This is a class as XML files handler, including reading, writing, processing as well as finding elements in a XML file.
+    """
+
+    def __init__(self, file_name):
+        """
+        Initialize the XMLProcessor object with the given file name.
+        :param file_name:string, the name of the XML file to be processed.
+        """
+        self.file_name = file_name
+        self.root = None
+
+    def read_xml(self):
+        """
+        Reads the XML file and returns the root element.
+        :return: Element, the root element of the XML file.
+        >>> xml_processor = XMLProcessor('test.xml')
+        >>> root_element = xml_processor.read_xml()
+        >>> print(root_element)
+        <Element 'root' at 0x7f8e3b7eb180>
+        """
+
+
+    def write_xml(self, file_name):
+        """
+        Writes the XML data to the specified file.
+        :param file_name: string, the name of the file to write the XML data.
+        :return: bool, True if the write operation is successful, False otherwise.
+        >>> xml_processor = XMLProcessor('test.xml')
+        >>> root = xml_processor.read_xml()
+        >>> success = xml_processor.write_xml('output.xml')
+        >>> print(success)
+        True
+        """
+
+
+    def process_xml_data(self, file_name):
+        """
+        Modifies the data in XML elements and writes the updated XML data to a new file.
+        :param file_name: string, the name of the file to write the modified XML data.
+        :return: bool, True if the write operation is successful, False otherwise.
+        >>> xml_processor = XMLProcessor('test.xml')
+        >>> root = xml_processor.read_xml()
+        >>> success = xml_processor.process_xml_data('processed.xml')
+        >>> print(success)
+        True
+        """
+
+
+    def find_element(self, element_name):
+        """
+        Finds the XML elements with the specified name.
+        :param element_name: string, the name of the elements to find.
+        :return: list, a list of found elements with the specified name.
+        >>> xml_processor = XMLProcessor('test.xml')
+        >>> root = xml_processor.read_xml()
+        >>> items = xml_processor.find_element('item')
+        >>> for item in items:
+        >>>     print(item.text)
+        apple
+        banana
+        orange
+        """
+
+ import xml.etree.ElementTree as ET
+
+
+class XMLProcessor:
+    def __init__(self, file_name):
+        self.file_name = file_name
+        self.root = None
+
+    def read_xml(self):
+        try:
+            tree = ET.parse(self.file_name)
+            self.root = tree.getroot()
+            return self.root
+        except:
+            return None
+
+    def write_xml(self, file_name):
+        try:
+            tree = ET.ElementTree(self.root)
+            tree.write(file_name)
+            return True
+        except:
+            return False
+
+    def process_xml_data(self, file_name):
+        for element in self.root.iter('item'):
+            text = element.text
+            element.text = text.upper()
+        return self.write_xml(file_name)
+
+    def find_element(self, element_name):
+        elements = self.root.findall(element_name)
+        return elements

@@ -1,0 +1,167 @@
+System Prompt:
+Provided are instructions for completing the code for a class. Please provide only code with comments in the response.
+
+User Prompt:
+Using the example solution included later, please complete the class VectorUtil in the subsequent code: 
+import numpy as np
+from gensim import matutils
+from numpy import dot, array
+
+class VectorUtil:
+    """
+    The class provides vector operations, including calculating similarity, cosine similarities, average similarity, and IDF weights.
+    """
+
+    @staticmethod
+    def similarity(vector_1, vector_2):
+        """
+        Compute the cosine similarity between one vector and another vector.
+        :param vector_1: numpy.ndarray, Vector from which similarities are to be computed, expected shape (dim,).
+        :param vector_2: numpy.ndarray, Vector from which similarities are to be computed, expected shape (dim,).
+        :return: numpy.ndarray, Contains cosine distance between `vector_1` and `vector_2`
+        >>> vector_1 = np.array([1, 1])
+        >>> vector_2 = np.array([1, 0])
+        >>> VectorUtil.similarity(vector_1, vector_2)
+        0.7071067811865475
+        """
+
+
+    @staticmethod
+    def cosine_similarities(vector_1, vectors_all):
+        """
+        Compute cosine similarities between one vector and a set of other vectors.
+        :param vector_1: numpy.ndarray, Vector from which similarities are to be computed, expected shape (dim,).
+        :param vectors_all: list of numpy.ndarray, For each row in vectors_all, distance from vector_1 is computed, expected shape (num_vectors, dim).
+        :return: numpy.ndarray, Contains cosine distance between `vector_1` and each row in `vectors_all`, shape (num_vectors,).
+        >>> vector1 = np.array([1, 2, 3])
+        >>> vectors_all = [np.array([4, 5, 6]), np.array([7, 8, 9])]
+        >>> VectorUtil.cosine_similarities(vector1, vectors_all)
+        [0.97463185 0.95941195]
+        """
+
+
+    @staticmethod
+    def n_similarity(vector_list_1, vector_list_2):
+        """
+        Compute cosine similarity between two sets of vectors.
+        :param vector_list_1: list of numpy vector
+        :param vector_list_2: list of numpy vector
+        :return: numpy.ndarray, Similarities between vector_list_1 and vector_list_2.
+        >>> vector_list1 = [np.array([1, 2, 3]), np.array([4, 5, 6])]
+        >>> vector_list2 = [np.array([7, 8, 9]), np.array([10, 11, 12])]
+        >>> VectorUtil.n_similarity(vector_list1, vector_list2)
+        0.9897287473881233
+        """
+
+
+    @staticmethod
+    def compute_idf_weight_dict(total_num, number_dict):
+        """
+        Calculate log(total_num+1/count+1) for each count in number_dict
+        :param total_num: int
+        :param number_dict: dict
+        :return: dict
+        >>> num_dict = {'key1':0.1, 'key2':0.5}
+        >>> VectorUtil.compute_idf_weight_dict(2, num_dict)
+        {'key1': 1.0033021088637848, 'key2': 0.6931471805599453}
+        """. Here is an included question and solution to base a response off of: import xml.etree.ElementTree as ET
+
+
+class XMLProcessor:
+    """
+    This is a class as XML files handler, including reading, writing, processing as well as finding elements in a XML file.
+    """
+
+    def __init__(self, file_name):
+        """
+        Initialize the XMLProcessor object with the given file name.
+        :param file_name:string, the name of the XML file to be processed.
+        """
+        self.file_name = file_name
+        self.root = None
+
+    def read_xml(self):
+        """
+        Reads the XML file and returns the root element.
+        :return: Element, the root element of the XML file.
+        >>> xml_processor = XMLProcessor('test.xml')
+        >>> root_element = xml_processor.read_xml()
+        >>> print(root_element)
+        <Element 'root' at 0x7f8e3b7eb180>
+        """
+
+
+    def write_xml(self, file_name):
+        """
+        Writes the XML data to the specified file.
+        :param file_name: string, the name of the file to write the XML data.
+        :return: bool, True if the write operation is successful, False otherwise.
+        >>> xml_processor = XMLProcessor('test.xml')
+        >>> root = xml_processor.read_xml()
+        >>> success = xml_processor.write_xml('output.xml')
+        >>> print(success)
+        True
+        """
+
+
+    def process_xml_data(self, file_name):
+        """
+        Modifies the data in XML elements and writes the updated XML data to a new file.
+        :param file_name: string, the name of the file to write the modified XML data.
+        :return: bool, True if the write operation is successful, False otherwise.
+        >>> xml_processor = XMLProcessor('test.xml')
+        >>> root = xml_processor.read_xml()
+        >>> success = xml_processor.process_xml_data('processed.xml')
+        >>> print(success)
+        True
+        """
+
+
+    def find_element(self, element_name):
+        """
+        Finds the XML elements with the specified name.
+        :param element_name: string, the name of the elements to find.
+        :return: list, a list of found elements with the specified name.
+        >>> xml_processor = XMLProcessor('test.xml')
+        >>> root = xml_processor.read_xml()
+        >>> items = xml_processor.find_element('item')
+        >>> for item in items:
+        >>>     print(item.text)
+        apple
+        banana
+        orange
+        """
+
+ import xml.etree.ElementTree as ET
+
+
+class XMLProcessor:
+    def __init__(self, file_name):
+        self.file_name = file_name
+        self.root = None
+
+    def read_xml(self):
+        try:
+            tree = ET.parse(self.file_name)
+            self.root = tree.getroot()
+            return self.root
+        except:
+            return None
+
+    def write_xml(self, file_name):
+        try:
+            tree = ET.ElementTree(self.root)
+            tree.write(file_name)
+            return True
+        except:
+            return False
+
+    def process_xml_data(self, file_name):
+        for element in self.root.iter('item'):
+            text = element.text
+            element.text = text.upper()
+        return self.write_xml(file_name)
+
+    def find_element(self, element_name):
+        elements = self.root.findall(element_name)
+        return elements

@@ -1,0 +1,40 @@
+a. Understand the Overall Purpose:
+    - The IpUtil is a class as a tool for ip that can be used to obtain the local IP address, validate its validity, and also provides the functionality to retrieve the corresponding hostname.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Check if the given IP address is a valid IPv4 address (is_valid_ipv4)
+        - Check if the given IP address is a valid IPv6 address (is_valid_ipv6)
+        - Get the hostname (get_hostname)
+        - Return the binary form of the IP address (get_binary)
+c. Detail each method:
+    -  @staticmethod is_valid_ipv4(ip_address):
+        - This method will check if the given IP address is a valid IPv4 address.
+        - This method will get "ip_address" as str which is the IP address to check.
+        - The method will return True if the IP address is valid, False otherwise. 
+        - Example Usage:
+        - >>> IpUtil.is_valid_ipv4('192.168.0.123')
+        - >>> The expected return value for example usage is : True
+        - >>> IpUtil.is_valid_ipv4('256.0.0.0')
+        - >>> The expected return value for example usage is : False
+    -  @staticmethod is_valid_ipv6(ip_address):
+        - This method will check if the given IP address is a valid IPv6 address.
+        - This method will get "ip_address" as str which is the IP address to check.
+        - The method will return True if the IP address is valid, False otherwise. 
+        - Example Usage:
+        - >>> IpUtil.is_valid_ipv6('2001:0db8:85a3:0000:0000:8a2e:0370:7334')
+        - >>> The expected return value for example usage is : True
+        - >>> IpUtil.is_valid_ipv6('2001:0db8:85a3:::8a2e:0370:7334')
+        - >>> The expected return value for example usage is : True  
+    -  @staticmethod get_hostname(ip_address):
+        - This method will get the hostname associated with the given IP address.
+        - This method will get "ip_address" as str which is the IP address to get the hostname for.
+        - The method will return the hostname associated with the IP address as str.
+        - Example Usage:
+        - >>> IpUtil.get_hostname('110.242.68.3')
+        - >>> The expected return value for example usage is : 'www.baidu.com'
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import socket
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 

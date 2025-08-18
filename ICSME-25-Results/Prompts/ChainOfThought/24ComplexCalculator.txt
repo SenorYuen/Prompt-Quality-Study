@@ -1,0 +1,49 @@
+a. Understand the Overall Purpose:
+    - The ComplexCalculator is a class that implements addition, subtraction, multiplication, and division operations for complex numbers.
+b. Identify the Required Methods:  
+    - To ensure the function of this class, it will need all of these methods:
+        - Adds two complex numbers (add)
+        - Subtracts two complex numbers (subtract)
+        - Multiplies two complex numbers (multiply)
+        - Divides two complex numbers (divide)
+c. Detail each method:
+    -  __init__(self):
+        - pass
+    - @staticmethod add(c1, c2):
+        - This method will add two complex numbers.
+        - This method will get "c1" as complex which is the first complex number, "c2" as complex which is the second complex number.
+        - This method will return the sum of the two complex numbers.
+        - Example Usage:
+        - >>> complexCalculator = ComplexCalculator()
+        - >>> complexCalculator.add(1+2j, 3+4j)
+        - >>> The expected return value for example usage is : (4+6j) 
+    - @staticmethod subtract(c1, c2):
+        - This method will subtract two complex numbers.
+        - This method will get "c1" as complex which is the first complex number, "c2" as complex which is the second complex number.
+        - This method will return the difference of the two complex numbers.
+        - Example Usage:
+        - >>> complexCalculator = ComplexCalculator()
+        - >>> complexCalculator.subtract(1+2j, 3+4j)
+        - >>> The expected return value for example usage is : (-2-2j)
+    - @staticmethod multiply(c1, c2):
+        - This method will multiply two complex numbers.
+        - This method will get "c1" as complex which is the first complex number, "c2" as complex which is the second complex number.
+        - This method will return the product of the two complex numbers.
+        - Example Usage:
+        - >>> complexCalculator = ComplexCalculator()
+        - >>> complexCalculator.multiply(1+2j, 3+4j)
+        - >>> The expected return value for example usage is : (-5+10j) 
+    - @staticmethod divide(c1, c2):
+        - This method will divide two complex numbers.
+        - This method will get "c1" as complex which is the first complex number, "c2" as complex which is the second complex number.
+        - This method will return the quotient of the two complex numbers.
+        - Example Usage:
+        - >>> complexCalculator = ComplexCalculator()
+        - >>> complexCalculator.divide(1+2j, 3+4j)
+        - >>> The expected return value for example usage is : (0.44+0.08j)   
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 

@@ -1,0 +1,48 @@
+a. Understand the Overall Purpose:
+    - The Calculator is a class for a calculator, capable of performing basic arithmetic calculations on numerical expressions using the operators +, -, *, /, and ^ (exponentiation).
+b. Identify the Required Methods:    
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the operations (__init__)
+        - Calculate the value of a given expression (calculate)
+        - Returns the priority of the specified operator (precedence)
+        - Use the operator at the top of the operator stack (apply_operator) 
+c. Detail each method:
+    - __init__(self, db_name):
+	 - This method will act as the constructor. 
+        - This method will Initialize the operations performed by the five operators'+','-','*','/','^'
+        - self.operators = {
+            '+': lambda x, y: x + y,
+            '-': lambda x, y: x - y,
+            '*': lambda x, y: x * y,
+            '/': lambda x, y: x / y,
+            '^': lambda x, y: x ** y
+          }
+    - calculate(self, expression):
+        - This method will calculate the value of a given expression
+        - This method will accept "expression" as str which is the given expression.
+        - This method will return the value of the expression if successful; otherwise, return None. 
+        - >>> calculator = Calculator()
+        - >>> calculator.calculate('1+2-3')
+        - >>> The expected return value for example usage is :  0.0  
+    - calculate(self, expression):
+        - This method will return the priority of the specified operator, where the higher the priority, the greater the assignment. The priority of '^' is greater than '/' and '*', and the priority of '/' and '*' is greater than '+' and '-'.
+        - This method will accept "operator" as str which is the given operator.
+        - This method will return the priority of the given operator as int;  otherwise, return 0. 
+        - >>> calculator = Calculator()
+        - >>> calculator.precedence('+')
+        - >>> The expected return value for example usage is : 1
+        - >>> calculator.precedence('^')
+        - >>> The expected return value for example usage is : 3
+- apply_operator(self, operand_stack, operator_stack):
+        - This method will use the operator at the top of the operator stack to perform the operation on the two numbers at the top of the operator stack, and store the results at the top of the operator stack
+        - This method will accept "operand_stack" as list, "operator_stack" as list. 
+        - This method will return the updated operand_stack and operator_stack.
+        - >>> calculator = Calculator()
+        - >>> calculator.apply_operator([1, 2, 3], ['+', '-'])
+        - >>> The expected return value for example usage is : ([1, -1], ['-'])
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 

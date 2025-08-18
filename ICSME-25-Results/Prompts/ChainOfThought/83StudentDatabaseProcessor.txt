@@ -1,0 +1,53 @@
+a. Understand the Overall Purpose:
+    - The StudentDatabaseProcessor is a class with database operation, including inserting student information, searching for student information by name, and deleting student information by name.
+b. To ensure the function of this class, it will need all of these methods:
+    - Initializes the StudentDatabaseProcessor object (__init__)
+    - Creates a "students" table in the database if it does not exist already (create_student_table)
+    - Inserts a new student into the "students" table (insert_student)
+    - Searches for a student in the "students" table by their name (search_student_by_name)
+    - Deletes a student from the "students" table by their name (delete_student_by_name)
+c. Detail each method:
+    - __init__(self, cash_balance):
+        - This method will act as the constructor.
+        - This method will initialize the StudentDatabaseProcessor object with the specified database name.
+        - This method will get "database_name" as str which is the name of the SQLite database. 
+        - self.database_name = database_name
+    - create_student_table(self):
+        - This method will create a "students" table in the database if it does not exist already.Fields include ID of type int, name of type str, age of type int, gender of type str, and grade of type int.
+        - This method will return None.
+        - Example Usage:   
+        - >>> processor = StudentDatabaseProcessor("students.db")
+        - >>> processor.create_student_table()
+    - insert_student(self, student_data):
+        - This method will insert a new student into the "students" table.
+        - This method will get "student_data" as dict which is a dictionary containing the student's information (name, age, gender, grade).
+        - This method will return None.
+        - Example Usage:   
+        - >>> processor = StudentDatabaseProcessor("students.db")
+        - >>> processor.create_student_table()
+        - >>> student_data = {'name': 'John', 'age': 15, 'gender': 'Male', 'grade': 9}
+        - >>> processor.insert_student(student_data)
+    - search_student_by_name(self, name):
+        - This method will search for a student in the "students" table by their name.
+        - This method will get "name" as str which is the name of the student to search for.
+        - This method will return a list of tuples, the rows from the "students" table that match the search criteria.
+        - Example Usage:   
+        - >>> processor = StudentDatabaseProcessor("students.db")
+        - >>> processor.create_student_table()
+        - >>> result = processor.search_student_by_name("John")    
+    - delete_student_by_name(self, name):
+        - This method will delete a student from the "students" table by their name.
+        - This method will get "name" as str which is the name of the student to delete.
+        - This method will return None.
+        - Example Usage:   
+        - >>> processor = StudentDatabaseProcessor("students.db")
+        - >>> processor.create_student_table()
+        - >>> student_data = {'name': 'John', 'age': 15, 'gender': 'Male', 'grade': 9}
+        - >>> processor.insert_student(student_data)
+        - >>> processor.delete_student_by_name("John")
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import sqlite3 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.           

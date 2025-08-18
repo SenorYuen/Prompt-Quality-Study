@@ -1,0 +1,214 @@
+System Prompt:
+Provided are instructions for completing the code for a class. Please provide only code with comments in the response.
+
+User Prompt:
+Using the example solution included later, please complete the class RegexUtils in the subsequent code: 
+import re
+
+class RegexUtils:
+    """
+    The class provides to match, find all occurrences, split, and substitute text using regular expressions. It also includes predefined patterns, validating phone numbers and extracting email addresses.
+    """
+
+
+    def match(self, pattern, text):
+        """
+        Check if the text matches the regular expression
+        :param pattern: string, Regular expression pattern
+        :param text: string, Text to match
+        :return: True or False, representing whether the text matches the regular expression or not
+        >>> ru = RegexUtils()
+        >>> ru.match(r'\b\d{3}-\d{3}-\d{4}\b', "123-456-7890")
+        True
+        """
+
+    def findall(self, pattern, text):
+        """
+        Find all matching substrings and return a list of all matching substrings
+        :param pattern: string, Regular expression pattern
+        :param text: string, Text to match
+        :return: list of string, List of all matching substrings
+        >>> ru = RegexUtils()
+        >>> ru.findall(r'\b\d{3}-\d{3}-\d{4}\b', "123-456-7890 abiguygusu 876-286-9876 kjgufwycs 987-762-9767")
+        ['123-456-7890', '876-286-9876', '987-762-9767']
+        """
+
+    def split(self, pattern, text):
+        """
+        Split text based on regular expression patterns and return a list of substrings
+        :param pattern: string, Regular expression pattern
+        :param text: string, Text to be split
+        :return: list of string, List of substrings after splitting
+        >>> ru = RegexUtils()
+        >>> ru.split(r'\b\d{3}-\d{3}-\d{4}\b', "123-456-7890 abiguygusu 876-286-9876 kjgufwycs 987-762-9767")
+        ['', ' abiguygusu ', ' kjgufwycs ', '']
+        """
+
+    def sub(self, pattern, replacement, text):
+        """
+        Replace the substring matched by a regular expression with the specified string
+        :param pattern: string, Regular expression pattern
+        :param replacement: Text to replace with
+        :param text: string, Text to be replaced
+        :return: string, Text after replacement
+        >>> ru = RegexUtils()
+        >>> ru.sub(r'\b\d{3}-\d{3}-\d{4}\b', 'phone num',  "123-456-7890 abiguygusu 876-286-9876 kjgufwycs 987-762-9767")
+        'phone num abiguygusu phone num kjgufwycs phone num'
+        """
+
+    def generate_email_pattern(self):
+        """
+        Generate regular expression patterns that match email addresses
+        :return: string, regular expression patterns that match email addresses
+        >>> ru = RegexUtils()
+        >>> ru.generate_email_pattern()
+        '\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+        """
+
+    def generate_phone_number_pattern(self):
+        """
+        Generate regular expression patterns that match phone numbers
+        :return: string, regular expression patterns that match phone numbers
+        >>> ru = RegexUtils()
+        >>> ru.generate_phone_number_pattern()
+        '\b\d{3}-\d{3}-\d{4}\b'
+        """
+
+    def generate_split_sentences_pattern(self):
+        """
+        Generate regular expression patterns that match the middle characters of two sentences
+        :return: string, regular expression patterns that match the middle characters of two sentences
+        >>> ru = RegexUtils()
+        >>> ru.generate_split_sentences_pattern()
+        '[.!?][\s]{1,2}(?=[A-Z])'
+        """
+
+    def split_sentences(self, text):
+        """
+        Split the text into a list of sentences without Punctuation except the last sentence
+        :param text: Text to be split
+        :return: Split Text List
+        >>> ru = RegexUtils()
+        >>> ru.split_sentences("Aaa. Bbbb? Ccc!")
+        ['Aaa', 'Bbbb', 'Ccc!']
+        """
+
+    def validate_phone_number(self, phone_number):
+        """
+        Verify if the phone number is valid
+        :param phone_number: Phone number to be verified
+        :return: True or False, indicating whether the phone number is valid
+        >>> ru = RegexUtils()
+        >>> ru.validate_phone_number("123-456-7890")
+        True
+        """
+
+    def extract_email(self, text):
+        """
+        Extract all email addresses from the text
+        :param text: string, input text
+        :return: list of string, All extracted email addresses
+        >>> ru = RegexUtils()
+        >>> ru.extract_email("abcdefg@163.com ygusyfysy@126.com wljduyuv@qq.com")
+        ['abcdefg@163.com', 'ygusyfysy@126.com', 'wljduyuv@qq.com']
+        """. Here is an included question and solution to base a response off of: import xml.etree.ElementTree as ET
+
+
+class XMLProcessor:
+    """
+    This is a class as XML files handler, including reading, writing, processing as well as finding elements in a XML file.
+    """
+
+    def __init__(self, file_name):
+        """
+        Initialize the XMLProcessor object with the given file name.
+        :param file_name:string, the name of the XML file to be processed.
+        """
+        self.file_name = file_name
+        self.root = None
+
+    def read_xml(self):
+        """
+        Reads the XML file and returns the root element.
+        :return: Element, the root element of the XML file.
+        >>> xml_processor = XMLProcessor('test.xml')
+        >>> root_element = xml_processor.read_xml()
+        >>> print(root_element)
+        <Element 'root' at 0x7f8e3b7eb180>
+        """
+
+
+    def write_xml(self, file_name):
+        """
+        Writes the XML data to the specified file.
+        :param file_name: string, the name of the file to write the XML data.
+        :return: bool, True if the write operation is successful, False otherwise.
+        >>> xml_processor = XMLProcessor('test.xml')
+        >>> root = xml_processor.read_xml()
+        >>> success = xml_processor.write_xml('output.xml')
+        >>> print(success)
+        True
+        """
+
+
+    def process_xml_data(self, file_name):
+        """
+        Modifies the data in XML elements and writes the updated XML data to a new file.
+        :param file_name: string, the name of the file to write the modified XML data.
+        :return: bool, True if the write operation is successful, False otherwise.
+        >>> xml_processor = XMLProcessor('test.xml')
+        >>> root = xml_processor.read_xml()
+        >>> success = xml_processor.process_xml_data('processed.xml')
+        >>> print(success)
+        True
+        """
+
+
+    def find_element(self, element_name):
+        """
+        Finds the XML elements with the specified name.
+        :param element_name: string, the name of the elements to find.
+        :return: list, a list of found elements with the specified name.
+        >>> xml_processor = XMLProcessor('test.xml')
+        >>> root = xml_processor.read_xml()
+        >>> items = xml_processor.find_element('item')
+        >>> for item in items:
+        >>>     print(item.text)
+        apple
+        banana
+        orange
+        """
+
+ import xml.etree.ElementTree as ET
+
+
+class XMLProcessor:
+    def __init__(self, file_name):
+        self.file_name = file_name
+        self.root = None
+
+    def read_xml(self):
+        try:
+            tree = ET.parse(self.file_name)
+            self.root = tree.getroot()
+            return self.root
+        except:
+            return None
+
+    def write_xml(self, file_name):
+        try:
+            tree = ET.ElementTree(self.root)
+            tree.write(file_name)
+            return True
+        except:
+            return False
+
+    def process_xml_data(self, file_name):
+        for element in self.root.iter('item'):
+            text = element.text
+            element.text = text.upper()
+        return self.write_xml(file_name)
+
+    def find_element(self, element_name):
+        elements = self.root.findall(element_name)
+        return elements

@@ -1,0 +1,34 @@
+a. Understand the Overall Purpose:
+    - The ChandrasekharSieve is a class that uses the Chandrasekhar's Sieve method to find all prime numbers within the range.
+b. Identify the Required Methods:    
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the ChandrasekharSieve class (__init__)
+        - Generate prime numbers (generate_primes)
+        - Get the list of generated prime numbers (get_primes)
+c. Detail each method:
+    - __init__(self, n):
+        - This method will act as the constructor. 
+        - Initialize the ChandrasekharSieve class with the given limit.
+        - This method will accept "n" as int which is the upper limit for generating prime numbers.
+        - self.n = n
+        - self.primes = self.generate_primes()
+    - generate_primes(self):  
+        - This method will generate prime numbers up to the specified limit using the Chandrasekhar sieve algorithm.
+        - This method will return a list of prime numbers as list.
+        - Example Usage:
+        - >>> cs = ChandrasekharSieve(20)
+        - >>> cs.generate_primes()
+        - >>> The expected return value for example usage is :  [2, 3, 5, 7, 11, 13, 17, 19]
+    - get_primes(self):
+        - This method will Get the list of generated prime numbers.
+        - This method will return a list of prime numbers as list.
+        - Example Usage:
+        - cs = ChandrasekharSieve(20)
+        - >>> cs.get_primes()
+        - >>> The expected return value for example usage is :  [2, 3, 5, 7, 11, 13, 17, 19] 
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 

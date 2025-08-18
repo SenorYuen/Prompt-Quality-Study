@@ -1,0 +1,65 @@
+a. Understand the Overall Purpose:
+    - The DataStatistics2 is a class for performing data statistics, supporting to get the sum, minimum, maximum, variance, standard deviation, and correlation of a given dataset.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize Data List (__init__)
+        - Calculate the sum of data (get_sum)
+        - Calculate the minimum value (get_min)
+        - Calculate the maximum value (get_max)
+        - Calculate variance (get_variance)
+        - Calculate standard deviation (get_std_deviation)
+        - Calculate correlation (get_correlation)
+c. Detail each method:
+    - __init__(self, data):
+        - This method will act as the constructor. 
+        - This method will initialize Data List.
+        - This method will get "data" as list.
+        - self.data = np.array(data)
+    - get_sum(self):
+        - This method will calculate the sum of data.
+        - This method will return the sum as float.
+        - Example Usage: 
+        - >>> ds2 = DataStatistics2([1, 2, 3, 4])
+        - >>> ds2.get_sum()
+        - >>> The expected return value for example usage is : 10  
+    - get_min(self):
+        - This method will calculate minimum value in the data.
+        - This method will return the minimum value as float.
+        - Example Usage: 
+        - >>> ds2 = DataStatistics2([1, 2, 3, 4])
+        - >>> ds2.get_min()
+        - >>> The expected return value for example usage is: 1
+    - get_max(self):
+        - This method will calculate maximum value in the data.
+        - This method will return the maximum value as float.
+        - Example Usage: 
+        - >>> ds2 = DataStatistics2([1, 2, 3, 4])
+        - >>> ds2.get_max()
+        - >>> The expected return value for example usage is: 4          
+    - get_variance(self):
+        - This method will calculate variance, accurate to two digits after the decimal separator.
+        - This method will return the variance value as float.
+        - Example Usage: 
+        - >>> ds2 = DataStatistics2([1, 2, 3, 4])
+        - >>> ds2.get_variance()
+        - >>> The expected return value for example usage is : 1.25  
+   - get_std_deviatio(self):
+        - This method will calculate standard deviation, accurate to two digits after the decimal separator.
+        - This method will return the standard deviation value as float.
+        - Example Usage: 
+        - >>> ds2 = DataStatistics2([1, 2, 3, 4])
+        - >>> ds2.get_std_deviation()
+        - >>> The expected return value for example usage is : 1.12  
+   - get_correlation(self):
+        - This method will calculate correlation.
+        - This method will return the correlation as float.
+        - Example Usage: 
+        - >>> ds2 = DataStatistics2([1, 2, 3, 4])
+        - >>> ds2.get_correlation()
+        - >>> The expected return value for example usage is : 1.0  
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import numpy as np
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 

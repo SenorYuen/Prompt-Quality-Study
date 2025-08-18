@@ -1,0 +1,33 @@
+a. Understand the Overall Purpose:
+    - The MetricsCalculator2 class provides to calculate Mean Reciprocal Rank (MRR) and Mean Average Precision (MAP) based on input data, where MRR measures the ranking quality and MAP measures the average precision.
+b. Identify the Required Methods:      
+        - To ensure the function of this class, it will need all of these methods:
+        - compute the MRR of the input data (mrr)
+        - compute the MAP of the input data (map)
+c. Detail each method:
+    -  __init__(self):
+        - pass
+    - @staticmethod mrr(data):
+        - This method will compute the MRR of the input data. MRR is a widely used evaluation index. It is the mean of the reciprocal rank.
+        - This method will get "data"; the data must be a tuple, list 0,1,eg.([1,0,...],5). In each tuple (actual result,ground truth num), ground truth num is the total ground num. ([1,0,...],5), or list of tuple eg. [([1,0,1,...],5),([1,0,...],6),([0,0,...],5)]. 1 stands for a correct answer, 0 stands for a wrong answer.
+        - The method will return the recall of this list if input data is list, if the input data is list of list, return the average recall on all list. The second return value is a list of precision for each input.
+        - Example Usage:    
+        - >>> MetricsCalculator2.mrr(([1, 0, 1, 0], 4))
+        - >>> MetricsCalculator2.mrr([([1, 0, 1, 0], 4), ([0, 1, 0, 1], 4)])
+        - The expected return value of example usage is : 1.0, [1.0]
+                                                    0.75, [1.0, 0.5]
+    - @staticmethod map(data):
+        - This method will compute the MAP of the input data. MAP is a widely used evaluation index. It is the mean of AP (average precision).
+        - This method will get "data"; the data must be a tuple, list 0,1,eg.([1,0,...],5). In each tuple (actual result,ground truth num), ground truth num is the total ground num. ([1,0,...],5), or list of tuple eg. [([1,0,1,...],5),([1,0,...],6),([0,0,...],5)]. 1 stands for a correct answer, 0 stands for a wrong answer.
+        - The method will return the recall of this list if input data is list, if the input data is list of list return the average recall on all list. The second return value is a list of precision for each input.
+        - Example Usage:    
+        - >>> MetricsCalculator2.mrr(([1, 0, 1, 0], 4))
+        - >>> MetricsCalculator2.map([([1, 0, 1, 0], 4), ([0, 1, 0, 1], 4)])
+        - The expected return value of example usage is :  0.41666666666666663, [0.41666666666666663]
+                                                    0.3333333333333333, [0.41666666666666663, 0.25]   
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import numpy as np
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.

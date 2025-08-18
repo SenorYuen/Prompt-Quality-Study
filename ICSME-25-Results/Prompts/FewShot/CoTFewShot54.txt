@@ -1,0 +1,149 @@
+System Prompt:
+Provided are instructions for generating the code for a class. Please provide the only code in your response.
+
+User Prompt:
+a. Understand the Overall Purpose:
+    - The MovieBookingSystem is a class that acts as a movie booking system, which allows adding movies, booking tickets and checking the available movies within a given time range. 
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize movies with information (__init__)
+        - Add a new movie (add_movie)
+        - Book tickets for a movie (book_ticket)
+        - Get a list of available movies (available_movies)
+c. Detail each method:
+    -  __init__(self):
+        - This method will act as the constructor.
+        - This method will Initialize movies contains the information about movies
+        - self.movies = []
+        - Example Usage:
+        -  >>> system.movies
+            [{'name': 'Batman', 'price': 49.9, 'start_time': datetime.datetime(1900, 1, 1, 17, 5), 'end_time': datetime.datetime(1900, 1, 1, 19, 25),
+            'seats': array([[0., 0., 0.],
+                [0., 0., 0.],
+                [0., 0., 0.]])}]
+    - add_movie(self, name, price, start_time, end_time, n):
+        - This method will add a new movie into self.movies.
+        - This method will get "name" as str which is the movie name, "price" as float which is the price for one ticket, "start_time" as str which is the movie start time, "end_time" as str which is the movie end time, "n" as int which is the size of seats(n*n).
+        - Example Usage:    
+        - >>>system.add_movie('Batman', 49.9, '17:05', '19:25', 3)
+        - >>> system.movies
+        - >>> The expected output of example usage is : [{'name': 'Batman', 'price': 49.9, 'start_time': datetime.datetime(1900, 1, 1, 17, 5), 'end_time': datetime.datetime(1900, 1, 1, 19, 25),
+            'seats': array([[0., 0., 0.],
+            [0., 0., 0.],
+            [0., 0., 0.]])}]
+    - book_ticket(self, name, seats_to_book):
+        - This method will book tickets for a movie. Change the seats value in self.movies if booked successfully.
+        - This method will get "name" as str which is the movie name, "seats_to_book" as list of tuples which represents seats to book [(row1, col1), (row2, col2), ...]
+        - This method will return the booking status message. "Movie not found." for no such movie, "Booking success." for successfully booking, or "Booking failed." otherwise.
+        - Example Usage:    
+        - >>> system.add_movie('Batman', 49.9, '17:05', '19:25', 3)
+        - >>> system.book_ticket('Batman', [(0, 0), (0, 1)])
+        - >>> The expected return value of example usage is :'Booking success.'
+        - >>> system.book_ticket('Batman', [(0, 0)]) 
+        - >>> The expected return value of example usage is : 'Booking failed.
+        - >>> system.book_ticket('batman', [(0, 0)])
+        - >>> The expected return value of example usage is :  'Movie not found.'
+    - available_movies(self, start_time, end_time):
+        - This method will get a list of available movies within the specified time range.
+        - This method will get "start_time" as str which is the movie start time, "end_time" as str which is the movie end time.
+        - This method will return the names of available movies as list of str
+        - Example Usage:    
+        - >>> system.add_movie('Batman', 49.9, '17:05', '19:25', 3)
+        - >>> system.available_movies('12:00', '22:00')
+        - >>> The expected return value of example usage is :  ['Batman']
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - from datetime import datetime
+    - import numpy as np
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.
+
+ Use the following prompt and solution pair as context for generating the previously mentioned class: 
+a. Understand the Overall Purpose:
+    - The ZipFileProcessor class can read and decompress zip files. The ZipFileProcessor class also can compress a list of specified files into a zip file. 
+b. Identify the Required Methods:
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize file name (__init__)
+        - Read files (read_zip_file)
+        - Extract all files (extract_all)
+        - Extract a specific file identified by name (extract_file)
+        - Compress files into zip (create_zip_file)
+c. Detail each method:
+    - __init__(self, file_name):
+        - This method will act as the constructor.
+        - This method will initialize the file name.
+        - This Method will accept "file_name" as str ehich is the name of the file to be processed.
+        - self.file_name = file_name
+    - read_zip_file(self):
+        - This method will get open file object, and return the open file object if successful; otherwise, returns None
+        - Example Usage: 
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> file = zfp.read_zip_file()
+    - extract_all(self, output_path):
+        - This method will extract all zip files and place them in the specified path
+        - This method will get the "output_path" as str which is the location of the extracted file.
+        - This method will return True or False to represent if the extraction operation was successful. 
+        - Example Usage:
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.extract_all("result/aaa")
+    - extract_file(self, file_name, output_path):  
+        - This method will extract the file with the specified name from the zip file and place it in the specified path  
+        - This method will get "file_name" as str whcih is the name of the file to be uncompressed, "output_path" as str which is the location of the extracted file. 
+        - The method will return True or False, representing whether the extraction operation was successful
+        - Example usage: 
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.extract_file("bbb.txt", "result/aaa")
+    - create_zip_file(self, files, output_file_name):
+        - This method will compress the specified file list into a zip file and place it in the specified path. 
+        - This method will get "files" as a list of string which is the List of files to compress, "output_file_name" as str which specifies output path.
+        - This method will return True or False, representing whether the compression operation was successful 
+        - Example Usage:
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.create_zip_file(["bbb.txt", "ccc,txt", "ddd.txt"], "output/bcd") 
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import zipfile
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 
+
+
+import zipfile
+
+
+class ZipFileProcessor:
+    def __init__(self, file_name):
+        self.file_name = file_name
+
+    def read_zip_file(self):
+        try:
+            zip_file = zipfile.ZipFile(self.file_name, 'r')
+            return zip_file
+        except:
+            return None
+
+    def extract_all(self, output_path):
+        try:
+            with zipfile.ZipFile(self.file_name, 'r') as zip_file:
+                zip_file.extractall(output_path)
+            return True
+        except:
+            return False
+
+    def extract_file(self, file_name, output_path):
+        try:
+            with zipfile.ZipFile(self.file_name, 'r') as zip_file:
+                zip_file.extract(file_name, output_path)
+            return True
+        except:
+            return False
+
+    def create_zip_file(self, files, output_file_name):
+        try:
+            with zipfile.ZipFile(output_file_name, 'w') as zip_file:
+                for file in files:
+                    zip_file.write(file)
+            return True
+        except:
+            return False

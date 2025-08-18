@@ -1,0 +1,136 @@
+System Prompt:
+Provided are instructions for generating the code for a class. Please provide the only code in your response.
+
+User Prompt:
+a. Understand the Overall Purpose:
+    - The DataStatistics4 is a class that performs advanced mathematical calculations and statistics, including correlation coefficient, skewness, kurtosis, and probability density function (PDF) for a normal distribution.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Calculate the correlation coefficient (correlation_coefficient)
+        - Calculate the skewness (skewness)
+        - Calculate the kurtosis (kurtosis)
+        - Calculate the probability density function (pdf)
+c. Detail each method:
+    - @staticmethod correlation_coefficient(data1, data2):
+        - This method will initialize Data List.Calculate the correlation coefficient of two sets of data.
+        - This method will get "data1" as list which is the first set of data, "data2" as list which is the second set of data.
+        - This method will return the correlation coefficient as float.
+        - Example Usages:
+        - DataStatistics4.correlation_coefficient([1, 2, 3], [4, 5, 6])
+        - >>> The expected return value for example usage is :  0.9999999999999998
+    - @staticmethod skewness(data):
+        - This method will Calculate the skewness of a set of data.
+        - This method will get "data" as list which is the The input data list.
+        - This method will return The skewness as float.
+        - Example Usages:
+        - DataStatistics4.skewness([1, 2, 5])
+        - >>> The expected return value for example usage is :  2.3760224064818463
+    - @staticmethod kurtosis(data):
+        - This method will Calculate the kurtosis of a set of data.
+        - This method will get "data" as list which is the The input data list.
+        - This method will return The kurtosis as float.
+        - Example Usages:
+        - DataStatistics4.kurtosis([1, 20,100])
+        - >>> The expected return value for example usage is : -1.5000000000000007
+    - @staticmethod pdf(data, mu, sigma):
+        - This method will Calculate the probability density function (PDF) of a set of data under a normal distribution.
+        - This method will get "data" as list which is the The input data list, "mus" as float which is The mean of the normal distribution, "sigma" as float which is The standard deviation of the normal distribution.
+        - This method will return The probability density function (PDF) as list.
+        - Example Usages:
+        - DataStatistics4.pdf([1, 2, 3], 1, 1)
+        - >>> The expected return value for example usage is : [0.3989422804014327, 0.24197072451914337, 0.05399096651318806]
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import math
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 
+
+ Use the following prompt and solution pair as context for generating the previously mentioned class: 
+a. Understand the Overall Purpose:
+    - The ZipFileProcessor class can read and decompress zip files. The ZipFileProcessor class also can compress a list of specified files into a zip file. 
+b. Identify the Required Methods:
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize file name (__init__)
+        - Read files (read_zip_file)
+        - Extract all files (extract_all)
+        - Extract a specific file identified by name (extract_file)
+        - Compress files into zip (create_zip_file)
+c. Detail each method:
+    - __init__(self, file_name):
+        - This method will act as the constructor.
+        - This method will initialize the file name.
+        - This Method will accept "file_name" as str ehich is the name of the file to be processed.
+        - self.file_name = file_name
+    - read_zip_file(self):
+        - This method will get open file object, and return the open file object if successful; otherwise, returns None
+        - Example Usage: 
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> file = zfp.read_zip_file()
+    - extract_all(self, output_path):
+        - This method will extract all zip files and place them in the specified path
+        - This method will get the "output_path" as str which is the location of the extracted file.
+        - This method will return True or False to represent if the extraction operation was successful. 
+        - Example Usage:
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.extract_all("result/aaa")
+    - extract_file(self, file_name, output_path):  
+        - This method will extract the file with the specified name from the zip file and place it in the specified path  
+        - This method will get "file_name" as str whcih is the name of the file to be uncompressed, "output_path" as str which is the location of the extracted file. 
+        - The method will return True or False, representing whether the extraction operation was successful
+        - Example usage: 
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.extract_file("bbb.txt", "result/aaa")
+    - create_zip_file(self, files, output_file_name):
+        - This method will compress the specified file list into a zip file and place it in the specified path. 
+        - This method will get "files" as a list of string which is the List of files to compress, "output_file_name" as str which specifies output path.
+        - This method will return True or False, representing whether the compression operation was successful 
+        - Example Usage:
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.create_zip_file(["bbb.txt", "ccc,txt", "ddd.txt"], "output/bcd") 
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import zipfile
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 
+
+
+import zipfile
+
+
+class ZipFileProcessor:
+    def __init__(self, file_name):
+        self.file_name = file_name
+
+    def read_zip_file(self):
+        try:
+            zip_file = zipfile.ZipFile(self.file_name, 'r')
+            return zip_file
+        except:
+            return None
+
+    def extract_all(self, output_path):
+        try:
+            with zipfile.ZipFile(self.file_name, 'r') as zip_file:
+                zip_file.extractall(output_path)
+            return True
+        except:
+            return False
+
+    def extract_file(self, file_name, output_path):
+        try:
+            with zipfile.ZipFile(self.file_name, 'r') as zip_file:
+                zip_file.extract(file_name, output_path)
+            return True
+        except:
+            return False
+
+    def create_zip_file(self, files, output_file_name):
+        try:
+            with zipfile.ZipFile(output_file_name, 'w') as zip_file:
+                for file in files:
+                    zip_file.write(file)
+            return True
+        except:
+            return False

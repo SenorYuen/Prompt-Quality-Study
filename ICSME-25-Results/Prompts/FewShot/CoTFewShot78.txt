@@ -1,0 +1,134 @@
+System Prompt:
+Provided are instructions for generating the code for a class. Please provide the only code in your response.
+
+User Prompt:
+a. Understand the Overall Purpose:
+    - The SQLQueryBuilder class provides functions to build SQL queries, including SELECT, INSERT, UPDATE, and DELETE statements. 
+b. To ensure the function of this class, it will need all of these methods:
+    - Generates a SELECT SQL statement (select)
+    - Generates an INSERT SQL statement (insert)
+    - Generates a DELETE SQL statement (delete)
+    - Generates an UPDATE SQL statement (update)
+c. Detail each method:
+    - @staticmethod select(table, columns='*', where=None):
+        - This method will generate the SELECT SQL statement from the given parameters.
+        - This method will get "table" as str which is the query table in database, "columns" as list of str -> ['col1', 'col2'], "where" as dict which is the query condition -> {key1: value1, key2: value2 ...}.
+        - This method will return the SQL query statement as str. 
+        - Example Usage:   
+        - >>> SQLQueryBuilder.select('table1', columns = ["col1","col2"], where = {"age": 15})
+        - >>> The expected return value for example usage is : "SELECT col1, col2 FROM table1 WHERE age='15'"
+    - @staticmethod insert(table, data):
+        - This method will generate the INSERT SQL statement from the given parameters.
+        - This method will get "table" as str which is the table to be inserted in the database, "data" as dict which is the key and value in SQL insert statement.
+        - This method will return the generated SQL insert statement as str. 
+        - Example Usage:   
+        - >>> SQLQueryBuilder.insert('table1', {'name': 'Test', 'age': 14})
+        - >>> The expected return value for example usage is : "INSERT INTO table1 (name, age) VALUES ('Test', '14')"
+    - @staticmethod delete(table, where=None):
+        - This method will generate the DELETE SQL statement from the given parameters.
+        - This method will get "table" as str which is the table that will be executed with DELETE operation in database, "where" as dict which is the query condition -> {key1: value1, key2: value2 ...}.
+        - This method will return the generated SQL delete statement as str. 
+        - Example Usage:   
+        - >>> SQLQueryBuilder.delete('table1', {'name': 'Test', 'age': 14})
+        - >>> The expected return value for example usage is : "DELETE FROM table1 WHERE name='Test' AND age='14'"
+    - @staticmethod update(table, data, where=None):
+        - This method will create anUPDATE SQL statement from the given parameters.
+        - This method will get "table" as str which is the table that will be executed with UPDATE operation in database, "data" as dict which is the key and value in SQL update statement, "where" as dict which is the query condition -> {key1: value1, key2: value2 ...}.
+        - Example Usage:   
+        - >>> SQLQueryBuilder.update('table1', {'name': 'Test2', 'age': 15}, where = {'name':'Test'})
+        - >>> The expected return value for example usage is : "UPDATE table1 SET name='Test2', age='15' WHERE name='Test'"
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.
+
+ Use the following prompt and solution pair as context for generating the previously mentioned class: 
+a. Understand the Overall Purpose:
+    - The ZipFileProcessor class can read and decompress zip files. The ZipFileProcessor class also can compress a list of specified files into a zip file. 
+b. Identify the Required Methods:
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize file name (__init__)
+        - Read files (read_zip_file)
+        - Extract all files (extract_all)
+        - Extract a specific file identified by name (extract_file)
+        - Compress files into zip (create_zip_file)
+c. Detail each method:
+    - __init__(self, file_name):
+        - This method will act as the constructor.
+        - This method will initialize the file name.
+        - This Method will accept "file_name" as str ehich is the name of the file to be processed.
+        - self.file_name = file_name
+    - read_zip_file(self):
+        - This method will get open file object, and return the open file object if successful; otherwise, returns None
+        - Example Usage: 
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> file = zfp.read_zip_file()
+    - extract_all(self, output_path):
+        - This method will extract all zip files and place them in the specified path
+        - This method will get the "output_path" as str which is the location of the extracted file.
+        - This method will return True or False to represent if the extraction operation was successful. 
+        - Example Usage:
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.extract_all("result/aaa")
+    - extract_file(self, file_name, output_path):  
+        - This method will extract the file with the specified name from the zip file and place it in the specified path  
+        - This method will get "file_name" as str whcih is the name of the file to be uncompressed, "output_path" as str which is the location of the extracted file. 
+        - The method will return True or False, representing whether the extraction operation was successful
+        - Example usage: 
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.extract_file("bbb.txt", "result/aaa")
+    - create_zip_file(self, files, output_file_name):
+        - This method will compress the specified file list into a zip file and place it in the specified path. 
+        - This method will get "files" as a list of string which is the List of files to compress, "output_file_name" as str which specifies output path.
+        - This method will return True or False, representing whether the compression operation was successful 
+        - Example Usage:
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.create_zip_file(["bbb.txt", "ccc,txt", "ddd.txt"], "output/bcd") 
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import zipfile
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 
+
+
+import zipfile
+
+
+class ZipFileProcessor:
+    def __init__(self, file_name):
+        self.file_name = file_name
+
+    def read_zip_file(self):
+        try:
+            zip_file = zipfile.ZipFile(self.file_name, 'r')
+            return zip_file
+        except:
+            return None
+
+    def extract_all(self, output_path):
+        try:
+            with zipfile.ZipFile(self.file_name, 'r') as zip_file:
+                zip_file.extractall(output_path)
+            return True
+        except:
+            return False
+
+    def extract_file(self, file_name, output_path):
+        try:
+            with zipfile.ZipFile(self.file_name, 'r') as zip_file:
+                zip_file.extract(file_name, output_path)
+            return True
+        except:
+            return False
+
+    def create_zip_file(self, files, output_file_name):
+        try:
+            with zipfile.ZipFile(output_file_name, 'w') as zip_file:
+                for file in files:
+                    zip_file.write(file)
+            return True
+        except:
+            return False

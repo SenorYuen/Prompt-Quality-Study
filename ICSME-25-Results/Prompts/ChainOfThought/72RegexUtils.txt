@@ -1,0 +1,98 @@
+a. Understand the Overall Purpose:
+    - The RegexUtils provides to match, find all occurrences, split, and substitute text using regular expressions. It also includes predefined patterns, validating phone numbers and extracting email addresses.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Check if the text matches the regular expression (match)
+        - Find all matching substrings (findall)
+        - Split text based on regular expression patterns (split)
+        - Replace the substring matched by a regular expression (sub)
+        - Generate regular expression patterns that match email addresses (generate_email_pattern)
+        - Generate regular expression patterns that match phone numbers (generate_phone_number_pattern)
+        - Generate regular expression patterns that match the middle characters of two sentences (generate_split_sentences_pattern)
+        - Split the text into a list of sentences (split_sentences)
+        - Verify if the phone number is valid (validate_phone_number)
+        - Extract all email addresses from the text (extract_email)
+c. Detail each method:
+    - match(self, pattern, text):
+        - This method will check if the text matches the regular expression.
+        - This method will get "pattern" as str which is the regular expression pattern, "text" as str which is the text to match.
+        - This method will return True or False, representing whether the text matches the regular expression or not.
+        - Example Usage: 
+        - >>> ru = RegexUtils()
+        - >>> ru.match(r'\b\d{3}-\d{3}-\d{4}\b', "123-456-7890")
+        - >>> The expected return value for example usage is : True
+    - findall(self, pattern, text):
+        - This method will find all matching substrings and return a list of all matching substrings.
+        - This method will get "pattern" as str which is the regular expression pattern, "text" as str which is the text to match.
+        - This method will return a list of all matching substrings.
+        - Example Usage: 
+        - >>> ru = RegexUtils()
+        - >>> ru.findall(r'\b\d{3}-\d{3}-\d{4}\b', "123-456-7890 abiguygusu 876-286-9876 kjgufwycs 987-762-9767")
+        - >>> The expected return value for example usage is : ['123-456-7890', '876-286-9876', '987-762-9767']
+    - split(self, pattern, text):
+        - This method will split text based on regular expression patterns and return a list of substrings
+        - This method will get "pattern" as str which is the regular expression pattern, "text" as str which is the text to match.
+        - This method will return a list of all matching substrings after splitting.
+        - Example Usage: 
+        - >>> ru = RegexUtils()
+        - >>> ru.findall(r'\b\d{3}-\d{3}-\d{4}\b', "123-456-7890 abiguygusu 876-286-9876 kjgufwycs 987-762-9767")
+        - >>> The expected return value for example usage is : ['', ' abiguygusu ', ' kjgufwycs ', ''] 
+    - sub(self, pattern, replacement, text):
+        - This method will replace the substring matched by a regular expression with the specified string.
+        - This method will get "pattern" as str which is the regular expression pattern, "replacement" as str which is the text to replace with, "text" as str which is the text to match.
+        - This method will return the text after replacement as str. 
+        - Example Usage: 
+        - >>> ru = RegexUtils()
+        - >>> ru.sub(r'\b\d{3}-\d{3}-\d{4}\b', 'phone num',  "123-456-7890 abiguygusu 876-286-9876 kjgufwycs 987-762-9767")
+        - >>> The expected return value for example usage is :  'phone num abiguygusu phone num kjgufwycs phone num' 
+    - generate_email_pattern(self):
+        - This method will generate regular expression patterns that match email addresses.
+        - This method will return the regular expression patterns that match email addresses as str. 
+        - Example Usage: 
+        - >>> ru = RegexUtils()
+        - >>> ru.generate_email_pattern()
+        - >>> The expected return value for example usage is : '\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+    - generate_phone_number_pattern(self):
+        - This method will generate regular expression patterns that match phone numbers.
+        - This method will return the regular expression patterns that match phone numbers as str. 
+        - Example Usage: 
+        - >>> ru = RegexUtils()
+        - >>> ru.generate_phone_number_pattern()
+        - >>> The expected return value for example usage is : '\b\d{3}-\d{3}-\d{4}\b'
+    - generate_split_sentences_pattern(self):
+        - This method will generate regular expression patterns that match the middle characters of two sentences.
+        - This method will return the regular expression patterns that match the middle characters of two sentences as str. 
+        - Example Usage: 
+        - >>> ru = RegexUtils()
+        - >>> ru.generate_split_sentences_pattern()
+        - >>> The expected return value for example usage is : '[.!?][\s]{1,2}(?=[A-Z])'
+    - split_sentences(self, text):
+        - This method will split the text into a list of sentences without punctuation except the last sentence.
+        - This method will get "text" as str which is the text to be splitted.
+        - This method will return the split text as list.
+        - Example Usage: 
+        - >>> ru = RegexUtils()
+        - >>> ru.split_sentences("Aaa. Bbbb? Ccc!")
+        - >>> The expected return value for example usage is : ['Aaa', 'Bbbb', 'Ccc!']
+    - validate_phone_number(self, phone_number):
+        - This method will verify if the phone number is valid.
+        - This method will get "phone_number" as str which is the Phone number to be verified.
+        - This method will return True or False, indicating whether the phone number is valid
+        - Example Usage: 
+        - >>> ru = RegexUtils()
+        - >>> ru.validate_phone_number("123-456-7890")
+        - >>> The expected return value for example usage is : True
+    - extract_email(self, text):
+        - This method will extract all email addresses from the text.
+        - This method will get "text" as str which is the input text.
+        - This method will return All extracted email addresses as list of strings.
+        - Example Usage: 
+        - >>> ru = RegexUtils()
+        - >>> ru.extract_email("abcdefg@163.com ygusyfysy@126.com wljduyuv@qq.com")
+        - >>> The expected return value for example usage is :  ['abcdefg@163.com', 'ygusyfysy@126.com', 'wljduyuv@qq.com']
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import re 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.           

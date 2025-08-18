@@ -1,0 +1,69 @@
+a. Understand the Overall Purpose:
+    - The TimeUtils is a time util class, including getting the current time and date, adding seconds to a datetime, converting between strings and datetime objects, calculating the time difference in minutes, and formatting a datetime object.
+b. To ensure the function of this class, it will need all of these methods:
+    - Get the current datetime (__init__)
+    - Return the current time (get_current_time)
+    - Return the current date (get_current_date)
+    - Add the specified number of seconds to the current time (add_seconds)
+    - Convert the time string to a datetime instance (string_to_datetime)
+    - Convert a datetime instance to a string (datetime_to_string)
+    - Calculate how many minutes have passed between two times (get_minutes)
+    - Get format time(get_format_time)
+c. Detail each method:
+    - __init__(self):
+        - This method will act as the constructor.
+        - This method will get the current datetime.
+        - self.datetime = datetime.datetime.now()
+    - get_current_time(self):
+        - This method will return the current time as str in the format of '%H:%M:%S'.
+        - Example Usage:   
+        - >>> timeutils = TimeUtils()
+        - >>> timeutils.get_current_time()
+        - >>> The expected return value for example usage is : "19:19:22"
+    - get_current_date(self):
+        - This method will return the current date as str in the format of "%Y-%m-%d"
+        - Example Usage:   
+        - >>> timeutils.get_current_date()
+        - >>> The expected return value for example usage is : "2023-06-14" 
+    - add_seconds(self, seconds):
+        - This method will add the specified number of seconds to the current time
+        - This method will get "seconds" as int which is the number of seconds to add.
+        - This method will return the time after adding the specified number of seconds in the format '%H:%M:%S'. 
+        - Example Usage:   
+        - >>> timeutils.add_seconds(600)
+        - >>> The expected return value for example usage is : "19:29:22"
+    - string_to_datetime(self, string):
+        - This method will convert the time string to a datetime instance.
+        - This method will get "string" as str which is the string before converting format.
+        - This method will return the datetime instance.
+        - Example Usage:   
+        - >>> timeutils.string_to_datetime("2001-7-18 1:1:1")
+        - >>> The expected return value for example usage is : 2001-07-18 01:01:01
+    - datetime_to_string(self, datetime):
+        - This method will convert the time string to a datetime instance.
+        - This method will get "datetime" as datetime which is the datetime instance to convert.
+        - This method will return the converted time string as str.
+        - Example Usage:   
+        - >>> timeutils.datetime_to_string(timeutils.datetime)
+        - >>> The expected return value for example usage is : "2023-06-14 19:30:03"
+    - get_minutes(self, string_time1, string_time2):
+        - This method will calculate how many minutes have passed between two times, and round the results to the nearest.
+        - This method will get "string_time1" as str, "string_times" as str. 
+        - This method will return the number of minutes between two times, rounded off as int.
+        - Example Usage:   
+        - >>> timeutils.get_minutes("2001-7-18 1:1:1", "2001-7-18 2:1:1")
+        - >>> The expected return value for example usage is : 60
+    - get_format_time(self, year, month, day, hour, minute, second):
+        - This method will get format time.
+        - This method will get "year" as int, "month" as int, "day" as int, "hour" as int, "minute" as int, "second" as int.
+        - This method will return the formatted time string.
+        - Example Usage:   
+        - >>> timeutils.get_format_time(2001, 7, 18, 1, 1, 1)
+        - >>> The expected return value for example usage is :  "2001-07-18 01:01:01"
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import datetime
+    - import time 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.           

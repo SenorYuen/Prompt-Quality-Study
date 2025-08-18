@@ -1,0 +1,60 @@
+a. Understand the Overall Purpose:
+    - The AreaCalculator class can calculate the area of different shapes, including circle, sphere, cylinder, sector and annulus. 
+b. Identify the Required Methods:
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the radius ( __init__)
+        - Calculate the area of a circle (calculate_circle_area)
+        - Calculate the area of a sphere (calculate_sphere_area)
+        - Calculate the area of a cylinder (calculate_cylinder_area)
+        - Calculate the area of a sector (calculate_sector_area)
+        - Calculate the area of a annulus (calculate_annulus_area)
+c. Detail each method:
+    - __init__(self, radius):
+        - This method will act as the constructor. 
+        - This method will Initialize the radius for shapes.
+        - Method will accept "radius" as float
+        - self.radius = radius
+    - calculate_circle_area(self):
+        - This method will calculate the area of circle based on self.radius
+        - This method will return area of circle as float
+        - Example Usage:
+        - >>> areaCalculator = AreaCalculator(2)
+        - >>> areaCalculator.calculate_circle_area()
+        - >>> The expected return value for example usage is : 12.566370614359172
+    - calculate_sphere_area(self):
+        - This method will calculate the area of sphere based on self.radius
+        - This method will return area of sphere as float
+        - Example Usage:
+        - >>> areaCalculator = AreaCalculator(2)
+        - >>> areaCalculator.calculate_sphere_area()
+        - >>> The expected return value for example usage is : 50.26548245743669    
+    - calculate_cylinder_area(self, height):
+        - This method will calculate the area of cylinder based on self.radius and height
+        - This method will accept "height" as a float which is the height of cylinder
+        - This method will return area of cylinder as float
+        - Example Usage:
+        - >>> areaCalculator = AreaCalculator(2)
+        - >>> areaCalculator.calculate_cylinder_area(3)
+        - >>> The expected return value for example usage is : 62.83185307179586
+    - calculate_sector_area(self, angle):
+        - This method will calculate the area of sector based on self.radius and angle
+        - This method will get "angle" as a float which is the angle of sector
+        - This method will return area of sector as float
+        - Example Usage:
+        - >>> areaCalculator = AreaCalculator(2)
+        - >>> areaCalculator.calculate_sector_area(math.pi)
+        - >>> The expected return value for example usage is : 6.283185307179586
+    - calculate_annulus_area(self, inner_radius, outer_radius):
+        - This method will calculate the area of annulus based on inner_radius and out_radius
+        - This method will get "inner_radius" as a float which is the inner radius of sector, and "outer_radius" as a float which is the outer radius of sector 
+        - This method will return area of annulus as float
+        - Example Usage:
+        - >>> areaCalculator = AreaCalculator(2)
+        - >>> areaCalculator.calculate_annulus_area(2, 3)
+        - >>> The expected return value for example usage is : 15.707963267948966
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.

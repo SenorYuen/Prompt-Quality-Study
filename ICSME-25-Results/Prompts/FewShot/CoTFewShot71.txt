@@ -1,0 +1,155 @@
+System Prompt:
+Provided are instructions for generating the code for a class. Please provide the only code in your response.
+
+User Prompt:
+a. Understand the Overall Purpose:
+    - The Server is a class as a server, which handles a white list, message sending and receiving, and information display.
+b. Identify the Required Methods:      
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize the whitelist, the sending and receiving information (__init__)
+        - Add an address to the whitelist (add_white_list)
+        - Remove an address from the whitelist (del_white_list)
+        - Receive information containing address and content (recv)
+        - Send information containing address and content (send)
+        - Returns struct of the specified type (show)
+c. Detail each method:
+    - __init__(self):
+        - This method will act as the constructor.
+        - This method will initialize the whitelist as an empty list, and initialize the sending and receiving information as an empty dictionary
+        - self.white_list = []
+        - self.send_struct = {}
+        - self.receive_struct = {}
+    - add_white_list(self, addr):
+        - This method will add an address to the whitelist and do nothing if it already exists. 
+        - This method will get "addr" as int which is the address to be added.
+        - This method will return the new whitelist as list or False if the address already exists. 
+        - Example Usage: 
+        - >>> server = Server()
+        - >>> server.add_white_list(88) 
+        - >>> The expected return value for example usage is : [88]   
+    - del_white_list(self, addr):
+        - This method will remove an address to the whitelist and do nothing if it already exists. 
+        - This method will get "addr" as int which is the address to be deleted.
+        - This method will return the new whitelist as list or False if the address does not exists. 
+        - Example Usage: 
+        - >>> server.add_white_list(88)
+        - >>> server.del_white_list(88)
+        - >>> The expected return value for example usage is : [] 
+    - recv(self, info):
+        - This method will receive information containing address and content. If the address is on the whitelist, receive the content; otherwise, do not receive it.
+        - This method will get "info" as dict which is the information dictionary containing address and content.
+        - This method will return the content of the information if successfully received; otherwise, return False. 
+        - Example Usage: 
+        - >>> server.recv({"addr":88,"content":"abc"})
+        - >>> The expected return value for example usage is : abc
+    - send(self, info):
+        - This method will send information containing address and content.
+        - This method will get "info" as dict which is the information dictionary containing address and content.
+        - This method will return nothing if successfully sent; otherwise, return a string indicating an error message. 
+        - Example Usage: 
+        - >>> server.send({"addr":66,"content":"ABC"})
+        - self.send_struct = {"addr":66,"content":"ABC"}  
+    -  show(self, type):
+        - This method will return a struct of the specified type.
+        - This method will get "type" as str which is the type of struct to be returned, which can be 'send' or 'receive'.
+        - This method will return the corresponding struct if type is equal to 'send' or 'receive; otherwise, return False. 
+        - Example Usage: 
+        - >>> server.recv({"addr":88,"content":"abc"})
+        - >>> server.send({"addr":66,"content":"ABC"})
+        - >>> server.show("send") 
+        - >>> The expected return value for example usage is : {"addr":66,"content":"ABC"}
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - No import 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 
+
+ Use the following prompt and solution pair as context for generating the previously mentioned class: 
+a. Understand the Overall Purpose:
+    - The ZipFileProcessor class can read and decompress zip files. The ZipFileProcessor class also can compress a list of specified files into a zip file. 
+b. Identify the Required Methods:
+    - To ensure the function of this class, it will need all of these methods:
+        - Initialize file name (__init__)
+        - Read files (read_zip_file)
+        - Extract all files (extract_all)
+        - Extract a specific file identified by name (extract_file)
+        - Compress files into zip (create_zip_file)
+c. Detail each method:
+    - __init__(self, file_name):
+        - This method will act as the constructor.
+        - This method will initialize the file name.
+        - This Method will accept "file_name" as str ehich is the name of the file to be processed.
+        - self.file_name = file_name
+    - read_zip_file(self):
+        - This method will get open file object, and return the open file object if successful; otherwise, returns None
+        - Example Usage: 
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> file = zfp.read_zip_file()
+    - extract_all(self, output_path):
+        - This method will extract all zip files and place them in the specified path
+        - This method will get the "output_path" as str which is the location of the extracted file.
+        - This method will return True or False to represent if the extraction operation was successful. 
+        - Example Usage:
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.extract_all("result/aaa")
+    - extract_file(self, file_name, output_path):  
+        - This method will extract the file with the specified name from the zip file and place it in the specified path  
+        - This method will get "file_name" as str whcih is the name of the file to be uncompressed, "output_path" as str which is the location of the extracted file. 
+        - The method will return True or False, representing whether the extraction operation was successful
+        - Example usage: 
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.extract_file("bbb.txt", "result/aaa")
+    - create_zip_file(self, files, output_file_name):
+        - This method will compress the specified file list into a zip file and place it in the specified path. 
+        - This method will get "files" as a list of string which is the List of files to compress, "output_file_name" as str which specifies output path.
+        - This method will return True or False, representing whether the compression operation was successful 
+        - Example Usage:
+        - >>> zfp = ZipFileProcessor("aaa.zip")
+        - >>> zfp.create_zip_file(["bbb.txt", "ccc,txt", "ddd.txt"], "output/bcd") 
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import zipfile
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code. 
+
+
+import zipfile
+
+
+class ZipFileProcessor:
+    def __init__(self, file_name):
+        self.file_name = file_name
+
+    def read_zip_file(self):
+        try:
+            zip_file = zipfile.ZipFile(self.file_name, 'r')
+            return zip_file
+        except:
+            return None
+
+    def extract_all(self, output_path):
+        try:
+            with zipfile.ZipFile(self.file_name, 'r') as zip_file:
+                zip_file.extractall(output_path)
+            return True
+        except:
+            return False
+
+    def extract_file(self, file_name, output_path):
+        try:
+            with zipfile.ZipFile(self.file_name, 'r') as zip_file:
+                zip_file.extract(file_name, output_path)
+            return True
+        except:
+            return False
+
+    def create_zip_file(self, files, output_file_name):
+        try:
+            with zipfile.ZipFile(output_file_name, 'w') as zip_file:
+                for file in files:
+                    zip_file.write(file)
+            return True
+        except:
+            return False

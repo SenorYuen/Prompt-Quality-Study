@@ -1,0 +1,42 @@
+a. Understand the Overall Purpose:
+    - The UrlPath class is a utility for encapsulating and manipulating the path component of a URL, including adding nodes, parsing path strings, and building path strings with optional encoding.
+b. To ensure the function of this class, it will need all of these methods:
+    - Initializes the UrlPath object ( __init__)
+    - Adds a segment to the list of segments (add)
+    - Parses a given path string (parse)
+    - Fixes the given path string (fix_path)
+c. Detail each method:
+    - __init__(self, url):
+        - This method will act as the constructor.
+        - This method will initialize the UrlPath object with an empty list of segments and a flag indicating the presence of an end tag.
+        - self.segments = []
+        - self.with_end_tag = False
+    - add(self, segment):
+        - This method will add a segment to the list of segments in the UrlPath.
+        - This method will get "segment" as str which is the segment to add. 
+        - Example Usage:   
+        - >>> url_path = UrlPath()
+        - >>> url_path.add('foo')
+        - >>> url_path.add('bar')
+        - >>> The expected output value for example usage is : url_path.segments = ['foo', 'bar']
+    - parse(self, path, charset):
+        - This method will parse a given path string and populates the list of segments in the UrlPath.
+        - This method will get "path" as str which is the path string to parse, "charset" as str which is the character encoding of the path string.
+        - Example Usage:   
+        - >>> url_path = UrlPath()
+        - >>> url_path.parse('/foo/bar/', 'utf-8')
+        - >>> The expected output value for example usage is : url_path.segments = ['foo', 'bar']
+    - @staticmethod fix_path(path):
+        - This method will fix the given path string by removing leading and trailing slashes.
+        - This method will get "path" as str which is the path string to fix
+        - This method will return the fixed path string as str.
+        - Example Usage:   
+        - >>> url_path = UrlPath()
+        - >>> url_path.fix_path('/foo/bar/')
+        - >>> The expected output value for example usage is: 'foo/bar' 
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import urllib.parse 
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Please only include the code output in your response, and do not include example usage or test cases in this code.           

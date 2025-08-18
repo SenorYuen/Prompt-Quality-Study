@@ -1,0 +1,51 @@
+a. Understand the Overall Purpose:
+    -  This AccessGatewayFilter class is a filter used for accessing gateway filtering, primarily for authentication and access log recording.
+b. Identify the Required Methods:
+    - To ensure the function of this class, it will need all of these methods:
+        - To ensure the function of this class, it will need all of these methods:
+        - Filter incoming requests (filter)
+        - Check the request URI start (is_start_with)
+        - Get the user information (get_jwt_user)
+        - Set and log the current user information (set_current_user_info_and_log)
+c. Detail each method:
+    - __init__(self):
+        - Pass
+    - filter(self, request):
+        - This method will filter the incoming request based on certain rules and conditions.
+        - This method will accept "request" as dict which is the details of incoming request.
+        - This method will return True if the request is allowed, False otherwise. 
+        - Example Usage:
+        - >>> filter = AccessGatewayFilter()
+        - >>> filter.filter({'path': '/login', 'method': 'POST'})
+        - This example will return True   
+    - is_start_with(self, request_uri):
+        - This method will check if the request URI starts with certain prefixes.
+        - This method will accept "request_uri" as str which is the URI of the request.
+        - This method will return True if the URI starts with certain prefixes, False otherwise.
+        - Example Usage:
+        - >>> filter = AccessGatewayFilter()
+        - >>> filter.is_start_with('/api/data')
+        - This example will return True   
+    - get_jwt_user(self, request)
+        - This method will get the user information from the JWT token in the request.
+        - This method will accept "request" as dict, which is the incoming request details.
+        - This method will return dict or None, the user information if the token is valid, None otherwise.
+        - Example Usage:
+        - >>> filter = AccessGatewayFilter()
+        - >>> filter.get_jwt_user({'headers': {'Authorization': {'user': {'name': 'user1'}, 'jwt': 'user1'+str(datetime.date.today())}}})
+        - {'user': {'name': 'user1'}
+    - set_current_user_info_and_log(self, user):
+        - This method will set the current user information and log the access.
+        - This method will accept "user" as dict, which is the user information.
+        - This method will return None.
+        - Example Usage:
+        - >>> filter = AccessGatewayFilter()
+        - >>> user = {'name': 'user1', 'address': '127.0.0.1'}
+        - >>> filter.set_current_user_info_and_log(user)
+d. Plan the implementation:
+    - For each method, consider the input parameters, the actions that must be performed, and the expected outcome. 
+e. Import statements:
+    - import PyPDF2
+f. Implement the methods:
+    - Write the code for each method step-by-step, following this outlined plan. Include explanatory comments and the code output in your response, and do not include example usage or test cases in this code.
+
