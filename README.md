@@ -1,7 +1,6 @@
 # Prompting Matters: Assessing the Effect of Prompting Techniques on LLM-Generated Class Code
 
-Preprint can be found here: https://aabdllatif.github.io/papers/Adam_ICSME2025.pdf
-
+Preprint can be found here: [ResearchGate](https://www.researchgate.net/publication/394255549_Prompting_Matters_Assessing_the_Effect_of_Prompting_Techniques_on_LLM-Generated_Class_Code)
 ## Repository Directory:
 - In data, you will find the prompts this study uses. 
   - data\ChainOfThought contains our handwritten Chain of Thought prompts 
